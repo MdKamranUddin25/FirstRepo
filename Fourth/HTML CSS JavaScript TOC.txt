@@ -1,0 +1,44 @@
+TOC
+
+"HTML 5
+The developer should be able to Diligently employ a code/test/refine strategy to translate initial design documents into static web pages. 
+1. Develop a web page using HTML semantic and structural tags
+2. Design a web form with  validations and fall back strategy
+3. Apply graphics and play audio and video
+4. Persist data using local  storage
+5. Improve user interactions in a web page by using APIs for Drag and Drop, Select Box, Carousel and Date Pickers
+6. Enhance the user experience by adding animations to an HTML5 page.
+7.  Add style and enhance graphics to a web page using CSS3
+8. Design responsive web pages using media queries
+9.Use Bootstrap grid system and apply Bootstrap navigation elements, breadcrumbs and different plugins
+11. Debug and inspect web applications and styles using browser's tools.
+
+CSS
+The associate should be able to
+1. Design responsive Web Pages using media Queries
+2. Use CSS3 features that you commonly use in projects - border-radius,gradients,transform, media queries
+3. Use Bootstrap grid system
+
+Javascript:
+The developer should be able to develop dynamic web pages & data validation using Javascript
+
+1.  Understand JavaScript and ECMAScript versions and platforms
+
+2. Map HTML using the DOM - Document Object Model.
+
+3. Validate web page using Javascript and evaluate a regular expression to validate the input format
+
+4. Declar and handle events , bubble events and event by an anonymous function
+
+5. Implement exception handling
+
+6. Implement a callback by using anonymous functions
+
+7. Understand OOP in Javascript
+
+8. Consume JSON and XML data
+
+9. Create closures, prototypes, and modules in JavaScript
+
+10. Good hands-on exposure to Websockets, Webworkers, application caches, localstorage, Geolocation etc
+"
