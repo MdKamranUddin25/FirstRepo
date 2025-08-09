@@ -1,0 +1,469 @@
+Received: from SI2PR02MB4876.apcprd02.prod.outlook.com (2603:1096:4:125::5) by
+ SL2PR02MB3724.apcprd02.prod.outlook.com with HTTPS; Mon, 27 Feb 2023 08:33:27
+ +0000
+Received: from SG2PR03CA0087.apcprd03.prod.outlook.com (2603:1096:4:7c::15) by
+ SI2PR02MB4876.apcprd02.prod.outlook.com (2603:1096:4:125::5) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.6134.28; Mon, 27 Feb 2023 08:32:54 +0000
+Received: from SG2APC01FT0017.eop-APC01.prod.protection.outlook.com
+ (2603:1096:4:7c:cafe::c3) by SG2PR03CA0087.outlook.office365.com
+ (2603:1096:4:7c::15) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6156.16 via Frontend
+ Transport; Mon, 27 Feb 2023 08:32:54 +0000
+Authentication-Results: spf=pass (sender IP is 76.223.176.156)
+ smtp.mailfrom=ap-south-1.amazonses.com; dkim=pass (signature was verified)
+ header.d=mbcare.in;dmarc=bestguesspass action=none
+ header.from=mbcare.in;compauth=pass reason=109
+Received-SPF: Pass (protection.outlook.com: domain of ap-south-1.amazonses.com
+ designates 76.223.176.156 as permitted sender)
+ receiver=protection.outlook.com; client-ip=76.223.176.156;
+ helo=c176-156.smtp-out.ap-south-1.amazonses.com; pr=C
+Received: from c176-156.smtp-out.ap-south-1.amazonses.com (76.223.176.156) by
+ SG2APC01FT0017.mail.protection.outlook.com (10.13.36.158) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.6156.16 via Frontend Transport; Mon, 27 Feb 2023 08:32:53 +0000
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=z6fgrkmmzkln4vm43g5c5pdoufdfyedz; d=mbcare.in; t=1677486772;
+	h=From:Date:Subject:Message-Id:Sender:To:MIME-Version:Content-Type:Content-Transfer-Encoding;
+	bh=6ESegwF2xONJJJGL0blKshjqbckeRGRfEkdk9BucWoI=;
+	b=ZC99d0PojmGQ7x8bPiYTDd29mn2HJ/31/4tnLbQICz13TcrL+rGCpHxBrwgB7oJ8
+	9HJeQtFZrDQBsGKWEEhIgezLaYmdQxdcVxwPIDx7cAP5K2QH6N6la8wpj/6nSiA7ahH
+	9DUfXDDthLr4Lmd3miFX72iHE9rFKNBqk1pXbAZI=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=dvogjbaa3ou3tduyzvyu4rj5tkuzdi4h; d=amazonses.com; t=1677486772;
+	h=From:Date:Subject:Message-Id:Sender:To:MIME-Version:Content-Type:Content-Transfer-Encoding:Feedback-ID;
+	bh=6ESegwF2xONJJJGL0blKshjqbckeRGRfEkdk9BucWoI=;
+	b=UKyVBFQ1/2QlMmQrI4gc/DKhtUm6z0l7dvSe9thHSf7s2h3G12tMukDVqkKLkHGc
+	q63PWhMw7Skp9/u81W4Fztq9sz8x9hpo2ohDvKaULmYvni6vn2pdYqfP43+yFGoaIYD
+	QqS0zaXzWCn2uSUT9NlbLVHkxMvCrg4HU3BWpMhE=
+From: customercare@mbcare.in
+Date: Mon, 27 Feb 2023 08:32:52 +0000
+Subject: Update from Medibuddy
+Message-ID: <010901869200d1e3-e1d4ad2b-e4e7-43d8-b06d-0300dc3382dd-000000@ap-south-1.amazonses.com>
+Sender: customercare@mbcare.in
+To: md.kamran.uddin@cognizant.com
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+Feedback-ID: 1.ap-south-1.HDn1CenuFm+BGv3Na5nnFmLPiPRgO2pviKUYn6QWu5s=:AmazonSES
+X-SES-Outgoing: 2023.02.27-76.223.176.156
+Return-Path:
+ 010901869200d1e3-e1d4ad2b-e4e7-43d8-b06d-0300dc3382dd-000000@ap-south-1.amazonses.com
+X-MS-Exchange-Organization-ExpirationStartTime: 27 Feb 2023 08:32:53.9812
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ cf8fa0a5-73c3-423c-a0f3-08db189d387e
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: de08c407-19b9-427d-9fe8-edf254300ca7:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: SG2APC01FT0017:EE_|SI2PR02MB4876:EE_
+X-MS-Exchange-Organization-AuthSource:
+ SG2APC01FT0017.eop-APC01.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: cf8fa0a5-73c3-423c-a0f3-08db189d387e
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: -1
+X-ETR: ByPass spam filtering for authenticated sender domain
+X-Microsoft-Antispam: BCL:5;
+X-Forefront-Antispam-Report:
+ CIP:76.223.176.156;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKN;H:c176-156.smtp-out.ap-south-1.amazonses.com;PTR:c176-156.smtp-out.ap-south-1.amazonses.com;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 27 Feb 2023 08:32:53.7624
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: cf8fa0a5-73c3-423c-a0f3-08db189d387e
+X-MS-Exchange-CrossTenant-Id: de08c407-19b9-427d-9fe8-edf254300ca7
+X-MS-Exchange-CrossTenant-AuthSource:
+ SG2APC01FT0017.eop-APC01.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SI2PR02MB4876
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:33.5159151
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.6134.027
+X-Message-Flag: Flag for follow up
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506478)(944626604)(920097)(930097);
+X-Microsoft-Antispam-Message-Info:
+	=?iso-8859-1?Q?jUZq5CxVrLkwumnis9ePgOBv3LydSIxtE7ZtZnrXrRjqhilx4VLGETvp0D?=
+ =?iso-8859-1?Q?qta6Xhf7iJFt/bLHYMqrABjywgFWCjLVOmCVfFcom5WmU04bvBZxUI+XBM?=
+ =?iso-8859-1?Q?BVAhmElHReg+0GOJ4FPsy8wEUULWGFiP3W/sBpiSxuGAKSKN0IhRlfMyhN?=
+ =?iso-8859-1?Q?uMcXlu9J+KtsxpqbrAkoo6YSaLgQxBT+MZESt0qFWoMfsm5kLtXOWvVlYr?=
+ =?iso-8859-1?Q?8DTpXHn4jPzSDQOqAhtki39QhOwTwrVPP2ek+LRm1dVoB3ty5IRBlHLLiP?=
+ =?iso-8859-1?Q?RxoZM3AKrdP6AQZgMmurz9exuc31sgIwW241hLH/DSKlTJhkcYdA6xn4hC?=
+ =?iso-8859-1?Q?c+zW0n+7ViRuxufPUnIkKKDx0zquAPIIBuJW3C7M4aUY05iOsDczv4al0R?=
+ =?iso-8859-1?Q?BX96xHQFcpdh5liqhKfO28yMsJGzP1Ntwl5XXasYvnz0AbTV8/FQNY8h8n?=
+ =?iso-8859-1?Q?2HaMBVL8AJQWO1JJ5ltVfSpjHKPluikGOq7OAwAbrgxrzpwWHuhSmraDd9?=
+ =?iso-8859-1?Q?we+1PBzTCjwDZOBpRI6semYmQLgggocBCd50CMhMzUMsZanB3oBDGZ5rwb?=
+ =?iso-8859-1?Q?pB55dtNdxYwnmj8Lt1FGoI47dxkPFxHKkscGGSMFu1sLnLYYKaemk2XfHt?=
+ =?iso-8859-1?Q?YpIB1J04Y9j3845VsmmaK5QsUSQ6mMTWmRvhSnm8CXzm6fMD9qYfwrrzEK?=
+ =?iso-8859-1?Q?X8XnTjV++C9GoeRROgnoQIKbFeGptY1rRYqru6MYgVZ1DxB5KiNg7EmOB+?=
+ =?iso-8859-1?Q?EDhvI0Cz2dvv19avPODzNXLqoBvNbIvazg4doWYXcXFANHJtxLsKAnNQSl?=
+ =?iso-8859-1?Q?h39ocCKQxpcfYyGouIBNSmPcmBCzvjHpVZ9f/W+cRdATwz5XAuFJmSldFy?=
+ =?iso-8859-1?Q?Ll1j+brdHSXf2pFdOj5pQhYbOddHJCirjwdp2/6gq4AmwDb6OodRA0aQom?=
+ =?iso-8859-1?Q?2uxOVWcUySdceORyLw5lW2sJbg7kk5kPHZJtOKB9AF8K9+gvb3WIm9DwrS?=
+ =?iso-8859-1?Q?rlLKWFrqkZdTFlPcc3Eo3qPeWBpX2Szb83Xu8dy45J8V6oNL5JDkEs35vj?=
+ =?iso-8859-1?Q?gJS1KXcTVAHTMp+wa13p2V3l+KefIzolojpdbGtXjmIT57qeutKdO+jsZa?=
+ =?iso-8859-1?Q?XyLLYT19RchFNZTCM/g1f/oKcyaXJrKuyrUYJ3di/NUdx8vNaYOHGSVmad?=
+ =?iso-8859-1?Q?iXHJUoHCY5u54Zu+IqxGA5CghzGCu8BZXH+ZUSG/vvFkwUSywkDa9RBuDA?=
+ =?iso-8859-1?Q?YTDP5HQ9sHRvKJ8FBODecLWXFcbAglSfm6EGFM8lMqyGwCwM31ahNp4p4j?=
+ =?iso-8859-1?Q?gFlXTFYogXCAF6y8NnPSnEa+mGQ3Jq0NrbSqGyvkQrY40y31L3ZBJL9OHf?=
+ =?iso-8859-1?Q?+0bGt+JhXKgqMOep4yxp1F76z+otZmfrtu80xwQ6RuC1YbHVvhyXP3C5IZ?=
+ =?iso-8859-1?Q?sC/p2kp/WH757DRMwkKbcGMIpNjCwjJvh0kglt47m9OAn1P5wotjL9WFdq?=
+ =?iso-8859-1?Q?EiJbgXtKZjn+BfaNdzepuV24V/GxIhu5SCFvA6IJnJkqzpCSA0Jw/Ka74M?=
+ =?iso-8859-1?Q?GMNp5T7bK9+MjNNGlKGL0xn/y/+8GnErcHayqx8as8f/qG/cZUqm3BUw0I?=
+ =?iso-8859-1?Q?QdCTsb3i5sda/lqDvy1GlKoVWP/UDxVxRNHTsKbwTZL95G/qxulUQVn6ef?=
+ =?iso-8859-1?Q?6YKMBv36ETtKRcyvctEQIdC2Ks5CWWf/KDVamtiZkhkBajrwNygLZXvXDM?=
+ =?iso-8859-1?Q?N/woJ6yxHwraAl5FmTED8P4trvrVBGfDmb4UwR4G0MxxFrdy0Ht2cRST6T?=
+ =?iso-8859-1?Q?6V8VZNj8rp0S0/jUAhD91INBGDu/rYRz8SNLe1fDLop4nTJ64B4PsLX66E?=
+ =?iso-8859-1?Q?uOT8jtZ8uJXHnkTxv4ssFziDU3JO2f9lcuOAG+PA4OqJRkKlMa1n9bueT+?=
+ =?iso-8859-1?Q?FvD4Rg4XvD3KPzpY7F22YwYEmCvBzaQVJhUxudX77tHUHwgPuNZnaJuS/5?=
+ =?iso-8859-1?Q?moS0nLZyVY8OiphqOOMBg2lEeL8tllBa7ifJ5+W78asn/6WQMz2yZJ7qyp?=
+ =?iso-8859-1?Q?8tRfcPoqCeEHVHdNM3RXcI8Z8qnITJgtDVgNIJZQSmmcCdr320O5QDSBgx?=
+ =?iso-8859-1?Q?1Qm/NWayrGcucVUAKadfmJQD4Dj3sGkpOevkTwmgNi4nb7PnxfW6jT60+K?=
+ =?iso-8859-1?Q?PyoCMpZOXLC0TXhBv5eg1HjVangMxJBy3z77oBXa4WyXpXjChiLdxGRC1b?=
+ =?iso-8859-1?Q?Qp0ad0x0CmXhmxgKU2IbC2LMWZQeAA?=
+MIME-Version: 1.0
+
+<!DOCTYPE html><html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><s=
+tyle>
+	.app-dtls-col {
+		width: 35%; border: 1px solid #ddd;border-collapse: collapse;padding:2px;=
+font-family:Arial,Helvetica,sans-serif;
+	}
+	.app-dtls-col-data {
+		width: 35%; border: 1px solid #ddd;border-collapse: collapse;padding:2px;=
+font-family:Arial,Helvetica,sans-serif;text-align: center;
+	}
+	</style>
+</head>
+<body style=3D"width: 770px;margin: 0 auto">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"left" widt=
+h=3D"`&quot;100%`&quot;">
+<tbody>
+<tr>
+<td style=3D"background:#000048;padding:2pt 2pt 2pt 2pt"></td>
+<td width=3D"`&quot;100%`&quot;" style=3D"width:100.0%;background:#FFD700;p=
+adding:1pt=0A=
+3.75pt 1pt 11.25pt; word-wrap:break-word" cellpadding=3D"`&quot;2px" 5px=3D=
+"" 2px=3D"" 15px`?=3D"" color=3D"`&quot;#212121`&quot;">
+<div>
+<p></p>
+<p class=3D"x_MsoNormal" align=3D"center" style=3D"text-align:center"><span=
+ style=3D"font-size:11pt;font-family:Arial,sans-serif;color:=0A=
+#212121"><b>CAUTION:</b> External Email
+</span></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<br>
+<br>
+<br>
+<div>
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" alig=
+n=3D"center" style=3D"padding:2px 0 0 0;background-color:#f7f7f7;border: 1p=
+x solid #ddd">
+<tbody>
+<tr>
+<td style=3D"background:#f7f7f7; font-family:Arial, serif;">
+<table width=3D"760" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=
+=3D"center" style=3D"background-color:#fff; width:100%">
+<tbody>
+<a href=3D"#"><img src=3D"https://ci4.googleusercontent.com/proxy/UKHlHXc8d=
+3NK9fEEYLHEDUsHJfusB5qICSbItDh3eiw7Oiy4e09Nh5iTBVSA98bt8mzd8F3V_ZvxxEvrRsXh=
+-KptrXNDhBsP2OlqympLJQ_JvgbsuVVR084Dg_4P73F6fz7_ExN3aue82MGIKBTqKqQC7xcQKlf=
+QuGxu-KpmRzE=3Ds0-d-e1-ft#https://mb-img.s3.ap-south-1.amazonaws.com/mailer=
+-banner-images/Reminder-Transactional-HV-and-CV-Banner-2.jpg" hspace=3D"0" =
+vspace=3D"0" border=3D"0" style=3D"display:block;max-width:unset;width:100%=
+" width=3D"600" alt=3D""></a>
+<tr>
+<td style=3D"padding-left:15px;font-size:13px; font-family:Arial,Helvetica,=
+sans-serif; color:#34495e;width:100%">
+<!--<p style=3D"margin:0 0 20px 0; padding:0; font-size:18px; color:#0689c5=
+">Your Health check request has been placed!</p>-->
+<p style=3D"font-family:'Nunito',sans-serif"><strong>Dear Md Kamran Uddin</=
+strong>,
+</p>
+<p style=3D"font-family:'Nunito',sans-serif">Thank you for booking your app=
+ointment with MediBuddy (PHASORZ). We are here to give you a reminder. Plea=
+se find the details of your appointment below.</p>
+<table width=3D"100%" border=3D"0" align=3D"center" cellpadding=3D"0" cells=
+pacing=3D"0" style=3D" ">
+<tbody>
+<tr>
+<td style=3D"font-family:helvetica, Tahoma, Arial; font-size:13px; line-hei=
+ght:18px; padding:5px; border:1px solid #eee;">
+<strong>Appointment Id </strong></td>
+<td style=3D"font-family:helvetica, Tahoma, Arial; font-size:13px; line-hei=
+ght:18px; padding:5px; border:1px solid #eee;">
+<strong>Name </strong></td>
+<td style=3D"font-family:helvetica, Tahoma, Arial; font-size:13px; line-hei=
+ght:18px; padding:5px; border:1px solid #eee;">
+<strong>Health Check Package Name</strong></td>
+<td style=3D"font-family:helvetica, Tahoma, Arial; font-size:13px; line-hei=
+ght:18px; padding:5px; border:1px solid #eee;">
+<strong>Date of Appointment</strong></td>
+</tr>
+<tr>
+<td style=3D" font-family:helvetica, Tahoma, Arial; font-size:13px; line-he=
+ight:18px; padding:5px; border:1px solid #eee;">
+12248014</td>
+<td style=3D" font-family:helvetica, Tahoma, Arial; font-size:13px; line-he=
+ight:18px; padding:5px; border:1px solid #eee;">
+Md Kamran Uddin</td>
+<td style=3D"font-family:helvetica, Tahoma, Arial; font-size:13px; line-hei=
+ght:18px; padding:5px; border:1px solid #eee;">
+Package 1- Up to 35 years Male</td>
+<td style=3D"font-family:helvetica, Tahoma, Arial; font-size:13px; line-hei=
+ght:18px; padding:5px; border:1px solid #eee;">
+02/28/2023 09:00:00</td>
+</tr>
+</tbody>
+</table>
+<p style=3D"font-family:'Nunito',sans-serif;font-size:14px;line-height:20px=
+"><strong>Terms and Conditions</strong><br>
+Please keep a copy of your photo ID along with this confirmation letter.<br=
+>
+</p>
+<div style=3D"background-color:#f2f2f2;padding:10px;border:1px solid #f2f2f=
+2;border-radius:10px">
+<p style=3D"font-family:'Nunito',sans-serif;font-size:14px;line-height:20px=
+;padding-left:25px">
+<strong>Instructions: </strong></p>
+<ul style=3D"font-size:14px">
+<li>You should have slept for at least 6 hours prior to the health check-up=
+.</li><li>Fast (except water) for 10 - 12 hours prior to sampling. If you a=
+re taking any medicine, take it post sampling.</li><li>Please do not consum=
+e alcohol for at least 24 hours prior to the test.</li><li>Kindly avoid smo=
+king 5-6 hours prior to the health check-up.</li><li>Stool samples should b=
+e collected in a sterile container if it is in your package.</li><li>Female=
+s must avoid health check-ups at the time of menstruation.</li></ul>
+</div>
+<p dir=3D"ltr" style=3D"color:#500050"><strong>Regards,<br>
+Team MediBuddy (PHASORZ)<br>
+</strong></p>
+<p style=3D"font-family:'Nunito',sans-serif;font-size:14px;line-height:20px=
+;"><strong>For any help:</strong><br>
+Visit MediBuddy to Track your order<br>
+Call <strong>99999 91555</strong> between 8 AM to 8 PM (Monday to Saturday)=
+ or <br>
+Email us at <a href=3D"https://apc01.safelinks.protection.outlook.com/?url=
+=3Dhttp%3A%2F%2Fjw4hpdms.r.ap-south-1.awstrack.me%2FL0%2FMailto%3Ainfiniti%=
+40medibuddy.in%2F1%2F010901869200d1e3-e1d4ad2b-e4e7-43d8-b06d-0300dc3382dd-=
+000000%2F8J2jYjg-8MC4TnHjQHoDj0_5_G4%3D91&amp;data=3D05%7C01%7Cmd.kamran.ud=
+din%40cognizant.com%7Ccf8fa0a573c3423ca0f308db189d387e%7Cde08c40719b9427d9f=
+e8edf254300ca7%7C0%7C0%7C638130836074033053%7CUnknown%7CTWFpbGZsb3d8eyJWIjo=
+iMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000%7C%7C%7C=
+&amp;sdata=3DCmY4PW3NTOTYnE%2FHDMfMJV5AUiTOHd%2FR2ks4MYh1HqM%3D&amp;reserve=
+d=3D0" originalsrc=3D"http://jw4hpdms.r.ap-south-1.awstrack.me/L0/Mailto:in=
+finiti@medibuddy.in/1/010901869200d1e3-e1d4ad2b-e4e7-43d8-b06d-0300dc3382dd=
+-000000/8J2jYjg-8MC4TnHjQHoDj0_5_G4=3D91" shash=3D"ipBtJn9tN/EvQXW1llF7V5p9=
+KuKrVj5LN8YJV3B0dwO/qKXy0/9dCsPjcCtP9zHhpEgHX1hVdC6R0L2fHyOcbVC8kgCCDMWPcC2=
+ebNV5V/i86B12dFKf2RlqYY7wuQfD8mVDGWPjRqBCLpSnmNruqLqS/2e984XO0dEIVHd0uvg=3D=
+" style=3D"color:#1778f2" target=3D"_blank" rel=3D"noreferrer">
+<strong>infiniti@medibuddy.in</strong></a><strong></strong></p>
+<p style=3D"font-family:'Nunito',sans-serif;font-size:14px;line-height:20px=
+;">This is a system generated correspondence. Please do not reply to this e=
+mail id.</p>
+</td>
+</tr>
+<tr bgcolor=3D"#ffffff" class=3D"m_row">
+<td style=3D"font-family:'Nunito',sans-serif;font-size:12px;line-height:100=
+%;text-align:center;color:#eb5e66">
+<span style=3D"font-family:'Nunito',sans-serif;font-size:12px;line-height:1=
+00%;text-align:center;color:#eb5e66"><img src=3D"https://ci4.googleusercont=
+ent.com/proxy/z0xWQZFSF2KBQ08iOc8sxzxEalSyDwPvsOEykjAJLEQpii-f5u8H_ynCDy_Rq=
+jpKtPex5trKcn11KngQ2nOOFsSzw9BwJwh95pptA9M0ngAogGY=3Ds0-d-e1-ft#https://mb-=
+img.s3.ap-south-1.amazonaws.com/DA/Consult_Retail.jpg" alt=3D"" max-width:u=
+nset;=3D"" width=3D"100%" border=3D"0" align=3D"center"></span></td>
+</tr>
+<tr bgcolor=3D"#ffffff" class=3D"m_row">
+<td style=3D"font-family:'Nunito',sans-serif;font-size:12px;line-height:100=
+%;text-align:center;color:#eb5e66">
+<span style=3D"font-family:'Nunito',sans-serif;font-size:12px;line-height:1=
+00%;text-align:center;color:#eb5e66"><img src=3D"https://ci3.googleusercont=
+ent.com/proxy/FALmewnrFl2Hl_LoBFy6MM-nktGkuqxRCYujYqJltX6Dfv9t_H7pORJ09XR4f=
+QwWXQOZA0K0K-zM68Ks9JsWRUtFIX2yTtT1OIpwoVwaql08KOBnhxcC1Mo1r8DQprtF5wthtWAF=
+KXVptw=3Ds0-d-e1-ft#https://mb-img.s3.ap-south-1.amazonaws.com/mailer-banne=
+r-images/Red-footer-new-2022.jpg" alt=3D"" max-width:unset;=3D"" width=3D"1=
+00%" border=3D"0" align=3D"center"></span></td>
+</tr>
+<tr class=3D"m_MainContainer" bgcolor=3D"#eaeaea" style=3D"border-top:1px s=
+olid #dedede">
+<td height=3D"26" bgcolor=3D"#f7f7f7" class=3D"m_inner2" style=3D"padding-t=
+op:15px;padding-bottom:15px;font-family:'Nunito',sans-serif;font-size:12px;=
+color:#424242">
+<table width=3D"100%" border=3D"0" align=3D"center" cellpadding=3D"0" cells=
+pacing=3D"0">
+<tbody>
+<tr>
+<td width=3D"33%" style=3D"font-size:10px;color:#424242;font-family:'Nunito=
+',sans-serif">
+<span style=3D"padding-right:10px;font-size:12px;color:#777777"><a href=3D"=
+https://apc01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fjw4hpdm=
+s.r.ap-south-1.awstrack.me%2FL0%2Fhttps%3A%252F%252Fwww.google.com%252Furl%=
+253Fq%3Dhttps%3A%252F%252Fwww.medibuddy.in%252F%253Futm_source%25253Demailf=
+ooter%252526utm_medium%25253Demail%252526utm_campaign%25253Demail_footer%25=
+26source%3Dgmail-html%2526ust%3D1657733274534000%2526usg%3DAOvVaw3mXvrSj77u=
+CccqXBK-OcKU%2F1%2F010901869200d1e3-e1d4ad2b-e4e7-43d8-b06d-0300dc3382dd-00=
+0000%2F6WmL4av6BbzM3djKpztjaWcuFgQ%3D91&amp;data=3D05%7C01%7Cmd.kamran.uddi=
+n%40cognizant.com%7Ccf8fa0a573c3423ca0f308db189d387e%7Cde08c40719b9427d9fe8=
+edf254300ca7%7C0%7C0%7C638130836074033053%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiM=
+C4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000%7C%7C%7C&a=
+mp;sdata=3DQBF%2FT%2B3uZE9DTOkWmSfYJFG8taRJRu9GlyMn6UpVUUM%3D&amp;reserved=
+=3D0" originalsrc=3D"https://jw4hpdms.r.ap-south-1.awstrack.me/L0/https:%2F=
+%2Fwww.google.com%2Furl%3Fq=3Dhttps:%2F%2Fwww.medibuddy.in%2F%3Futm_source%=
+253Demailfooter%2526utm_medium%253Demail%2526utm_campaign%253Demail_footer%=
+26source=3Dgmail-html%26ust=3D1657733274534000%26usg=3DAOvVaw3mXvrSj77uCccq=
+XBK-OcKU/1/010901869200d1e3-e1d4ad2b-e4e7-43d8-b06d-0300dc3382dd-000000/6Wm=
+L4av6BbzM3djKpztjaWcuFgQ=3D91" shash=3D"P4k099YgPJ8/UGhNBAn8qAHcALi+RK9/QMG=
+ROdH3pVAaYWWS2tETtxRuUd/YewTBOYDtttf2mWm11YaqZEl7FMd4I0SI09zvNV6fbK6iEYwKuy=
+0czV3DoJC+GtmM32vC3fhCUTtKliLRoKGY52ZX6dMwWtCIHMtfKEF1x5Rq4fY=3D" target=3D=
+"_blank" rel=3D"noreferrer"><img src=3D"https://ci6.googleusercontent.com/p=
+roxy/UTbXlRL5PxhQab-OtUDs56EmxZQOvwmi2QFUPuAxcln15dB9sFCjuBE333TmyRePKnyvZA=
+rQqFKwnBDsYFNM5e9BLZ_RLwbKsAnr9uzyOI43OHCDMeSQ0lzO7OdxKK9cfu8-5qoAkldA0A=3D=
+s0-d-e1-ft#https://portal.medibuddy.in/MImages/common-images/icons/social-m=
+edia-icons/web-icon.png" width=3D"20" height=3D"20" border=3D"0" align=3D"c=
+enter" style=3D"margin-right:5px;margin-left:10px" alt=3D""></a><a href=3D"=
+https://apc01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fjw4hpdm=
+s.r.ap-south-1.awstrack.me%2FL0%2Fhttps%3A%252F%252Fwww.google.com%252Furl%=
+253Fq%3Dhttps%3A%252F%252Fwww.facebook.com%252FMediBuddy%252F%2526source%3D=
+gmail-html%2526ust%3D1657733274535000%2526usg%3DAOvVaw1NRI3vRPzFWvV1_MziIiW=
+G%2F1%2F010901869200d1e3-e1d4ad2b-e4e7-43d8-b06d-0300dc3382dd-000000%2FyySM=
+Hl8BkLbw3Ne1u0tAWJXEDcU%3D91&amp;data=3D05%7C01%7Cmd.kamran.uddin%40cogniza=
+nt.com%7Ccf8fa0a573c3423ca0f308db189d387e%7Cde08c40719b9427d9fe8edf254300ca=
+7%7C0%7C0%7C638130836074033053%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAi=
+LCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000%7C%7C%7C&amp;sdata=3D=
+YZNQobQHlN0TTppTcglFkdTBqcmqGdCi9iAL22XSMaY%3D&amp;reserved=3D0" originalsr=
+c=3D"https://jw4hpdms.r.ap-south-1.awstrack.me/L0/https:%2F%2Fwww.google.co=
+m%2Furl%3Fq=3Dhttps:%2F%2Fwww.facebook.com%2FMediBuddy%2F%26source=3Dgmail-=
+html%26ust=3D1657733274535000%26usg=3DAOvVaw1NRI3vRPzFWvV1_MziIiWG/1/010901=
+869200d1e3-e1d4ad2b-e4e7-43d8-b06d-0300dc3382dd-000000/yySMHl8BkLbw3Ne1u0tA=
+WJXEDcU=3D91" shash=3D"uu03BSTaL/Ir6QSo8Tc07sq49FAZKaC2KTcxC8pMi8A6UTzZtxk8=
+G7RrbxrigKNc8L/KkyDjyqGNIf/jcUlCmhf2InsOEKn+QiuX9pr9ycpx8vg/rjF9usnuoLZj267=
+bGZXpLaEgHQh0Z3+mI+qxsUkhgTw5Tf31FsHZBoCZTBo=3D" target=3D"_blank" rel=3D"n=
+oreferrer"><img src=3D"https://ci6.googleusercontent.com/proxy/wHfN9vU8bT8U=
+DtMXKR2fPAbeG7jFJxZiBc1BDRihaAZ5YRCC4hiu7cFNrG0TZBGetxPgEiCyFsxRsbdTmIeQjKN=
+4H4u1-2OBAihm11llHU4RWE1zrVs3_CcSN8BhsX4lIrCaeFBuSrW7zw=3Ds0-d-e1-ft#https:=
+//portal.medibuddy.in/MImages/common-images/icons/social-media-icons/facebo=
+ok.png" width=3D"20" height=3D"20" border=3D"0" align=3D"center" style=3D"m=
+argin-right:5px;margin-left:5px" alt=3D""></a><a href=3D"https://apc01.safe=
+links.protection.outlook.com/?url=3Dhttps%3A%2F%2Fjw4hpdms.r.ap-south-1.aws=
+track.me%2FL0%2Fhttps%3A%252F%252Fwww.google.com%252Furl%253Fq%3Dhttp%3A%25=
+2F%252Fblogs.medibuddy.in%252F%253Futm_source%25253Demailfooter%252526utm_m=
+edium%25253Demail%252526utm_campaign%25253Demail_footer%2526source%3Dgmail-=
+html%2526ust%3D1657733274535000%2526usg%3DAOvVaw2Pzav8F-t5JiOXw8ZRZGF9%2F1%=
+2F010901869200d1e3-e1d4ad2b-e4e7-43d8-b06d-0300dc3382dd-000000%2FR1xhuYVrrd=
+vtFxlpKbvsKFrzk-M%3D91&amp;data=3D05%7C01%7Cmd.kamran.uddin%40cognizant.com=
+%7Ccf8fa0a573c3423ca0f308db189d387e%7Cde08c40719b9427d9fe8edf254300ca7%7C0%=
+7C0%7C638130836074189302%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIj=
+oiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000%7C%7C%7C&amp;sdata=3DvV2yCi=
+cm7DYj7rQvJ9TmVA%2BVy9l4lual3RtyyIpYRQY%3D&amp;reserved=3D0" originalsrc=3D=
+"https://jw4hpdms.r.ap-south-1.awstrack.me/L0/https:%2F%2Fwww.google.com%2F=
+url%3Fq=3Dhttp:%2F%2Fblogs.medibuddy.in%2F%3Futm_source%253Demailfooter%252=
+6utm_medium%253Demail%2526utm_campaign%253Demail_footer%26source=3Dgmail-ht=
+ml%26ust=3D1657733274535000%26usg=3DAOvVaw2Pzav8F-t5JiOXw8ZRZGF9/1/01090186=
+9200d1e3-e1d4ad2b-e4e7-43d8-b06d-0300dc3382dd-000000/R1xhuYVrrdvtFxlpKbvsKF=
+rzk-M=3D91" shash=3D"iS6DCc+ARnhrV7Eq6kf7V12QTcu6JPCX4x2F0kdaCbndZgS+V15Ael=
+yucEkhf7jRP6brY5t4KjjMBqEVl4Dn/g9MDoyD6WLlAYICzkRVjpc2UXzrvuKFyMhoeo8fi03FX=
+31pPbJS58WZyy38GS9ZZbWHTgtI0Qmx4hLRvrrDRYY=3D" target=3D"_blank" rel=3D"nor=
+eferrer"><img src=3D"https://ci6.googleusercontent.com/proxy/soD8aqR_mnWb5u=
+vjLzGaSajfmZYkivICf7VP5QGhCjglGEAFk4zQArO1gfXQQ-pDn4KMvifR-DcT6iwfUZqHxm7rQ=
+c6YIimXtlzzDdZVz6pGMO60RNdYPAzgdpejceKotTV2IT1vbR8yfQ=3Ds0-d-e1-ft#https://=
+portal.medibuddy.in/MImages/common-images/icons/social-media-icons/blog-web=
+.png" width=3D"20" height=3D"20" border=3D"0" align=3D"center" style=3D"mar=
+gin-right:5px;margin-left:5px" alt=3D""></a></span></td>
+<td width=3D"34%" style=3D"font-size:12px;color:#424242;font-family:'Nunito=
+',sans-serif" align=3D"center">
+Download app<strong> <a href=3D"https://apc01.safelinks.protection.outlook.=
+com/?url=3Dhttps%3A%2F%2Fjw4hpdms.r.ap-south-1.awstrack.me%2FL0%2Fhttps%3A%=
+252F%252Fwww.google.com%252Furl%253Fq%3Dhttps%3A%252F%252Fplay.google.com%2=
+52Fstore%252Fapps%252Fdetails%253Fid%25253Din.medibuddy%2526source%3Dgmail-=
+html%2526ust%3D1657733274535000%2526usg%3DAOvVaw20vJ6eIHMUfmL5RZEm832F%2F1%=
+2F010901869200d1e3-e1d4ad2b-e4e7-43d8-b06d-0300dc3382dd-000000%2F4HtWRWBYX4=
+6BKdgA37_NspPFKXw%3D91&amp;data=3D05%7C01%7Cmd.kamran.uddin%40cognizant.com=
+%7Ccf8fa0a573c3423ca0f308db189d387e%7Cde08c40719b9427d9fe8edf254300ca7%7C0%=
+7C0%7C638130836074189302%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIj=
+oiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000%7C%7C%7C&amp;sdata=3DeP4nEJ=
+vSwd451rdsVzbjp%2FUsq%2BiU0kaVLtgygBTYU1Y%3D&amp;reserved=3D0" originalsrc=
+=3D"https://jw4hpdms.r.ap-south-1.awstrack.me/L0/https:%2F%2Fwww.google.com=
+%2Furl%3Fq=3Dhttps:%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%253D=
+in.medibuddy%26source=3Dgmail-html%26ust=3D1657733274535000%26usg=3DAOvVaw2=
+0vJ6eIHMUfmL5RZEm832F/1/010901869200d1e3-e1d4ad2b-e4e7-43d8-b06d-0300dc3382=
+dd-000000/4HtWRWBYX46BKdgA37_NspPFKXw=3D91" shash=3D"PdYmAo/PdYY2hgSA1lp5HQ=
+RuCExM4B3NBFgO4msm9/Vwd0RB5yUrnyZgscqeKKYgG5BkyB//T7UT4SNz3OFyd4WhbUH/cQzAm=
+JhfYM6dN2tNcUghiBxTKv0+O8OHA9UdQesTigCQD5BJZzweu+Gwp/B/S3ob9Qs4/jkL/dmR5Bc=
+=3D" target=3D"_blank" rel=3D"noreferrer">
+<img src=3D"https://ci3.googleusercontent.com/proxy/ezlp9jxF5Q5eFXljSS6cI33=
+aJSEN8z5LCUmbqlT0_1EAwtpqzi0aGK-zsZ4yPy4D570hS0Xzx52Xf_vKiHW_k_f8pcJOdPNNbe=
+2uZKosl_gViY16X2LZs-d-qUgMY89OJJDuaotQWxXtUSbEag=3Ds0-d-e1-ft#https://porta=
+l.medibuddy.in/MImages/common-images/icons/social-media-icons/google-play.p=
+ng" width=3D"20" height=3D"20" border=3D"0" align=3D"center" style=3D"margi=
+n-right:5px;margin-left:5px" alt=3D""></a><a href=3D"https://apc01.safelink=
+s.protection.outlook.com/?url=3Dhttps%3A%2F%2Fjw4hpdms.r.ap-south-1.awstrac=
+k.me%2FL0%2Fhttps%3A%252F%252Fwww.google.com%252Furl%253Fq%3Dhttps%3A%252F%=
+252Fitunes.apple.com%252Fin%252Fapp%252Fmedibuddy%252Fid946666981%253Fmt%25=
+253D8%2526source%3Dgmail-html%2526ust%3D1657733274535000%2526usg%3DAOvVaw1p=
+hIDqWtnTUmXXkWXPic8B%2F1%2F010901869200d1e3-e1d4ad2b-e4e7-43d8-b06d-0300dc3=
+382dd-000000%2FV3ZupNfs40Z_l-BT9i120FQ6iz4%3D91&amp;data=3D05%7C01%7Cmd.kam=
+ran.uddin%40cognizant.com%7Ccf8fa0a573c3423ca0f308db189d387e%7Cde08c40719b9=
+427d9fe8edf254300ca7%7C0%7C0%7C638130836074189302%7CUnknown%7CTWFpbGZsb3d8e=
+yJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000%7C=
+%7C%7C&amp;sdata=3DEIHww4qTX7hOAlI4wu%2FedxYnuJdxWumq0op7eOB0UXQ%3D&amp;res=
+erved=3D0" originalsrc=3D"https://jw4hpdms.r.ap-south-1.awstrack.me/L0/http=
+s:%2F%2Fwww.google.com%2Furl%3Fq=3Dhttps:%2F%2Fitunes.apple.com%2Fin%2Fapp%=
+2Fmedibuddy%2Fid946666981%3Fmt%253D8%26source=3Dgmail-html%26ust=3D16577332=
+74535000%26usg=3DAOvVaw1phIDqWtnTUmXXkWXPic8B/1/010901869200d1e3-e1d4ad2b-e=
+4e7-43d8-b06d-0300dc3382dd-000000/V3ZupNfs40Z_l-BT9i120FQ6iz4=3D91" shash=
+=3D"zKLC78WTbInm5n9Z6DuVQJlGPtF7OU60VgUEfAi9r5AHbdeVaqVgGpJ8qdAAZhDEEjeHeXh=
+woWatefpeF4/Bqv4xrjjiYd7e6/ir6Bur5Ew7mP197XGpYjZZePAWNoFQyc+Ivv9MAuVjX/lrTh=
+KIyyPBlQJEKvyvvRogSldJgRM=3D" target=3D"_blank" rel=3D"noreferrer"><img src=
+=3D"https://ci5.googleusercontent.com/proxy/TSU8Hu7ebRqozY1QQW67K3e1hU4Xmds=
+1aDRT7zos49Lmu5dsficH8kOtomuP_FjZ91O46wE4KrYRiBbY9JEFmAkXxcz2-rW2CKGa5H3TiG=
+zWbCV6sYeTzDE2-oODJOxxezm1VOS9KynEgtJteQ=3Ds0-d-e1-ft#https://portal.medibu=
+ddy.in/MImages/common-images/icons/social-media-icons/apple-store.png" widt=
+h=3D"20" height=3D"20" border=3D"0" align=3D"center" style=3D"margin-right:=
+5px;margin-left:5px" alt=3D""></a></strong></td>
+<td width=3D"33%" style=3D"font-size:10px;color:#424242;font-family:'Nunito=
+',sans-serif">
+<span style=3D"display:block;text-align:right;font-size:12px;color:#777777;=
+line-height:normal;padding-right:15px">=C2=A9 2022
+<a href=3D"https://apc01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fjw4hpdms.r.ap-south-1.awstrack.me%2FL0%2Fhttps%3A%252F%252Fwww.google.c=
+om%252Furl%253Fq%3Dhttp%3A%252F%252Fwww.medibuddy.in%2526source%3Dgmail-htm=
+l%2526ust%3D1657733274535000%2526usg%3DAOvVaw2r4fkZxUNsC4F_bqUv_hEX%2F1%2F0=
+10901869200d1e3-e1d4ad2b-e4e7-43d8-b06d-0300dc3382dd-000000%2FXpLv1zccdwJBX=
+LZ-wb8lGF6mCvk%3D91&amp;data=3D05%7C01%7Cmd.kamran.uddin%40cognizant.com%7C=
+cf8fa0a573c3423ca0f308db189d387e%7Cde08c40719b9427d9fe8edf254300ca7%7C0%7C0=
+%7C638130836074189302%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV=
+2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000%7C%7C%7C&amp;sdata=3DCqDN9zLpt=
+HIbgKuth2Nve1Igao0pDRKyHfxKy3oFzS8%3D&amp;reserved=3D0" originalsrc=3D"http=
+s://jw4hpdms.r.ap-south-1.awstrack.me/L0/https:%2F%2Fwww.google.com%2Furl%3=
+Fq=3Dhttp:%2F%2Fwww.medibuddy.in%26source=3Dgmail-html%26ust=3D165773327453=
+5000%26usg=3DAOvVaw2r4fkZxUNsC4F_bqUv_hEX/1/010901869200d1e3-e1d4ad2b-e4e7-=
+43d8-b06d-0300dc3382dd-000000/XpLv1zccdwJBXLZ-wb8lGF6mCvk=3D91" shash=3D"oy=
+E5PDGWb8NrRSh8Aj28j0cFNKRoVIFN0eU0ZVEdHHQAzcrValxaIbCJnxup9ZLMFZi9i7hMtcgtv=
+v0CB4fUHLGiVLaT9Ui8Mnx1PwiAywoZyM/lm7uAAXZTRyWwyFUo6igojf1HPttFQXUMbFEbK5gq=
+R4fHOTrdcINLX1Aiuv0=3D" style=3D"text-decoration:none;color:#0a69c7" target=
+=3D"_blank" rel=3D"noreferrer">
+MediBuddy</a></span></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<img alt=3D"" src=3D"https://jw4hpdms.r.ap-south-1.awstrack.me/I0/010901869=
+200d1e3-e1d4ad2b-e4e7-43d8-b06d-0300dc3382dd-000000/UlAxmhy6AgV-n-reGhcSYhZ=
+MRwg=3D91" style=3D"display: none; width: 1px; height: 1px;">
+</div>
+</body>
+</html>
