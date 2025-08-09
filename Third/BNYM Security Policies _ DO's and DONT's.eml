@@ -1,0 +1,1499 @@
+Received: from TYSPR02MB6350.apcprd02.prod.outlook.com (2603:1096:400:417::7)
+ by KL1PR02MB5043.apcprd02.prod.outlook.com with HTTPS; Wed, 12 Jul 2023
+ 06:35:26 +0000
+Received: from SEZPR02MB6007.apcprd02.prod.outlook.com (2603:1096:101:7e::10)
+ by TYSPR02MB6350.apcprd02.prod.outlook.com (2603:1096:400:417::7) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6565.29; Wed, 12 Jul
+ 2023 06:35:21 +0000
+Received: from SEZPR02MB6007.apcprd02.prod.outlook.com
+ ([fe80::c8c1:f941:60e6:9bac]) by SEZPR02MB6007.apcprd02.prod.outlook.com
+ ([fe80::c8c1:f941:60e6:9bac%6]) with mapi id 15.20.6588.017; Wed, 12 Jul 2023
+ 06:35:21 +0000
+From: "BNYM Operations (Off) (Cognizant)"
+	<BNYMOperationsOffCognizant@cognizant.com>
+To: "BNYM All Offshore(Cognizant)" <BNYMAllOffshoreCognizant@cognizant.com>,
+	"BNYM All Onsite(Cognizant)" <BNYMAllOnsiteCognizant@cognizant.com>
+CC: "Regis, Charles (Cognizant)" <Charles.Regis@cognizant.com>, "BNY Mellon
+ EPLs (Cognizant)" <BNYMellonDL@cognizant.com>, "BNY Mellon CRMs (Cognizant)"
+	<BNYMellonEL@cognizant.com>, "BNY Mellon CSE (Cognizant)"
+	<BNYMellonCSE@cognizant.com>, "BNYM ESA PMs (Cognizant)"
+	<BNYMellonESAPMs@cognizant.com>, "BNYM Leads(Offshore) (Cognizant)"
+	<BNYMLeadsOffshoreCognizant@cognizant.com>, "BNYM Communication
+ TF(Cognizant)" <MellonCommunicationTaskForce@cognizant.com>, "BNYM Operations
+ (Off) (Cognizant)" <BNYMOperationsOffCognizant@cognizant.com>
+Subject: BNYM Security Policies : DO's and DONT's
+Thread-Topic: BNYM Security Policies : DO's and DONT's
+Thread-Index: AQHZmpT1EgYqJcjhQUueo1nOLU9MTa+syMuAgAhrOYCAAIongIAAIrkA
+X-MS-Exchange-MessageSentRepresentingType: 1
+Date: Wed, 12 Jul 2023 06:35:20 +0000
+Message-ID:
+	<SEZPR02MB600760D35013520C979D7DE59B36A@SEZPR02MB6007.apcprd02.prod.outlook.com>
+References:
+	<KL1PR02MB51236BDA453DD166081DE46C8A4C9@KL1PR02MB5123.apcprd02.prod.outlook.com>
+ <KL1PR02MB512320589892F2259C5A95448A2D9@KL1PR02MB5123.apcprd02.prod.outlook.com>
+ <KL1PR02MB51232032BF8B27A61BD426A28A2D9@KL1PR02MB5123.apcprd02.prod.outlook.com>
+ <KL1PR02MB5123097CCE217CE9F726F3138A2D9@KL1PR02MB5123.apcprd02.prod.outlook.com>
+ <KL1PR02MB5123B7361C3235A3BBA5BC3B8A2D9@KL1PR02MB5123.apcprd02.prod.outlook.com>
+ <KL1PR02MB5123D56B8EDA09BA214645868A069@KL1PR02MB5123.apcprd02.prod.outlook.com>
+ <KL1PR02MB51238D408DA08F9C38242F538A069@KL1PR02MB5123.apcprd02.prod.outlook.com>
+ <KL1PR02MB5123C1FC8A2DDDE7CA195D118A069@KL1PR02MB5123.apcprd02.prod.outlook.com>
+ <SI2PR02MB512930675B198F94195B2EC58A099@SI2PR02MB5129.apcprd02.prod.outlook.com>
+ <SI2PR02MB51290482B2FF5F3DDEEFCE2D8A099@SI2PR02MB5129.apcprd02.prod.outlook.com>
+ <SI2PR02MB51297E5A442E89D023016EF18A099@SI2PR02MB5129.apcprd02.prod.outlook.com>
+ <KL1PR02MB5123FBFD74B163E83D9609728A0A9@KL1PR02MB5123.apcprd02.prod.outlook.com>
+ <PU1PR02MB25218BF189D0359981F96E9CFA0A9@PU1PR02MB2521.apcprd02.prod.outlook.com>
+ <PU1PR02MB2521BEEEB3A97C841D331C39FA0A9@PU1PR02MB2521.apcprd02.prod.outlook.com>
+ <KL1PR02MB5123326068BDDB13461931138A0D9@KL1PR02MB5123.apcprd02.prod.outlook.com>
+ <KL1PR02MB5123F7B4F6940B35D04C03148A0D9@KL1PR02MB5123.apcprd02.prod.outlook.com>
+ <KL1PR02MB51231D2E4C069440F06019408A0F9@KL1PR02MB5123.apcprd02.prod.outlook.com>
+ <KL1PR02MB51233F2CB7C3D3E59576D4A08A0F9@KL1PR02MB5123.apcprd02.prod.outlook.com>
+ <KL1PR02MB5123A180A15CE2DF441891A58A0F9@KL1PR02MB5123.apcprd02.prod.outlook.com>
+ <KL1PR02MB5123D612F48F3BFBD782C7258A0F9@KL1PR02MB5123.apcprd02.prod.outlook.com>
+ <KL1PR02MB51239ACB5570A3FB252C0E618A139@KL1PR02MB5123.apcprd02.prod.outlook.com>
+ <KL1PR02MB5123CF59AAD46112A3F63D828A139@KL1PR02MB5123.apcprd02.prod.outlook.com>
+ <TYZPR02MB57636B01A35627EE18FA915B90139@TYZPR02MB5763.apcprd02.prod.outlook.com>
+ <TYZPR02MB576388F14302C1F5DBC2030090129@TYZPR02MB5763.apcprd02.prod.outlook.com>
+ <KL1PR02MB5123DBAAE07F5C6F822DB0398A129@KL1PR02MB5123.apcprd02.prod.outlook.com>
+ <PUZPR02MB6082C9BDB615E50A7B66EDCB8AFC9@PUZPR02MB6082.apcprd02.prod.outlook.com>
+ <PUZPR02MB6082C68E43F4164883EF208F8AC29@PUZPR02MB6082.apcprd02.prod.outlook.com>
+ <PUZPR02MB6082FC65A857DB72767A83DD8AC29@PUZPR02MB6082.apcprd02.prod.outlook.com>
+ <KL1PR02MB45159060CAB2EEC3A1B978D6F7C19@KL1PR02MB4515.apcprd02.prod.outlook.com>
+ <KL1PR02MB4515B46162EDF3A60FC9BD7BF7B99@KL1PR02MB4515.apcprd02.prod.outlook.com>
+ <SI2PR02MB4524B6550A0F555DAB848DF2F7469@SI2PR02MB4524.apcprd02.prod.outlook.com>
+ <SEZPR02MB6007EFEC98AB11EF28A284439B51A@SEZPR02MB6007.apcprd02.prod.outlook.com>
+ <SEZPR02MB6007DBD0A4F5FE1E7E1169609B2CA@SEZPR02MB6007.apcprd02.prod.outlook.com>
+ <SI2PR02MB4908813B523F4133C9DCFBFFA831A@SI2PR02MB4908.apcprd02.prod.outlook.com>
+ <SEZPR02MB6007315366D2D49F268AEFC49B36A@SEZPR02MB6007.apcprd02.prod.outlook.com>
+In-Reply-To:
+	<SEZPR02MB6007315366D2D49F268AEFC49B36A@SEZPR02MB6007.apcprd02.prod.outlook.com>
+Accept-Language: en-IN, en-US
+Content-Language: en-US
+X-MS-Exchange-Organization-AuthMechanism: 04
+X-MS-Exchange-Organization-AuthSource: SEZPR02MB6007.apcprd02.prod.outlook.com
+X-MS-Has-Attach: yes
+X-Auto-Response-Suppress: DR, OOF, AutoReply
+X-MS-Exchange-Organization-Network-Message-Id:
+	f3593633-c151-4c05-e7ae-08db82a22a5d
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+msip_labels:
+x-ms-publictraffictype: Email
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:1;jmr:0;auth:0;dest:C;OFR:CustomRules;ENG:(910001)(920097)(425001)(930097);
+X-Microsoft-Antispam-Message-Info:
+	vJFrxRp9bn5etKYta6imkTuX34Z/kl9Zflh+JKMEJjzuI3gP1VizkAQMj1FYzxWp3ViE1R8+YII6ci1jnVw9N+QdvWK5hQ1oS0RZzsETf7VhuvTT4EjPQGGNSQE1jvH2GA9csKIQUBCB2PU4FlaF9X9R+b6v3poE3gRF+kLvQc7Jrps5ej8/dLYD1YKXXPf1qGi8MEHrDzuEr8kV/mQoYCztZWMTXJSFG7hEv41+GXott6nEGIt9rQbI6W9C/MgoSZgl3Vm/FPxz2TSV8QQG63s50s0WplFfxlhN/Vg8X0mE5bV+YOd3v7/Qm5+IUi371gX6QJB0mMpCrFv9iJ/Aa6xtqeoijNnBntqYYQw2l6SbOm7TutCl8wpTVGOG4LxPnJa+fsEHZBFUVGoahpKHkhhX9cDqPiK2T0S26UQtTELSaOKTsGm8lpXSyJBtKzsJE7L/elNN/LPFRPK+SqZA/7LB/qqMCYXeCaYnjd5v1kQ+uI9XfV/HLWISKaQ50QMRhLC/XgvC7FLdeS6eFNl2lhL9GOxPe75ixOFuKAyFZmwu5CX1TpYG4/HuTbAqH0N9mkEWUjhfUkWzcsOOeGtmt93cZj6uoahMCrun4cPEYBsb4Lo2MKpKPob8QEuTXSkbsuMtsBMVuVJz8HtuzPcE2gJ7AKcea8Iad6NvoDJnKsvo11BNhzcnFGhF7zARfLdnOSS/hykDDHeoM412exCAD/Hw2U/EizATTYWKSxwWQRAruhbil6qyYyZyyo98r5ZMMstUA62emM4hKP7jQPJVbtyZMrZuHARMxT7a8yPyuKK6z3Itokrl4VFt1NMzXgOKNmhdWs6Y6tmSADAFHmeM2/ntz8GCPXw8TgR6zxjPiF8=
+Content-Type: multipart/related;
+	boundary="_006_SEZPR02MB600760D35013520C979D7DE59B36ASEZPR02MB6007apcp_";
+	type="multipart/alternative"
+MIME-Version: 1.0
+
+--_006_SEZPR02MB600760D35013520C979D7DE59B36ASEZPR02MB6007apcp_
+Content-Type: multipart/alternative;
+	boundary="_000_SEZPR02MB600760D35013520C979D7DE59B36ASEZPR02MB6007apcp_"
+
+--_000_SEZPR02MB600760D35013520C979D7DE59B36ASEZPR02MB6007apcp_
+Content-Type: text/plain; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+
+
+
+
+
+
+Check out the list of Do=92s and Don=92ts below and be aware of the securit=
+y policies to be followed at Cognizant & Client Network=85
+
+
+
+
+
+Timesheet/Leaves/Furlough Compliance etc.
+
+1.    Submit your Cognizant & Client timesheet every week without fail.
+
+2.    Cognizant timesheet updates are Mandatory as per Organization policy =
+and any non-compliance may lead to disciplinary action from HR
+
+3.    Discuss leaves/Furlough plans with your project manager well in advan=
+ce and take his/her concurrence to update client manager with sufficient le=
+ad time.
+
+4.    Ensure to update Project Manager and/or client on your leave/Furlough=
+ and update leaves in both cognizant ESA and client specific systems (PPM/ =
+Beeline if applicable).
+
+5.    Also ensure that you are updating your leaves in right category like =
+Normal leave, Furlough leave etc.
+
+6.    To protect the integrity of the financial services industry, there ar=
+e laws and regulation in place which require disclosure by individuals of a=
+ny history of certain crimes that includes dishonesty, theft, robbery, exto=
+rtion, forgery, misappropriation of funds or securities etc. Please check t=
+he below link for more details regarding regulatory compliance.
+
+Legal - Regulatory (cognizant.com)<https://be.cognizant.com/sites/legal/Sit=
+ePage/458964/regulatory>
+
+
+
+
+
+
+
+
+
+
+
+Do=92s
+
+
+
+Don=92ts
+
+*       Always wear your identity card in Office Premise
+*       Ensure that you have completed all mandatory trainings both Cogniza=
+nt & Client related courses
+*       Ensure that you have signed the NDA forms & share the document to y=
+our project manager & OPS CORE TEAM.
+*       All admin rights & software need to be authorized via One NSS. USB =
+access should be removed. Request must be raised for getting admin rights/s=
+oftware installation etc.
+*       Cognizant default screensaver should be used
+*       Check whether the anti-virus is enabled & is the latest on your sys=
+tems
+*       Access internet only for business purposes.
+*       Access only work-related websites from Client remote desktop
+*       Lock your workstations whenever you leave the desk
+*       Clean Desk policy - No Abnormal posters, No scratch pads on the des=
+ks with passwords/user-ids, project level details etc.
+*       Printer area should be clean. If you have fired a printout, please =
+make sure you go and collect the printout. Use the shredder to put away unw=
+anted paper.
+*       Strictly observe all physical security guidelines while accessing O=
+DC areas
+*       Uninstall RSA soft token from your mobile as soon as you are releas=
+ed from the project / account
+*       All planned vacation/leaves need to be informed upfront to your res=
+pective BNYM Managers, seek necessary approvals, apply leave and book time =
+in the systems appropriately.
+
+
+
+
+
+
+
+=D7        Do not send any project related information to personal mail IDs=
+ or anywhere outside Client network
+
+=D7        Do not transmit any material/information over the network that v=
+iolates Indian/US international laws. An example of violation could be tran=
+smitting copyrighted material over the network by taking a scanned copy or =
+buying a softcopy of a book and mail to many
+
+=D7        Do not use client related documents in any third-party websites =
+such as portals for online software for formatting of documents / images, e=
+tc.
+
+=D7        Do not upload any code snippets from Client in public websites s=
+uch as technical forums, blogging websites, etc
+
+=D7        Do not send any mails to Cognizant mail id from your client mail=
+ id.
+
+=D7        Do not use your Personal devices (like Laptop /Desktop etc.) for=
+ any business purposes
+
+=D7        Do not share confidential, Personally Identifiable Information.
+
+=D7        Do not use Client network for non-business purposes
+
+=D7        Do not access client network once you are released from the proj=
+ect / account.
+
+=D7        Do not access websites that are in violation of Client/Cognizant=
+ policies, accessing Cognizant mails from Client remote desktop is strictly=
+ prohibited.
+
+=D7        Do not share your Cognizant and Client IDs & passwords with othe=
+rs. Never Use your colleague=92s Cognizant or Client id & password in their=
+ absence.
+
+=D7        Do not install any software by yourself in your Laptops/Desktops=
+.
+
+=D7        Do not leave any printouts at the printer unattended.
+
+=D7        Do not attempt to fix the printer issues by yourself if there ar=
+e any malfunctions.
+
+=D7        Remove all music (mp3, wma, etc...), video, gaming software/free=
+ware/unlicensed software. No streaming of music, video=85 etc. No music dur=
+ing office hours on speaker (FM)
+
+=D7        Remove unwanted access to the floor. Do not open the door to peo=
+ple who come and knock & No tail gating
+
+=D7        Remove unwanted access to KR/VSS
+
+=D7        Taking photograph inside the ODC is prohibited
+
+=D7        You are not authorized to work in a different geography unless y=
+ou have all necessary approvals or clearance in place
+
+
+
+
+
+
+
+
+=A9 2023 Cognizant. All rights reserved.
+
+
+
+
+--_000_SEZPR02MB600760D35013520C979D7DE59B36ASEZPR02MB6007apcp_
+Content-Type: text/html; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:x=3D"urn:schemas-microsoft-com:office:excel" xmlns:m=3D"http://schema=
+s.microsoft.com/office/2004/12/omml" xmlns=3D"http://www.w3.org/TR/REC-html=
+40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DWindows-1=
+252">
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<!--[if !mso]><style>v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style><![endif]--><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-priority:34;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;}
+span.EmailStyle21
+	{mso-style-type:personal-reply;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;
+	mso-ligatures:none;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+/* List Definitions */
+@list l0
+	{mso-list-id:236675339;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1436030052 163901336 -1 -1 -1 -1 -1 -1 -1 -1;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:=D7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Calibri",sans-serif;
+	mso-bidi-font-family:"Times New Roman";}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l1
+	{mso-list-id:1223061850;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1300031140 67698703 67698713 67698715 67698703 67698=
+713 67698715 67698703 67698713 67698715;}
+@list l1:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:266.05pt;
+	text-indent:-.25in;}
+@list l1:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:302.05pt;
+	text-indent:-.25in;}
+@list l1:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:338.05pt;
+	text-indent:-9.0pt;}
+@list l1:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:374.05pt;
+	text-indent:-.25in;}
+@list l1:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:410.05pt;
+	text-indent:-.25in;}
+@list l1:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:446.05pt;
+	text-indent:-9.0pt;}
+@list l1:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:482.05pt;
+	text-indent:-.25in;}
+@list l1:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:518.05pt;
+	text-indent:-.25in;}
+@list l1:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:554.05pt;
+	text-indent:-9.0pt;}
+@list l2
+	{mso-list-id:1514610269;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-87132002 1074331661 -1 -1 -1 -1 -1 -1 -1 -1;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0FC;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l2:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l2:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l2:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l2:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l2:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l2:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l2:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l2:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l3
+	{mso-list-id:2106732301;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1993853144 1189805646 67698691 67698693 67698689 67=
+698691 67698693 67698689 67698691 67698693;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;
+	mso-fareast-font-family:Calibri;
+	mso-bidi-font-family:"Times New Roman";}
+@list l3:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l3:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l3:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l3:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l3:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l3:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l3:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l3:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body bgcolor=3D"#BFBFBF" lang=3D"EN-IN" link=3D"#0563C1" vlink=3D"#954F72"=
+ style=3D"word-wrap:break-word">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><span lang=3D"EN-US"><o:p>&nbsp;</o:p></span></p>
+<div align=3D"center">
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" style=3D"border-collapse:collapse">
+<tbody>
+<tr>
+<td valign=3D"top" style=3D"padding:0in 0in 0in 0in">
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" style=3D"border-collapse:collapse">
+<tbody>
+<tr style=3D"height:98.55pt">
+<td width=3D"1102" valign=3D"top" style=3D"width:826.85pt;padding:0in 0in 0=
+in 0in;height:98.55pt">
+<p class=3D"MsoNormal"><img width=3D"1103" height=3D"162" style=3D"width:11=
+.493in;height:1.6875in" id=3D"Picture_x0020_1" src=3D"cid:image002.jpg@01D9=
+B4B9.1F8CA240" alt=3D"A picture containing icon
+
+Description automatically generated"><o:p></o:p></p>
+</td>
+</tr>
+<tr style=3D"height:73.35pt">
+<td width=3D"1102" valign=3D"top" style=3D"width:826.85pt;background:white;=
+padding:0in 0in 0in 0in;height:73.35pt">
+<p class=3D"MsoNormal"><span style=3D"font-size:6.0pt"><o:p>&nbsp;</o:p></s=
+pan></p>
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" style=3D"border-collapse:collapse">
+<tbody>
+<tr style=3D"height:55.8pt">
+<td width=3D"852" style=3D"width:639.0pt;background:white;padding:0in 0in 0=
+in 0in;height:55.8pt">
+<p class=3D"MsoNormal" style=3D"mso-margin-top-alt:0in;margin-right:0in;mar=
+gin-bottom:12.0pt;margin-left:28.35pt">
+<span style=3D"font-size:26.0pt;font-family:&quot;Arial&quot;,sans-serif;co=
+lor:#000048">Check out the list of Do=92s and Don=92ts below and be
+</span><span style=3D"font-size:26.0pt;font-family:&quot;Arial&quot;,sans-s=
+erif;color:black">a</span><span style=3D"font-size:26.0pt;font-family:&quot=
+;Arial&quot;,sans-serif;color:#000048">ware of the security policies to be =
+followed at Cognizant &amp; Client Network=85</span><span style=3D"font-siz=
+e:16.0pt;font-family:&quot;Arial&quot;,sans-serif"><o:p></o:p></span></p>
+</td>
+<td width=3D"228" style=3D"width:171.05pt;background:white;padding:0in 0in =
+0in 0in;height:55.8pt">
+<p class=3D"MsoNormal" align=3D"right" style=3D"margin-right:19.85pt;text-a=
+lign:right">
+<span style=3D"font-family:&quot;Arial&quot;,sans-serif"><o:p>&nbsp;</o:p><=
+/span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class=3D"MsoNormal"><o:p></o:p></p>
+</td>
+</tr>
+<tr style=3D"height:245.85pt">
+<td width=3D"1102" valign=3D"top" style=3D"width:826.85pt;background:#F2F2F=
+2;padding:0in 0in 0in 0in;height:245.85pt">
+<p class=3D"MsoNormal"><b><o:p>&nbsp;</o:p></b></p>
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"1044" style=3D"width:783.0pt;margin-left:22.1pt;background:=
+white;border-collapse:collapse">
+<tbody>
+<tr style=3D"height:26.9pt">
+<td width=3D"1044" colspan=3D"5" style=3D"width:783.0pt;border:solid white =
+1.0pt;background:#000048;padding:0in 0in 0in 0in;height:26.9pt">
+<p class=3D"MsoNormal" style=3D"margin-left:14.2pt"><b><span style=3D"font-=
+size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;color:#26EFE9">Timeshe=
+et/Leaves/Furlough Compliance</span></b><b><span style=3D"font-size:14.0pt;=
+font-family:&quot;Arial&quot;,sans-serif;color:white">
+</span></b><b><span style=3D"font-size:14.0pt;font-family:&quot;Arial&quot;=
+,sans-serif;color:#26EFE9">etc.</span></b><b><span style=3D"font-size:10.0p=
+t;font-family:&quot;Arial&quot;,sans-serif;color:white"><o:p></o:p></span><=
+/b></p>
+</td>
+</tr>
+<tr style=3D"height:33.0pt">
+<td width=3D"1044" colspan=3D"5" style=3D"width:783.0pt;border:solid white =
+1.0pt;border-top:none;padding:0in 0in 0in 0in;height:33.0pt">
+<p class=3D"MsoListParagraph" style=3D"margin-top:12.0pt;mso-margin-bottom-=
+alt:auto;margin-left:35.7pt;text-indent:-17.85pt;mso-list:l1 level1 lfo2">
+<![if !supportLists]><span style=3D"font-size:12.0pt;font-family:&quot;Aria=
+l&quot;,sans-serif;color:#000048"><span style=3D"mso-list:Ignore">1.<span s=
+tyle=3D"font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style=3D"font-size:12.0pt;font-family:=
+&quot;Arial&quot;,sans-serif;color:#000048">Submit your Cognizant &amp; Cli=
+ent timesheet every week without fail.<o:p></o:p></span></p>
+<p class=3D"MsoListParagraph" style=3D"margin-top:12.0pt;mso-margin-bottom-=
+alt:auto;margin-left:35.7pt;text-indent:-17.85pt;mso-list:l1 level1 lfo2">
+<![if !supportLists]><span style=3D"font-size:12.0pt;font-family:&quot;Aria=
+l&quot;,sans-serif;color:#000048"><span style=3D"mso-list:Ignore">2.<span s=
+tyle=3D"font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style=3D"font-size:12.0pt;font-family:=
+&quot;Arial&quot;,sans-serif;color:#000048">Cognizant timesheet updates are=
+ Mandatory as per Organization policy and any non-compliance may lead to di=
+sciplinary action from HR<o:p></o:p></span></p>
+<p class=3D"MsoListParagraph" style=3D"margin-top:12.0pt;mso-margin-bottom-=
+alt:auto;margin-left:35.7pt;text-indent:-17.85pt;mso-list:l1 level1 lfo2">
+<![if !supportLists]><span style=3D"font-size:12.0pt;font-family:&quot;Aria=
+l&quot;,sans-serif;color:#000048"><span style=3D"mso-list:Ignore">3.<span s=
+tyle=3D"font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style=3D"font-size:12.0pt;font-family:=
+&quot;Arial&quot;,sans-serif;color:#000048">Discuss leaves/Furlough plans w=
+ith your project manager well in advance and take his/her concurrence to up=
+date client manager with sufficient lead time.<o:p></o:p></span></p>
+<p class=3D"MsoListParagraph" style=3D"margin-top:12.0pt;mso-margin-bottom-=
+alt:auto;margin-left:35.7pt;text-indent:-17.85pt;mso-list:l1 level1 lfo2">
+<![if !supportLists]><span style=3D"font-size:12.0pt;font-family:&quot;Aria=
+l&quot;,sans-serif;color:#000048"><span style=3D"mso-list:Ignore">4.<span s=
+tyle=3D"font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style=3D"font-size:12.0pt;font-family:=
+&quot;Arial&quot;,sans-serif;color:#000048">Ensure to update Project Manage=
+r and/or client on your leave/Furlough and update leaves in both cognizant =
+ESA and client specific systems (PPM/ Beeline
+ if applicable).<o:p></o:p></span></p>
+<p class=3D"MsoListParagraph" style=3D"margin-top:12.0pt;mso-margin-bottom-=
+alt:auto;margin-left:35.7pt;text-indent:-17.85pt;mso-list:l1 level1 lfo2">
+<![if !supportLists]><span style=3D"font-size:12.0pt;font-family:&quot;Aria=
+l&quot;,sans-serif;color:#000048"><span style=3D"mso-list:Ignore">5.<span s=
+tyle=3D"font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style=3D"font-size:12.0pt;font-family:=
+&quot;Arial&quot;,sans-serif;color:#000048">Also ensure that you are updati=
+ng your leaves in right category like Normal leave, Furlough leave etc.<o:p=
+></o:p></span></p>
+<p class=3D"MsoListParagraph" style=3D"margin-top:12.0pt;mso-margin-bottom-=
+alt:auto;margin-left:35.7pt;text-indent:-17.85pt;mso-list:l1 level1 lfo2">
+<![if !supportLists]><span style=3D"font-size:12.0pt;font-family:&quot;Aria=
+l&quot;,sans-serif;color:#000048"><span style=3D"mso-list:Ignore">6.<span s=
+tyle=3D"font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style=3D"font-size:12.0pt;font-family:=
+&quot;Arial&quot;,sans-serif;color:#000048">To protect the integrity of the=
+ financial services industry, there are laws and regulation in place which =
+require disclosure by individuals of any history
+ of certain crimes that includes dishonesty, theft, robbery, extortion, for=
+gery, misappropriation of funds or securities etc. Please check the below l=
+ink for more details regarding regulatory compliance.<o:p></o:p></span></p>
+<p class=3D"MsoListParagraph" style=3D"margin-top:12.0pt;mso-margin-bottom-=
+alt:auto;margin-left:35.7pt">
+<span style=3D"font-size:12.0pt;color:black"><a href=3D"https://be.cognizan=
+t.com/sites/legal/SitePage/458964/regulatory">Legal - Regulatory (cognizant=
+.com)</a></span><span style=3D"font-size:16.0pt;font-family:&quot;Arial&quo=
+t;,sans-serif;color:#000048"><o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"text-align:justify"><span style=3D"font-siz=
+e:12.0pt;font-family:&quot;Arial&quot;,sans-serif;color:#26EFE9"><o:p>&nbsp=
+;</o:p></span></p>
+</td>
+</tr>
+<tr>
+<td width=3D"66" style=3D"width:49.4pt;padding:0in 0in 0in 0in"></td>
+<td width=3D"241" style=3D"width:180.45pt;padding:0in 0in 0in 0in"></td>
+<td width=3D"212" style=3D"width:159.15pt;padding:0in 0in 0in 0in"></td>
+<td width=3D"59" style=3D"width:44.5pt;padding:0in 0in 0in 0in"></td>
+<td width=3D"466" style=3D"width:349.5pt;padding:0in 0in 0in 0in"></td>
+</tr>
+</tbody>
+</table>
+<p class=3D"MsoNormal"><o:p></o:p></p>
+</td>
+</tr>
+<tr style=3D"height:7.55pt">
+<td width=3D"1102" valign=3D"top" style=3D"width:826.85pt;background:#85A0F=
+9;padding:0in 0in 0in 0in;height:7.55pt">
+<p class=3D"MsoNormal" style=3D"margin-left:.25in"><span style=3D"font-size=
+:13.5pt;font-family:&quot;Arial&quot;,sans-serif;color:#F2F2F2"><o:p>&nbsp;=
+</o:p></span></p>
+</td>
+</tr>
+<tr style=3D"height:161.15pt">
+<td width=3D"1102" valign=3D"top" style=3D"width:826.85pt;background:#F2F2F=
+2;padding:0in 0in 0in 0in;height:161.15pt">
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" style=3D"margin-left:20.75pt;background:white;border-collapse:collap=
+se">
+<tbody>
+<tr style=3D"height:42.1pt">
+<td width=3D"78" style=3D"width:58.45pt;border:solid #BFBFBF 1.0pt;padding:=
+0in 0in 0in 0in;height:42.1pt">
+<p class=3D"MsoNormal" style=3D"mso-margin-top-alt:12.0pt;margin-right:14.2=
+pt;margin-bottom:12.0pt;margin-left:.25in">
+<span style=3D"font-size:9.0pt;font-family:&quot;Arial&quot;,sans-serif;col=
+or:black"><img border=3D"0" width=3D"34" height=3D"26" style=3D"width:.3541=
+in;height:.2708in" id=3D"Picture_x0020_7" src=3D"cid:image003.png@01D9B4B9.=
+1F8CA240"></span><span style=3D"font-size:9.0pt;font-family:&quot;Arial&quo=
+t;,sans-serif;color:white"><o:p></o:p></span></p>
+</td>
+<td width=3D"449" style=3D"width:336.8pt;border:solid #BFBFBF 1.0pt;border-=
+left:none;background:#00B050;padding:0in 0in 0in 0in;height:42.1pt">
+<p class=3D"MsoNormal" align=3D"center" style=3D"mso-margin-top-alt:12.0pt;=
+margin-right:14.2pt;margin-bottom:12.0pt;margin-left:.25in;text-align:cente=
+r">
+<b><span style=3D"font-size:20.0pt;font-family:&quot;Arial&quot;,sans-serif=
+;color:white">Do=92s</span></b><span style=3D"font-size:20.0pt;font-family:=
+&quot;Arial&quot;,sans-serif;color:white"><o:p></o:p></span></p>
+</td>
+<td width=3D"71" style=3D"width:53.0pt;border:solid #BFBFBF 1.0pt;border-le=
+ft:none;padding:0in 0in 0in 0in;height:42.1pt">
+<p class=3D"MsoNormal" align=3D"center" style=3D"mso-margin-top-alt:12.0pt;=
+margin-right:14.2pt;margin-bottom:12.0pt;margin-left:.25in;text-align:cente=
+r">
+<span style=3D"font-size:20.0pt;font-family:&quot;Arial&quot;,sans-serif;co=
+lor:black"><img border=3D"0" width=3D"26" height=3D"26" style=3D"width:.270=
+8in;height:.2708in" id=3D"Picture_x0020_9" src=3D"cid:image004.png@01D9B4B9=
+.1F8CA240"></span><span style=3D"font-size:20.0pt;font-family:&quot;Arial&q=
+uot;,sans-serif;color:white"><o:p></o:p></span></p>
+</td>
+<td width=3D"454" style=3D"width:340.75pt;border:solid #BFBFBF 1.0pt;border=
+-left:none;background:#C00000;padding:0in 0in 0in 0in;height:42.1pt">
+<p class=3D"MsoNormal" align=3D"center" style=3D"mso-margin-top-alt:12.0pt;=
+margin-right:14.2pt;margin-bottom:12.0pt;margin-left:.25in;text-align:cente=
+r">
+<b><span style=3D"font-size:20.0pt;font-family:&quot;Arial&quot;,sans-serif=
+;color:white">Don=92ts</span></b><span style=3D"font-size:20.0pt;font-famil=
+y:&quot;Arial&quot;,sans-serif;color:white"><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style=3D"height:42.1pt">
+<td width=3D"527" colspan=3D"2" valign=3D"top" style=3D"width:395.25pt;bord=
+er:solid #BFBFBF 1.0pt;border-top:none;padding:0in 0in 0in 0in;height:42.1p=
+t">
+<ul style=3D"margin-top:0in" type=3D"disc">
+<li class=3D"MsoListParagraph" style=3D"color:#000048;mso-margin-top-alt:6.=
+0pt;margin-right:14.2pt;margin-bottom:6.0pt;margin-left:0in;mso-list:l2 lev=
+el1 lfo3">
+<span style=3D"font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif">A=
+lways wear your identity card in Office Premise<o:p></o:p></span></li><li c=
+lass=3D"MsoListParagraph" style=3D"color:#000048;mso-margin-top-alt:6.0pt;m=
+argin-right:14.2pt;margin-bottom:6.0pt;margin-left:0in;mso-list:l2 level1 l=
+fo3">
+<span style=3D"font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif">E=
+nsure that you have completed all mandatory trainings both Cognizant &amp; =
+Client related courses
+<o:p></o:p></span></li><li class=3D"MsoListParagraph" style=3D"color:#00004=
+8;mso-margin-top-alt:6.0pt;margin-right:14.2pt;margin-bottom:6.0pt;margin-l=
+eft:0in;mso-list:l2 level1 lfo3">
+<span style=3D"font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif">E=
+nsure that you have signed the NDA forms &amp; share the document to your p=
+roject manager &amp; OPS CORE TEAM.
+<o:p></o:p></span></li><li class=3D"MsoListParagraph" style=3D"color:#00004=
+8;mso-margin-top-alt:6.0pt;margin-right:14.2pt;margin-bottom:6.0pt;margin-l=
+eft:0in;mso-list:l2 level1 lfo3">
+<span style=3D"font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif">A=
+ll admin rights &amp; software need to be authorized via One NSS. USB acces=
+s should be removed. Request must be raised for getting admin rights/softwa=
+re installation etc.<o:p></o:p></span></li><li class=3D"MsoListParagraph" s=
+tyle=3D"color:#000048;mso-margin-top-alt:6.0pt;margin-right:14.2pt;margin-b=
+ottom:6.0pt;margin-left:0in;mso-list:l2 level1 lfo3">
+<span style=3D"font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif">C=
+ognizant default screensaver should be used
+<o:p></o:p></span></li><li class=3D"MsoListParagraph" style=3D"color:#00004=
+8;mso-margin-top-alt:6.0pt;margin-right:14.2pt;margin-bottom:6.0pt;margin-l=
+eft:0in;mso-list:l2 level1 lfo3">
+<span style=3D"font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif">C=
+heck whether the anti-virus is enabled &amp; is the latest on your systems
+<o:p></o:p></span></li><li class=3D"MsoListParagraph" style=3D"color:#00004=
+8;mso-margin-top-alt:6.0pt;margin-right:14.2pt;margin-bottom:6.0pt;margin-l=
+eft:0in;mso-list:l2 level1 lfo3">
+<span style=3D"font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif">A=
+ccess internet only for business purposes.<o:p></o:p></span></li><li class=
+=3D"MsoListParagraph" style=3D"color:#000048;mso-margin-top-alt:6.0pt;margi=
+n-right:14.2pt;margin-bottom:6.0pt;margin-left:0in;mso-list:l2 level1 lfo3"=
+>
+<span style=3D"font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif">A=
+ccess only work-related websites from Client remote desktop
+<o:p></o:p></span></li><li class=3D"MsoListParagraph" style=3D"color:#00004=
+8;mso-margin-top-alt:6.0pt;margin-right:14.2pt;margin-bottom:6.0pt;margin-l=
+eft:0in;mso-list:l2 level1 lfo3">
+<span style=3D"font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif">L=
+ock your workstations whenever you leave the desk
+<o:p></o:p></span></li><li class=3D"MsoListParagraph" style=3D"color:#00004=
+8;mso-margin-top-alt:6.0pt;margin-right:14.2pt;margin-bottom:6.0pt;margin-l=
+eft:0in;mso-list:l2 level1 lfo3">
+<span style=3D"font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif">C=
+lean Desk policy - No Abnormal posters, No scratch pads on the desks with p=
+asswords/user-ids, project level details etc.<o:p></o:p></span></li><li cla=
+ss=3D"MsoListParagraph" style=3D"color:#000048;mso-margin-top-alt:6.0pt;mar=
+gin-right:14.2pt;margin-bottom:6.0pt;margin-left:0in;mso-list:l2 level1 lfo=
+3">
+<span style=3D"font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif">P=
+rinter area should be clean. If you have fired a printout, please make sure=
+ you go and collect the printout. Use the shredder to put away unwanted pap=
+er.
+<o:p></o:p></span></li><li class=3D"MsoListParagraph" style=3D"color:#00004=
+8;mso-margin-top-alt:6.0pt;margin-right:14.2pt;margin-bottom:6.0pt;margin-l=
+eft:0in;mso-list:l2 level1 lfo3">
+<span style=3D"font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif">S=
+trictly observe all physical security guidelines while accessing ODC areas<=
+o:p></o:p></span></li><li class=3D"MsoListParagraph" style=3D"color:#000048=
+;mso-margin-top-alt:6.0pt;margin-right:14.2pt;margin-bottom:6.0pt;margin-le=
+ft:0in;mso-list:l2 level1 lfo3">
+<span style=3D"font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif">U=
+ninstall RSA soft token from your mobile as soon as you are released from t=
+he project / account<o:p></o:p></span></li><li class=3D"MsoListParagraph" s=
+tyle=3D"margin-left:0in;mso-list:l2 level1 lfo3"><span style=3D"font-size:1=
+2.0pt;font-family:&quot;Arial&quot;,sans-serif;color:#000048">All planned v=
+acation/leaves need to be informed upfront to your respective BNYM Managers=
+, seek necessary
+ approvals, apply leave and book time in the systems appropriately</span><s=
+pan style=3D"font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;colo=
+r:black">.</span><span style=3D"font-size:12.0pt;font-family:&quot;Arial&qu=
+ot;,sans-serif"><o:p></o:p></span></li></ul>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal" style=3D"mso-margin-top-alt:6.0pt;margin-right:14.2p=
+t;margin-bottom:6.0pt;margin-left:0in">
+<o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal" style=3D"mso-margin-top-alt:6.0pt;margin-right:14.2p=
+t;margin-bottom:6.0pt;margin-left:0in">
+<o:p>&nbsp;</o:p></p>
+</td>
+<td width=3D"525" colspan=3D"2" style=3D"width:393.75pt;border-top:none;bor=
+der-left:none;border-bottom:solid #BFBFBF 1.0pt;border-right:solid #BFBFBF =
+1.0pt;padding:0in 0in 0in 0in;height:42.1pt">
+<p class=3D"MsoNormal" style=3D"mso-margin-top-alt:6.0pt;margin-right:15.3p=
+t;margin-bottom:6.0pt;margin-left:35.7pt;text-indent:-17.85pt;line-height:1=
+05%;mso-list:l0 level1 lfo4">
+<![if !supportLists]><span style=3D"font-size:12.0pt;line-height:105%;color=
+:#000048"><span style=3D"mso-list:Ignore">=D7<span style=3D"font:7.0pt &quo=
+t;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style=3D"font-size:12.0pt;line-height:=
+105%;font-family:&quot;Arial&quot;,sans-serif;color:#000048">Do not send an=
+y project related information to personal mail IDs or anywhere outside Clie=
+nt network<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"mso-margin-top-alt:6.0pt;margin-right:15.3p=
+t;margin-bottom:6.0pt;margin-left:35.7pt;text-indent:-17.85pt;line-height:1=
+05%;mso-list:l0 level1 lfo4">
+<![if !supportLists]><span style=3D"font-size:12.0pt;line-height:105%;color=
+:#000048"><span style=3D"mso-list:Ignore">=D7<span style=3D"font:7.0pt &quo=
+t;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style=3D"font-size:12.0pt;line-height:=
+105%;font-family:&quot;Arial&quot;,sans-serif;color:#000048">Do not transmi=
+t any material/information over the network that violates Indian/US interna=
+tional laws. An example of violation could be
+ transmitting copyrighted material over the network by taking a scanned cop=
+y or buying a softcopy of a book and mail to many<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"mso-margin-top-alt:6.0pt;margin-right:15.3p=
+t;margin-bottom:6.0pt;margin-left:35.7pt;text-indent:-17.85pt;line-height:1=
+05%;mso-list:l0 level1 lfo4">
+<![if !supportLists]><span style=3D"font-size:12.0pt;line-height:105%;color=
+:#000048"><span style=3D"mso-list:Ignore">=D7<span style=3D"font:7.0pt &quo=
+t;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style=3D"font-size:12.0pt;line-height:=
+105%;font-family:&quot;Arial&quot;,sans-serif;color:#000048">Do not use cli=
+ent related documents in any third-party websites such as portals for onlin=
+e software for formatting of documents / images,
+ etc. <o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"mso-margin-top-alt:6.0pt;margin-right:15.3p=
+t;margin-bottom:6.0pt;margin-left:35.7pt;text-indent:-17.85pt;line-height:1=
+05%;mso-list:l0 level1 lfo4">
+<![if !supportLists]><span style=3D"font-size:12.0pt;line-height:105%;color=
+:#000048"><span style=3D"mso-list:Ignore">=D7<span style=3D"font:7.0pt &quo=
+t;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style=3D"font-size:12.0pt;line-height:=
+105%;font-family:&quot;Arial&quot;,sans-serif;color:#000048">Do not upload =
+any code snippets from Client in public websites such as technical forums, =
+blogging websites, etc<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"mso-margin-top-alt:6.0pt;margin-right:15.3p=
+t;margin-bottom:6.0pt;margin-left:35.7pt;text-indent:-17.85pt;line-height:1=
+05%;mso-list:l0 level1 lfo4">
+<![if !supportLists]><span style=3D"font-size:12.0pt;line-height:105%;color=
+:#000048"><span style=3D"mso-list:Ignore">=D7<span style=3D"font:7.0pt &quo=
+t;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style=3D"font-size:12.0pt;line-height:=
+105%;font-family:&quot;Arial&quot;,sans-serif;color:#000048">Do not send an=
+y mails to Cognizant mail id from your client mail id.<o:p></o:p></span></p=
+>
+<p class=3D"MsoNormal" style=3D"mso-margin-top-alt:6.0pt;margin-right:15.3p=
+t;margin-bottom:6.0pt;margin-left:35.7pt;text-indent:-17.85pt;line-height:1=
+05%;mso-list:l0 level1 lfo4">
+<![if !supportLists]><span style=3D"font-size:12.0pt;line-height:105%;color=
+:#000048"><span style=3D"mso-list:Ignore">=D7<span style=3D"font:7.0pt &quo=
+t;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style=3D"font-size:12.0pt;line-height:=
+105%;font-family:&quot;Arial&quot;,sans-serif;color:#000048">Do not use you=
+r Personal devices (like Laptop /Desktop etc.) for any business purposes<o:=
+p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"mso-margin-top-alt:6.0pt;margin-right:15.3p=
+t;margin-bottom:6.0pt;margin-left:35.7pt;text-indent:-17.85pt;line-height:1=
+05%;mso-list:l0 level1 lfo4">
+<![if !supportLists]><span style=3D"font-size:12.0pt;line-height:105%;color=
+:#000048"><span style=3D"mso-list:Ignore">=D7<span style=3D"font:7.0pt &quo=
+t;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style=3D"font-size:12.0pt;line-height:=
+105%;font-family:&quot;Arial&quot;,sans-serif;color:#000048">Do not share c=
+onfidential, Personally Identifiable Information.<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"mso-margin-top-alt:6.0pt;margin-right:15.3p=
+t;margin-bottom:6.0pt;margin-left:35.7pt;text-indent:-17.85pt;line-height:1=
+05%;mso-list:l0 level1 lfo4">
+<![if !supportLists]><span style=3D"font-size:12.0pt;line-height:105%;color=
+:#000048"><span style=3D"mso-list:Ignore">=D7<span style=3D"font:7.0pt &quo=
+t;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style=3D"font-size:12.0pt;line-height:=
+105%;font-family:&quot;Arial&quot;,sans-serif;color:#000048">Do not use Cli=
+ent network for non-business purposes
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"mso-margin-top-alt:6.0pt;margin-right:15.3p=
+t;margin-bottom:6.0pt;margin-left:35.7pt;text-indent:-17.85pt;line-height:1=
+05%;mso-list:l0 level1 lfo4">
+<![if !supportLists]><span style=3D"font-size:12.0pt;line-height:105%;color=
+:#000048"><span style=3D"mso-list:Ignore">=D7<span style=3D"font:7.0pt &quo=
+t;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style=3D"font-size:12.0pt;line-height:=
+105%;font-family:&quot;Arial&quot;,sans-serif;color:#000048">Do not access =
+client network once you are released from the project / account.<o:p></o:p>=
+</span></p>
+<p class=3D"MsoNormal" style=3D"mso-margin-top-alt:6.0pt;margin-right:15.3p=
+t;margin-bottom:6.0pt;margin-left:35.7pt;text-indent:-17.85pt;line-height:1=
+05%;mso-list:l0 level1 lfo4">
+<![if !supportLists]><span style=3D"font-size:12.0pt;line-height:105%;color=
+:#000048"><span style=3D"mso-list:Ignore">=D7<span style=3D"font:7.0pt &quo=
+t;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style=3D"font-size:12.0pt;line-height:=
+105%;font-family:&quot;Arial&quot;,sans-serif;color:#000048">Do not access =
+websites that are in violation of Client/Cognizant policies, accessing Cogn=
+izant mails from Client remote desktop is strictly
+ prohibited. <o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"mso-margin-top-alt:6.0pt;margin-right:15.3p=
+t;margin-bottom:6.0pt;margin-left:35.7pt;text-indent:-17.85pt;line-height:1=
+05%;mso-list:l0 level1 lfo4">
+<![if !supportLists]><span style=3D"font-size:12.0pt;line-height:105%;color=
+:#000048"><span style=3D"mso-list:Ignore">=D7<span style=3D"font:7.0pt &quo=
+t;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style=3D"font-size:12.0pt;line-height:=
+105%;font-family:&quot;Arial&quot;,sans-serif;color:#000048">Do not share y=
+our Cognizant and Client IDs &amp; passwords with others. Never Use your co=
+lleague=92s Cognizant or Client id &amp; password in their
+ absence. <o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"mso-margin-top-alt:6.0pt;margin-right:15.3p=
+t;margin-bottom:6.0pt;margin-left:35.7pt;text-indent:-17.85pt;line-height:1=
+05%;mso-list:l0 level1 lfo4">
+<![if !supportLists]><span style=3D"font-size:12.0pt;line-height:105%;color=
+:#000048"><span style=3D"mso-list:Ignore">=D7<span style=3D"font:7.0pt &quo=
+t;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style=3D"font-size:12.0pt;line-height:=
+105%;font-family:&quot;Arial&quot;,sans-serif;color:#000048">Do not install=
+ any software by yourself in your Laptops/Desktops.<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"mso-margin-top-alt:6.0pt;margin-right:15.3p=
+t;margin-bottom:6.0pt;margin-left:35.7pt;text-indent:-17.85pt;line-height:1=
+05%;mso-list:l0 level1 lfo4">
+<![if !supportLists]><span style=3D"font-size:12.0pt;line-height:105%;color=
+:#000048"><span style=3D"mso-list:Ignore">=D7<span style=3D"font:7.0pt &quo=
+t;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style=3D"font-size:12.0pt;line-height:=
+105%;font-family:&quot;Arial&quot;,sans-serif;color:#000048">Do not leave a=
+ny printouts at the printer unattended.
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"mso-margin-top-alt:6.0pt;margin-right:15.3p=
+t;margin-bottom:6.0pt;margin-left:35.7pt;text-indent:-17.85pt;line-height:1=
+05%;mso-list:l0 level1 lfo4">
+<![if !supportLists]><span style=3D"font-size:12.0pt;line-height:105%;color=
+:#000048"><span style=3D"mso-list:Ignore">=D7<span style=3D"font:7.0pt &quo=
+t;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style=3D"font-size:12.0pt;line-height:=
+105%;font-family:&quot;Arial&quot;,sans-serif;color:#000048">Do not attempt=
+ to fix the printer issues by yourself if there are any malfunctions.<o:p><=
+/o:p></span></p>
+<p class=3D"MsoNormal" style=3D"mso-margin-top-alt:6.0pt;margin-right:15.3p=
+t;margin-bottom:6.0pt;margin-left:35.7pt;text-indent:-17.85pt;line-height:1=
+05%;mso-list:l0 level1 lfo4">
+<![if !supportLists]><span style=3D"font-size:12.0pt;line-height:105%;color=
+:#000048"><span style=3D"mso-list:Ignore">=D7<span style=3D"font:7.0pt &quo=
+t;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style=3D"font-size:12.0pt;line-height:=
+105%;font-family:&quot;Arial&quot;,sans-serif;color:#000048">Remove all mus=
+ic (mp3, wma, etc...), video, gaming software/freeware/unlicensed software.=
+ No streaming of music, video=85 etc. No music
+ during office hours on speaker (FM) <o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"mso-margin-top-alt:6.0pt;margin-right:15.3p=
+t;margin-bottom:6.0pt;margin-left:35.7pt;text-indent:-17.85pt;line-height:1=
+05%;mso-list:l0 level1 lfo4">
+<![if !supportLists]><span style=3D"font-size:12.0pt;line-height:105%;color=
+:#000048"><span style=3D"mso-list:Ignore">=D7<span style=3D"font:7.0pt &quo=
+t;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style=3D"font-size:12.0pt;line-height:=
+105%;font-family:&quot;Arial&quot;,sans-serif;color:#000048">Remove unwante=
+d access to the floor. Do not open the door to people who come and knock &a=
+mp; No tail gating
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"mso-margin-top-alt:6.0pt;margin-right:15.3p=
+t;margin-bottom:6.0pt;margin-left:35.7pt;text-indent:-17.85pt;line-height:1=
+05%;mso-list:l0 level1 lfo4">
+<![if !supportLists]><span style=3D"font-size:12.0pt;line-height:105%;color=
+:#000048"><span style=3D"mso-list:Ignore">=D7<span style=3D"font:7.0pt &quo=
+t;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style=3D"font-size:12.0pt;line-height:=
+105%;font-family:&quot;Arial&quot;,sans-serif;color:#000048">Remove unwante=
+d access to KR/VSS
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"mso-margin-top-alt:6.0pt;margin-right:15.3p=
+t;margin-bottom:6.0pt;margin-left:35.7pt;text-indent:-17.85pt;line-height:1=
+05%;mso-list:l0 level1 lfo4">
+<![if !supportLists]><span style=3D"font-size:12.0pt;line-height:105%;color=
+:#000048"><span style=3D"mso-list:Ignore">=D7<span style=3D"font:7.0pt &quo=
+t;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style=3D"font-size:12.0pt;line-height:=
+105%;font-family:&quot;Arial&quot;,sans-serif;color:#000048">Taking photogr=
+aph inside the ODC is prohibited<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"mso-margin-top-alt:6.0pt;margin-right:15.3p=
+t;margin-bottom:6.0pt;margin-left:35.7pt;text-indent:-17.85pt;line-height:1=
+05%;mso-list:l0 level1 lfo4">
+<![if !supportLists]><span style=3D"font-size:12.0pt;line-height:105%;color=
+:#000048"><span style=3D"mso-list:Ignore">=D7<span style=3D"font:7.0pt &quo=
+t;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style=3D"font-size:12.0pt;line-height:=
+105%;font-family:&quot;Arial&quot;,sans-serif;color:#000048">You are not au=
+thorized to work in a different geography unless you have all necessary app=
+rovals or clearance in place<o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class=3D"MsoNormal"><o:p></o:p></p>
+</td>
+</tr>
+<tr style=3D"height:15.15pt">
+<td width=3D"1102" valign=3D"top" style=3D"width:826.85pt;background:#F2F2F=
+2;padding:0in 0in 0in 0in;height:15.15pt">
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</td>
+</tr>
+<tr style=3D"height:15.15pt">
+<td width=3D"1102" valign=3D"top" style=3D"width:826.85pt;background:#85A0F=
+9;padding:0in 0in 0in 0in;height:15.15pt">
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</td>
+</tr>
+<tr>
+<td width=3D"1102" valign=3D"top" style=3D"width:826.85pt;background:#F2F2F=
+2;padding:0in 0in 0in 0in">
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" style=3D"margin-left:20.85pt;background:white;border-collapse:collap=
+se">
+<tbody>
+<tr>
+<td width=3D"122" style=3D"width:91.6pt;padding:0in 0in 0in 0in"></td>
+<td width=3D"451" style=3D"width:337.9pt;padding:0in 0in 0in 0in"></td>
+<td width=3D"7" style=3D"width:5.6pt;padding:0in 0in 0in 0in"></td>
+<td width=3D"118" style=3D"width:88.75pt;padding:0in 0in 0in 0in"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr style=3D"height:14.5pt">
+<td width=3D"1102" valign=3D"top" style=3D"width:826.85pt;background:#F2F2F=
+2;padding:0in 0in 0in 0in;height:14.5pt">
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</td>
+</tr>
+<tr style=3D"height:45.5pt">
+<td width=3D"1102" style=3D"width:826.85pt;background:white;padding:0in 0in=
+ 0in 0in;height:45.5pt">
+<p class=3D"MsoNormal" style=3D"margin-left:22.7pt"><span style=3D"font-siz=
+e:9.0pt;font-family:&quot;Arial&quot;,sans-serif;color:black">=A9 2023 Cogn=
+izant. All rights reserved.</span><span style=3D"font-size:9.0pt;font-famil=
+y:&quot;Arial&quot;,sans-serif"><o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class=3D"MsoNormal"><span lang=3D"EN-US"><o:p>&nbsp;</o:p></span></p>
+</div>
+</body>
+</html>
+
+--_000_SEZPR02MB600760D35013520C979D7DE59B36ASEZPR02MB6007apcp_--
+
+--_006_SEZPR02MB600760D35013520C979D7DE59B36ASEZPR02MB6007apcp_
+Content-Type: image/jpeg; name="image002.jpg"
+Content-Description: image002.jpg
+Content-Disposition: inline; filename="image002.jpg"; size=16057;
+	creation-date="Wed, 12 Jul 2023 06:35:19 GMT";
+	modification-date="Wed, 25 Oct 2023 05:17:31 GMT"
+Content-ID: <image002.jpg@01D9B4B9.1F8CA240>
+Content-Transfer-Encoding: base64
+
+/9j/4AAQSkZJRgABAQEAeAB4AAD/2wBDAAoHBwgHBgoICAgLCgoLDhgQDg0NDh0VFhEYIx8lJCIf
+IiEmKzcvJik0KSEiMEExNDk7Pj4+JS5ESUM8SDc9Pjv/2wBDAQoLCw4NDhwQEBw7KCIoOzs7Ozs7
+Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozv/wAARCADfBWIDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDx+iii
+vdMgooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKK
+KACiiigAooopAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUU
+AFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFIYUUUUAFFFFABRRRSASiiig
+AooooAKKKKACiiigAooopAFFFFABRRRQAUUUUgCiiigAq9p1r5j+c4+RTwPU1WtoGuJQg4HUn0Fb
+iIqIEUYUDAFXCN9TKpKyshaWkorY5gNFFJQDFpKKDSAM0hNBNMJqRgTTSaCaYTUsBCaYTSk0w1LG
+BNNpaSoGBpDRSUhhSUVPaQeY29h8in8zSSbdht2RPaQeWvmMPmbp7CrFFFdaSSsjBu7FopKWmISi
+ikJqWAE8VGTSk1GxqRgzVGTQTTCahsaQhNITQaSs2WJSUGkqShyI0jhF5JrUjjWKMIvQfrUNpB5S
+bmHzt19h6VYrppwsrs56kruyCiiitDIKSlpKQgpaKSkIWiiigBaVHeNw6MUdejKcEU2ikI3rHxGe
+I9QXeP8Ansg5H1HetkLFcRCWB1kjPRlOa4iprW8uLKXzLaUxt3A6N9R3qS1LudTJbe1VJLf2qSx8
+QWt1iO7AtpT/ABfwN/hWjJbcZ6g8gjvRctMwJIPaqzw47VuS2/tVSS39qZaZjvFUTR1pyQVXeH2o
+KuUClRlKutFULJSAqlaaVqyUqMpQBAVpu2pylMK0CK1tqF/oV151jO0at1XqrexHeu10bxrp+pbY
+b4LZXB4yT+7b8e34/nXHywrLGUbof0rIkjaJyjDBFS0jeKjUVnue0PBxnqDyD61Wkg9q850TxXqO
+ikRq/wBotu8EpyB9D2rv9I8Q6ZrqhbeTyrjHMEhw34etS00YzpyiNkg9qrPB7VsyQe1VpIPai5Bj
+vDVd4q13h9qryQ+1Fx3Mpo6iZK0nh9qrtFTGUtlFWfLopDucLRRRWp3BRRRQAUUUUAFFFFABRRRQ
+AUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUgCiiigAooooAKKKKACiiigA
+ooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+iigAooooAKKKKACiiigAooopAFFFFAwooooAKKKKQBRRSUAFFFFABRRRQAUUUUAFFFFIAooooAKK
+KKACiiikAUUUUAFKAWIAGSTwKStLTrbaPPccn7g/rTirsmUuVXLNrbi2i29XPLGpqSlrotY5G7u4
+UtJS0CCkoJpKQC00mimk0gFJphNKTTCakYE0wmlJphNSwEJpppTTTUsoKQ0GkqRhRRSfTk0hjo4z
+K4Re/U+grSVQihV4UdKjt4fJjwfvH71S10Qjyoyk7hRRRVki0dqSikwEzTSaCaYTUsAJqNjSsaYT
+UMYjGmE0pNNqGUgNIaKQ1DKENWbODe3msPlX7vuahhiM0gUcDqT6CtNQFUKowAMAVpThd3ZM5WVh
+aWkpa6TmYUUUUCCiiipEFJRRSAWkoopCFpKKSkAuaKSikAtXdP1m7075Y28yHvE/I/D0qhmjNSNa
+Ha2OqWWqYWNvKm7wyHk/Q96lltuvHNcHnn37Vcs/HFxZziC6T7XbLxuJ/eD6Hv8AjRc2hFy2Olkt
+/aqklv7VqWN9Y6xCZbGdZcD5k6Ov1FLLbe1O4arcwJIPaq7xY7VuSW1VJLf2oHcyGjqNkrRkgqB4
+qCrlFlphWrbR1EUoArFaq3tr50e5R869PcelaBSmFaBp2d0c5SqzIwZSVYHIIPIq7qNp5becg+Vj
+8w9DVGmdkWpK51uiePLq02waopu4RwJB/rF/H+L8fzruLK9stWt/PsZ1mTuB95fqOorxqp7O9ubC
+4W4tJ3hlXoyHFS4mU6Kex6/JD7VWkg9qwdF8fQXG2DWEEL9BcRj5T/vDt9RXWBY54llhdZY3GVdD
+kH8ajVHLKMovUyHh9qrvD7VsyQVVkg9qLk3MryaK0PJooHc8pooorY9EKKKKACiiigAooooAKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooopAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUA
+FFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAU
+UUUAFFFFABRRRQAUUUUAFFFFIYUUUUAFFFFABRRRSAKSlpKACiiigAooooAKKKKACiiikAUUUUAF
+FFFABRRRSAKKKfHG0siogyTQBNZ232iXLf6tfve/tWv9OlMhiWCMRr0HU+pp9dEY2RyTlzMKWkpa
+ZAUUlFAC000GkJpABNMJpSaaakAJphNKTTSaTGITTDSmkqRiGkNKaQ1IxKSlpKkYVZtIf+WrD/d/
+xqKCLzXwfujrV/8AlWlON9SZPoLRRSVuQLRSUUhBQTxSZppNSxiE0wmgmmE1LACaYTQTTTUMoDTa
+U0lQUJSAEkADJJ4FLVuzhwPNYcn7vt70RjzOwN2RPBCIY9vVjyx96koFFdaVlY5m9QpaKKCQoooo
+EFJRRUiCkzS0lIAzRSUVIC5pM0lGaQC0maQmkJqR2FJpCaaTUc0ywxF259B6mkUo3diG+ufLTy1P
+zsOfYVl053aRy7HJJ5ptI9GnBQjYlt7ma0mWa3leKRTkMhwRXZaN47V9sGsJg9Bcxj/0Jf6iuIop
+jlCMtz2NBDdQLPbyJNE/3XQ5BqvJbe1eZaXrF/pE3mWU5TP3kPKt9RXdaP4y0/VNsN5tsrk8fMf3
+bH2Pb8aDlnSlHYnltvaqslv7V0Ett7dapy23tRcyuYLw1A8VbMtv7VVkgp3KuZTR1GyVoPD7VA0V
+Ayk8aupVhlSMEVgXds1rMUPKnlT6iunZMVUvLQXUBTo45U+houaQlys52ilZWRirDDA4INJVHUFa
+Wka/qOiS7rOchCfmiblG+orNooBpPc9S0XxjpmsbYZ8WV0eNjn5GPs39DW3JB6ivEq6LQ/Geo6QF
+hmP2u1H/ACzkPK/7rdv5Vm4djmnQ/lPRPIorIXx7oDKC32pSRyvlZx7daKmzMfZy7HmFFFFbneFF
+FFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRSAKKKKACiiigAooooAKKK
+KACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiikMKKKKACiiigAooopAJRRRQAUUUUAFFFFA
+BRRRSAKKKKACiiigAooopAFFFFIArWsbbyY97D52H5Cq2n23mN5zj5VPA9TWnW9OPVmFSXRCd6Wi
+itDBhRRRQAUUlIaQAaaTSmmmpAKaaU000hiGm0pptSxiUhp1NpAJSU6kqRiYoVS7BV5JpatW8Wxd
+5+8f0FOMbsG7EkcYjQKPxPrTqKK6DMKKKSkAUZpKQmkAE0wmlJppqQGk0wmnGmGpZSENIaWkqGMb
+SU6lVGkcKvU0hjreHzXy33F6+/tWhTY0WNAi9B+tOFdEY8qMpO4oooFFUZsKWkooEFFFFIQUlFFI
+QZpKKTNSwCikJpuakdh2aaTSZpM0rjsLmkzSZpM1LY7ATjknAHesu6nM8mR9wfdFT31x/wAsVP8A
+vH+lUaR2UadveYUUUUzoCiiigAooooA3NF8Wajo22Ld9otR1hkPT/dPau90rXdM11QLaXy58cwSc
+MPp6/hXk1OVmRgysVYHIIOCKLGU6UZHsMtt14qpLbdeK5XRfHlzbBYNVU3UI4Eo/1i//ABX4121p
+c2Wq2/2ixnSePvjqv1HUVOqOSUJQ3MeS39qqyQda35bb2qnLbe1O5NzDeHFQtHWvJb+1VZIPai5V
+zmtXsNym5jX5l++B3HrWLXbvF1yK5fVdPNlPuQfuZPu+x9KpM6aU7+6yhRRRVGwUUUUAFFFFMAoo
+ooAKKKKACiiigAooooAKKKKACiirFpaPdybFIUd2I6U0m3ZCclFXZXorej8KXEq7kuYyPoalXwZd
+N/y8x/8AfJq/ZzXQx+s0v5jnKK6hfAt43/L3F/3yaWbwHfRW7yrcRyFBnaFOTUOLQvrNH+Y5ailK
+lSVYYI6g0lI6AooooAKKKKACiiikAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQ
+AUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAB
+RRRQAUUUUAFFFFIYUUUUAFFFFIAoopKACiiigAooooAKKKKQBRRRQAUUUUAFFFFIAooooAKlt4Gu
+JQg4HVj6Co1BYhVGSTgCtq1txbxBerHljVwjzMicuVEioqKEUYUDAFLS0V0nIJRRS0gEpKWkNIAp
+ppaQ0gENNNKaQ1IxKbSmkNIBDTTSmkqRhSUtIaQCUlLSohkfaPxPpSGPt4t7bmHyj9TVukChQFXg
+ClrojHlRDCiikoEFIaU0hpAJmmmlJppqQAmmGlNIaQxpptONNqBiUlLRSGJVy3i8tcn7zdfaoraL
+cfMboOnuatVpCPUmTClFFFakC0UlFBLFooopEhSUUUgCkpM0malhYUmmk0E00mpYWAmkJpCaTNS2
+VYXNJmkzSZqR2FzUNzP5MfH3j93/ABp7uEUs3Qday5ZWlkLN+A9Kk2p0+Z67DSc896SiimdgUUUU
+wCiiigAooooAKKKKYBVizvrrT7hbi0neGVejIcf/AK6r0UAeg6L49t7nbBrEYgk6C4jHyH/eHb8K
+6kxRzRLLE6yRuMq6HIP0NeLVpaP4g1HRJN1pOfLJy0L8o34f1qXHsc86CesT0yW29qpy23tRo3i7
+S9Z2wykWd0ePLkb5WP8Ast/Q1rzWvXIxUXsczTi7M52S39qo3lilzA8Mg+Vu/oexro5bb2qnLb+1
+O4Jnml1bSWlw8Eowyn8/eoq7PXtGN7bGSJf38QyuB94en+FcYRitU7nbCfMgoooplhRRRTAKKKKA
+CiiigAooooAKKKKACiiigBVUswVeSa6CwgWCIKOp6ms2wgwfMbr2rXh7V1U4WV2cGKnf3UaFtI8R
+BRiPatm1uklwH+Rv0rEiq7F2ocmjx5ycWdBGMYq3FXI3fiZNHljhZTLu5YA/dFdFpWq2epxCS2mD
+Z6rnkfhWbkmU4S5FO2jON8b+H/sVx/aNuv7mY/OB/C1cjXt91ZQ6jZSWs67kkXBFePaxpc2kalLZ
+zA/KflPqKxZ62Cr88eR7oo0UUUHeFFTWtpcXtwlvawvNK5wqIMk16BpfwW1+9t1mupIrbeMhCckf
+WolOMfiY7HnNFelX/wAEtdt4GktZ4ZyoztzgmvPr7T7vTLlra9t3glU8q4xSjOMvhYWK1FFdB4a8
+Ea34pf8A0C2Ih7zScL+dU2krsRz9FepL8DNWKZa+iDelcz4l+HGv+Gk86e38+3/56Q84+tQqsJOy
+Y7M5OiinRxvK6pGpd2OAqjJNaCG0V3mhfCLxDq9ql1MqWkbjgSH5vyrTuPgbrSREwXkMjgcKeM1k
+61NO1x2Z5hRXU2Hw8128199Gkg8idASWf7pHsaqeJ/CN94V1SHT7x42kmUMpQ8cnFXzxbtcDBort
+tW+FXiDS9Ljvgi3IkKgRxctzWnp3wT126tkmuporcuMhM5I+tS6sEr3CzPNqK9A1r4O+INLtXubf
+Zdogyyofm/AVwMkUkMjRyoyOpwysMEGqjOMtmB7J8IfD/hvUfD01xexQXF4XKyLIeUXtXmnjK1sL
+LxXf2+mFTapKQm08D2rV8G+CNd8SWs11pV2LdFO1v3hXP5VlReF7658Vnw+HQ3fmlCxPGayikpt8
+wdDEor0n/hSHiL/n4tv++qP+FIeIv+e9t/31Ve2p9wszzaivSf8AhSHiL/nvbf8AfVcT4g0K58Oa
+xLpl2ytLFjJU8c1UakZOyYWMyitPQ/DuqeIrsW+m2rytnBbHyr9TXewfA3WGjBmvIUfuBzRKpCO7
+Cx5fRXc+IPhN4h0S2a6RFu4U+95XLD8KjtPhdrV34f8A7ZV4ki2FyjHDACl7SFr3CxxVFb/hbwff
++LL6W0snjV4hli5rUh+FniKfXptKSFf3IBaduE/A03OKdmwscZRXqR+BmreXkX0O/HSuM8TeC9Z8
+KzBdQtyYj0mTlT+NKNWEnZMLMyNPtft2oQWu7b50gTPpmu58bfDJfCehpqK3pm3OFKketcdoH/If
+sf8Aruv86+h/iF4XvfFnhyGxsZESRXDneeCMVnVqOE466DS0PB/B9nY3erKL7DKpB2N3Her3j21s
+4LyN7G2WGFiQuOp471P4j+G2teE9LOq3M8WxHC/u25BNchPczXLbppWkP+0a0VpPmTERUUUVoIKK
+KKACiiigAooooAKKKKACiiigAooooAKKKKACiiikAUUUUDCiiigAooopAFJRRQAUUUUAFFFFABRR
+RSAKKKKACiiigAooopAFFFWbK2+0S5b/AFa/e9/ahJt2E3ZXLOnW20ee45P3Pb3q/QKXFdkY8qsc
+kpXdwpKWimSJRRRSASmmlNNqRgaQ0UhqQEpDS0hpDENNNKaSpAQ0lLSUgEpKWkpDD6cmrkMflJ/t
+HrUdvF/y0b/gP+NWK1pxtqyWJRS0VoISkpaSkAhpDQaaalgBpppTTTUjCmmlpDUgNNJSmkqRiU6O
+MyPt7dzTQCSAOSe1XIo/LTHU9zVRjzMQ8AAADgCloorckKWkopEi0UlFIQuaKSkzSFYXNITSZpM0
+mFhSaaTRmm5qQsKTTSaCaaTUsdgJpuaCabmobKsOzSUmar3U2xdin5m6+wqSoxbdiG6n8xtin5VP
+5mq9FFM7YpRVkFFFFMYUUUUAFFFFABRRRQAUUUUwCiiigBaKKKACuj0PxrqGkhYJ/wDTLUceXIfm
+Uf7Ldvp0rnKKGkyZRUlZnsOl6vpuvRbrGbMgGWhfh1/Dv+FSy23tXjkUskEqyxSNG6nKspwRXZ6J
+8QZE22+tRmZOguEHzj6jv/Os3BrY5p0WvhOkltsdq4nxVohtpDqECYic4lUD7rev0P8AOvR4JLXU
+bYXFnOk8TfxIc4+voarXVik0TxSpvjkUqynuKSlZmcJODPHaK0td0eXRdQa3bLRN80T/AN5f8aza
+3TudqaaugooooGFFFFMAooooAKKKKACiiigAp8Sb3HpTUUuwVRkk8CtCLT7tAP8AR2/Kt6FPnd3s
+ROSiieEYAxV6HtVeGzuv+eDVdhtbnj9y1dczyqso9yzFUl1eJY2rTP2HA9TRFbXA/wCWTcVzGsXz
+3VyYyCqRnAU+tck3Y56NFV6lui3KdzcSXU7zSHLMcmltLy4sphNbytG47g1DRWB7/KrcvQ9D8PeP
+Ypdlvqg8t84Eo6H61qeMNCi17SPtloVeeAblZedy+leUVt6D4q1HQZB5L+ZAT80T8ikzgqYTll7S
+lo+xikFSQRgg4INABYhQMknAFbfiN9PvphqWnI0Szf6yJh0buRVfw1Clx4jsIpBuVplyDQ3pc7oS
+5lc9t+HnhTT/AAh4b/tvVERLp4/Mkkf/AJZr6CuR8S/GvUpr1o9CRILZTgPIuWf39q6f4z30lp4P
+gs4sqszqGI9B2rwWuSjBVL1J6mjdtD0zQfjVrVteoNXWO5tScNtXDD3rvvFvh7SviF4X/tLT2Rrl
+Y98Eqjk8fdNfOtadh4j1nTIPIstRngi/uI3FXKgrqUNGFzX8EeD5vEfigafcIyQ27ZuT/dx2r2Lx
+b4z0n4eaZFp1lbq1yU/dQpwFHqawvgggex1G/ky88snzueprzPx/fS3/AI01GWUniUqoPYCoa9rV
+5Xsg2Rsv8Y/FjTeYJ4VGeFEfFeh+BPiXa+LQdJ1eJI7x1wAR8kteAVb0q7msdUtrmBiskcqkEfWt
+J0ISWiFdnZ/FTwUnhrV1vLKMixuskDsjeldV8IvBNtFZHxJqcasxz5CuOEA6tWp8XcXnw8trhhhv
+Mjbn3q54nu5NC+EivZ/Kxto0yP8AaHNc/tJSpqPV6FW1Ob8Z/GWa2vHsfDyoRE21rhxkH6Cud074
+z+Jba6R7sxXMOfmTZgkexrz2iulUKaVrE3Z9VeGNf0zxVp0eq2ar5mNrgj5kPoa8k+NP/I72P/XF
+f50fA+9mi8Q3NorHypY8svuKPjT/AMjvY/8AXFf51zwhyVrFXuj2eK6gstCiurlwkUNurMx7ALXj
+HiP406tPqDpooS3tFOFLrln967j4lTSQ/DIGNypaOMHHcYr54ow9KMk5MGz2HwV8Yrq41KOx8QbC
+kzbUnUY2n3p3xl8IWq2ieJLBFQkhZwo4bPRq8eT/AFi/UV9Ha6oufhUxm+c/ZAefpVTiqc1KPUS1
+Rz/wM/5Al7/v15zrer3Oh/EW81K02+dBckruGRXo3wM/5Al7/v15X40/5HDU/wDruaqGtWQPY6j/
+AIXb4o/uWv8A37qez+L/AIw1G6jtLSC3knlO1FWPPNebxRSTyrFEheRztVQOSa95+Hvgi08GaQ+u
+62UW8ZNxL9IV9PrTqRpQWwK7OsttUudF8LjUfE1xEk6Jul2cAH0FeAajPP8AEHx4zWsJU3cgUAdk
+Hf8AKrfxE8ez+LdRMMDNHp0Dfu0z98/3jWl8FLZZPF7Tn70URx+NTCHsoOb3Bu56dcXGhfC3wsgC
+DdjCgD5pnryy++M3ie4uWe2eG3iz8qBM4Hual+NWoz3PixLNmIhgiG1e2T3rzmnRpRceaWrYNntP
+gr4xNfXaad4hRFaY7UnQYHPYivRPEMcUXhe+EKqqGEkBRxXymCVIYHBHQivo/SryS++FCTSkl/se
+CT3xWVekotOI0zgfgj/yM97/ANczXovj3xzbeDLBdkay3s+fLj9Pc1518Ef+Rnvf+uZrG+L88k3j
+y4V2JWNFCj0qpQU69mJPQkHxk8WC483zoCufueXxj0r1Twv4m0r4keH57S8gUShds8Lc4z3FfN1e
+i/BJ2HjN0BO1rdsitK1KPJdKzQJmHe6DJ4b+IMWmuCES5Uxk91J4r2z4ieJ7/wAK+G4b7T1RpWkC
+HeMgDFcJ8UkQfEnSXAwzFAT6810nxo/5EmH/AK7L/KspPncLj2ueX+JPiVrnijSjp18IBCXDHYuD
+kVyNFFdkYqKsiAoooqgCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooopDCiiigAooooAKKK
+KQCUUUUAFFFFABRRRQAUUUUgCiiigAooopAFFFFAD4o2mkWNBkk1twwrBEI06Dv6moLG2EEe9/8A
+WOOfYelWsiuqnDlV2c1SV3ZC0UmRRkVqZC0UmRRkUgCkNJmkzUsYGkNGaTNSMKSjNJkVICUhpSRS
+ZFIBKbSk0hNIYUlGRSZqQA06KPzH5+6OtNA3NtHJNXEVY1Cg/U+tVCPMxDqWm5FLkV0CFpKMikzS
+EBpCaCRTc1LGBNIaMikzUMBKSlzTSRSGFNNLkU0mpADTaXNOiTe2T90frStd2Alt48fO3U9Knpu4
+UbhXQlZWEx1FJuFG6gVh1JSbhRuFIVhaM03cKQtUisOzSE03cKQsKVwsOzSZpm6k3VIWHE0hNN3U
+3dUthYcTSE03dSFqlsdhSabmgmmEgck4FQykhZJBEhY/gPWs5mLsWY5J60+aXzX/ANkdKjoSOmnD
+lQUUUVRoFFFFABRRRQAUUUUAFFFFMAooooAKKKKAFooooAKKKKYBRRRQIt6dql7pNyLixuHhfvg8
+N7Ed677RfHtjf7YNVVbSc8eaP9W31/u/yrzailKKZEoRlueva/oEWuaYYQy7/v28oOQD9fQ9K8ln
+gltp5IJkMcsbFWU9QRWponijU9CbbBL5luT80EnKn6eh+laniG50vxPbf2pY/wCjahCv+kW0h5kX
++8p/iI/PFTFOOj2IgnB2exydFFFaGwUUUUwCiiigAooooAKKKKAFBIOQcGus0TVDd2/lSN+9jHfu
+K5KprS5e0uFmQ8qefcVrRqckvIwr0vawa6nfxsasxsaoWVwl1bpNGeGH5Vejr0JO58nVjZ2ZbjJr
+lPF+ibD/AGjbr8p4lUDp711cdTNEk8TRSKGRxgg1x1FcyoYmWGqqa+Z5DRWpr+kSaRqDRYPlPzG3
+qKZYaPPeEMw8uP8AvGuY+yVem6aqX0ZRjieVwkalmPQCt+w8OrHH9p1BsKo3FB6e9a1hp1vZKBGg
+3d2PWsrxJqef9Chbj/loR/KpvfQ894qpiJ+zpaLuZOp3wvLkmNBHEnCKPSmaZeNp+p292oyYZA1V
+aKdj1IRUIqKPo7xdpaePPAEcmnsHcos0R9SByK+drm2mtLh7e4jaOWM4ZWGCDXefDj4kP4XcadqO
+6TT3bg9TF9PavUbnTfA3jaIXLNbSM3JdWCOfrXHGToPla0NNz5vjjeWRY41LuxwqgZJNer6N8HLc
++Hhqeu3strIEMjxqB8i13Fp4f8C+EEN2PsyleQ8jh2H0rzv4jfFH+3Yn0nRi0dln95L0MnsPaq9p
+Oo7Q0XcLW3NH4M63aWutahoqSlopWLWxbq2D/hWJ8W/Cd1pfiGXVo42e0vG3FgOEb0NcJYX1xpl7
+FeWkhjmibcrA17x4Z+JWgeKdNWx1wRQ3JG145RlH9xRNSpz5469wWqsfP9dR4C8KXXifX4EWNvss
+LhppMcADtXsb/DnwJPcfa9kXJ3YWcbfypNX8a+FPA+nPb6cIXnA+SGAD5j7kUniOZWgtQsY3xt1S
+2ttAtNGVv3zurhR2Va3NF+y+OfhklpuDMYPLIJ5VlHGa8F8Qa9e+JNWl1G+fdJIflXsg7AVseBPH
+N34O1EsAZrOY4miz+oodBqmkt0F9TB1bSbzRNRlsb6FopY2wQR19xVKvpP7b4J8e2oMz20rlf4yF
+ce2aitPBfgTw+xvNtv8ALzmaUN+lNYmytJahYwfgz4QudOgl1u+jMbTjbCjDBx61z3xp/wCR3sf+
+uK/zr0jSPiBpms+Jv7E0qMyxRplphwox2FebfGoqPG1kScAQrn25rOm5OteQ3sdt8Tv+SYr/ALsf
+8q+e694+JGr6Zc/DlYIL6GWTbHhVcE9PSvB61wytD5ie45Pvr9RX0dq//JKW/wCvMfyr5wT76/Wv
+oTVdZ0l/hk9uuowGT7IAFDjOcdMUYhO8fUEZXwM/5Al7/v15X4zBbxjqQAyTOcAV6X8FtU0+x0a8
+W7vIoXL/AHXYDiuTs5tOl+L5muJIpLQ3Rbe33TSjdVJMOh2Xwz+H8Oj2o8R66qpJt3RJJ0jHqfeu
+X+J3xEPiK5bS9MkI0+JsM4/5an/CvZb7VfDt/ZvZ3Go2xhcbWUSAZHpWEug/DxVCj7Dgf7YrCNT3
+ueadx2PnKuy+Fesw6P40t2uX2RTgxk+56V64ND+Hv/Tj/wB9ivFvHsWm2fjG5XRWVbZNpQxngH2r
+pjUVW8bCtY9D+NHhGe7MWv2cbSFF2TqozgDoa8Xr2rwL8V7O5sU0nxIwV1XYszDKyD0NdHd+BfAm
+tyC82QDdz+5lCg/hWcajpLlmgtc8C0PRbzX9UisLKJneRgCQPujuTX0jdaYujeAJNOVtwt7XZn14
+rPl1PwV4AsmNubdJAvCxYZ29sikl8Y6Xrngq5unuobd5oTiJnG4VnUnKo00tBrQ4H4I/8jPe/wDX
+M1hfFv8A5H67/wB1a1vg1fWdl4kvHurmOFWjIUu2Aaxfinc21344uprWZZoyq/MpyK3S/fv0F0OO
+r0T4J/8AI7N/17tXndd78Hby2svGJlup0hQwMAznAzWtX4GJbm98VXWP4h6S7nCgpk/iK6j4w2s9
+34GR7eMyLG6u5XnC461wfxmv7W88R28lncpMFi5MbZwa6bwD8TdMu9HTR/EDqkka7A8gyso965XG
+ShCSWw+p4lRXsfxO0/wjF4We60n7KLtpV2+SwzjvxXjlddOfOriasFFFFWIKKKKACiiigAooooAK
+KKKACiiigAooooAKKKKACiiikMKKKKACiiigAoopKQBRRRQAUUUUAFFFFIAooooAKKKKACiiikAU
+oJBBHBFJRSA7/wAP6tHqtltkVPtMIxINo+Ydm/xrV2J/dX/vkV5pp9/Npt7HdQn5kPI7MO4Nej2l
+3DfWsdzA2Y5BkeoPcH3FdlKfMrPc8+tT5HdbEnlr/cX/AL5FJsX+4v8A3yKfS1qc5FsX+6v/AHyK
+Qxr/AHF/IVLikIpDITGv91f++RTDGv8AcX8hVgrTStBNysUX+4v5Cm7F/ur+QqwVphWgdyEov91f
+yppRf7q/lUpFNIpAQlF/ur+VNKL/AHV/KpSKaRSAhKr/AHV/KmlF/ur+VSEU00gIiq/3V/KmFV/u
+j8qmIqM1IxI2MMqyIF3L6jr7VuQtDcRLKiLhv9kcH0rCNWLG6+zTYc/un+97e9OLsBseWn9xf++R
+SeWv9xf++RT6WtREXlr/AHF/75FIY1/uL/3yKlxSEUhMgMS/3F/75FMMa/3F/IVZK00rQK5UMa/3
+F/KmlF/ur+VWGWmFaQXICi/3V/KmFF/ur+VTkUwikO5XKL/dX8qYUX+6PyqcimEVLC5XZB/dH5VY
+sJ1gk8uRV8tz1IHyn1qNhUbDilsFze8tP7i/98ikMS/3F/75FVdOuvNTyJD86D5T/eFXq1TuMi8p
+f7i/98ik8tf7i/8AfNS4oxxTJIPLX+4v5Ck8tf7i/lU+KTbSJuV2iX+4v5CmGFf7q/lVorSFKRLZ
+SMQ/uL+VMaJf7q/lV0x0wx0mK5RMS/3R+VRNEP7o/Kr5jqNo6kVyi0Q/uj8qjMY/uj8qvNHUbR1I
+rlIxj+6PyphjH90flVxo6jZKhoFIqGMeg/Ko3iVlKsoIIwRirZSmFKho0Uzmru2a1mKHlTyp9RUF
+dJd2i3UBjPDdVPoa510aN2RwQynBBqT1aFVVI+Y2iiig6AooooAKKKKACiiigAooopgFFFFABRRR
+QAtFFFABRRRTAKKKKBBRTkjeRgqKWY9hWhBpirhpzk/3QePxNDaRE6kYblKC2lnbEa8dyegqa4ii
+tE8sHfM3U9lHtWhPMltDkAADhVHrWM7s7l2OWJ5NJO5nCUqjvshtFFFUbhRRRTAKKKKACiiigAoo
+ooAKKKKANjw/qf2S48iVsRSHv2NdrHzivMwcc12Gg67A9oIrydInj43O2NwrqpVNOVni5lhW/wB7
+Bep00fWp5J4bVPMuJAoHbuawLrxNZwAx200bv/f3DArKfUYJ38ye8R2926VE5roePDA1J6yTS/E1
+dVvItYKK1uvlxn5Sw5piAAAAYAqit/Zj/l6i/wC+hUo1KyAz9qi4/wBoVzs6/YyjFRinZDtSv1sL
+RnyN54Qe9cY7tI7O5yzHJNW9Uvmvrotn5F4UVSoSse3hMP7GGu7CiiimdgU+OaWFt0UjIfVTimUU
+ASS3E05zLK8h/wBpiajoopAFFFFAE63t0sflrcyhP7oc4qAkk5JyaKKACvUvDHwt0rxP4ZXUbXUn
++0MpBTjCt6GvLa6vwJ44uvB2pFuZbKY/vov6j3rOopOPu7jRh6rpd/oGpSWd2jwzRNjIyM+4qs9x
+dXJCvNLKewLE19C3OvfDzxbZRz6peaeCR9y4lVHX681Bp9v8LNKuFubW90kSIchjcq2P1rFV3bWL
+uOxn/CDwfNotjLrmpJ5Mk6/u0cYKoO5rzX4j66Nd8YXc0bB4YT5UbDuBXZ/EL4sJdW0mkeH2xGw2
+yXCnqPRa8iJyc06UZOTqSB9hck9zSUUV0khS5OMZOKSigBQSOhxSZoooAXc394/nRub+8fzpKKAF
+3N/eP50lFFABU0V3cwgrFcSID2ViKhooAVnZzudix9Sc0ZOMZOKSigABI6cUZzRRQAUAkdOKKKAA
+knrzRRRQAuSepJpKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKQwooooAKKK
+KQBSUtJQAUUUUAFFFFABRRRSAKKKKACiiigAooopAFFFFIArc8M6z/Z139nnbFtOeT/cbs3+NYdF
+NNxd0TKKkrM9X6UVzvhTWftUA0+4b99Ev7on+NfT6j+VdFXdGSkro8ucXF2YUUUUyRKMUtFBLGFa
+YVqWkxQBAy1GRVhlqNlpAQEUwipiKjYUDISKYalNRmpGMIqM1IajNIBppppTTTUjNTS7vev2aQ/M
+v3D6j0rRrmQzKwZSVZTkEdjW/ZXS3kAccOOHX0NaRfQRPRRRVCYUhFLRQSRstRstTkU1hSEVitRs
+KsMtROtAyu1RmpXFRNUjI2phpzGoyakADtGyuhwynINbttcLdQiReD0Yehrnyams7s2k4c8xtw49
+vWnF2A36MUAhgGUgqRkEdxS9q0ENxRinYoxQSNxSYp+KMUiWR4pCtS4pMVLJIClMMdWttNKUiblN
+o6jMdXSlMMdSK5RaOomjq+Y6jaOpC5RMdRFKvmOomjqWFykUrL1iw8xDcxj50Hzgdx61utHUZSpa
+NKdV05cyOJorR1fT/sc/mRj9zIeP9k+lZ1Se7CanFSQUUUUFhRRRQAUUUUwCiiigAooooAKKKKAF
+ooooAKKKs21jNc8gbU/vNTJlJRV2VgM1et9MkfDTHy19O5q9BaQ233Buf+83X/61SFqhyOOeIb0i
+JHHHAm2JQo7+ppGcAEk4A6mkJrPvrjP7lTx/Ef6VCu2ZQg5yILq4M8ueijhRUNFFbrQ9FJJWQUUU
+UDCiiimAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFIAooooAKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+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
+
+--_006_SEZPR02MB600760D35013520C979D7DE59B36ASEZPR02MB6007apcp_
+Content-Type: image/png; name="image003.png"
+Content-Description: image003.png
+Content-Disposition: inline; filename="image003.png"; size=1045;
+	creation-date="Wed, 12 Jul 2023 06:35:19 GMT";
+	modification-date="Wed, 25 Oct 2023 05:17:31 GMT"
+Content-ID: <image003.png@01D9B4B9.1F8CA240>
+Content-Transfer-Encoding: base64
+
+iVBORw0KGgoAAAANSUhEUgAAAGwAAABSCAMAAACGyMEiAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAABaUExURQAAAAC/QACvQAC1QACvQACzQACvQACyQACvQACxQACvQACxQACvQACxQACw
+QACxQACyQACyQACxQACyQACxQACyQACxQACxQACxQACxQACxQACxQACxQACxQNmu288AAAAddFJO
+UwAIEBggKDA4QEhQWGBoeICHn6evt7/Hz9ff5+/3ILm9sQAAAAlwSFlzAAAXEQAAFxEByibzPwAA
+AgVJREFUaEPt2FtTgzAQhuH0LNqDaA+0Jf//bxrbr7bAJlmyu3e+N47NwjN2HAI4szb14VBv8Itt
+i6O/dVzgA8Oq9m55f13iI7Oelr32allrXctW61uW2tCy0ygraG9YVo22vG8rDCi2xrmH6WtxK2jK
+32TK8r6ZYEyltOX9FnMa5Sx/xKBCWcu3mJSXt/QwhuVPmJXGsXyNYWEsq51hWhbL8jr3Izxrh2lZ
+/1a/qm6u++2YC2axNfm8LzUrfJCv2JqesMbf6BQstqZiMTWeRexi8wZriKHxrDWmX5qfsfZXVlO0
+gkbMvbTBWDqmFUppO8ykI86wvGKtX1wrtlYxK66V/12RG+ZbtFZsOTz8RqKOKLdy/1XDY8ot94XF
+aP2jBJbrXKXIusdJLHfBcqLXI1lW9Hqwx0Cq57E8K3qlw4aZ7qEJLTdjfI+PPUlqOfeBoXS/mtxi
+niNoGhZXO+BnsqzF3ZsYMSzurpuNZSlpTEtFG/GCSqyNehkm1Ea+eHtPbdm5Rr/ki71RY1TwQrFY
+K7CKtSKrUDvPcfTYCrRiK3nLSiewEjfjdCIraKy9Gwmt6EMNldgaoSlYbE3FYmpKVtB6D/REalb/
+VQWRopXVVK2M1uhaSe00xYxeUc3AimomVkQzskjNzCI0Q2ugmVo9zdjqaOZW0GpYtb0Vqr4v/rLn
+PhLROfcDYF6MOmI3oK0AAAAASUVORK5CYII=
+
+--_006_SEZPR02MB600760D35013520C979D7DE59B36ASEZPR02MB6007apcp_
+Content-Type: image/png; name="image004.png"
+Content-Description: image004.png
+Content-Disposition: inline; filename="image004.png"; size=1154;
+	creation-date="Wed, 12 Jul 2023 06:35:20 GMT";
+	modification-date="Wed, 25 Oct 2023 05:17:31 GMT"
+Content-ID: <image004.png@01D9B4B9.1F8CA240>
+Content-Transfer-Encoding: base64
+
+iVBORw0KGgoAAAANSUhEUgAAAFMAAABSCAMAAAAfMBiXAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAABdUExURQAAAL8AAL8AAL8AAL8AAL8AAL8AAL8AAL8AAL8AAL8AAL8AAL8AAL8AAL8A
+AL8AAMEAAMEAAMAAAMAAAMAAAMAAAMAAAMAAAMAAAMAAAMAAAMAAAMAAAMAAAMAAAGgCMJYAAAAe
+dFJOUwAIEBggKDA4QEhQWGBweICHj5+nr7e/x8/X3+fv9wWkFs0AAAAJcEhZcwAAFxEAABcRAcom
+8z8AAAJuSURBVFhHrdnrdqowEAXgYKme1qotFRSLef/HPEEGzWVuIexfSYifq2pCmJogu++u+z1u
+oKfJ5njuup899NJU3/aRvw8YkLP7m17SvsFAlM11uu5ygiEpXzDf2lsNQ0E8Uou+SBwNSB3qkxha
+3+DSHBkNyRRNSBmNyRhFSAlNyRBFSR7FSGv750+bIDkUJ629ArqF3y0SCqXIGX0boIsFRw9wFcsD
+baGDB0NPcA1PY8wemlTclCg8ae3e/EKLTIxKpD2bHlp0QlQk7aAwA1QmnXmGFpcXqiBtp5r1RFWT
+T6aiFlGQCYX7AJ++MuYftPmMaANtNvft+O70QvPTKEm4l+lQ1Wc0k1pUkRfpFugdBsvik8Z8rIGG
+5CpoTK6ApmQxipGFKE4WoRRZgNLkYpQjF6I8uQiVyAWoTLrjNHeGSKMh3VknB9WRWaiWzED1pBrN
+IeMHBirYswYVJZmDqkk9mkFq0SxSh2aSGjSblNEFpIQuInm0XkZyKPk8J4dCC0gKLSJxtJDE0GIy
+RVcgY3QVMkRXIn0060bJZ0Z15G2rWmQTWuvIWrkZ3MY6wwU6bK7j2+vQlq9tPAPlmE0HfTYH1bP2
+XOExFV88mdJqagJPUodq6gwe6VCxfqKpMwSki/h43JkjtKh0ESmjR1Pxf3xbgeSFRy/uFTvusI2R
+PDq8jzOYEzxOGvMD19MMj9IFg1IkXcCZSYfiS54mKfRFElsTR+KoT6KoX1HDkqIhiaASmaIx6dCw
+AiyT8ZaWktFNSUOGNSSMDFAd6aM46bZc2HOGLxiQ8wlfw+WxetDs27vtG+J/QWjqprf37gC9Mcb8
+B7MCBaPu2qduAAAAAElFTkSuQmCC
+
+--_006_SEZPR02MB600760D35013520C979D7DE59B36ASEZPR02MB6007apcp_--
