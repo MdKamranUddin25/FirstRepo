@@ -1,0 +1,268 @@
+Received: from TYSPR02MB7340.apcprd02.prod.outlook.com (2603:1096:400:46a::13)
+ by TYZPR02MB7748.apcprd02.prod.outlook.com with HTTPS; Wed, 22 May 2024
+ 11:39:48 +0000
+Received: from SG2PR02CA0073.apcprd02.prod.outlook.com (2603:1096:4:90::13) by
+ TYSPR02MB7340.apcprd02.prod.outlook.com (2603:1096:400:46a::13) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.7587.36; Wed, 22 May
+ 2024 11:39:47 +0000
+Received: from SG2PEPF000B66CB.apcprd03.prod.outlook.com
+ (2603:1096:4:90:cafe::28) by SG2PR02CA0073.outlook.office365.com
+ (2603:1096:4:90::13) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.7611.19 via Frontend
+ Transport; Wed, 22 May 2024 11:39:46 +0000
+Authentication-Results: spf=pass (sender IP is 20.204.251.184)
+ smtp.mailfrom=cognizant.com; dkim=none (message not signed)
+ header.d=none;dmarc=pass action=none header.from=cognizant.com;
+Received-SPF: Pass (protection.outlook.com: domain of cognizant.com designates
+ 20.204.251.184 as permitted sender) receiver=protection.outlook.com;
+ client-ip=20.204.251.184; helo=mail.cognizant.com; pr=E
+Received: from mail.cognizant.com (20.204.251.184) by
+ SG2PEPF000B66CB.mail.protection.outlook.com (10.167.240.24) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.7611.14 via Frontend Transport; Wed, 22 May 2024 11:39:46 +0000
+Received: from CAZINCIPV788555.cts.com (10.153.54.5) by
+ CAZINCIPV788709.cts.com (10.153.52.180) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.2.1544.11; Wed, 22 May 2024 11:39:30 +0000
+Received: from CAZINCIPV788555.cts.com (10.153.54.5) by
+ CAZINCIPV788555.cts.com (10.153.54.5) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.2.1544.11; Wed, 22 May 2024 11:39:25 +0000
+Received: from CAZINCIPV788918.cts.com (10.153.54.7) by
+ CAZINCIPV788555.cts.com (10.153.54.5) with Microsoft SMTP Server id
+ 15.2.1544.11 via Frontend Transport; Wed, 22 May 2024 11:39:25 +0000
+Received: from CTSINAZPDCBAJ05 (10.153.62.55) by CAZINCIPV788934.cts.com
+ (10.153.54.7) with Microsoft SMTP Server id 15.2.1544.11; Wed, 22 May 2024
+ 11:39:23 +0000
+From: <1CommEmailPRD@cognizant.com>
+To: <Md.Kamran.Uddin@cognizant.com>
+Reply-To: <1CommEmailPRD@cognizant.com>
+Date: Wed, 22 May 2024 17:09:23 +0530
+Subject: My Workspace Notification for you: Flexi seat reservation Check
+ out[zdh6xfun]
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+Message-ID: <560e207a-0f4a-40c5-afe4-031a11a40681@CAZINCIPV788934.cts.com>
+Return-Path: 1CommEmailPRD@cognizant.com
+Received-SPF: PermError (CAZINCIPV788934.cts.com: domain of
+ 1CommEmailPRD@cognizant.com used an invalid SPF mechanism)
+X-CrossPremisesHeadersFilteredBySendConnector: CAZINCIPV788934.cts.com
+X-OrganizationHeadersPreserved: CAZINCIPV788934.cts.com
+X-OrganizationHeadersPreserved: CAZINCIPV788555.cts.com
+X-MS-Exchange-Organization-ExpirationStartTime: 22 May 2024 11:39:46.5143
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 638e2715-032f-43d2-e862-08dc7a53e192
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-MS-Exchange-Organization-AuthSource: CAZINCIPV788555.cts.com
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 10
+X-CrossPremisesHeadersPromoted: SG2PEPF000B66CB.apcprd03.prod.outlook.com
+X-CrossPremisesHeadersFiltered: SG2PEPF000B66CB.apcprd03.prod.outlook.com
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic:
+ SG2PEPF000B66CB:EE_|TYSPR02MB7340:EE_|TYZPR02MB7748:EE_
+X-OriginatorOrg: mail.cognizant.com
+X-MS-Office365-Filtering-Correlation-Id: 638e2715-032f-43d2-e862-08dc7a53e192
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam:
+ BCL:0;ARA:13230031|366007|82310400017|69100299006|41050700001;
+X-Forefront-Antispam-Report:
+ CIP:20.204.251.184;CTRY:IN;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:mail.cognizant.com;PTR:cogcihyedgeobptr1.centralindia.cloudapp.azure.com;CAT:NONE;SFS:(13230031)(366007)(82310400017)(69100299006)(41050700001);DIR:INT;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 22 May 2024 11:39:46.3580
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 638e2715-032f-43d2-e862-08dc7a53e192
+X-MS-Exchange-CrossTenant-Id: de08c407-19b9-427d-9fe8-edf254300ca7
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=de08c407-19b9-427d-9fe8-edf254300ca7;Ip=[20.204.251.184];Helo=[mail.cognizant.com]
+X-MS-Exchange-CrossTenant-AuthSource: CAZINCIPV788555.cts.com
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: TYSPR02MB7340
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.1447314
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.7611.013
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506478)(944626604)(920097)(425001)(930097)(140003)(1420198);
+X-Microsoft-Antispam-Message-Info:
+	+Yyi+pnWsdjuGc8ojXzjmoUnmEFW+4oOj3RVilFe7LBySxC0x2b23/pAN2DFRhvH91iRXXdZjQuSBIw6FMS2R3mn9ny+xfbmEks5N63/8df7iws0iLxzUJsHlz63J4QwdNGwuZqwnjncXFEGMAZ4z9LOSu6Y7zxOYSbbOSnUMytQVNil4sZkWqMzWpKvRZavzdTPZ5u4h3mAdcNeBNc+xnaAyHuqDhfqaTZu/H/7Bhockl9RYjMzc8I51ba7poSFm+I3MMQRbrA1k84GIHhgiguIpKvOxVsjKhl5wrgPfw4ALk4doitEk1tZ0ipHG7KfIF0bM7R5hiJVFu7GJFJ11MwUvkg6kDlzaBjlr/c+7pEeyYgciICnk4Nln0IektbA0p2PWpU7wwGPTeJYcBJ2cX67+2sM1EVLye3cAPdJzxXmXlYnQnvMH7IUdu4SGnjbRsrzzXPhB9D7MoRuGU2A1Pv23THKFzU54QAykl+DMXnoNzNAs4Ftw8ET9AluK8e9TVqtqbKnHN85jfv96XuIn9vR17+aKqTe4xTkeQ7yNmbFhKk9XYjo8km8AzA92cmD6xpQdixmKVIrLtVM16kOEoa3vPsKKEYYWyE/aBvsv65FI4K4z14sBANc8v/GASWKeHar+LjBEapl8PkIpVX5t7vQPF4Mku13IeXlXlSBkLhyzSbcgwgb15wAexL4W9QEIDf56RsoSr5yZaBmZggcgmFNq+qu6G7197oniDBKKUxDju0b4wK1o0DrAzfZbbJC5CuRPENWQTjBsUp0Xy8032gYAe0djXTlKrFOzfMYBRBeoK8H5eXFlLYkcBKA67XJDQEJ/5LmnWzdHSS/fc+rMuno7Ws33tAfrohh3P86Gzwf6ds8I529Dufip3+UDtqd
+MIME-Version: 1.0
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns=3D"http://www.w3.=
+org/1999/xhtml"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+><title>One Cognizant Template</title>          <style type=3D"text/css">  =
+                        body{                  background-color: rgb(242,24=
+2,242);              }             body,            td,            th {    =
+          font-family: Arial,"Segoe UI", Verdana, Helvetica, sans-serif;   =
+           font-size: 14px;              color: #000048;              margi=
+n: 0px;            }            table,            td {              vertica=
+l-align: top;            }            a img {              border: 0px;    =
+        } .linkblock a{ text-decoration:underline}            a {          =
+    color: #2F78C4;              text-decoration: none;                    =
+  }            a:visited {              text-decoration: none !important;  =
+          }            a:focus {              text-decoration: none !import=
+ant;            }            a:hover {              text-decoration: none !=
+important;            }            .mail-container {              backgroun=
+d-color: white;              font-size: 14px;              color: #3e4c51; =
+             width: 100%;            }            .template-table {        =
+      border-collapse: collapse;            }            .template-table td=
+ {              padding: 8px 16px;              color: #000048;            =
+  border: 1px solid #7F7F7F;              font-size: 14px;            }  #R=
+equestInformation > td {    padding-top: 24px;}           a.mailtoLink {   =
+           color: #FFFFFF;              font-size: 14px;  font-weight: bold=
+;         }            .linkblock {              width: 216px;             =
+ background: #00B0F0;              color: #000048;              text-align:=
+ center;              padding: 10px 0;            }            .padding-xl =
+{              padding: 15px 32px;              background: white;         =
+   }            p.infopart {              padding: 3px 0;              colo=
+r: #000048;            }            h2 {              font-weight: bold;   =
+           color: #2F78C4;              font-size: 14px;     margin: 0;    =
+        }            .titlepart {              padding: 12px 32px;         =
+   background-color: white;  font-weight: bold;              color: #2F78C4=
+;              font-size: 14px;          }            .psnote {            =
+  padding: 15px 32px;              background-color: white;              fo=
+nt-size: 12px;              color: #53565A;            }            .foot-t=
+ab {              padding: 8px 32px;              /* background: #000048; *=
+/            }            .foot-img1 {              width: 100%;        pad=
+ding: 6px 6px 6px 32px;  background: white;           }            .foot-im=
+g2 {              width: 47px;              height: 50px;            }     =
+       #foot-txt {              text-align: left;              padding-left=
+: 20px;              color: #040506;              width: 420px;            =
+  height: 50px;              background-color: rgb(0, 0, 0);              f=
+ont-size: 14px;              text-overflow: clip;              overflow: hi=
+dden;            } #mobilityPromo{background-color: white}            #dyna=
+mic {              background-color: rgb(0, 0, 0);              width: 47px=
+;            }            .wide {              width: 650px;     }         =
+   .main-container {              margin: 0 auto;            }            #=
+headerimg {              height: 53px;            }            #headerimg t=
+d {              width: 256px;            }            /* new CSS */       =
+     #headerimg td {              background-color: rgb(0, 51, 160);       =
+     }   #RequestDetails{background-color: #FFFFFF}         #RequestDetails=
+ p {              color: #000048;              font-size: 14px;            =
+  line-height: 1.4;            }            #UnsubscribeSection {          =
+    color: #53565A;            }            #RequestOtherDetails p {       =
+       color: #000048;            } #RequestOtherDetails > td {            =
+  padding-top: 24px;            } #RequestOtherDetails p {              bac=
+kground-color: #FFFFFF;            } #valedictionSection td {              =
+padding-top: 24px;            }            #ApprovalMethods p {            =
+  color: #000048;            } #ApprovalMethods td {              padding-t=
+op: 24px;            }  #ApprovalMethods {              background-color: #=
+FFFFFF;            } #twoWayReplyButtons{              background-color: #F=
+FFFFF;            } #twoWayReplyButtons > td {padding-top: 24px;}          =
+   #valedictionSection p {              color: #000048;            }  #vale=
+dictionSection {            background-color: white;           } #RequestIn=
+formation{background-color: #FFFFFF;}           .linkblock {              b=
+order-left: 1px solid white;              border-right: 1px solid white;   =
+         }       #footerImage{            background-color: white;        }=
+          </style>        </head>              <body>          <table width=
+=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">            <tr>=
+              <td>                <center>                  <table class=3D=
+"wide" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D"margin: 0 =
+auto;">                    <tr id=3D"headerImage">                      <td=
+>                        <table class=3D"wide" cellpadding=3D"0" cellspacin=
+g=3D"0" border=3D"0">                          <tr class=3D"wide" id=3D"hea=
+derimg">                            <td style=3D"background-color: #000048;=
+padding: 24px 32px">                              <img alt=3D"img left" src=
+=3D"https://1ct.es/343/Images/CognizantBrandLogo.png">                     =
+       </td>                                                </tr>          =
+              </table>                      </td>                    </tr> =
+                   <tr>                      <td>  <table width=3D"100%" bo=
+rder=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tr><td><div class=3D"mail-c=
+ontainer"><table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0">=0A=
+                                                    <tr id=3D"SaluationSect=
+ion">=0A=
+                                                       <td class=3D"padding=
+-xl">=0A=
+                                                            Dear Md. Kamran=
+ Uddin (2267152),=0A=
+                                                        </td>=0A=
+                                                    </tr>=0A=
+                                                    <tr id=3D"RequestDetail=
+s">=0A=
+                                                        <td class=3D"paddin=
+g-xl">=0A=
+                                                            <p style=3D"pad=
+ding: 5px 0; color: #4f4f4f;"> =0A=
+The workspace reservation is going to end in 60 minutes for <b>22-May-2024<=
+/b> from 3:00 PM to 5:59 PM.</p> =0A=
+<p> <table align=3D"center" border=3D"1" border-width=3D"1px" borderColor=
+=3D"blue" cellspacing=3D"0" cellpadding=3D"0" style=3D"height: 38px; width:=
+ 100%"><tr><td align=3D"center" class=3D"auto-style2">Seat Number</td><td a=
+lign=3D"center" class=3D"auto-style2">GBI03B008A03A039</td></tr><tr><td ali=
+gn=3D"center" class=3D"auto-style2">Facility</td><td align=3D"center" class=
+=3D"auto-style2">HYD - DLF</td></tr><tr><td align=3D"center" class=3D"auto-=
+style2">Building</td><td align=3D"center" class=3D"auto-style2">HYD DLF Blo=
+ck 1</td></tr><tr><td align=3D"center" class=3D"auto-style2">Floor</td><td =
+align=3D"center" class=3D"auto-style2">8</td></tr><tr><td align=3D"center" =
+class=3D"auto-style2">Wing</td><td align=3D"center" class=3D"auto-style2">A=
+</td></tr><tr><td align=3D"center" class=3D"auto-style2">Module</td><td ali=
+gn=3D"center" class=3D"auto-style2">3</td></tr><tr><td align=3D"center" cla=
+ss=3D"auto-style2">Date | Time</td><td align=3D"center" class=3D"auto-style=
+2">22-May-2024 | 3:00 PM to 5:59 PM</td></tr></table> </p> =0A=
+<p> <br>Kindly ignore, if already done. </p>  =0A=
+<p>  </p> =0A=
+                                </td>=0A=
+	                   </tr>=0A=
+                               <tr id=3D"RequestInformation">=0A=
+                                                     </tr>                 =
+               =0A=
+              <tr id=3D"RequestOtherDetails">                              =
+   =0A=
+ </tr>=0A=
+                                                    <tr id=3D"ApprovalMetho=
+ds">=0A=
+	                              </tr>=0A=
+                                                 <tr id=3D"twoWayReplyButto=
+ns"><table style=3D"width: 100%; border-collapse:collapse;"><tbody style=3D=
+"padding: 0 10px;"><tr><td width=3D"50%" style=3D"background:#3E4C51;border=
+-right:1px solid #d3d3d3;text-align:center;padding:5px 0;color: #fafafa"><a=
+ style=3D"color:#fafafa;text-decoration:underline" href=3D"mailto:1CommEmai=
+lPRD@cognizant.com?subject=3DFlexi seat checked out successfully [zdh6xfun]=
+&amp;body=3DCheckout">Check Out</a></></></></> </tr>=0A=
+                                                    <tr id=3D"valedictionSe=
+ction">=0A=
+                                                        <td class=3D"paddin=
+g-xl">=0A=
+                                                            <p>=0A=
+                                                             <br> =0A=
+                                                                Regards,=0A=
+                                                             <br> My Worksp=
+ace Team.=0A=
+                                                            </p>=0A=
+                                                        </td>=0A=
+                                                    </tr>=0A=
+                                                </table></div></td></tr></t=
+able></td></tr><tr id=3D"AutoGeneratedMailTwoWay">                      <td=
+>                        <table width=3D"100%" border=3D"0" cellspacing=3D"=
+0" cellpadding=3D"0">                          <tr>                        =
+    <td class=3D"psnote">                              <p>** Please do not =
+change the subject line while replying to the email. **</p>                =
+            </td>                          </tr>                          <=
+!-- <tr style=3D"height:10px;"></tr> -->                          <tr id=3D=
+"mobilityPromo">                            <td style=3D"text-align: center=
+;">                              <a target=3D"_blank" href=3D"https://oneco=
+gnizant.cognizant.com/">                                <img style=3D"width=
+: 90%;" alt=3D"img right" src=3D"https://1ct.es/343/Images/approvals.png"> =
+                             </a>                            </td>         =
+                 </tr>                          <!-- <tr style=3D"height:10=
+px;"></tr> -->                        </table>                      </td>  =
+                  </tr><tr id=3D"footerImage">  <table class=3D"wide" borde=
+r=3D"0" cellspacing=3D"0" cellpadding=3D"0">  <tr>  <td class=3D"foot-img1"=
+>  <p style=3D"color: #000048;margin: 12px 0;font-size: 14px; padding-top:1=
+2px;">  <span>&copy;</span>  2024 Cognizant. All Rights Reserved. &nbsp; | =
+&nbsp; <span>IT</span>  </p>  </td>  <td>  <img src=3D"https://1ct.es/343/I=
+mages/footerImageTemplate2.jpg"></td></tr></table></tr></table>
+                </center>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+
