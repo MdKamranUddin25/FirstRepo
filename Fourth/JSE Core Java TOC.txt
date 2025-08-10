@@ -1,0 +1,20 @@
+Topics to be Covered : 
+
+1 Introduction to Java
+2 Classes and Objects
+3 Methods, Encapsulation, and Conditionals
+4 Data Manipulation and Inheritance
+5 Encapsulation, Polymorphism, and Abstraction
+6 Interfaces, Lambda Expressions, Collections, and Generics
+7 Inheritance, Interfaces, Exceptions, and Deployment
+8 Date/Time API, I/O and File I/O (NIO.2), and Concurrency
+9 Concurrency, Parallelism, The JDBC API, and Localization
+ 
+JDBC:
+Understand various database drivers.
+Driver interface
+Connection interface
+Statement interface
+PreparedStatement interface
+CallableStatement interface
+ResultSet interface
