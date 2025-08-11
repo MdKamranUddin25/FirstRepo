@@ -1,0 +1,28 @@
+			Domain				    Percentage 
+
+
+Domain 1: Responsible Al					7%
+
+Domain 2: GitHub Copilot plans and features			31%
+
+Domain 3: How GitHub Copilot works and handles data		15%
+
+Domain 4: Prompt crafting and Prompt engineering		9%
+
+Domain 5: Developer use cases for Al				14%
+
+Domain 6: Testing with GitHub Copilot				9%
+
+Domain 7: Privacy fundamentals and context exclusions		15%
+
+
+References : 
+
+
+1. Basics : https://www.youtube.com/live/6D0iOzEc_QE?si=E7l-w0ejzhsuekmX
+
+2. Plans & Features : https://www.youtube.com/live/uOWu0swjC_M?si=Scz26FRUKd8OwHet
+
+3. Study Guide : https://assets.ctfassets.net/wfutmusr1t3h/3i7ISEUsTLBgOGrWrML07y/dd586e2b2b607988e2679ed8cce36a76/github-copilot-exam-preparation-study-guide.pdf
+
+4. Bootcamp Link : https://cognizant.kpoint.com/web/videos/gcc-e19bc843-7f7b-4782-9fa8-4e936a6a4bc7?vsrc=shm
