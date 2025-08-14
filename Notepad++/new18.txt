@@ -1,0 +1,23 @@
+empList ->exp, bonus
+another list with employess exp greater than 10
+bonus of 10%
+
+empList=empList.stream().filter(e->e.getExp()>10).map(e->e.getBonus()+10%).collect(Collectors.toList());
+
+empId = 
+
+20ms via hr, fin,
+
+
+different endpoints
+
+@getmapping(value=
+
+@request body
+
+empl table
+id, age, exp whole,
+years of experience
+
+select count(*) from empl groupby(exp)
+

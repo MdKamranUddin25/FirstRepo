@@ -1,0 +1,57 @@
+Which attack can be used to exploit an application's backend database by inputting specially manipulated queries?
+sql injection
+
+In which case should you change the default passwords of an application framework?
+always
+
+Which is the MOST secure way to defend against deserialization attacks?
+never accept serialized objects from untrusted sources
+
+True or False: You should worry about a vulnerability in a third-party component your are using only when it is reported on a major news site.
+false
+
+True or False: It is best to implement your own crypto operations rather than rely on existing cryptographic libraries.
+false
+
+True or False: It is acceptable to leave an admin debugging page online as long as there are no links to it in your application.
+false
+
+In which vulnerability does an application expose a reference to an internal object such as a file, directory, object ID, or credential?
+insecure direct object reference
+
+Which of the following information should ΝΟΤ be included in a log entry?
+personal information
+
+Which of the following is NOT part of a strong authentication and session management system?
+Escaping all user input on a user profile page
+
+Which of the following BEST describes when you should treat cookies as untrusted input?
+always
+
+True or False: Privacy requirements are addressed in legal policies, terms, and conditions only.
+false
+
+True or False: Performing input validation on the client using JavaScript filters makes your code safe.
+false
+
+Which of the following is NOT part of the threat modeling process?
+Choose encryption libraries and algorithms.
+
+True or False: Although cryptography does not eliminate security issues, it does make them more manageable by reducing the task of protecting a large amount of data to a matter of protecting a relatively small key.
+true
+
+Which BEST describes when you should check third-party libraries for vulnerabilities?
+on a regular basis
+
+Which of the following is a risk associated with failing to enable the HttpOnly flag on an application's session ID artifact?
+Cookies being stolen using XSS
+
+True or False: You do NOT need to patch third-party libraries once the code is copied into your repository.
+false
+
+Which of the following is NOT a logging and monitoring best practice?
+Store logs in only one location.
+
+Which security mechanism is the LEAST effective against common web application attacks?
+blocklisting
+

@@ -1,0 +1,73 @@
+Adhering to coding standards, procedures, and techniques.  --removed
+Testing source code and debugging code. --removed
+
+
+Analyzing and documenting issues, recommending solutions, and initiating corrective action. 
+
+
+Analyzing the issues which come during UAT testing and documenting the same for tracking purpose along with recommending solutions to the seniors in the team and initiating corrective action for resolving those issues. 
+
+
+can proceed with delhi consulate but travelling has to be bear by the associate
+
+all the things are fine in the letter and reframing points are in progress
+
+the letter date can be 1 or 2 days old, not a problem
+
+manager sign have taken from snipping tool and pasted
+
+office address confirmation in progress
+
+For experience letter, reach out to the previous company HR or Separation Portal. If they have not provided you can process with your previous company supervisor/  Team Lead  affidavit( with 20rs stamp paper with notary public sign).
+
+In my case, currently there was no onsite opportunity in my project as of now so my Manager didn't put up LCA pointer, but in the call I suppose they mentioned that you can update Cognizant work address as your work location , in that case no LCA process needs to be done for now and my application was successfully submitted for Petition, Later on when there is actual opportunity , Amendments can be done in the work location by different process , But if you are going to be deployed in that project as soon as you get the Visa then LCA process is mandatory. This is my understanding, Correct me if I'm wrong, It's my first applying for the same.
+
+Notice must be given to U.S. workers on or within 30 days before the date the employer files the Labor Condition Application (LCA) (Form ETA 9035 and/or ETA 9035E) with the Department of Labor. This notice must include:
+
+The number of H-1B nonimmigrants the employer is seeking to employ;
+The occupational classifications in which the H-1B nonimmigrants will be employed;
+The wages offered;
+The period of employment;
+The locations at which the H-1B nonimmigrants will be employed; and
+The following statement: “Complaints alleging misrepresentation of material facts in the labor condition application and/or failure to comply with the terms of the labor condition application may be filed with any office of the Wage and Hour Division of the United States Department of Labor.”
+
+Just for info,
+These are the direct points,
+ 
+1) first he need to send confirmation as Client approved to post notice and please provide LCA notice to GM
+2) once GM send LCA notice to your onsite manager then that notice should posted in client place 
+3) once client posted notice then onsite manager should inform to mobility team as they posted.`
+ 
+The 3rd step is pointer notice confirmation, as i know based on my case process.
+
+Step 4: Onsite Manager Need to Send an email on the same email chain after the Notice is kept posted for 15 Working days confirming few information - 
+               i.   Client Name and full worksite address(es); 
+               ii.  The month/day/year the notice remains posted; and 
+               iii. Mention the two places at the client worksite location(s) where the notice
+			   
+Most people don't receive notification regarding the LCA approval. Kindly check two things
+If the LCA details are reflecting in the visa request app
+If there is a petition filing row added below the h1b nomination row in the visa request app
+Else, you can get the LCA number from the Cognizant's LCA site and then check it in the DOL website. Hope this helps.
+
+
+26 mangoes bought
+
+
+Upcoming agenda for CALIBER 2024
+
+ 
+
+1) Co-Pilot Week (On-demand videos 29th April Onwards) - Click here to launch.
+
+2) Technical Webinars (7th May- 10th May) - Click here to launch.
+
+3) Prompt-a-thon - Details on registrations & schedule for Prompt-a-thon to be shared soon.
+
+4) Hackathon (29th April onwards) – Register here as a team.
+
+5) Global ARB Certification Drive - Associates registering for the Global ARB certification drive must complete the nominated certification by 15th June  to receive a free exam voucher and will stand to win an exciting gift voucher from Microsoft- Register Here
+
+ 
+
+Visit the official Caliber 2024 Be.Cognizant page for more details. Please write to MicrosoftAcademy@cognizant.com for any questions.

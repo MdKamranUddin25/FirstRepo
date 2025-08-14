@@ -1,0 +1,23 @@
+
+LEARNING ACTIVITY PROGRESS DETAIL
+SE JAVA MICROSOFT ADVANCED WEB ANGULAR CERTIFICATION PROGRAM - DAY 2
+ 
+This ILT will help the associates understand At the end of this intermediate-level program
+Introduction
+Angular Features
+Angular Improvements upto version 11
+Angular CLI
+Angular Common Topic
+Angular Components and templates
+Angular Lifecycle Hook
+Basic, Common, Domain
+Component Interaction and Data Binding
+DI, Directives
+Lazy Loading , Lifecycle Hooks, Routing, Operator, Pipes, RxJS, Service
+Structural directives
+TypeScript, TypeScript Features
+Unit Testing, Scenarios - Component, service, API call, Pipe, directives
+Web workers
+Differential loading
+
+This ILT will help the associates understand At the end of this Basic -level program. TOC are :Introduction to Java2 Classes and Objects3 Methods, Encapsulation, and Conditionals4 Data Manipulation and Inheritance5 Encapsulation, Polymorphism, and Abstraction6 Interfaces, Lambda Expressions, Collections, and Generics7 Inheritance, Interfaces, Exceptions, and Deployment8 Date/Time API, I/O and File I/O (NIO.2), and Concurrency9 Concurrency, Parallelism, The JDBC API, and LocalizationJDBC:Understand various database drivers.Driver interfaceConnection interfaceStatement interfacePreparedStatement interfaceCallableStatement interfaceResultSet interface

@@ -1,0 +1,114 @@
+https://docs.aws.amazon.com/lambda/latest/dg/java-package.html
+ 
+https://aws.amazon.com/what-is/low-code/
+ 
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+
+unzip awscliv2.zip
+
+sudo ./aws/install
+ 
+V, Sangeetha (Cognizant) no longer has access to the chat.
+
+ 
+Ramdasi, Ashutosh (Cognizant) no longer has access to the chat.
+
+ 
+Ramdasi, Ashutosh (Cognizant) has temporarily joined the chat.
+
+ 
+V, Sangeetha (Cognizant) has temporarily joined the chat.
+
+ 
+Please provide the feedback for today's session using the below link: https://forms.office.com/r/DJtC2ueZvd
+Please fill out this form
+A post on Microsoft Forms provided by: forms.office.com
+ 
+https://github.com/awsdocs/aws-lambda-developer-guide/blob/main/sample-apps/java-basic/README.md
+ 
+aws s3 mv s3://bucket1/key/to/folder/ s3://bucket2/key/to/folder2 --recursive
+ 
+Navya, Kodamanchili (Cognizant) has temporarily joined the chat.
+
+ 
+Verma, Ramraj (Cognizant) no longer has access to the chat.
+
+ 
+import com.amazonaws.services.lambda.runtime.Context;
+ 
+public class LambdaMethodHandler {
+
+    public String handleRequest(String input, Context context) {
+
+        context.getLogger().log("Input: " + input);
+
+        return "Hello World - " + input;
+
+    }
+
+}
+ 
+Unable to locate credentials
+ 
+Chand, Rohit (Cognizant) no longer has access to the chat.
+
+ 
+https://repost.aws/knowledge-center/s3-locate-credentials-error
+Resolve "Unable to locate credentials" error in Amazon S3
+When I try to use the AWS Command Line Interface (AWS CLI) to access my Amazon Simple Storage Service (Amazon S3) bucket, I get an error. 
+ 
+https://docs.aws.amazon.com/lambda/latest/dg/getting-started.html
+ 
+Please provide the feedback for today's session using the below link: https://forms.office.com/r/DJtC2ueZvd
+Please fill out this form
+A post on Microsoft Forms provided by: forms.office.com
+ 
+Dear Participant,
+Kindly take a few minutes to provide your feedback of today session.
+StackRoute team 
+(An NIIT venture)
+
+ 
+Kumar, Gaurav (Cognizant) no longer has access to the chat.
+
+ 
+https://aws.amazon.com/architecture/well-architected/?wa-lens-whitepapers.sort-by=item.additionalFields.sortDate&wa-lens-whitepapers.sort-order=desc&wa-guidance-whitepapers.sort-by=item.additionalFields.sortDate&wa-guidance-whitepapers.sort-order=desc
+ 
+ 
+https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html
+
+
+Advantages based on points and diagrams (aws sites)
+3 or 4 services that we have covered
+templatised deployment, cloud formation templates, terraform
+encryption at rest and in transit
+
+https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-guide/resources.html
+ 
+https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/get-started-with-automated-portfolio-discovery.html
+ 
+ 
+sessions will be available till 15th october, download option will be enabled
+mail to kavya for any queries
+ 
+ 
+Operational Excellence
+Understand and clarify requirements with the client as well as Highlight any potential risks within time.
+Zero Post Delivery Defects
+
+Stakeholder Satisfaction
+Always striving to work at the best level and providing positive impact to the client through our development and enhancements.
+Zero Escalations
+
+Personal Excellence
+Always ready to Upskill and Learn new things for delivering better to the client. Complete all Mandatory learnings, timesheets and SkillUp goals without default.
+100% Learning and Zero Negligence
+
+Delivery Excellence
+Complete all the assigned stories along with Team reviews. Always ready to take up the client requirements and deliver them on time.
+Zero number of defects / stories carried forward to future Sprint
+
+Innovation
+Continuous improvement (process/code) suggested by self/team
+Contribute to hackathons, Project Improvements
+

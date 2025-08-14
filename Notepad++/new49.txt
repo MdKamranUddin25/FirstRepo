@@ -1,0 +1,23 @@
+Productivity--
+Always focused on completing the user stories assigned within the SLA along with code review and proper testing
+
+Design Development--
+Working on the Design Documenting of the Requirements assigned as well as the Development. Using all the essential tools and software's for proceeding towards development.
+
+Process Adherence--
+Always following the best practices for coding in the development tasks and getting reviewed by fellow team mates and team lead. Always aiming to complete all the tasks with regressive testing before raising the merge request.
+
+Contribution to Technology Thought Leadership--
+Have given inputs on the design thinking for the new requirements assigned.
+
+Productivity--
+Always focused on completing the user stories assigned within the SLA along with code review and proper testing
+
+Design Development--
+Working on the Design Documenting of the Requirements assigned as well as the Development. Using all the essential tools and software's for proceeding towards development.
+
+Contribution to Technology Thought Leadership--
+Have done the analysis and design for a new project requirement in multiple applications.
+
+Customer Satisfaction--
+Working on the client deliverables and Always following the best practices for coding in the development tasks and getting reviewed by fellow team mates and team lead. Always aiming to complete all the tasks with regressive testing before raising the merge request.

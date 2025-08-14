@@ -1,0 +1,1181 @@
+Spring Boot and Microservices
+-------------------------------------
+Spring Boot is a spring framework module that offers auto-configuration and thereby provides RAD - Rapid Application Development
+Spring Boot also has embedded servers
+
+auto-configuration->what, how and why
+auto-config-------->Convention over coding...!
+
+@SpringBootApplication    =    @Configuration
+							   @ComponentScan
+							   @EnableAutoConfig
+							   @PropertySource
+							   
+Spring Starter Project can be created via
+	1.STS Starter Project Wizard
+	2.SpringInitializr -> http://start.spring.io
+	3.Spring Boot CLI
+	
+@SpringBootApplication
+public class MyApplication{
+	public static void main(String args[]){
+		SpringApplication.run(MyApplication.class);
+		/*
+		*ApplicationContext is instantiated
+		*Context initialization like component scan, auto-config, etc
+		*Invoke all Spring Runners (if any)
+		*Start the embedded server (if any)
+		*Once Server is shut down, the context is destroyed and the app terminates
+		*/
+	}
+}
+
+SpringRunner
+	is any class that implements CommandLineRunner or ApplicationRunner
+	
+Assignment 1-
+Develop a rest-api on Spring Boot 3.0
+To facilitate the CRUD operation on Contact Entity
+Contact Entity has contactId, fullName, mailId, dateOfBirth as fields
+Spring Data JPA for ORM
+Validation framework for Server Side Validations
+Use Lombok if available
+
+@Query("select c from Contact c where c.dob between :startingDate and :endingDate")
+List<Contact> findByRange(String startingDate, String endingDate)
+
+no need to put annotation in repository interface
+
+employeeDAO class -> employeeService
+
+interface is very important as it maintains a contract between the controller and service
+
+@responsebody tells the controller that the action methods inside the controller wont provide views, it will return the data as the response body
+
+put and patch both mean update
+patch is a small update, put is update at the object level
+a patch request will depend on path variable for modifying one or two variable, like updating status of a service ticket
+
+spring profiles, spring security, spring testing
+
+Micro-services
+-------------------------------------
+
+Database 		<------------> 			Application[logic + UI]			<------------->		EndUser
+
+A Webservice is any method that can be invoked through a request, the parameter if any will be passed as request parameters or request body and the result is received through a response 			
+web services were introduced because it encapsulates logic for the different types of user interfaces
+
+Persistence Layer					Middleware					UI/UX
+
+																Java-Swing-Standalone-App		<--->  EndUser
+																Java-SpringWebMVC-App			<--->  EndUser
+Database		<------------>		Webservice	<------------>
+																Java-Android-Mobile-App			<--->  EndUser
+																JavaScript-Angular-SPA			<--->  EndUser
+																
+Web-Services	are of two ways to build:
+	SOAP Web Services
+	REST-ful Web Services / REST api
+	
+The approach of building these middleware as a single unit of deployment is called Monolithical approach. All the modules of an application including all the entities, services, controllers are housed together in a single deployment unit.
+
+This approach has three main limitations-
+(a) lack of Scalability
+(b) lack of Interoperability
+(c) lack of Adaptability
+
+Scalability is to make application available to maximum nunmber of users in a given point of time 
+Interoperability is developing application in different languages
+Adaptability is to adapt to certain changes or additions
+
+Micro-services is an ecosystem of isolated independent web-services aimed at a single application that can correlate data and operations
+
+(+) As the services are isolated into individual deployments, independent scaling is possible
+(+) As the services are independent, each of them can be of any technology
+(+) As and a new services has to be added to the ecosystem, the new service need not comply with the technologies of the existing services and can independently adapt to new standards and technologies
+
+Challenges to Build a Microservices Ecosystem
+(-) Decomposition - how many microservices are need for the application
+(-) Inter-Service-Communication - how to identify the service for exchange of information
+(-) Monitoring and Tuning - for monitoring the services
+(-) Distributed Transactions - if one operation fails, all the other operations have to be rolled back residing in diff microservices
+(-) Distributed Tracing - if something went wrong, then debugging is to start at which microservices
+
+Micro-Services Design Patterns
+-------------------------------------------
+
+Decomposition Desing Patterns-
+	Decomposition by Domain
+		Decomposing a monolithic application into a microservice. We can identify the modules of a monoliothic application and consider each module as a microservice.
+		Based on the anticipated workload, further microservices can be merged or split.
+		We will decompose the budgetTackingApp into 3 microservices
+			(a)Profiles-Service
+			(b)Transactions-Service
+			(c)Statement-Service
+			
+	Decomposition by Sub-Domain
+		Identify the god-classes (classes that appear in most of the microservices)
+		Define their bounded-context and avoid redundancy, consider an employee having personal details needed by the HR department and the finance details needed by the finance department, so each of these is a bounded context
+		
+Database Design Patterns-
+	Shared Database Pattern
+		Having a single DB for all microservices in brown field apps (an application already existing and enhancements happening)
+		
+	Database Per Service Pattern
+		Each microservice has its own database in all green field apps (an application constructed from scratch)
+		
+	CQRS Pattern
+		DML and DDL operations are handled separately
+		
+	SAGA Pattern
+		To handle distributed transactions across microservices
+		
+Integration Design Patterns-
+	API Gateway Pattern
+	Aggregation Pattern
+	Client Side Component Pattern
+	
+Observation Design Patterns-
+	Log Aggregation Design Pattern
+	Distributed Tracing Design Pattern
+	
+Cross-Cutting Design Patterns-
+	Discovery Service Pattern
+	Load Balancer Design Pattern
+	External Configuration Design Pattern
+	Circuit Breaker Design Pattern
+	
+	Discovery Service Pattern
+		It solves the problem of inter service communication
+		microservices urls are dynamic
+		it is a microservice running independently
+		each microservice will register its address with discovery service
+		when one microservice wants to communicate with another microservice, it will ask to discovery service for the address and then connect
+	
+		discovery-service
+			|
+			|-all microservices will register their address with discovery-service
+			|-the address are retireved from here by the needy microservices
+			
+	Data Aggregation Pattern
+		Aggregation is about designing a microservice that can collect info from other microservices, analyze and aggregate the data and pass the aggregagted data to the client, saving the client from making multiple requests for different parts of the data
+		
+		going to a restaurant and ordering biryani, we get all the other things like salad, raita all together with biryani
+		similarly, a user logged in bank website, he is asking for statement, then all the details of the transactions should come together
+		
+		the 'statement-microservice' is an example for this pattern
+		
+	Client Side Component Pattern
+		Each component of the UI/UX application can place their individual requests to different microservices parallely and should be receiving the responses as well parallely
+		
+		example-one client will have 3 different components, it will have 3 diff requests and the responses will come parallely with their own time
+		
+	Distributed Tracing Design Pattern
+		Tracing - Service, this is a separate microservice maintained centrally
+		
+		Whenever a request comes to any of the microservices in our app-ecosystem, that request is given a unique ID and is reported to the Tracing-Service every time, the request goes from one service to another service until the final response is sent to the client. And the tracing-service will record all the track of this request along with any performance metrics and log info attached with the request
+		
+	Load Balancing Design Pattern
+		Load balancing means mapping the incoming requests to multiple instances of the same microservice based on some (round-robin) algorithm
+		tools like Ribbon/Spring Cloud Load Balancer, etc are used to perform load balancing
+		
+	API Gateway Design Pattern
+		it is like a receptionist in a office
+		gateway-service <------------(all reqs)----------------any-client
+			|
+			|->forward that request to the respective microservice
+			|<-receives the response from that microservice
+			|
+			|--------------------------------(response)-------->client
+			
+	Circuit-Breaker Design Pattern
+		circuit-breaker-threshold, time limit or subsequent number of requests
+		
+		when the first request could not reach a specific microservice (due to its downtime), a fallback mechanism is triggered
+		After that, the circuit is made open (broken), means that the fallback mechanism will address all the other consecutive request targeting that microservice
+		when a request to that same microservice is inbound after the threshold, then the circuit is half-closed, means that a new attempt to reach the microservice is made,
+				|-on successful contact, the circuit is closed
+				|-or if that microservice is still unavailable, the circuit continues to be open
+				
+		tools like  Resilience4j, etc, are used for the purpose
+		
+		open- circuit not working
+		closed- circuit working
+		half-open-neither open nor closed, it is going to test whether the microservice will be able to reach or not for communication
+		
+		External-Configuration Design Pattern
+			repository(github) [contains a list of all config of all microservices]
+				|
+				|
+			config-service
+					|<-when ever a microservice has to start, it will first send a fetch req to the config-service
+					|
+					|the config-service will check for the config file in the repo
+					|
+					|<-the config file is passed to the microservice by the config-service
+					|
+					|<-when ever the config files are modified and pushed into the repo, the config service will automatically notify all the respective microservices and the microservices will receive the updated config-file and restart all by themselves
+					
+Case Study Budget Tracking App
+1.We need to have different consumer or account holders to register
+2.Each accountHolder must be able to record his spending or earning transactions
+3.Generate a statement periodically displaying the total spending, the total earning and the balance
+
+Decomposing by domain
+	budgetTracking
+		profiles service
+		txns service
+		statement service
+		
+Decomposing by sub-domain
+	budgetTracking
+		profiles service
+			AccountHolder Entity
+				Long ahId
+				String fullName
+				String mobile
+				String mailId
+				
+		txns service
+			AccountHolder Entity
+				Long ahId
+				Double currentBalance
+				Set<Txn> txns
+				
+			Txn Entity
+				Long txnId
+				String header
+				Double amount
+				TxnType type
+				LocalDate txnDate
+				AccountHolder holder
+				
+		statement service
+			AccountHolder Model
+				Long ahId
+				String fullName
+				String mobile
+				String mailId
+				Double currentBalance
+				
+			Txn Model
+				Long txnId
+				String header
+				Double amount
+				TxnType type
+				LocalDate txnDate
+				
+			Statement Model
+				LocalDate start
+				LocalDate end
+				AccountHolder profile
+				Set<txn> txns
+				totalCredit
+				TotalDebit
+				statementBalance
+				
+A class that represents a domain object, anything that is related to project domain but not a component. domain is the area for which the project is being created like healthcare, banking, etc
+
+Connections, threads, etc are all components
+person, etc are all domain objects
+
+if the domain object is mapped to a table, then it is an entity
+if the domain object is not mapped to a table, then it is a model
+
+statement service acts an an Aggregator
+data will be stored in profiles and txns service
+
+Aggregator Pattern-
+	req for statement--------------->statement-service-------------->profile service
+													<------account holder data------
+													-------------------------->txns service
+													<--------list of txns-----------
+										does the composition and computation
+						<--------statement obj---------into statement obj
+
+Zuul-used for API Gateway
+
+Discovery Service Design Pattern-
+
+				discovery-service
+				(spring cloud netflix eureka discovery service)
+						||
+					registration of urls
+					and retrieval of urls
+						||
+			-----------------------------------------
+			|					|					|
+		profile-service		txns-service	statement-service	
+		
+Api Gateway Pattern Design Pattern-
+
+		Android App/Angular App/ReactJS App
+			||
+		api-gateway
+		(spring cloud api gateway)
+		    |
+			|
+			|<----> discovery-service
+				|	(netflix eureka discovery service)
+				|			||
+				|	registration of urls 
+				|	and retrival of urls
+				|			||
+				------------------------------------
+				|				|				   |
+		profile-service		txns-service	statement-service
+		
+sleuth-tracking the request and giving request id, request and response data
+prometheus-capture the performance metrics
+zipkin job is to collect info and store it, info related to all api's
+
+Distributed Tracing-
+
+		Android App/Angular App/ReactJS App
+			||
+		api-gateway
+		(spring cloud api gateway)
+		    |
+			|
+			|<----> discovery-service
+				|	(netflix eureka discovery service)
+				|			||
+				|	registration of urls 
+				|	and retrival of urls
+				|			||
+				------------------------------------
+				|				|				   |
+		profile-service		txns-service	statement-service
+		   (sleuth)			  (sleuth)			(sleuth)
+		       |				  |					|
+			   --------------------------------------
+								||
+					distributed tracing service
+						  (zipkin-server)
+
+External Configuration-
+
+		Android App/Angular App/ReactJS App
+			||
+		api-gateway
+		(spring cloud api gateway)
+		    |
+			|
+			|<----> discovery-service
+				|	(netflix eureka discovery service)
+				|			||
+				|	registration of urls 
+				|	and retrival of urls
+				|			||
+				------------------------------------
+				|				|				   |
+		profile-service		txns-service	statement-service
+		   (sleuth)			  (sleuth)			(sleuth)
+		       |				  |					|
+			   ---------------------------------------
+							||						||
+				distributed tracing service			configuration-service
+					  (zipkin-server)			  (spring cloud config service)
+														|
+														|
+														git-repo
+															profile.properties
+															txns.properties
+															statement.properties
+															gateway.properties
+															
+open feign is for communicating to another service
+
+all account holder to register, retrieve accountholders, for transaction to be recorded, an account holder exists or not
+
+open feign is a framework that generates inter service communication automatically
+
+open feign-
+communication between 2 webservices, the methods are very lot
+to eliminate the boiler plate code, we have open feign
+we will have to enable feign clients on the main Spring Boot application class
+
+for transaction management, we use transactional annotation for persisting to db or rolling back from db
+
+Design Algorithm-saved in snipping tool snapshot
+POST call for adding a transaction->incoming transaction contains accountHolder id or not->if accountHolder id is not there then throw an exception->now accountHolder is present in 2 db's which are profiles db and transaction db->first check will be if the account with the given accountHolder id exists in the transaction db or not->if it exists then record the transaction->if not exists then the transaction db doesnt have that data but it may be present in the profiles db->so we do an inter service communication call to the profiles microservice from transaction microservice->if the accountHolder id is present in the profiles db then record the accountHolder in transaction db and record the transaction object->if not present in the profiles db then throw an exception
+
+fork and join
+
+discovery client-register to eureka server and fetch list of available microservices
+address of one microservice to be provided automatically without hardcoding urls
+
+client will send the request to gateway, which will call to microservices
+
+zuul is not getting used nowadays for api gateway
+
+gateway will help in only single url to communicate with all the other microservices
+
+zipkin for distributed tracing, alternate is telemetry
+
+for tracing the requests, zipkin server is used
+
+External Configuration Steps--
+git init
+git add .
+git commit -m "all configs"
+
+from resources, delete application properties file
+and put bootstrap properties file
+
+--------------------------------------------------------------------
+
+Spring Boot Microservices
+-------------------------
+
+Objectives
+	Spring Framework - Spring IoC, Spring Boot, REST api using Spring Boot
+	Microservices Design Patterns
+	Use Spring Boot and Spring Cloud to implement Microservices
+	
+Pre-requisites
+	Java SE
+	
+Lab Setup
+	JDK 8/JDK 17
+	Spring Boot 2.x/Spring Boot 3.x
+	RDBMS (optional)
+	STS IDE
+	
+Spring Framework
+	Framework offers standard template based application structure. They as well improve productivity
+	
+	Spring Modules
+		Spring Core is a basic fundamental module needed for all other modules to work
+		Spring Beans offers Dependency Injection via Inversion of Control through BeanFactory
+		Spring Context offers Dependency Injection via Inversion of Control through ApplicationContext
+		Spring SpEL Spring Expression Language used to map externalized configs
+		Spring Web is used to develop web-mvc and rest-api
+		Spring Data JDBC is used to dynamically generate JDBC based repositories (DAO)
+		Spring Data JPA is used to dynamically generate JPA based repositories (DAO)
+		Spring Data NoSQL is used to dynamically generate repositories (DAO) for NoSQL databases
+		Spring Test is used to write test cases for classes used on a spring framework app
+		Spring Security offers authorization and authentication solution for spring based app
+		Spring Batch used for developing batch processing apps
+		Spring AOP is used for developing Aspect Oriented Programming on Spring App
+		Spring Profile is used to manage multiple profiles for app lifecycle stages
+		Spring Boot offers auto-config and enable Rapid Application Development
+		Spring Cloud provides tools for microservices architecture
+		
+	Dependency Injection
+	--------------------
+		a unit of an app is said to functionally depend on another unit of the app, 
+		if the first needs to invoke the second to complete an operation/task
+		
+		a Controller is functionally dependent on a service
+		a Service is functionally dependent on a DAO/Repo
+		
+		interface EmployeeRepo{
+			Employee add(Employee emp);
+		}
+		
+		class EmployeeRepoJdbcImpl implements EmployeeRepo{
+			public Employee add(Employee emp){
+			//write jdbc code
+			return emp;
+			}
+		}
+		
+		class EmployeeRepoJpaImpl implements EmployeeRepo{
+			public Employee add(Employee emp){
+			//write jpa code
+			return emp;
+			}
+		}
+		
+		interface EmployeeService{
+			Employee validateAndSave(Employee emp);
+		}
+		
+		class EmployeeServiceImpl implements EmployeeService{
+			private EmployeeRepo repo;
+			
+			/*public EmployeeServiceImpl(){
+				this.repo=new EmployeeRepoJdbcImpl();
+				this.repo=new EmployeeRepoJpaImpl();
+			}*/
+			
+			public EmployeeServiceImpl(EmployeeRepo repo){
+				this.repo=repo;
+			}
+			
+			public Employee validateAndSave(Employee emp){
+				//write code to validate the emp
+				//if not valid we will raise an exception
+				return repo.add(emp);
+			}
+		}
+		
+	Inversion Of Control
+	--------------------
+		IoC is a software design principle where the object creation and dependency injection 
+		is not done by the app-code but is handed over to a framework-container
+		
+		Component is any class of the app-code, whose object creation and management has to be done by a container.
+				  all services, controllers, repositories, utility classes come under components.
+				  classes like exceptions or models or enitities do not come under components.
+		
+		Bean is an object of a component. An object that is created and managed by a container but not by the app-code is said to be a Bean
+		
+		Container is that class offered by a framework which can create, destroy and manage the lifecycle of objects of a list of classes
+				  that belong to an app code
+				  
+	Inversion Of Control using Spring Framework
+	-------------------------------------------
+		Spring Framework offers two types of containers:
+			BeanFactory				Spring Beans Module
+			ApplicationContext		Spring Context Module
+			
+		ApplicationContext is a little enhanced than BeanFactory
+		
+		ApplicationContext
+			is an interface from Spring Context module and has a variety of implementations 
+			each for a different environment (non-web or web or async pattern...etc)
+			
+		Bean Configuration
+			is a mechanism through which the application informs the list of components to the container
+			
+			Spring allows three ways of Bean Config
+				XML Based Config
+				Annotation Based Config
+				Java Based Config
+				
+			Annotation Based Config
+				@Component("beanIdorBeanName")
+					@Repository
+					@Service
+					@Controller
+					@Advice
+					@RestController
+					@ControllerAdvice
+					@RestControllerAdvice
+					...etc
+					
+				@Configuration
+				@ComponentScan(basePackage)
+				class BeanConfig{
+				
+				}
+				
+				We can provide a bean id or bean name to the above annotations, if we dont provide a bean id or bean name,
+				then the class name in camel case is assigned as the bean name
+				
+				@Autowired, @Qualifier
+					autowiring is to map a field of a bean to another bean
+					
+					Autowiring via Constructor/Constructor Injection
+					
+					class First{
+						private Second second;
+						
+						@Autowired
+						public First(Second second){
+							this.second=second;
+						}
+					}
+					
+					Autowiring via Setter/Setter Injection
+					
+					class First{
+						private Second second;
+						
+						public First(){
+						}
+						
+						@Autowired
+						public void setSecond(Second second){
+							this.second=second;
+						}
+					}
+					
+					Autowiring via Field/Field Injection
+					
+					class First{
+					
+						@Autowired
+						private Second second;
+						
+					}
+					
+					Autowiring can be done by two main methods
+					
+					a)autowiring by type  a bean is mapped to a field of another bean, provided their data types match
+					b)autowiring by name  a bean is mapped to a field of another bean, provided their names match
+					
+			
+			Java Based Config
+
+				@Configuration
+				@ComponentScan(basePackage)
+				class BeanConfig{
+				
+					@Bean
+					Scanner scan(){	//the method name is taken as bean name
+						return new Scanner(System.in)
+					}
+				}
+				
+			Bean Scope
+			
+				@Scope		singleton | prototype | request | session | global-session
+				
+				singleton is bean is created only for the first time it is requested and shared throughout
+				if we want new bean to be created every time, then we should change to prototype
+				for a web app, creating a new bean for every new request is request
+				for a web app, creating a new bean for every new session is session
+				for a web app, creating a new bean globally on every server reset is global session
+				
+			Externalized Config
+				
+				.properties
+				.yml
+				
+				the provided key-value pairs can be injected into the fields of the components through @Value(spel)
+				
+				@PropertySource(locationOfConfigFile)
+				
+		Spring Boot
+		------------
+			is a module of spring framework that offers Auto-Config thus enabling RAD-Rapid Application Development
+			
+			Each time we develop any application using one or the other spring module like spring data or spring web
+			or spring batch, etc, we will have to do some basic configuration and these configuration are automatically 
+			by spring boot and enable the developer to directly work with an out of the box solution
+			
+			Spring Boot also supports embedded server enabling to develop server less application
+			
+			To create a spring boot application / spring starter project
+			1.STS
+			2.Spring Boot CLI
+			3.start.spring.io
+			
+			Spring Boot Starter application uses starter dependency alternate to the regular dependencies of spring modules
+			these starter dependencies have the minimum required configuration for the respective module
+			
+			@SpringBootApplication		//@AutoConfig + @Configuration
+			public class DemoApplication{
+				
+				public static void main(String[] args){
+					SpringApplication.run(DemoApplication.class, args);
+				}
+				
+			}
+			
+			SpringApplication.run
+				1.create an applicationContext
+				2.@AutoConfig enables 
+					@PropertySource(classpath:application.properties)
+					@ComponentScan(the current package of the application class)
+				3.the default config of each spring starter dependency is loaded
+				4.all the Runner classes (if any) are executed
+				5.the embedded server if any is started
+				6.Once the server shuts down, the applicationContext is destroyed and the application terminates
+				
+			Runner classes are those classes that inherit CommandLineRunner
+			
+			We can create as many runner classes as possible and these classes are executed in the alphabetical order of their names, just before 
+			the embedded server gets started
+			
+	Spring Data JPA
+	----------------
+		is a Spring module that provides an automatic dynamic jpa implementation of repositories
+		
+		CrudRepository
+			|<-	JpaRepository<EntityClass,IdType>
+					|<- List<Entity> findAll()
+					|<- Optional<Entity> findById(id)
+					|<- Entity save(entity)
+					|<- void deleteById(id)
+					|<- boolean existsById(id)
+					
+		@Entity
+		public class Employee{
+			@Id
+			@GeneratedValue
+			private Integer empId;
+			private String fullName;
+			private double salary;
+			private LocalDate dateOfJoining;
+			private String emailId;
+			
+			//.....
+		}
+		
+		public interface EmployeeRepo extends JpaRepository<Employee.class,Integer>{
+			List<Employee> findAllByFullName(String fullName);
+			Optional<Employee> findByEmailId(String emailId);
+			
+			@Query("SELECT e from Employee e where e.salary BETWEEN :lowerLimit AND :upperLimit")
+			List<Employee> findAllInSalRange(Double lowerLimit,Double upperLimit);
+		}
+
+		h2db spring properties
+	    ----------------------
+			spring.datasource.url=jdbc:h2:file:./adbdata/hrdb
+            spring.datasource.username=sa
+            spring.datasource.password=password
+			spring.datasource.driverClassName=org.h2.Driver
+			
+            spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+			spring.jpa.properties.hibernate.hbm2ddl.auto=update
+			
+	Assignment 2
+		Develop a Spring Boot application with spring data jpa that
+		a)display a menu of choices for adding/deleting and listing student records
+		b)as the user chooses an option, the application shall execute that option
+		c)and this continues until the user chooses to quit
+		
+		**we cannot assign nullable to primitive variable so we use only wrapper class variable so that null can be assigned
+		
+	*library is like a utility, jwt is used for json web tokens
+	*frameworks are used for application development
+	*specification is a collection of interfaces like jdbc, servlets, hibernate
+	
+	Spring Web Rest Api on Spring Boot
+	----------------------------------
+		REST-api
+			Representational State Transfer
+			
+			this is a web service that offers CRUD operation on resource over http-protocol with xml or json as primary media
+			
+		End-Point per Resource
+		
+		Employee	/emps
+		Department	/depts
+		Asset		/assets
+		
+		path parameter
+		query parameter
+		
+		CRUD Operations are mapped to HttpMethods to differentiate requests coming to the same end-point
+		HttpStatus are used to communicate the result of the request to the client
+		
+		CRUD		Http	End		Request	Response	Success			ClientSideFailure	ServerSideFailure 	
+		Operation	Method	Point 	Body	Body		HttpStatus		HttpStatus			HttpStatus
+		------------------------------------------------------------------------------------------------------
+		RetrieveALL	GET		/emps		NA			emps[].json		200-OK			NA				500-InternalServerError
+		
+		RetrieveONE	GET		/emps/{id}	NA			emp.json		200-OK			404-NotFound	500-InternalServerError
+			
+		Insert		POST	/emps		emp.json	emp.json		201-CREATED		400-BadRequest	500-InternalServerError
+		
+		Update		PUT		/emps/{id}	emp.json	emp.json		202-ACCEPTED	400-BadRequest	500-InternalServerError
+		
+		Delete		DELETE	/emps/{id}	NA			NA				204-NoContent	404-NotFound	500-InternalServerError
+		
+		
+		Spring Web Module
+		-----------------
+			is a module of spring framework that supports web mvc and rest-api application development
+
+			this module offers Single-Front-Controller Architecture
+
+			MVC-Architecture
+
+			Repos<----entities---->Service<--models-->Controllers	<---REQ----Client
+														   |					|
+														   |models				|
+														   |					|
+														  Views ------RESP------| 
+														  
+			Single-Front-Controller-Architecture
+			
+			Repos<----entities---->Service<--models-->Controllers<--models---FrontController	<---REQ----Client
+														   |					|	|						  |
+														   |					|	|models					  |	
+														   |---modelAndView-----|	|						  |	
+																					|						  |
+																				   Views------RESP------------|
+																				   
+			Single-Front-Controller-REST-Api-Architecture
+			
+			Repos<----entities---->Service<--models-->Controllers<--models---FrontController	<---REQ----Client
+														   |												 |
+														   |												 |
+														   |-----model (RESP)--------------------------------|
+																				   
+																				   
+			@RestController	= @Controller(we are creating a class with action methods) + @ResponseBody(directly producing the body for the response)
+
+			@RestControllerAdvice	- creating a global class for exceptions, handle exceptions occuring anywhere in the application
+			
+			@ExceptionHandler	- creating methods for exceptions which we are going to handle
+			
+			@RequestMapping
+				|
+				|<--@GetMapping
+				|<--@PostMapping
+				|<--@PutMapping
+				|<--@DeleteMapping
+			
+			@PathVariable	- path parameter to be injected
+			
+			@RequestBody	- extracting the data from request body
+			
+			@Valid	- validating the data
+			
+			Binding Result	- binding a request body with java object for validation errors
+			
+			Response Entity - response body and http status 
+			
+			Assignment 3
+				Develop a spring boot rest api to perform crud operations on student entity
+				Student
+					admNo		Integer
+					fullName	String
+					fee			Double
+					mailId		String
+					scores[]	Double		//@ElementCollection  @OrderColumn
+					
+	S.O.L.I.D
+	----------
+		Single Responsibility Principle
+			Each software component (Class) shall have one and only one responsibility to ensure that there will be only one reason 
+			to change in the code of that class
+			
+		Open/Close Principle
+			Each software component (Class) shall be closed for modification and open for extensions
+			
+		Liskov Substitution Principle
+			An object of a sub class must be able to replace an object of its super type
+			
+			(all the functions that a super class object does are expected to be done by a sub class object as well
+			
+		Interface Segregation Principle
+			A Client is not to be forced to implement anything that it is not going to use
+			
+		Dependency Inversion Principle
+			A Client is not to depend on concretes but should depend on abstractions
+			
+			interface EmployeeDAO{
+				//...
+			}
+			
+			class EmployeeDAOImpl implements EmployeeDAO{
+			
+			}
+			
+			class EmployeeServiceImpl{
+				//private EmployeeDAOImpl dao=new EmployeeDAOImpl();	//this is wrong
+				private EmployeeDAO dao=new EmployeeDAOImpl();
+			}
+			
+			
+	Microservices
+	--------------
+		Modern App Expectations
+		
+			+Interoperability
+			+Granular Scalability
+			+Scope to implement using enhanced method/techniques
+			+Granular Level Maintainability
+			
+		A monolithic approach does not offer any of the above features
+		
+		A microservice eco system is a group of inter communicating isolated individual api's where each of that API is called a microservice
+		
+		Challenges while adopting to Microservices
+			1.Decomposition
+				converting a monoliothic design into a microservice design
+			2.Integration
+				a.inter-Service-Communication
+				b.distributed transaction
+				c.common url for a client app to talk to the entire ecosystem of microservices
+				d.auto-scaling
+			3.Maintainability
+			4.Monitoring
+			5.Distributed Tracing
+			
+		Microservices Design Patterns
+			Decomposition Design Patterns
+				Decomposition by Domain
+				Decomposition by Sub-Domain
+			Integration Design Patterns
+				Api Gateway Pattern
+				Aggregator Pattern
+				Client Side Component Pattern
+			Database Design Patterns
+				Database Per Service
+				Shared Database
+				Saga Pattern
+				CQRS Pattern
+			Observability Design Patterns
+				Log Aggregator
+				Performance Metrics Aggregator
+				Distributed Tracing
+			Cross Cutting Design Patterns
+				Discovery Service
+				Circuit Breaker
+				External Configuration
+				
+		Case Study
+			BudgetTracker
+				This application is meant to be used by users who wish to track their earnings and spendings. Each user can be called an AccountHolder
+				and has to register and create his/her profile. They will also feed in each transaction they make. The application has to generate a 
+				statement for a given AccountHolder for a given period of time.
+				
+			Decomposition by Domain
+				Domain refers to a particular feature of the application. Each domain can be framed as a isolated microservice offering all 
+				the operations needed for that feature
+				
+				For example: eCommerce
+								Wallet Service
+								Inventory Service
+								Sales Service
+								Order Tracking Service
+								..etc
+								
+							BudgetTracker
+								Profile Service		can be used for registering profiles of the AccountHolders
+								Txn Service			offers CRUD operations on Txn entity
+								Statement Service	generates the statement
+								
+			Decomposition by Sub Domain
+				Sub domain here refers to the bounded context of a model or an entity in reference to the domain. The bounded context defines the usage or God classes without redundancy and in a manner that promotes consistency
+				
+				BudgetTracker
+					Profile-Service
+						AccountHolder	Entity
+							ahId		Long
+							fullName	String
+							mobile		String
+							mailId		String
+							
+						Txn-Service
+							AccountHolder	Entity
+								ahId		Long
+								txns		Set<Txn>
+								currentBal	Double
+								
+							Txn			Entity
+								txnId	Long
+								amount	Double
+								txnDate	LocalDate
+								txnType	CREDIT|DEBIT
+								header 	String
+								holder 	AccountHolder
+								
+						Statement-Service
+							AccountHolder	Model
+								ahId		Long
+								fullName	String
+								mobile		String
+								mailId		String
+								currentBal	Double
+									
+							Txn			Model
+								txnId	Long
+								amount	Double
+								txnDate	LocalDate
+								txnType	CREDIT|DEBIT
+								header 	String
+								
+							Statement		Model
+								holder  	AccountHolder
+								txns		Set<Txn>
+								startDate	LocalDate
+								endDate		LocalDate
+								totalCredit	double
+								totalDebit	double
+								stmtBalance	double
+			
+			Shared Database Pattern
+				Having a single DB for all microservices in brown field apps
+				
+			Database Per Service Pattern
+				Each microservice has its own database in all green field apps
+				
+				BudgetTracker
+					Profile-Service		profileDB on H2DB
+					Txn-Service			txnsDB on H2DB
+					Statement-Service   No-Database
+					
+		Data Aggregation Pattern
+			Aggregation is about designing a microservice that can collect info from other microservices and analyze and
+			aggregate the data and pass the aggregagted data to the client, saving the client from making multiple requests 
+			for different parts of the data
+			
+			the 'statement-microservice' is an example of this pattern
+				
+				CLIENT -----> req for statement ----------->statement-service
+																	|---------------->profile service
+																	|<------------account holder data----
+																	|----------------->txns service
+																	|<-----------list of txns------
+																	|
+														does the composition
+														and computation
+				CLIENT  <------- resp statement obj---- into statement obj
+				
+		Client Side Component Pattern
+			Each component of the UI/UX application can place their individual requests 
+			to different microservices parallely and should be receiving the responses as well parallely
+			
+		Discovery Service Pattern
+			discovery-service
+				|
+				|-all microservices will register their address with discovery-service
+				|-the address are retrieved from here by the needy microservices
+				
+							discovery-service
+							(spring cloud netflix eureka discovery service)
+									|
+								registration of urls
+								and retrieval of urls
+									|
+					---------------------------------
+					|				|				|	
+				profile-service	  txns-service	 statement-service
+				
+		Load Balancing Design Pattern
+			load balancing means mapping the incoming requests to multiple instances of the same microservice based on some (round-robin) algorithm
+			
+			tools like Ribbon/Spring Cloud Load Balancer..etc.., are used to perform load balancing
+			
+		API Gateway Design Pattern
+			
+			gateway-service<------------(all reqs)-----------------any-client
+				|
+				|->forward that request to the respective microservice
+				|<-receives the response from that microservice
+				|
+				|----------------------(response)------------------>client
+				
+			Android App/Angular App/ReactJS App
+				|
+			 api-gateway
+			 (spring cloud api gateway)
+				|
+				|
+				|<----->	discovery-service
+					|		(spring cloud netflix eureka discovery service)
+					|				|
+					|			registration of urls
+					|			and retrieval of urls
+					|				|
+					---------------------------------
+					|				|				|	
+				profile-service	  txns-service	 statement-service
+				
+		Distributed Tracing Design Pattern
+			Tracing-Service
+				Whenever a request comes to any of the microservices in our app ecosystem,
+				that request is given a unique ID and is reported to the Tracing-Service
+				every time, the request goes from one service to another service until 
+				the final response is sent to the client. And the tracing-service will 
+				record all the track of this request along with any performance metrics
+				and log info attached with the request
+				
+				Android App/Angular App/ReactJS App
+				|
+			 api-gateway
+			 (spring cloud api gateway)
+				|
+				|
+				|<----->	discovery-service
+					|		(spring cloud netflix eureka discovery service)
+					|				|
+					|			registration of urls
+					|			and retrieval of urls
+					|				|
+					---------------------------------------
+					|				|				      |	
+				profile-service	  txns-service	      statement-service
+			(discovery-client)	 (discovery-client)	  (discovery-client)
+			(load-balancer)		  (load-balancer)	   (load-balancer)
+				(sleuth)			(sleuth)			(sleuth)
+			(zipkin-client)		 (zipkin-client)		(zipkin-client)
+					|				|					  |
+					---------------------------------------
+									|
+							distributed tracing service
+								(zipkin-server)
+								
+								
+		External-Configuration Design Pattern
+			
+			repository(github) [contains a list of all config files of all microservices]
+				|
+				|
+			config-service
+				|<-when ever a microservice has to start, it will first send a fetch request to the config-service
+				|
+				|the config-service will check for the config file in the repo
+				|
+				|<-the config file is passed to the microservice by the config-service
+				|
+				|<-whenever the config files are modified and pushed into the repo, the config-service
+					will automatically notify all the respective microservices and the microservices 
+					will receive the updated config-file and restart all by themselves
+					
+					
+				Android App/Angular App/ReactJS App
+				|
+			 api-gateway
+			 (spring cloud api gateway)
+				|
+				|
+				|<----->	discovery-service
+					|		(spring cloud netflix eureka discovery service)
+					|				|
+					|			registration of urls
+					|			and retrieval of urls
+					|				|
+					---------------------------------------
+					|				|				      |	
+				profile-service	  txns-service	      statement-service
+			(discovery-client)	 (discovery-client)	  (discovery-client)
+			(load-balancer)		  (load-balancer)	   (load-balancer)
+				(sleuth)			(sleuth)			(sleuth)
+			(zipkin-client)		 (zipkin-client)		(zipkin-client)
+			(config-client)		 (config-client)		(config-client)
+					|				|					  |
+					-------------------------------------------
+									|						  |
+							distributed tracing service		configuration-service
+								(zipkin-server)				(spring cloud config service)
+																|
+																|
+																git-repo
+																	profile.properties
+																	txns.properties
+																	statement.properties
+																	gateway.properties
+																	
+		
+		Child Vaccination Tracker
+		--------------------------
+		1.Each parent must register with (fatherName,motherName,mobile,mailId)
+		2.A parent may have multiple children
+		3.Each child must be registered with (childName,gender,dateOfBirth)
+		4.Each time a child is given a vaccine, we need to record that info as (vaccineName,dateOfAdministration,dosage)
+		5.A child can be administered with multiple vaccines multiple times
+		6.Generate a report of vaccine given to a child given childId
+		7.Generate a report listing all the children who are administered a specific vaccine
+		
+		
+		gateway-service is for external client requests
+		it only routes the requests to the resp microservices
+		
+		first discovery service start, then all other microservices
+		
+		discovery -> config (git client) -> any other microservices (start flow)
+		
+		circuit breaker - to check non availability of any microservice
+		
+		inter service communication - open feign
+		
+		circuit breaker - resilience4j
+		closed (no connect), half open (try to connect), open (connection working) - these are the states
+		
+		cloud aws -> repeat with the cloud -> docker and kubernetes learn -> event based design
+		
+		
+		
+		

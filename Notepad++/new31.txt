@@ -1,0 +1,123 @@
+package com.cts.adb.runners;
+ 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.List;
+import java.util.Scanner;
+ 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.stereotype.Component;
+ 
+import com.cts.adb.model.Contact;
+import com.cts.adb.service.ContactService;
+ 
+@Component
+public class AddressBookRunner implements CommandLineRunner {
+ 
+	@Autowired
+	private Scanner kbScanner;
+	
+	@Autowired
+	private ContactService contactService;
+	
+	@Override
+	public void run(String... args) throws Exception {
+		String cmd = null;
+		
+		while(!"quit".equalsIgnoreCase(cmd)) {
+			System.out.println("Cmd (add/list/delete/quit)? ");
+			cmd = kbScanner.nextLine().toLowerCase();
+			
+			switch(cmd) {
+			case "add": doAdd(); break;
+			case "delete": doDelete(); break;
+			case "list": doList(); break;
+			case "quit":System.out.println("Application Terminated!! "); break;
+			default: System.out.println("Unknown Command");
+			}
+		}
+	}
+ 
+	public void doAdd() {
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+		
+		Contact contact = new Contact();
+		System.out.println("FullName? ");
+		contact.setFullName(kbScanner.nextLine());
+		System.out.println("Mobile: ");
+		contact.setMobileNumber(kbScanner.nextLine());
+		System.out.println("MailId: ");
+		contact.setMeilId(kbScanner.nextLine());
+		System.out.println("Date Of Birth (yyyy-MM-dd): ");
+		contact.setDateOfBith(LocalDate.parse(kbScanner.nextLine(), formatter));
+		
+		contactService.add(contact);
+		System.out.println();
+	}
+	
+	public void doDelete() {
+		System.out.println("ContactId: ");
+		int id = kbScanner.nextInt();
+		contactService.deleteById(id);
+		System.out.println("Contact Deleted!");
+	}
+	
+	public void doList() {
+		List<Contact> contacts = contactService.getAll();
+		
+		if(contacts.isEmpty()) {
+			System.out.println("No contacts recorded as of now");
+		}else {
+			contacts.stream().forEach(System.out::println);
+		}
+	}
+}
+
+
+
+=============================================================================
+
+package com.cts.adb.view;
+
+import java.time.LocalDate;
+import java.util.Scanner;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.stereotype.Component;
+
+import com.cts.adb.service.ContactService;
+
+@Component
+public class ContactView implements CommandLineRunner {
+	
+	@Autowired
+	private ContactService contactService;
+	
+	private LocalDate date;
+	
+	public void run(String... args) throws Exception {
+		System.out.println("Welcome to Address Book Console");
+		System.out.println("Please select the below number options to perform the functions on the Address Book: \n"
+				+ "1.Add Contact \n"
+				+ "2.Delete Contact By Id \n"
+				+ "3.Get Contact By Id \n"
+				+ "4.Get All Contacts");
+		Scanner scan = new Scanner(System.in);
+		System.out.println("What is your Option? ");
+		int option = scan.nextInt();
+		if(option==1) {
+			contactService.add(0,"Raju","1234567890","raju@gmail.com",date);
+		}else if(option==2) {
+			contactService.deleteById(option);
+		}else if(option==3) {
+			contactService.getById(option);
+		}else {
+			contactService.getAll();
+		}
+	}
+
+}
+

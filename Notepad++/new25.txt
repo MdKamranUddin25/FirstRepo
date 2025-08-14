@@ -1,0 +1,48 @@
+auth guard
+route guard
+hash error
+validations
+interceptor
+
+https://onecognizantbcazrapps.cognizant.com/1989/HTML/CCAHR/AssociateCareerLattice.html?vs=9.7#
+
+
+187854- Sivakumar Rajamani
+105716- Jerald Royar
+102376- Harish Kizhakoot
+227173- Anantha Narayanan Venkata Subramanian
+170028- Ammu Sebastian
+
+
+Future Institute of Engineering & Management
+
+Working on analyzing the different application codes
+Working on making the changes for upgradation of project from Java 8 to Java 17
+Collaborating with to Team Work and Communication
+Coordinating with the other team members 
+Worked on setting up of the infrastructure of the application.
+Working on developing and improving the UI screens as per the client requirements.
+Working on designing the UI screens as well.
+Working on analyzing and solving functional issues as reported by QA.
+Working on Production Incidents as well.
+Worked on suggesting and modifying the design for some functionalities.
+Helping the team with respect to different modules and aspects of the project.
+Cross skilled to different technologies as per the necessity
+
+Understanding client requirements and translating them into application features
+Analyzing the different application architectures and code structure
+Providing creative prototypes according to design specifications
+Develop the code as per the quality standards and deliver the application enhancements within timelines
+Performing unit and integration testing before moving to production
+Troubleshoot and resolve major application issues reported by QA
+Developing technical design documents to accurately represent application design as per the changes
+Making suitable code changes for the upgrade of application from Java 8 to Java 17 along with maintaining code compatibility
+Collaborating and Coordinating with the other members of the team with respect to technical discussions and code reviews
+Setting up of the infrastructure of the application
+Handling Production incidents with respect to different modules of the application
+Cross skilling with different technologies as per the necessity and sharing the knowledge with fellow team mates
+
+Monitoring existing applications and suggesting improvement features
+Developing and Improving the UI screens as per the client requirements
+Designing the UI screens as per client requests for better visualization and giving better look and feel to the client
+Performing functional and non-functional testing with the help of QA

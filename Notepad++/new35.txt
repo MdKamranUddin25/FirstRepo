@@ -1,0 +1,44 @@
+IDEALIZATION
+REALIZATION
+
+
+OJT/Evaluation Instruction
+Associate View:
+
+* This OTJ (On the job) course, where associates will submit self-prepared work/project related document based on the goal statement/template set for that specific OJT course which will be evaluated by the associate's HCM supervisor/SME  based on goal statements and defined Parameters.
+
+* Once associate have registered for the course, attempt will be considered and associate have to submit the document within the specified due date/cutoff date for that enrollment.
+
+* Each OJT course will have a specific due date and cutoff date (time duration) present, within which the associate need to submit the document. Associates can click on the start button to launch the course from LEARN and check on the due date and cutoff date details for that registration and submit document accordingly.
+
+* If associate fails to submit the document within the due date, it will be considered as late submission, late submission mail will be triggered and if associate fails to submit within cut-off date then existing attempt will be lost then user should make new registration/attempt to proceed further.
+
+* Once submitted the document, supervisor/SME keeping associate in CC will receive One Communicator submission notification mailer for grading the document with evaluation URL.
+
+* Based on the grading points provided by supervisor/SME, final score is calculated by the system. If final score has met the passing score, the status would be completed. Post which associate will get the One Communicator Completion Notification, status and score will be published to LEARN.
+
+* If supervisor/SME is not satisfied with the document and needs rework, supervisor can reopen it. In such case, associate will receive rejection notification mailer.
+
+* Note : If Associates submission went to the old supervisor instead of current supervisor, please wait for a day the submission will be moved to the current supervisor.
+
+ 
+
+Supervisor View:
+
+* Supervisor can log in to the Moodle portal with his/her credentials and navigate to the below link for grading the assignment.
+
+https://moodle.cognizant.com/onemoodle/my/myevaluation.php
+
+* To grade the submission click on the ‘Not Graded’ hyper-link.
+
+* The supervisor can provide grade for the submission based on different parameters and provide feedback for the submission.
+
+* After providing the grade points, select ‘Marking Completed’ in the ‘Marking workflow state’ option and select 'No' in ‘Allow another attempt’ option if the submission is fine and to save the final grades.
+
+* The supervisor can also allow the user to take another attempt by selecting ‘Not marked’ in the ‘Marking workflow state’ option and clicking ‘Yes’  on the ‘Allow another attempt’ option and click on save changes.
+
+* Once the evaluation is done by the supervisor, the evaluation completion mail (if ‘allow another attempt’ is set as ‘no’ )or rejection mail(if ‘allow another attempt’ is set as ‘yes’) will be triggered.
+
+* SME has an option to assign submission to another marker. Select ‘In marking’ option and choose the marker from the ‘Allocated Marker’ list.
+
+* When the evaluation is reassigned, one communicator Reassign Evaluator Notification  mail will be triggered to the new SME and the assignment will be assigned to the new SME for evaluation.

@@ -1,0 +1,27 @@
+
+
+final class with abstract method -- wrong
+
+abstract class wth final method -- right
+
+
+list of numbers = [random numbers including numbers]
+even in asc without duplicates
+1,4,7,2,8,8,9
+2,4,8 = result
+
+Set s = new HashSet();
+temp = numbers.stream().filter(n->n%2==0).forEach(sysout::println); --.distinct().sorted()
+finalVal = temp.stream().filter(n2->!set.add(n2)).forEach(sysout::println);
+finalVal = finalVal.stream().sorted().forEach(sysout::println);
+
+
+Design Patterns, PLSQL, GraphQL, Junit, Kubernetes, Docker, Openshift,
+practice basic coding
+
+
+Sakti Das - UHG
+Aninda Mukherjee - CoreLogic
+Anindya Basu - Metlife
+Stephen Albert - Electrolux
+Arunabha Sengupta - Qatar Airways

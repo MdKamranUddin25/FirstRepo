@@ -1,0 +1,61 @@
+<p>Amazon CodeWhisperer, an advanced coding companion powered by generative AI, helps increase coding efficiency and productivity by interactively offering code suggestions while you type. This streamlines your coding experience and reduces the amount of code you have to write to complete your tasks. CodeWhisperer also scans your code for security vulnerabilities from right within your editor.</p> <p> </p> <p>In this course, you will learn how to install and start using CodeWhisperer in your supported integrated development environment (IDE) or code editor. You will also learn how to use the key features of CodeWhisperer, such as code completion, open-source reference tracking, security scans, and prompting to generate useful code suggestions. Finally, you will learn about subscription options, including features and costs.</p> <p><strong>Course objectives</strong></p> <p>In this course, you will learn to:</p> <p>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Install, configure, and start using CodeWhisperer.</p> <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Describe key advantages and differentiators of CodeWhisperer.</p> <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Use CodeWhisperer in multiple coding scenarios.</p> <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Access additional information and resources on CodeWhisperer.</p> <p> </p>
+
+https://home.pearsonvue.com/aws/freeretake?sc_channel=ha&trk=e5b138b5-d5f6-4abd-a8a3-376b8fcda3b1~ha_awssm-4895_aware_tnc
+
+from AWS James McKinney- AWS SR Partner Trainer to Everyone22:34
+You can book the exam at any time/date in the future that fits your needs.
+from AWS James McKinney- AWS SR Partner Trainer to Everyone22:35
+You can reschedule up to two times- if needed, after that you will have to cancel and re-book
+from AWS James McKinney- AWS SR Partner Trainer to Everyone22:36
+https://home.pearsonvue.com/aws/freeretake?sc_channel=ha&trk=e5b138b5-d5f6-4abd-a8a3-376b8fcda3b1~ha_awssm-4895_aware_tnc
+from AWS James McKinney- AWS SR Partner Trainer to Everyone22:37
+^^re-take promo
+from AWS James McKinney- AWS SR Partner Trainer to Everyone22:37
+For voucher questions- please refer to the Program guide faq- https://partners.awscloud.com/rs/302-CJJ-746/images/Program%20Guide%20-%20APCR%20Cloud%20Practitioner%20NAMER.pdf?version=3
+from AWS James McKinney- AWS SR Partner Trainer to Everyone22:37
+@kelly yes - previous sessions were recoreded and email out-
+from Lee Bergs to Everyone22:37
+Interested in the free exam retake promo code? https://home.pearsonvue.com/aws/freeretake?trk=fdac4a10-bbd0-49eb-ad2a-d144576a9fcd&sc_channel=el
+
+session 2
+https://explore.skillbuilder.aws/learn/course/internal/view/elearning/18842/aws-partnercast-aws-partner-certification-readiness-cloud-practitioner-session-2-feb-2024-business
+
+kick off https://explore.skillbuilder.aws/learn/course/18831/aws-partnercast-aws-partner-certification-readiness-cloud-practitioner-kickoff-business-feb-2024
+
+Cloud Quest – Registration Link - https://partnercentral.awspartner.com/LmsSsoRedirect?RelayState=%2flearningobject%2filt%3fid%3d142860
+
+AWS Certified Cloud Practitioner - https://aws.amazon.com/certification/certified-cloud-practitioner/
+
+You need to be logged into APN account before clicking the link: Cloud Quest – Registration Link - https://partnercentral.awspartner.com/LmsSsoRedirect?RelayState=%2flearningobject%2filt%3fid%3d142860
+
+@Kamran... there is no negative marking in any of our exams.
+
+https://d1.awsstatic.com/training-and-certification/docs-cloud-practitioner/AWS-Certified-Cloud-Practitioner_Exam-Guide.pdf
+
+https://d6vq5lw05v0j8.cloudfront.net/AWS%20CP%20Exam%20prep%20session%20links.pdf
+
+Hi Shiv. Exam Accomodation Processes (such as English Second Language (ESL)) can be found on this home page; https://aws.amazon.com/certification/policies/before-testing/
+
+VPC Connectivity options: https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/introduction.html
+
+a customer wants to build a hybrid solution connecting their on premises env to aws cloud services, dedicated connection--aws direct connect
+which aws service can provide recommendations for reducing costs,high performance,security --aws trusted advisor
+AWS Inspector = Vulnerability Assesment tool
+an amazon s3 bucket was deleted and several ec2 instances were terminated, which service can help to determine who did it--aws cloud trail
+Amazon CloudWatch-monitoring services
+you are migrating sql database to aws cloud, post migration, the db needs to provide 5times faster performance and high availability--amazon aurora
+From the docs... Amazon Aurora provides unparalleled high-performance and availability at global scale with full MySQL and PostgreSQL compatibility, at 1/10th the cost of commercial databases. Aurora has 5x the throughput of MySQL and 3x of PostgreSQL. Aurora has broad compliance standards and best-in-class security capabilities.
+https://aws.amazon.com/getting-started/decision-guides/databases-on-aws-how-to-choose/
+aurora doesnt do autoscaling by default
+performing standard sql queries on csv and json formats data done by--amazon athena
+which aws service can be used to protect malicious activity and protect the aws account--amazon guard duty,inside protection
+AWS Shield--DDoS protection, protecting our application and not our account, AWS Shield is DDOS protecting your application not your AWS account. Shield come in a free and paid version. All customers using Cloudfront,WAF,Load Balancers are protected by default.
+Amazon Macie--helps to find things in S3 bucket, data classification service
+A company is undergoing a compliance review, which aws service can the customer use to view and download the report--amazon artifact
+what are the possible uses of aws edge locations--deliver content closer to users, reducing backend server traffic by caching response
+services that can run on edge locations--cloudfront, shield, waf, route 53
+points of presence means edge locations
+aws redshift--best price performance cloud data warehousing
+https://aws.amazon.com/solutions/case-studies/
+network access control list--on subnet level
+security groups--on ec2 level

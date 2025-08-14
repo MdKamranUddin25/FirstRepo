@@ -1,0 +1,168 @@
+1.Which of the following describes the Builder pattern correctly?
+This pattern builds a complex object using simple objects and using a step by step approach.
+
+2.Which of the following describes the MVC pattern correctly?
+This pattern is used to decouple presentation tier and business tier.
+
+3.Which of the following terms relate to making a service available with no downtime for
+  an extended period of time?
+High Availability
+
+4.In
+  computer networking, ------------- is the ability to "provide and
+  maintain an acceptable level of service in the face of faults and challenges
+  to normal operation.
+Resilience
+
+5.These
+  are valid NFR types for a system
+Certification, Elasticity, Boot Up time, Escrow, Data Retention  
+
+6.Which technology or service can be used to send notifications to Mobile devices
+Notification Hub
+
+7.What is cloud computing?
+On-demand delivery of IT resources and applications through the internet with pay-as-you-go pricing
+
+8.Which AWS service automatically analyzes code and provides performance
+  recommendations?
+CodeGuru
+
+9.____
+  prescribes the state of software project work progress that to be tracked.
+Kanban  
+
+10.You are looking to run multiple instances of the same application on the same EC2
+  instance and expose it with a load balancer. The application is available as
+  a Docker container. You should use
+Application Load Balancer + ECS
+
+11.What are different types of Agile Methodology?
+Scrum, Kanban, XP
+
+12.Is 'Cucumber' a tool used for BDD testing?
+TRUE
+
+13.What are the benefits of cloud computing? (Select TWO.)
+Increase speed and agility
+Stop spending money running and maintaining data centers.
+
+14.When we  are talking of 64 bit, we are talking of  
+Application, Operating System, Hardware
+
+15.Unlike architectural patterns, component-level design patterns may be applied to solve subproblems without regard to system context.
+False
+
+16.What are
+  pods, squads, packs, chapters or tribes ?
+They are all scrum teams
+
+17.Data in
+  transit(Motion)', 'Data in rest' and 'Data in Use' are the 3
+  states/principals of ….........
+Data
+
+18.Two Pizza Team means
+Team of around 8 people
+
+19.Agile
+  software development principles
+Customer satisfaction by early and continuous delivery of valuable software.
+Welcome changing requirements, even in late development.
+Close, daily cooperation between business people and developers
+Regularly, the team reflects on how to become more effective, and adjusts accordingly
+
+20.Which of the following pattern is used when we need to decouple an abstraction from its implementation so that the two can vary independently?
+Bridge Pattern
+
+21.Is
+  Architecture an Artifact ?
+FALSE
+
+22.Authentication
+  as well as Authotization is supported in …..............
+Oauth 2.0
+SAML 1.0
+SAML 2.0
+
+23.You need to move hundreds of Terabytes into the cloud in AWS S3, and after that
+  pre-process it using many EC2 instances in order to clean the data. You have
+  a 1 Gbit/s broadband and would like to optimize the process of moving the
+  data and pre-processing it, in order to save time. What do you recommend?
+Use Snowball Edge
+
+24.AWS
+  Lambda is ?
+FaaS
+
+25.I have
+  added more machines in different regions of same configuration to support
+  users of different regions separatel. This is normally referred as ....
+Scaling Out
+
+26.OAUTH2.0
+  is used for ?
+Authentication, Authorization, SSO
+
+27.Design patterns are divided into three fundamental groups.
+Bahavioral Patterns, Structural Patterns, Creational Patterns
+
+28.Which pillar of the AWS Well-Architected Framework includes the ability to run
+  workloads effectively and gain insights into their operations?
+Operational Excellence
+
+29.Which of the following is true about design patterns?
+Design patterns are obtained by trial and error by numerous software developers over quite a substantial period of time
+Design patterns represent the best practices used by experienced object-oriented software developers
+Design patterns are solutions to general problems that software developers faced during software development
+
+30.what are
+  all the advantages of Devops
+Faster issue resolution
+Reduced complexity
+Greater scalability and availability
+
+31.Which is
+  not a devops method
+None of the above (Agile, Scrum, Kanban, Sprint)
+
+32.In which of the following pattern a class represents functionality of another class?
+Proxy Pattern
+
+33.Which
+  SDLC area is important for implementation of DevOps automation in the IT
+  organization ?
+IaaS
+
+34.Sprint
+  concept is define under the which Devops Method.
+Scrum
+
+35.The
+  Aggregation is stronger than Composition
+FALSE
+
+36.What are
+  the artifacts of Agile Scrum ?
+Product backlog
+Product Increment
+Burndown Chart
+Defination of Done
+
+37.In MVC
+  Architecture, which of the statements are correct?
+Controller responds to events from triggered from View and acts on Model
+Model holds only the data and is not responsible for logic or presentation
+View is responsible for rendering data and does not deal with what the data represents.
+
+38.Agile
+  Scrum uses Stroy Points as unit of estimation
+TRUE
+
+39.I have some private servers on my premises, also I have distributed some of my workload on the public cloud, what is this architecture called?
+Virtual Private Cloud
+
+40.When
+  security practices gets integrated into the DevOps approach it becomes
+  DevSecOps ?
+TRUE

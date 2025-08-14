@@ -1,0 +1,27 @@
+create a sql script for creating an Expense table with expenseId, date, amount and categoryId columns
+
+CREATE TABLE Expense (
+    expenseId INT PRIMARY KEY,
+    date DATE,
+    amount DECIMAL(10, 2),
+    categoryId INT
+);
+
+create a sql script for creating a Category table with categoryId and categoryName columns
+
+CREATE TABLE Category (
+    categoryId INT PRIMARY KEY,
+    categoryName VARCHAR(255)
+);
+
+create a sql script for creating a Report table with categoryName and totalAmount columns
+
+CREATE TABLE Report (
+    categoryName VARCHAR(255),
+    totalAmount DECIMAL(10, 2)
+);
+
+create a java spring boot project for building a Simple Chart and Graph for the given Monthly expense Amount Vs categories for any specific Month with Expense, Category and Amount as the parameters and three API's namely -
+/add API should insert the expense data to the table
+/delete API should remove the expense from the table
+/finalize API should read all the data from table and consolidate them to create Chart and Graph

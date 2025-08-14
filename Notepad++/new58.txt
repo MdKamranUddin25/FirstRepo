@@ -1,0 +1,99 @@
+Migrate an on-premises Go web application to AWS Elastic Beanstalk by using the binary method
+
+rehost given by aws
+
+replatform as an alternate
+
+Using this migration strategy, you move the application to the cloud, and you introduce some level of optimization in order to operate the application efficiently, to reduce costs, or to take advantage of cloud capabilities
+
+You want to improve your security and compliance stance by upgrading your operating system to the latest version.
+
+You can reduce costs by using AWS Graviton Processors, custom-built processors developed by AWS
+
+You can improve performance by migrating virtual machines into containers, without making any code changes. You can modernize your .NET and Java applications into containerized applications by using the AWS App2Container migration tool.
+
+Replatform reduces cost and improves performance by migrating to a managed or serverless service, moving virtual machines to container, and avoiding licensing expenses.
+
+--------------------------------------------
+
+Anil Jaista - take update
+Priyasakthi - take update
+Vinolin Getzial - take update, jagadeesh.ganesan@cognizant.com- not go ahead
+Sudhakar Muthumanickam - take update
+Arunkumar Guruswamy - take update
+Sangeetha Ramalingam - take update, check SO, support project- so leaving
+Senthilnathan Ramaiyan - take update, Karthikeyan
+venkatesh.santhanagopal@cognizant.com - take update - hold
+Priyamvada, Vairamani - take update - final checking
+thilagam - walgreens - backup
+
+Ashwin Kumar - offshore
+Vaidhyanathan - offshore
+Vijay.AntonyThiyagan@cognizant.com - offshore
+Anand Rajasekaran - offshore
+Omprakash - offshore
+Nilabrata - offshore
+
+kanagasabapathi.balasubramanian@cognizant.com - to ping-done
+gnanasoundari.kumar@cognizant.com - to ping, hold, ping done
+manojkumar.c@cognizant.com - to ping, hold
+mahesha.mallikarjuna@cognizant.com - to ping, hold
+radhakrishna.jakka@cognizant.com - to ping-done
+prakash.bakthavachalu@cognizant.com - to ping-done
+narayanan.saranathachari@cognizant.com - to ping-done
+omprakash.janardhanan@cognizant.com - to ping-done
+jagannath.chatterjee@cognizant.com - to ping-done
+thirunavukkarasu.tv@cognizant.com - to ping, try again-done
+manickavasagam.raju@cognizant.com - to ping-done
+kamalanandh.arumugam@cognizant.com - to ping, mail sent
+Rajesh Sharad Joshi - ping monday, ping done
+ag.vijaykumar@cognizant.com - ping monday, ping done
+sathiya.thangavelu@cognizant.com - send profile, mail sent
+ashish.gupta12@cognizant.com - to ping, mail sent
+vivekanandan.bakthavatchalam@cognizant.com - ping monday, ping done
+
+
+Your tsc poc- AVMTSCFET@cognizant.com
+
+united health group-hold
+first data bank-hold
+northern trust-ask, hold
+us bank-ask
+truist bank-waiting
+walgreens healthcare-waiting
+s&p global-ask, hold
+
+
+Deepu Radhakrishnan, hold
+Panchavarnam, hold
+Radhika Kannan, done
+Manoj Kumar C, done
+Kalyan Varadarajan, night
+Arul Selvan, night
+Balasubramanian subramanian, done
+Prakash Bakthavachalu, hold
+Mohammad Junaid Khan, night
+Venkatachalam venugopalan, night
+Vijay Kumar AG, done
+Prafullata, hold
+Senthilkumar Ravi, done
+Arindam Chatterjee, night
+Reshma Justine, done
+
+budget problem truist for onsite quota
+but can work in offshore and prove myself
+offshore full billable
+can travel to onsite by feb or march
+otherwise can move to other project for onsite within truist
+project critical to deliver by q1 feb
+talk to Priya if visa stamping can be taken up by the account team after I am onboarded
+and tell Priya all the updates
+
+you can work all in a day and complete, no need to stretch
+provide update on the next day
+if help is required, you can ask for help
+work from morning to evening
+no need to go office if it hampers productivity
+will talk to Priya on this
+we will start your onboarding so that you are productive from 1st oct
+

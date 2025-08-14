@@ -1,0 +1,19 @@
+ninja call pro max 1600 2.01
+
+
+728672
+flooring no change
+wiring talk one to one
+sliding window to check
+bathroom to inform arafat bhai
+
+
+102376
+Harish Kizhakoot
+105716
+Jerald Royar
+170028
+Ammu Sebastian
+
+netstat -ano | findstr 8080
+taskkill /PID 18264 /f

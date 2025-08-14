@@ -1,0 +1,232 @@
+You will see no image on the border of the div element.
+
+You must use the data attribute instead of the src attribute.
+
+The conditions, (max-height: 500px) and screen, both return a boolean false value which sets the final value of the media query to false.
+
+selector:pseudo-class
+
+<p>special</p>
+
+Screen readers can identify the <button> tag as a button.
+
+<aside>
+  <p>HTML determines the content of the page, and CSS decides what it looks like.</p>
+</aside>
+
+
+For defining CSS in the HTML page to style that specific HTML page
+
+skew
+
+li::marker {
+  content: '->';
+  font-size: 10px;  
+}
+
+div.demo {
+  margin: 20px 100px 40px 50px;
+}
+
+transition: background-color 4s 1s, font-size 4s 2s;
+
+Information (data) about data that is not displayed on the page but is machine parsable.
+
+The application uses all four stylesheets in a cascade pattern.
+
+column-rule-width
+
+#config {
+  column-count: 4;
+  column-gap: 200px;
+  column-rule: 2px dashed red;  
+}
+
+You can use header and footer multiple times.
+
+column-gap
+
+Add aria-label="config" to the nav tag.
+
+Hello, user! in blue and mobile.png behind it.
+
+You apply CSS on a parent div element that holds eight items. Which grid track has the smallest size compared to the other tracks based on the following code? Third
+
+You set the innerText to <p>hi</p> using JavaScript. What is the problem?
+The literal text, "<p>hi</p>" shows on the website.
+
+You used 300px instead of 250px in the #config div selector.
+
+Which symbol separates a pair of a properties and its value from other pairs in a CSS selector? ;
+
+Remove <tr> inside <th> and <td> and put <tr> around them.
+
+You create a web page with two elements as follows:
+<body>    
+    <h2>XYZ automobiles</h2>
+    <div id="foo">We deal with a variety of cars.</div>    
+</body>
+How would you color the first element maroon and the second element gold?
+body {
+  color: gold;
+}
+
+h2 {
+  color: maroon;  
+}
+
+You create two div blocks that appear vertically, one below another with a blue background:
+myApp.html
+<body>
+    <div class="foo">Waterfall</div>
+    <div class="foo" id="p1">Mountains</div>
+</body>
+
+myApp.css
+.foo {  
+  height: 150px;
+  width: 150px;
+  background-color: blue;  
+}
+
+#p1 {
+  position: absolute;  
+}
+You must bring the second div block in line horizontally with the first block, so you change the position property value to relative. This action has no effect. How would you fix the issue?
+#p1 {
+  position: relative;
+  left: 300px;
+  top: -150px;
+}
+
+The details tag must be the outer element. The summary tag goes around the clickable text.
+
+You must configure three grid items in three rows. The first item must occupy the first row completely, the second item must occupy one-third of the second row from the right, and the third item must occupy the initial two-thirds of the third-row track. You write the following scripts:
+myApp.html
+<body>
+    <div id="config">
+        <div id="foo" style="background-color: aqua;">Foo</div>
+        <div id="bar" style="background-color: hotpink;">Bar</div>
+        <div id="baz" style="background-color: olive;">Baz</div>        
+    </div>
+</body>
+
+myApp.css
+#config  {
+  display: grid;
+  grid-template-areas: "a a"
+                       "b b"
+                       "c c";
+  grid-template-columns: 2fr 1fr;   
+}
+
+#foo { grid-area: a }
+#bar { grid-area: b }
+#baz { grid-area: c }
+All three items occupy the complete space of all three rows. How would you change the CSS to correct the issue?
+grid-template-areas: "a a"
+                     ". b"
+                     "c .";
+					 
+You want to display a 20 sentence paragraph on your web page. You must confine it within two columns with a three pixel dashed gray line dividing the columns. How would you write the CSS for the config ID if you cannot use the column-rule-style property?
+#config {
+  column-count: 2;
+  column-rule: dashed 3px gray;
+}
+
+You must change the text, "We are playing in a park," to red with a font size of 12 pixels. To do so, you write the following scripts:
+myApp.html
+<p id="foo">We are playing in a park</p>
+
+myApp.css
+foo {
+  font-size: 12px;
+  color: red;
+}
+The paragraph is missing CSS styling. What fix would you make to either script to resolve the issue?
+In myApp.css, replace foo with p.
+
+<body>
+    <div id="config">
+        <div id="foo" style="background-color: aqua;">Foo</div>
+        <div id="bar" style="background-color: hotpink;">Bar</div>
+        <div id="baz" style="background-color: olive;">Baz</div>        
+    </div>
+</body>
+#config  {
+  display: grid;
+  grid-template-areas: "a a"
+                       "b c"
+                       "b c";
+  grid-template-columns: 2fr 1fr;   
+}
+
+#foo { grid-area: a }
+#bar { grid-area: b }
+#baz { grid-area: c }
+
+You added the opaque image before the transparent image.\
+
+You must create a button on your web page. You can apply any of the available CSS properties to this button. Based on this statement, what is true?
+You can develop the button without using the button or input elements.
+
+div ~ p {
+  color: blue;
+}
+
+You are justifying four items at the center of a container. Which layout would you use along with the justify-items property?
+Grid
+
+You are displaying 20 items on a web page with a custom image marker. You must choose only base.jpg as the marker image for each list item. How would you write the CSS code for the li tag so each marker has a size of 10 pixels?
+li {  
+  padding: 10px 10px 10px 20px;
+  list-style: none;
+  background-image: url("../../static/img/base.jpg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 10px;  
+}
+
+<div class="box">
+    <div style="background-color: aqua;" id="one">Foo</div>
+    <div style="background-color: gold;" id="one">Baz</div>
+    <div style="background-color: pink;" id="two">Que</div>
+</div>
+.box {
+  display: flex;
+  flex-wrap: wrap;
+}
+#one {
+  flex-basis: 50%;
+}
+#two {
+  flex-basis: 66.6%;
+}
+
+You have five div elements within a parent div element. Only two elements can occur on the main axis (horizontal). You use the display: flex property to configure these elements. What happens?  Here is a snippet of the HTML:
+<div class="box">
+  <div>One</div>
+  <div>Two</div>
+  <div>Three</div>
+  <div>Four</div>
+  <div>Five</div>
+</div>
+And here is the CSS:
+.box {
+  display: flex;
+  flex-wrap: wrap;
+}
+ 
+.box>* {
+  flex: 1 1 200px;
+  border: black 1px solid;
+}
+The fifth element occupies the place for the unavailable sixth element. 
+
+
+
+inport from excel
+
+26as form
+
+KOLKATA.ITO32.1@INCOMETAX.GOV.IN

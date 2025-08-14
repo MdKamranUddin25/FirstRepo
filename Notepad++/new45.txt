@@ -1,0 +1,3210 @@
+REACT JS
+-----------------------------------
+Lab Setup--
+Node JS
+VS Code
+Chrome
+
+Pre-Requisites--
+HTML 5
+CSS 3
+Bootstrap 5
+JavaScript (ES6)
+
+ReactJS Intro--
+It is a javascript based Single-Page-Application Framework
+
+Static Website
+	It is a folder of pre-scripted html documents hosted on a http-server.
+	
+Dynamic Web Application
+	HttpServer																Browser
+		ServerSidePrograms
+		(Servlet & JSP/ASPX/PHP, etc)
+		<-----------------REQ1--------------------------------------
+		based on the data in the request, an html
+		content is generated on the go ("dynamically")
+		------------------(generated html content)RESP1------------>
+		<-----------------REQ2--------------------------------------
+		based on the data in the request, an html
+		content is generated on the go ("dynamically")
+		------------------(generated html content)RESP2------------>
+
+Single Page Application
+	HttpServer																Browser
+		spa-bundle
+		(index.html + *.js)
+		<---------------REQ-----------------------------------
+		---------------(spa-bundle)RESP---------------------->		index.html along with the JS is loaded
+		
+																	any event or form submissions or links, etc are all 
+																	handled by the JS on the client itself
+																	
+																	JS on the client can generate html content dynamically 
+																	on the client side and can replace the index.html content
+																	as and when needed
+																	
+		rest-api 	<-------json/.xml------------------------>		spa-bundle
+		
+SPA-Frameworks
+Angular
+ReactJS
+VueJS
+...etc
+
+ReactJS Features
+	1.Html Extendability (we can create our own html-elements and html-attributes using ReactJS)
+	2.State Binding (the changes to the data or state is monitored and the output on the screen is updated)
+	3.Shadow DOM/Virtual DOM
+	4.Server Side Rendering/Differential Loading
+
+Creating a ReactJS application
+npx create-react-app app-name
+
+npm install -g create-react-app (if above command not working)
+followed by create-react-app app-name
+	
+ReactJS Components
+	The html-elements created in ReactJS are called ReactJS Components.
+	A Single Page App is made up of a stack of these Components
+	
+	index.html
+	<html>.....</html>
+		| - <head>...</head>
+		| - <body>...</body>
+			|- <div id="root">...</div>
+								|- <App>...</App> (Top Level Component)
+										|- <Component1 />
+											|- <Component2 />
+											|- <Component3 />
+										|- <Component4 />
+											|- <Component5 />
+											|- <Component6 />
+
+We can create components in 2 different ways--
+Function Components
+It is any javascript function that accepts 'props' as argument and return one and only one Html-Element.
+We use JSX for scripting. Function Components are also called as state-less components.
+	cont ComponentName = (props) => HtmlElement;
+	
+	const TitleBar = () => <h1>My First ReactJS App</h1>;
+	
+	<TitleBar />
+	
+	const TitleBar2 = function(){
+		return <h1>My First ReactJS App</h1>;
+	}
+	
+	<TitleBar2 />
+	
+Class Components
+It is any sub-class of React.Component class.
+From React.Component, a Class Component inherits
+	1.state						is used to hold all the data related to the component
+	2.setState()				is a method used to change state
+	3.render()					must be overridden to return the html-element that has to be displayed for this component
+	4.componentDidMount()
+	5.componentDidUpdate()
+	6.componentWillUnMount()
+	7.and a few more life cycle methods
+
+class EmployeeList extends React.Component{
+constructor(props){
+super(props);
+this.state={}; //initial data into the state
+}
+
+render(){
+return(
+	<table>
+		<thead>
+		</thead>
+		<tbody>
+		</tbody>
+	</table>
+);
+}
+}
+
+<EmployeeList />
+
+JSX?
+	JavaScript Extended. It is an amalgamation script of html with javascript to facilitate easier html manipulation.
+	
+	JS
+	let pObj=document.createElement("p");
+	pObj.innerText="This is a sample content of the para";
+	
+	JSX
+	let pObj=<p>This is a sample content of the para</p>;
+	
+	JS
+	let userName="Vamsy Kiran";
+	let pObj=document.createElement("p");
+	pObj.innerText="Hello! " + userName + "! Welcome Here...!";
+	
+	JSX
+	let userName="Vamsy Kiran";
+	let pObj=<p>Hello! {userName} Welcome Here...!</p>;
+	
+	JS
+	let friends=["Swathi","Suma","Sudha","Sita"];
+	let olObj=document.createElement("ol");
+	
+	for(let i=0;i<friends.length;i++){
+	let liObj=document.createElement("li");
+	liObj.innerText=friends[i];
+	olObj.appendChild(liObj);
+	}
+	
+	JSX
+	let friends=["Swathi","Suma","Sudha","Sita"];
+	let olObj=(
+		<ol>
+			{friends.map(f=><li>{f}</li>)}
+		</ol>
+	);
+	
+JSX Rules
+	1.'class' attribute is not to be used, 'className' attribute is used instead
+	2.All html-element tag-names must be lower in case
+	3.All attributes must follow camelCase
+	4.All ReactJS Component must be InitialCapitalized
+	
+ReactJS Component State
+	1.'state' is used to hold all the data related to a component
+	2.'state' is immutable, we cannot go and modify a state directly
+	3.'state' is only replaceable using 'setState()' method
+	4.Each time 'state' is replaced, the 'render()' method is invoked
+	
+npm start -- to start a react app
+
+Shadow DOM
+	Each time when an iterative collection of data in state gets modified, regenerating the entire DOM is a costly process
+
+	Instead, ReactJS maintains a temporary copy of the DOM called Shadow DOM. Actual DOM is directly linked to the screeen whereas 
+	the Shadow DOM has no link with the screen
+	
+	This means modifying the shadow dom is less costlier than modifying the actual DOM
+	
+	Now changes are first made on shadow DOM and after all the state is placed on shadow DOM, the shadow DOM is super imposed on 
+	the actual DOM and the actual DOM will have only the final changes
+	
+	To facilitate the comparison between the shadow DOM and actual DOM, each element iterated is expected to have a unique 'key'
+	
+Integrating ReactJS with Bootstrap
+npm i bootstrap
+bootstrap.min.css and bootstrap.bundle.js must be imported into index.js
+
+props is used for receiving the data from parent to child
+a parent can pass data through attributes
+the child receives the attributes through props
+state is immutable, we cannot modify state directly so we use setState
+
+we have to put/maintain the data in a state so we use class component
+we cannot store data using function component
+
+Controlled Components are used in app03
+
+Uncontrolled Components in ReactJS, In case of uncontrolled components, we use a reference
+
+Working with Forms - what is the difference between controlled and uncontrolled components
+
+Component Lifecycle Methods-
+	constructor()				receive the 'props' and initialize the 'state'
+		|
+		|
+		render()				returns the DOM to be displayed for the current component
+			|
+			|
+			componentDidMount	is used to execute an operation after the first render (like rest-api calls)
+			
+				/******************************************************/
+						whenever setState() is called...
+				/******************************************************/
+							|
+							|
+							render()
+								|
+								|
+								componentDidUpdate()	is used to execute an operation after each render except the first time
+								
+	componentWillUnMount()	is used to execute an operation just before the component is unmounted
+
+when one calculation is dependent on another calculation, it is called side effect
+this is handled by componentDidUpdate
+do not call setState() without a condition in componentDidUpdate
+
+ReactJS Hooks-
+	A Hook is a special function used to add features to a function component
+	
+	function components dont have state and lifecycle methods
+	
+	Some of the Hooks are defined below-
+	useState		is a hook that allows a function component to have a state
+	
+					let [reader,writer] = useState(initialValue);
+					let [x,setX] = useState(0);
+					'x' is used to read the value and 'setX()' is like a method that can be used to to change the value
+					
+	useEffect		is a hook that provides lifecycle methods to a function component
+	
+					useEffect(callBack, dependencyArray)
+					
+						if the dependencyArray is empty, the callBack is executed only once, that too after the first render
+						
+							useEffect( ()=> {
+								//this is equivalent to componentDidMount
+							}, []);
+							
+						if the dependencyArray is not empty, the callBack is executed after every render each time the fields in the array
+						change their value
+						
+							useEffect( ()=> {
+								//this is equivalent to componentDidUpdate
+							}, [x,y]);
+							
+function components are easy to test and less of code to write
+98% people are using function components only
+
+Employee- id, fullName, salary, mailId
+
+Application Level State Management - Redux
+	Redux is a third party library , used to isolate state management from the UI-Components
+	
+	npm i redux
+	
+	Store 		is a object that holds all the data related to an application
+				one application has only one store
+				
+				const store = createStore(reducer)
+				
+	reducer		is a function that accepts an action, and existing state, and returns the
+				modified state as per the given action
+				
+				const reducer = (currentState,action) => {
+					//create a new modified state based on the action and the currentState
+					
+					return modifiedNewState
+				}
+				
+	action		is an object that has two fields 'type' and 'payload'
+	
+				const action1 = {type:"ADD_EMP", emp:{id:1,fullName:"Vamsy",salary:45000}}
+				const action2 = {type:"DEL_EMP", empId:101}
+				
+	dispatch	is a method provided by 'redux'. it is used to throw an action from a ui-component into the reducer
+	
+				dispatch(action) ----------> reducer(store.state,action)
+				
+	npm i react-redux
+		react-redux is an integration library between redux and reactjs
+		
+		useSelector		is a hook provided by 'react-redux'. it is used to select a part of the state
+						into a component. useSelector is bound to the state and hence everytime the state
+						is modified, useSelector will automatically update the component too
+						
+						let empsList = useSelector( state => state.emps );
+						
+		useDispatch		is a hook that gives access to 'dispatch' method
+		
+						const dispatch = useDispatch();
+						
+		Provider		is a component from 'react-redux' that is used to wrap the store on the 'App' component
+		
+						<Provider store={store}>
+							<App />
+						</Provider>
+	
+	reducer and action to be written by developer
+	
+	store-------------------> ----(useSelector)----------
+	  |								|					|
+	  |								|					|
+	  |							   Component1			|	
+	  |								|			   		Component2
+	  |								|					|
+	  |								dispatch(action)	|
+	  |								|					dispatch(action)
+	  |								|					|
+	  |(modified state)				|					|
+	  |								|					|	
+	  reducer <----------(action)------------------------
+	  
+	  actions are the standards/guidelines for keeping the reducer and the component on the same page
+	  
+	  Application Flow--action->reducer->store->component->action...
+	  
+Create a fake rest-api using json-server
+	json-server is a javascript tool that generates fake rest-api from a .json
+	
+	md adb-api
+	cd adb-api
+	npm init -y
+	npm i json-server
+	
+	create adb-api/data.json
+	change the 'start' script in the package.json as 'json-server --port 9999 --watch ./data.json'
+	
+	npm start
+	
+Calling rest-api using axios
+	npm i axios
+	
+	axios.get(apiEndPoint) : Promise
+	axios.post(apiEndPoint,reqBody) : Promise
+	axios.put(apiEndPoint,reqBody) : Promise
+	axios.delete(apiEndPoint) : Promise
+	
+	axios.get("http://localhost:9999/contacts")
+		.then( data => { } )
+		.catch( err => { } );
+		
+Integrating axios calls with redux reducer through redux-thunk (middleware)
+	'thunk' means a function that returns another function
+	
+	while integrating rest-api calls with redux, the rest-api calls are managed by an actionFunction
+	
+	Here, actions are not objects but they are functions
+	
+	npm i redux-thunk
+	
+	'thunk' is applied on the reducer using 'applyMiddleware' method on the store
+	
+	const store = createStore(reducer, applyMiddleware(thunk));
+	
+	We use action as object if the operation is local (like markEditable or unMarkEditable)
+	We use action as function (thunkAction) if the operation is a rest-api call (like add or update or delete)
+	
+	store-------------------> ----(useSelector)----------
+	  |								|					|
+	  |								|					|
+	  |							   Component1			|	
+	  |								|			   		Component2
+	  |								|					|
+	  |								dispatch(thunkAction)	|
+	  |								|					dispatch(thunkAction)
+	  |								|					|
+	  |(modified state)				|					|
+	  |								|					|	
+	  reducer <----------(action)---------------------|------------[thunkAction]---------------|
+		|											  |										   |
+		|<------(actionSignallingWait)----------------|	dispatch(waitAction)				   |
+		|											  |	call to rest-api					   |
+		|<------(actionCarryingData)------------------|	  (a)get data, dispatch(refreshAction) |
+		|<------(actionCarryingErr)-------------------|	  (b)get error, dispatch(errAction)    |
+		|											  |----------------------------------------|
+		
+
+React Routing
+	npm i react-router react-router-dom
+	
+	<BrowserRouter>
+	
+		<Header />
+		
+		<Routes>
+			<Route path="/" element={<C1 />} />
+			<Route path="/a" element={<C2 />} />
+			<Route path="/b" element={<C3 />} />
+			<Route path="/c/:pathVariable" element={<C4 />} />
+		</Routes>
+		
+		<Footer />
+		
+	</BrowserRouter>
+	
+	<Link to=""></Link>		instead of <a></a>
+	
+	<Navigate to="" />
+	
+controlled forms are used nowadsys because uncontrolled use references which doesnt sit well with React's single instance of truth
+state management, creating multiple reducers
+combined reducers, ognl state management
+Next.js go through now
+create multiple entities react project
+
+
+=====================================================================================================
+
+Angular Intro
+------------------------------------
+It is a javascript based Single-Page-Application framework.
+
+Static Website
+	It is a folder of pre-scripted .html and .css documents hosted on a http-server.
+	
+Dynamic Web Application
+	'dynamic' here refers to that the html content is not pre-scripted but rather is generated on the fly.
+	
+HttpServer																	Client/Browser
+	Server Side Programs													
+	(servlets/jsp/asp/aspx/php,etc)
+		<-------------------REQ1----------------------------------------
+		is received by a program, and after processing the
+		data in the request, some dynamic html content is generated
+		-----------------------(html-content)RESP----------------------->
+		<-------------------REQ2-------------------
+		is received by a program, and after processing the
+		data in the request, some dynamic html content is generated
+		-----------------------(html-content)RESP----------------------->
+		
+Single Page Application
+Http Server																	Client/Browser
+	spa-bundle
+	(index.html+*.js)
+		<-------------------------REQ-----------------------
+		----------------(spa-bundle)RESP------------------->	index.html is loaded along with .js
+																the JS will execute on the client machine and any events
+																including links/form-submissions,etc are all handled by the
+																JS on the client
+																
+																the JS can generate html content dynamically as needed and 
+																can replace the content of the index.html as needed
+																
+		rest-api	<-----------------json/.xml------------>	spa-bundle	
+
+SPA-Frameworks
+AngularJS
+Angular		
+ReactJS
+VueJS
+...etc
+
+AngularJS vs Angular
+AngularJS uses JavaScript for scripting
+Angular supports Typescript (Angular 2 to Angular 18)
+
+TypeScript
+It is a superset of JavaScript. JavaScript plus type-safety is TypeScript. TypeScript is not understood by any browser but scripting using typescript will reduce the chance typing errors and eliminates a lot of runtime debugging.
+
+.ts must be compiled in .js before it is executed on the browser. And this process is called transpiling(compiling).
+
+Lab Setup
+NodeJS		above 18.x			node --version			https://nodejs.org
+Angular CLI						ng version				npm i -g @angular/cli
+VSCode as an IDE
+
+NodeJS?
+It is a javascript runtime. alternative to a browser to execute javascript. NodeJS does not support any UI like html.
+
+Now, while developing an application we have to execute various tools like
+angular-cli		for project-artifact-management 
+tsc				for compilation
+jasmine			for	testing
+grunt/gulp		for	packaging and so on
+
+And these tools are executed on the developer machine, not on the client.
+And for this purpose we need nodejs.
+
+Angular CLI
+	It is a frontier of commands or macros that help in creating and managing the structure of an angular application. And also command for testing, packaging, and executing angular apps are found.
+	
+	ng new app-name				creates a new angular app
+	cd app-name
+	
+	ng serve					compile, build, and host the package into a development server running on 4200 port
+	ng serve --port 9899 -o		compile, build, and host the package into a development server running on 9899 port,
+								and will launch the browser pointing to http://localhost:9899
+								
+	ng build					compile, build, and stores the package into 'dist' folder
+	ng test						compile, build, and runs the test cases
+	
+	ng g artifact-type artifact-name		is used to generate angular artifacts
+	
+
+Angular Architecture
+	It talks about the list of artifacts an angular application is made up of
+	1.Each angular artifact is a typescript class
+	2.Each class is marked with a decorator to identify its role
+	3.Each of these decorators are passed a json-object called meta-data which has of the configuration information
+	
+	Modules
+		@NgModule({
+			declarations:[],
+			imports:[],
+			exports:[],
+			providers:[],
+			bootstrap:[]
+		})
+		class SalesModule(){
+		
+		}
+		
+	Directives
+		@Directive({
+			selector:'[appFastMovingStock]',
+			providers:[]
+		})
+		class FastMovingStockDirective(){
+		
+		}
+		
+	Components
+		@Component({
+			selector:'app-dashboard',
+			templateUrl:'app-dashboard.component.html',
+			styleUrls:['app-dashboard.component.css'],
+			providers:[]
+		})
+		class SalesDashboardComponent(){
+		
+		}
+		
+	Pipes
+		@Pipe({
+			name:'inwords'
+		})
+		class IntoWordsPipe{
+		
+		}
+		
+	Services
+		@Injectable({
+			providedIn:'root'
+		})
+		class StockService(){
+		
+		}
+	
+Angular Modules
+	Module is a isolated logical unit of an application
+	
+	logical unit means one unseparable part which contains some functionality
+	isolation is always important for separating and maintaining your code
+	
+	Angular Modules and JavaScript/TypeScript modules live alongside one another in an angular app
+	
+	Angular Modules is a class by itself
+	
+	@NgModule({
+		declarations:[ /* list of all components, directives and pipes that belong to this module */ ],
+		imports:[ /* list of other modules we want to import from */ ],
+		exports:[ /* list of components or pipes or directives that belong here but are allowed to be used elsewhere */ ],
+		providers:[ /* list of services that belong to this module */ ]
+		bootstrap:[ /* list of Components that must be loaded along with the Module */ ]
+	})
+	class SalesModule(){
+	
+	}
+	
+	Each angular application is housed inside a top-level-module called 'ROOT MODULE'. The 'ROOT MODULE'is generally named as 'AppModule'.
+	
+	'ROOT MODULE' will not have 'exports' section in its meta-data
+	
+	Only 'ROOT MODULE' has 'bootstrap' section in its meta-data
+	
+	ng g module ModuleName		is the command used for creating a module
+	
+Angular Feature - Html Extendability
+	This allows us to create our own html elements and html attributes using angular framework
+	
+	These html-attributes created using angular framework are called Directives
+	These html-elements created using angular framework are called Components
+	
+	index.html
+	
+	<html>.....</html>
+			|-<head>...</head>
+			|-<body>...</body>
+					|-<app-root>...</app-root>
+								|-<app-header>...</app-header>
+								|-<app-emps-list>...</app-emps-list>
+								|-<app-vendors-list>...</app-vendors-list>
+								|-<app-orders-list>...</app-orders-list>
+					
+					
+	npm is the build tool
+	package.json is the descriptor file like pom.xml in java
+	
+Angular Components
+	Component is an html-element created using Angular Framework
+	
+	ng g c SalesDashboard --skip-tests
+		
+		SalesDashboard.component.ts			Component Class			Fields and Methods
+		SalesDashboard.component.html		Component Template		HTML MarkUp
+		SalesDashboard.component.css		Component Style			Style
+		
+		SalesDashboard.component.ts
+		@Component({
+			selector:'app-sales-dashboard',
+			templateUrl:'SalesDashboard.component.html',
+			styleUrls:['SalesDashboard.component.css'],
+			providers:[]
+		})
+		class SalesDashboardComponent(){
+		
+		}
+
+Data Binding
+	It is the way to consume the fields and methods of a component class in its template
+	
+	We bind the fields with DOM in the html and the methods with the events in the html
+	
+	Interpolation
+		To render the value of an expression in the content of an element
+		
+		<element> {{expression}} </element>
+		
+		<p> Sum of {{n1}} and {{n2}} is {{n1+n2}} </p>
+		
+	Two-Way Data Binding
+		To bind a field with a form-element. The value of the field is loaded into the form-element for the first time.
+		Whenever the form-element is edited, the value of the field is as well updated
+		
+		<input [(ngModel)]="fieldName" />
+		
+		'ngModel' is a directive defined in 'FormsModule' from '@angular/forms'. we have to import it in AppModule class
+	
+	One-Way Data Binding
+		Attribute Binding
+			It is about binding the value of a field to an attribute
+			
+			<element [attribute]="field"></element>
+			
+			<img [src]="myLogo" />
+			
+			<img src="../imgs/logo.png" />
+			
+		Event Binding
+			It is to bind a method with an event-directive
+			
+			<element (eventDirective)="method()"></element>
+			
+			html-event-attribute 				eventDirective
+				onClick								click
+				onDblClick							dblClick
+				onChange							change
+				onFocus								focus
+				onBlur								blur
+				onSubmit							ngSubmit
+				
+		Style Binding
+			It is about binding an expression to a cssProperty or a cssClass
+			
+			[style.cssProperty]="expression"
+			
+			let abcd:string="CENTER";
+			<p [style.textAlign]="abcd">Some Text</p>
+			
+			[ngStyle]="jsonObjectHavingCssPropertyNamesAsKeysAndValuesAsValues"
+			
+			let obj1={width:"20px",height:"100px",margin:"10px"};
+			<p [ngStyle]="obj1">Some Text</p>
+			
+			[class.className]="booleanExpression"
+			
+			let flag:boolean=true;
+			<p [class.highlight]="flag">Some Text</p>
+			
+			[ngClass]="arrayOfClassNames"
+			
+			let myClasses:string[]=["highlight","important","bordered"];
+			<p [ngClass]="myClasses">Some Text</p>
+			
+			[ngClass]="jsonObjectHavingClassNamesAsKeysAndBooleanAsValues"
+			
+			let myClasses={"highlight":true,"important":false,"bordered":true};
+			<p [ngClass]="myClasses">Some Text</p>
+		
+Directives
+Attribute Directives- ngModel, ngClass, ngStyle
+Event Directives- mentioned above
+
+Structural Directives- for manipulating the structure of the DOM
+	ngIf
+		<ng-template [ngIf]="booleanExpression">
+			<p>This para will appear only if the boolean expression evaluates to true.</p>
+		</ng-template>
+		
+		<p *ngIf="booleanExpression">This para will appear only if the boolean expression evaluates to true.</p>
+		
+		<ng-container *ngIf="booleanExpression then template1; else template2">
+		</ng-container>
+		
+		<ng-template #template1>
+			<p>Template one content</p>
+		</ng-template>
+		
+		<ng-template #template2>
+			<p>Template two content</p>
+		</ng-template>
+		
+	ngFor
+		<ng-template [ngFor]="let loopingVar of array">
+			<p>{{loopingVar}}</p>
+		</ng-template>
+		
+		<p *ngFor="let loopingVar of array">
+			{{loopingVar}}
+		</p>
+		
+	ngSwitch
+		<div [ngSwitch]="anExpression">
+			<p *ngSwitchCase="value1">if expression evaluates to value1</p>
+			<p *ngSwitchCase="value2">if expression evaluates to value2</p>
+			<p *ngSwitchCase="value3">if expression evaluates to value3</p>
+			<p *ngSwitchCase="value4">if expression evaluates to value4</p>
+			<p *ngSwitchCase="value5">if expression evaluates to value5</p>
+			<p *ngSwitchDefault>if expression evaluates to none of those values</p>
+		</div>
+		
+Pipes
+	It is a construct used to alter a value into another before rendering
+	
+	built-in-pipes
+		lowercase
+		uppercase
+		titlecase
+		number
+		percent
+		date
+		currency
+		async (observables)
+		json
+		
+	{{expression|pipeName:'pipe-inputs'}}
+	
+Integrating Bootstrap
+	bootstrap helps to design application in a responsive mode
+	npm i bootstrap
+	include 
+		'node_modules/bootstrap/dist/css/bootstrap.min.css' into 'styles' section &&
+		'node_modules/bootstrap/dist/js/bootstrap.min.js' into 'scripts' section
+	of angular.json
+
+Angular Routing
+	Routing feature allows navigating between components
+	
+	import 'RouterModule' from '@angular/router'
+	
+	RouterModule gives router outlet
+	router-outlet is a component used to reserve space for output of routing on the top level component
+	
+	Routes is a data type of Route array
+	
+	Route is an interface which contains path, redirect, pathMatch, component, children, etc
+	path: path of the component to be displayed
+	redirect: for redirecting to a certain component
+	
+	target component will appear as and when url matches with the path
+	path match is 'startsWith|full'
+	we can also define children paths 
+	
+	routerLink is an Attribute directive
+	
+	router-outlet		component		used to reserve space for output of routing on the top-level component
+	
+	routes				Route[]
+	
+	Route				interface		path:''
+										redirect:''
+										pathMatch: 'startsWith|full'
+										component: TargetComponent
+										children: []
+										
+	routerLink			directive		is used on 'a' tag instead of its 'href' attribute
+	
+	routerLinkActive	directive		takes a css-class-name and applies that class on the 'a' tag only when it is active
+	
+	Router				service			navigate(['sales','dashboard','settings'])
+										navigateByUrl('sales/dashboard/settings')
+										
+	ActivatedRoute		service			used to extract info like pathParameters, queryString, hostName, etc from the current url
+
+Angular Services
+		A service is an injectable artifact. services are used to hold business logic and supply it
+		whenever it is needed through dependency injection
+		
+		Validation logic, calculations, rest-api calls, etc are all held in services
+		
+		ng g service ServiceName --skip-tests					the service gets created in the 'app' folder
+		ng g service folderName/ServiceName --skip-tests		the service gets created in the specified folder
+		
+private will make the service a data member which will be accessible to use
+services will be injectable through constructor without using the new keyword
+
+
+@Input is used for passing data from parent to the child
+that field becomes attribute of the component which is marked with @Input
+! after a variable name means its optional, initialization not needed, only for undefined
+? after a variable name means its optional, nulls and undefined
+
+Interceptor have a look
+
+
+Angular Forms
+	Template Driven Form		'FormsModule' from '@angular/forms'
+	
+		1.the structure and behaviour of the form is defined using html
+		2.each input control is bound to a field of the component
+		3.these forms are difficult to test, as always testing JS is far more easier than testing html
+		4.these forms do not support nested or complex models
+		
+		ngForm			valid,invalid
+		ngModel			valid,invalid,dirty,pristine,touched,untouched
+		
+		Template Driven Forms are recommended only when the form has not more than two fields
+		
+	Model Driven Form			'ReactiveFormsModule' from '@angular/forms'
+	
+	Also called as Reactive Forms
+		1.the structure and behaviour of the form is defined using javascript
+		2.these forms are easy to test, as always testing JS is far more easier than testing html
+		3.these forms support nested or complex models
+		
+		FormGroup			valid,invalid
+		FormControl			valid,invalid,dirty,pristine,touched,untouched
+
+
+Bootstrap should design the webpage as its responsive
+Angular Material should design the components
+Angular Material is not responsive
+
+snapshot is for accessing the app url
+params is for accessing the path params
+paramMap is for accessing the whole path params
+
+custom pipes and directives
+lifecycle methods, chain detection, view encapsulation
+observables
+rest api integration
+route guards
+see the mphasis pdf
+
+Angular LifeCycle Hooks for a Component/Directive
+	constructor
+	This is invoked when Angular creates a component or directive by calling new on the class
+	
+	ngOnChanges
+	Invoked every time there is a change in one of the input properties of the component
+	
+	ngOnInit
+	Invoked when the given component has been initialized
+	This hook is only called once after the first ngOnChanges
+	
+	ngDoCheck
+	Invoked when the change detector of the given component is invoked. It allows us to implement our own change detection algorithm for the 
+	given component
+	
+Custom Directives
+	ng g directive DirectiveName --skip-tests
+	
+	@Directive({
+		selector:'[appFastMovingStock]'
+		providers:[]
+	})
+	class FastMovingStockDirective{
+	
+	}
+	
+	@Input()			for receiving any values
+	@HostListener()		is used to handle event that occur on the element
+	ElementRef			represents the element on which the directive is applied
+	
+Custom Pipes
+	ng g pipe PipeName --skip-tests
+	
+	@Pipe({
+		name:'inwords'
+	})
+	class IntoWordsPipe implements PipeTransform{
+		transform(value:any,...args:unknown):any{
+		
+		}
+	}
+	
+Observable from RxJS
+	An Observable is an enhanced Promise
+	
+	const bgJob = (resolve,reject) => {
+		//we use resolve(val) to indicate successful completion of the job
+		//we use reject() to indicate abortion due to an error
+	};
+	let p = new Promise(bgJob);
+	
+	p.then(
+		(val) => { /* is the implementation of resolve */ },
+		() => { /* is the implementation of reject */ }
+	);
+	
+	- only one value can be returned from the bgJob after its completion through resolve
+	- once the bgJob is triggered we can not cancel it or unsubscribe from it
+	- only one subscription per promise is allowed
+	
+	const bgJob2 = (observer) => {
+		//observer.next(val)		is called every time the bgJob2 wants to emit a value
+		//observer.error(err)		is called to indicate abortion of the job due to an error
+		//observer.complete()		is called to indicate the successful completion
+	};
+	
+	let ob = new Observable(bgJob2);
+	
+	ob.subscribe({
+		next: val => { /* consume the value */ }
+		error: err => { /* handle the error */ }
+		complete: () => { /* do something once the job is done */ }
+	})
+	
+	+ any number of values can be returned from the bgJob2 while it is in progress
+	+ once the bgJob2 is triggered we can cancel by calling 'unsubscribe'
+	+ any number of subscriptions per observable are allowed
+	
+HttpClient from 'HttpClientModule' from '@angular/common/http'
+
+	HttpClient provides 
+		get(apiEndPoint) : Observable
+		post(apiEndPoint, reqBody) : Observable 
+		put(apiEndPoint, reqBody) : Observable
+		delete(apiEndPoint) : Observable
+		
+one thousand twenty four
+
+Create a fake rest-api using json-server
+	json-server is a javascript tool that generates fake rest-api from a .json
+	
+	md hr-api
+	cd hr-api
+	npm init -y
+	npm i json-server@0.17.4
+		
+	create hr-api/data.json
+	change the 'start' script in the package.json as 'json-server --port 9999 --watch ./data.json'
+	
+	npm start
+	
+'async' pipe helps to extract data from Observable, read more on this
+
+View Encapsulation
+	allows us to isolate the css classes to the specified component level
+	
+	encapsulation: ViewEncapsulation.NONE
+	encapsulation: ViewEncapsulation.Emulated	(default)
+	encapsulation: ViewEncapsulation.ShadowDOM
+	
+Router Guards
+	canActivate
+	canActivateChild
+	canDeActivate
+	canMatch
+
+pure and impure pipes
+observables (rxjs) learn more, dependency injection learn more, @Output-old school thought, use input only, ViewChild, ContentChild, 
+debugging-only developer tools, subjects, form builder, form array, go with form group and form control
+
+angular material, angular library, lazy loading
+https://medium.com/@mattias.trnqvist/10-best-practices-for-building-scalable-angular-applications-with-examples-efdfe2a5b4e8
+https://www.freecodecamp.org/news/best-practices-for-a-clean-and-performant-angular-application-288e7b39eb6f/
+
+	
+====================================================================================
+
+Java 8
+--------------------------------------
+Topics to be Covered:
+1 Introduction to Java
+2 Classes and Objects
+3 Methods, Encapsulation, and Conditionals
+4 Data Manipulation and Inheritance
+5 Encapsulation, Polymorphism, and Abstraction
+6 Interfaces, Lambda Expressions, Collections, and Generics
+7 Inheritance, Interfaces, Exceptions, and Deployment
+8 Date/Time API, I/O and File I/O (NIO.2), and Concurrency
+9 Concurrency, Parallelism, The JDBC API, and Localization
+
+Lab Setup
+JDK 8 or above.
+EClipse / IntelJ/ STS 
+Maven
+MySQL 8 community Server
+
+Intro
+	History
+		1.1,
+		1.2,1.3,1.4
+		1.5
+		1.8
+		1.17
+		1.21
+		
+	Features
+		Simple
+		Robust
+		Multi-Threaded
+		Distributed
+		Self-Documented
+		Platform Independent
+		Architecture Neutral
+		
+	Characteristics
+		Partially but Strictly Object Oriented
+		Type Safe
+		Case Sensitive
+		Has c-family syntax
+		
+	Tokens And Standards
+	
+		Identifiers
+			variables names and method names
+				camelCase
+			
+			type names (classes, interfaces, etc)
+				initialCapitals
+				
+			constants Names
+				ALL_CAPITALS
+				
+		Keywords
+		Operators
+		Comments
+		Literals
+			"hello"			string literal
+			'$'				char literal
+			12				integer literal (decimals)
+			034				integer literal (octal)
+			0xA1			integer literal (hexa-decimal)
+			12.56			floating point literal
+			true, false		boolean literals
+			null			null literal
+			
+z1 holds the reference of the object but not the object directly
+copy constructor is accpeting an object of the same class
+'this' means reference to the current object
+
+Object Oriented Programming Concepts
+	Class and Object
+		class is a user defined datatype. It is used to define a model with properties and behaviours. Properties are represented through variables and behaviours through Methods
+		
+		Object is a variable of class type
+		
+		class ComplexNumber{
+			int real;
+			int imaginary;
+			
+			ComplexNumber(){
+				/* is a default constructor - no arg constructor
+				is a special method that gets invoked as and when an object is allocated
+				is used to initialize the fields of the object
+				*/
+				
+				this(8,17);
+					//here 'this' keyword is used to call paramaterized-constructor from default constructor
+					
+			}
+			
+			ComplexNumber(int real, int imaginary){
+				//a paramaterized constructor
+				this.real=real;
+				this.imaginary=imaginary;
+				
+				//'this' keyword represents the current object
+			}
+			
+			ComplexNumber(ComplexNumber z){
+				//a copy constructor
+				
+				this(z.real, z.imaginary);
+					//here 'this' keyword is used to call paramaterized-constructor from copy constructor
+			}
+		}
+		
+		ComplexNumber z1=new ComplexNumber();
+		ComplexNumber z2=new ComplexNumber(10,11);
+		ComplexNumber z3=new ComplexNumber(z2);
+		ComplexNumber z4=z2;
+		
+		new keyowrd creates the object. memory location
+		z2,z4 two difeerenet names of the same object
+		
+	Encapsulation
+		It is a means of applying restriction of access on fields or methods
+		
+		This is done through access specifiers and setters and getters
+		
+		Access Specifiers
+			<default>
+			private
+			protected
+			public
+			
+		setter is a method that allows a value into a field (writing into a field)
+		getter is a method that allows the value of the field to be returned (reading a field)
+		
+		If a field is marked private,
+			we can make it both readable and writable by defining both setter and getter upon it
+			we can make it read only by defining only getter
+			we can make it write only by defining only setter
+			
+		class ComplexNumber{
+			private int real;
+			private int imaginary;
+			
+			public ComplexNumber(){
+				this(8,17);
+			}
+			
+			public ComplexNumber(int real, int imaginary){
+				this.real=real;
+				this.imaginary=imaginary;
+			}
+			
+			public ComplexNumber(ComplexNumber z){
+				this(z.real, z.imaginary);
+			}
+			
+			public void setReal(int real){
+				this.real=real;
+			}
+			
+			public int getReal(){
+				return this.real;
+			}
+			
+			//we are making the field 'imaginary' as read-only (as a setter is not defined)
+			public int getImaginary(){
+				return this.imaginary;
+			}
+		}
+		
+		'static' keyword is used in various context
+		
+		static fields		a field is called a instance variable as each instance (object) of the class has its own copy of the field but if 
+							the field is marked static, it is called class variable, as it is allocated as a single copy for all instances (objects)
+							to share
+		static methods		methods that are marked static can access only static fields and method of that class directly
+							public static fields or methods can be accessed with the class name directly, memory efficiency, global access, object independence
+		static classes		Inner Classes vs Nested Classes
+							A class inside a class is called Inner class. Inner class has access to all the other memebr of the
+							enclosing class.
+							A static class inside a class is called Nested class. Nested class is a treated as memeber of the enclosing
+							class.
+		static blocks		static { /* some code goes here */ }, what it is, what is the purpose, where to use it
+							A class can have any number of static blocks but are all clubbed into one.
+							The code enclsoed in these blocks gets executed just before the class being accessed
+							for the first time.
+		
+	Polymorphism
+		It is a technique to define multiple methods with the same name
+		It has two ways of achieving it-
+		
+		Overloading
+			two methods of the same class or two methods from a super and a sub class
+				1.having same name
+				2.but different no. of args or different types of arguments
+			are said to be overloaded
+			
+			class Human{
+				public void eat(Apple apple){
+					wash(apple);
+					ApplePieces[] pieces = cut(apple);
+					for(ApplePieces piece : pieces){
+						chewAndSwallow(piece);
+					}
+				}
+				
+				public void eat(IceCream iceCream){
+					while(iceCream!=null){
+						lickAndSwallow(iceCream);
+					}
+				}
+			}
+			
+		Overriding
+			two methods from a super and a sub class, having the same signature (same name, same args and same return type)
+			are said to be overridden
+			
+			class Monkey{
+				public void eat(Apple apple){
+					while(apple!=null){
+						biteAndChewAndSwallow(piece);
+					}
+				}
+			}
+			
+			class Human extends Monkey{
+				public void eat(Apple apple){
+					wash(apple);
+					ApplePieces[] pieces = cut(apple);
+					for(ApplePieces piece : pieces){
+						chewAndSwallow(piece);
+					}
+				}
+			}
+		
+	Inheritance
+		It is about defining a new class from an existing class
+		
+		class Pen{
+			Nib nib;
+			Barrel barrel;
+			Refill refill;
+			
+			public void write(Paper paper){
+			
+			}
+		}
+		
+		class Marker extends Pen{
+			public void write(WhiteBoard board){
+			
+			}
+		}
+		
+		Simple/Single
+						super<---------------sub
+		MultiLevel
+						super<---------------sub1<--------------sub2<---------------sub3
+		Hierarchical
+										|<------------sub1
+						super<----------|
+										|<------------sub2
+										
+		Multiple
+						super1<---------|
+										|<------------sub
+						super2<---------|
+						
+		Hybrid
+										|<-----------sub1
+						super<----------|
+										|<-----------sub2<------------sub3<----------sub4
+										
+		Classes in Java do not support 'multiple' inheritance
+		
+		Constructors are chained from super to sub class, when an object of a sub-class is allocated
+		A reference of a super class can refer to an object of its sub class
+		
+			SuperClass s = new SubClass();
+			
+		A Super class reference can be typecasted to a sub class reference
+		
+			SubClass x = (SubClass) s;
+		
+		'super' keyword can be used to invoke any super class constructor from a sub class constructor
+		
+		'super' keyword can be used to invoke a super class method from its overridden copy in the sub-class
+		
+		class SuperClass{
+			public void method(){
+			
+			}
+		}
+		
+		class SubClass extends SuperClass{
+			public void method(){
+				super.method();
+			}
+		}
+		
+	Abstraction
+		It is the process of declaring a method and implementing it in later stages
+		
+		In main words, it is the process of declaring and the implementation follows later
+		
+		It has three ways of achieving it-
+		
+		abstract class
+				a class that can not have an object allocated
+				you can declare an object but cannot allocate an object
+				
+				abstract class Person				id,fullName,gender,bloodGroup
+						|
+						|-class Student				class,section,fee
+						|-class Teacher				subject,salary
+						|-class NonTeachingStaff	designation,salary
+						|-class Parent				mobileNumber,mailId
+						
+		abstract method
+				a method that is declared now but implemented later
+				an abstract method can be declared only inside an abstract class or an interface
+				
+				abstract class Shape{
+					private int[] sides;
+					
+					public int perimeter(){
+						int sum=0;
+						for(int s : sides){
+							sum += s;
+						}
+						return sum;
+					}
+					
+					public abstract int area();	
+				}
+				
+		abstract classes when inherited, the inheriting sub class must implement all the abstract methods
+		of the abstract super class, failing which - that sub class also must be marked as abstract
+		
+		interface
+			It is a user defined abstract data type that can not have instance variables (non-static fields)
+			
+			a class can implement multiple interfaces
+
+			while defining an abstract data type.....
+				if we have to declare fields -> no choice ->  we write an abstract class
+				if we have no fields -> we choose interface over abstract class, as interface support multiple inheritance
+				
+			Classes represent Entities and Interfaces represent Roles
+			
+			interface Mother		giveBirth()
+			interface Father		protect(),feed()
+			interface Sibling		showAffectionAndLove()
+			
+			abstract class Animal
+							|-class FemaleAnimal		implements Mother,Sibling
+							|-class MaleAnimal			implements Father,Sibling
+							
+			abstract class Bird
+							|-class FemaleBird			implements Mother,Sibling
+							|-class MaleBird			implements Father,Sibling
+							
+		'final' keyword
+			final variables 	are constants
+			final methods		can not be overridden
+			final classes		can not be inherited further
+			
+		'final' and 'abstract' keywords contradict each other and will never appear together
+		
+		MarkerInterface			an interface having no methods at all is called a MarkerInterface
+		
+								example- java.io.Serializable
+								
+								Modernly MarkerInterfaces are replaced with Annotations
+								
+		FunctionalInterface		an interface having only one abstract method is called a functional interface
+		
+								introduced in 1.8
+								
+								interface BinaryOperator{
+									int operate(int n1, int n2);
+								}
+								
+								interface Greet{
+									String doGreet(String unm);
+								}
+								
+								interface GetText{
+									String get();
+								}
+								
+								Functional interfaces can be implemented and instantiated without a class,
+								using a special functional syntax called Lambda Expression
+								
+								A Lambda Expression 'maps' a list of parameters with its return value
+								
+									(paramList) -> returnValue
+									
+										BinaryOperator sum = (a,b) -> a+b;
+										System.out.println(sum.operate(10,20));
+
+										BinaryOperator maxOf = (x,y) -> x>y?x:y;
+										System.out.println(maxOf.operate(10,20));
+										
+										Greet greet1 = userName -> "Hello " + userName;
+										System.out.println(greet1.doGreet("Vamsy"));		
+
+										GetText companyName = () -> "Cognizant";
+										System.out.println(companyName.get());
+										
+										(paramList) -> {
+											//complex function body
+											
+											return someResult;
+										};
+
+
+								pass a function as a parameter to another function is known as functional programming
+								
+								@Override is a compiler check annotation, it ensures that we overriden the right method name
+								@FunctionalInterface is a compiler-check annotation that ensures that the interface has one and only abstract method
+								if we have two abstract methods in functional interface, then lambda function wont know to where to go because we didnt mention the function name in implementation so to avoid that, the lambdas are used with functional interface since they only have one abstract method
+								
+								Types of Functional Interfaces
+								
+								Suppliers		returns a value but has no-args
+								Consumers		doesn't return any value but has args
+								Predicates		returns boolean irrespective of having args
+								Functionals		any other than the above
+		
+	java.lang
+		Object		the default super class for all classes in java
+					offers some important methods like-
+					public boolean equals(Object)		//obj1.equals(obj2)
+					public int hashcode()
+					public String toString()
+					
+					if two objects have same hashcode, it is not necessary that they have the same magnitude
+					overriding the hashcode gives the same hashcode based on the same magnitude
+					if not overridden, then it gives hashcode based on the new object creation
+					== compares pointing to the same object location or not
+					.equals compares the value
+					when object is created, java maintains a register
+					hashcode is an easier method to compare objects for good performance
+					when hashcode is not equal, no comparison happens
+					when hashcode is equal, then further comparison happens
+					
+		System		
+		Math
+		
+		Wrapper Classes-
+		Byte
+		Short
+		Long
+		Integer
+		Float
+		Double
+		Boolean
+		Void
+		Character
+		
+		String
+			Strings are immutable, we cannot modify the existing string, if modified a new string object is created and assigned to the variable
+		StringBuffer
+			it is mutable, String buffer is thread safe and used in multi threaded environments
+		StringBuilder
+			it is mutable, String builder is not thread safe and used in uni threaded environments
+			
+		Exception Handling
+		
+			Throwable interface
+				|-Exception
+					|-<sub classes of Exception class> are called CHECKED Exceptions
+					|-RuntimeException
+						|-<sub classes of RuntimeException class including RuntimeException> are called UN_CHECKED Exceptions
+						
+			CHECKED Exceptions are checked by the compiler, if they are handled or not. And if not handled
+			the compilation will not continue. It is compulsory to handle CHECKED Exceptions
+			
+				try{
+					Connection con = DriverManager.getConnection(dbUrl,dbUserName,dbPassword);
+					//in this case we cannot avoid if the username or password are changed by the time the above line executes
+					//we cannot control the power-off of the database server by the time the above line executes
+				}catch(SQLException exp){
+				
+				}
+				
+			UN_CHECKED Exceptions are NOT checked by the compiler, if they are handled or not. It is NOT compulsory to handle UN_CHECKED Exceptions. Because the UN_CHECKED exceptions MUST NOT BE HANDLED USING TRY...CATCH, BUT THEY MUST BE AVOIDED.
+			
+				public void increaseSal(Employee emp,double percent){
+					if(emp!=null){	//avoiding NullPointerException, we are not handling it
+						emp.setSalary(emp.getSalary() + (emp.getSalary()*percent));
+					}
+				}
+				
+			//try-with-multiple-catch	
+				
+			try{
+				//statements that may raise an exception
+			}catch(ExceptionType1 exp){
+				//alternate code or exception handling happens
+			}catch(ExceptionType2 exp){
+				//alternate code or exception handling happens
+			}catch(ExceptionType3 exp){
+				//alternate code or exception handling happens
+			}finally{
+				//any code that has to be executed irrespective an exception occured or not
+				//is used to close resources like streams, connections, etc
+			}
+			
+			//try-with-multi-catch
+			
+			try{
+				//statements that may raise an exception
+			}catch(ExceptionType1 | ExceptionType2 | ExceptionType3 exp){
+				//alternate code or exception handling happens
+			}finally{
+				//any code that has to be executed irrespective an exception occured or not
+				//is used to close resources like streams, connections, etc
+			}
+			
+			//try-with-resources
+			
+			try(/*declare all closeable resources like files, streams, connections, etc, here*/){
+				//statements that may raise an exception
+			}catch(ExceptionType1 | ExceptionType2 | ExceptionType3 exp){
+				//alternate code or exception handling happens
+			}
+		
+			'throw'		is a keyword used to raise an exception
+			'throws'	is a keyword used to transfer the exception handling from a method to its caller-method
+			
+			CHECKED Exceptions cannot be avoided
+			UN_CHECKED Exceptions can be avoided
+			
+			'throws' keyword transfers the exception to the UI layer, meaning it transfers first to the calling method and then handled there
+			followed by transfer to the UI
+				
+		Runnable interface
+			|-Thread
+		
+	java.time
+	
+		LocalDate       .now(),.of(year,month,day)
+		LocalTime       .now(),.of(hour,min,sec)    
+		LocalDateTime   .now(),.of(year,month,day,hour,min,sec) 
+		ZonedDateTime   .now(zoneId),.of(year,month,day,hour,min,sec,zoneId) 
+
+						getDay(),getMonth(),getYear(),getHour() .....etc.,
+						plusDays(int),plusMonths(int),plusYears(int),...etc.,
+						minusDays(int),minusMonths(int),minusYears(int),...etc.,
+						isAfter,isBefore,isEquals
+						parse(String),parse(String,dateTiemFormatter),format(dateTiemFormatter)
+
+		TemporalAdjusters
+
+		Period          .between(startDate,startDate);
+		Duration        .between(startTime,startTime);
+
+		DateTimeFormatter.ofPattern("");
+
+	java.util
+		Scanner (class)
+		
+		Comparator
+			is an interface used to provide comparison strategy of any model
+			
+				int compare(T obj1, T obj2); //comparatorObject.compare(obj1,obj2);
+				
+				is expected to return a 
+					positive number if obj1 is greater than obj2 OR
+					negative number if obj1 is lesser than obj2 OR
+					zero meaning both objects are equal
+					
+			java.lang.Comparable is also an interface expected to be implemented by a model class to facilitate the
+			comparison strategy
+			
+				int compareTo(Object); //obj1.compareTo(obj2)
+				
+			Comparable interface is used for default comparison strategy, whereas
+			Comparator interface facilitates customized comparison strategy
+			
+		Collection<T> (interface)	add(ele),remove(ele),contains(ele),size(),clear(),stream()
+			|
+			|-Set (i)
+			|			represents a non-linear data-structure	
+			|			elements in set will not have index. set doesn't allow duplicates
+			|
+			|	|-HashSet (c)			doesn't have any order in retrieving elements (internally implements HashTable)
+			|	|-LinkedHashSet (c)		it follows entry order in retrieving elements (internally implements LinkedList and HashTable)
+			|	|-TreeSet (c)			it follows sorted order in retrieving elements (internally implements Binary Search Tree)
+			|
+			|-List (i)
+			|			represents a linear data structure
+			|			elements have index(0 based). duplicate elements are allowed
+			|
+			|			add(int index,element),removeAt(int index),first(),last(),etc
+			|	
+			|	|-Vector (c)		a synchronized growable array, thread-safe (internally implements Array)
+			|	|-ArrayList (c)		a growable array (not synchronized), not thread-safe(internally implements Array)
+			|	|-LinkedList (c)	a doubly linked list implementation (in which there is a node which contains 3 parts-previous element index,
+									current node value, next element index)
+									
+			Linked List is used for extensive modification like insertion and deletion, heavy traversing is there in linked list
+			Array List or Vector is used for retrival purposes and when insertion and deletion are lesser
+			
+		Map (i) 		represents a group of key value pairs (internally implements Dictionary)
+		 |				put(key,value),set(key,value),containsKey(key),keySet(),size(),clear()
+		 |				key cannot be duplicate
+		 |
+		 | - HashMap (c)			doesn't have any order in retrieving elements (internally implements HashTable)
+		 | - LinkedHashMap (c)		it follows entry order in retrieving elements (internally implements LinkedList and HashTable)
+		 | - Tree Map (c)			it follows sorted order on KEY in retrieving elements (internally implements Binary Search Tree)
+						
+						
+		Collections (c)		is a class that provides a variety of utility functions
+		
+		javap java.util.Comparator --> command to see the structure
+			
+		
+	java.util.regex
+		Pattern pattern  = Pattern.compile(regexp);
+		
+		java.lang.string	matches(regexp)
+		
+	java.util.function
+		this package provides a list of pre-declared functional interfaces
+		
+		:: -> scope resolution operator
+		System.out::println; //Method Referencing
+		
+		Suppliers		returns a value but has no-args
+		Consumers		doesn't return any value but has args
+		Predicates		returns boolean irrespective of having args
+		Functionals		any other than the above
+	
+	java.util.stream
+		it gives a class called Stream
+		Stream is a class that represents 'a flow of data'
+		
+		DataSource - flow of data starts
+		DataSink - flow of data ends
+		
+		DataSource<-------------stream---------------->DataSink
+		
+		DataSource can be an array or a list or a set or any other collection
+		
+		DataSink can be an array or a list or a set or any other collection or a single object or nothing
+		
+		Stream s1 = Stream.of(ele1,ele2,ele3,...);
+		Stream s2 = Arrays.stream(array);
+		Stream s3 = ListorSetorAnyOtherCollectionObj.stream();
+		
+		Streams support functional programming
+		
+		DataSource
+			|----------Stream----------|
+									OPERATION
+										|--------------Stream----------|
+																	OPERATION
+																		|----------Stream----------|
+																								DataSink
+																								
+		As functional programming is a new paradigm that provides higher maintainability of data
+		manipulation when compared to their alternate looping-based-solutions
+		
+		Intermediate and Terminal Stream
+		
+		Instance Methods of Stream Class
+			
+			void forEach(Consumer)
+				execute the consumer on each and every element of the stream
+				this is a terminal operation as the stream terminates into nothing
+				
+			Collection collect(Collector)
+				is used to collect a stream into a collection
+				this is a terminal operation as the stream terminates into a collection
+				
+				Collectors.toList()
+				Collectors.toSet()
+				Collectors.toMap()
+				...etc, are Collectors
+				
+				Set set = streamObj.collect(Collectors.toSet());
+				
+			T reduce(identity, binaryOperator) - used for any logical operation like sum, multiply, etc
+			Optional<T> reduce(binaryOperator) - used for operation on objects like Employee, Item, etc
+			
+				it is going to reduce a stream into a single element
+				this is a terminal operation as the stream terminates into a single element
+				
+				int[] nums = new int[] {1,2,3,4,5}
+				BinaryOperator prd = (x,y) ->  x*y;
+				int result = Arrays.stream(nums).reduce(1,prd);
+									// prd(prd(prd(prd(prd(1,1),2),3),4),5) -> 120
+									
+				Optional<Integer> result2 = Arrays.stream(nums).reduce(prd);
+									// prd(prd(prd(prd(1,2),3),4),5) -> 120
+			
+			Stream filter(predicate)
+				it executes the predicate on each element of a stream and returns a new stream containing
+				elements that satisfy the predicate
+				this is a intermediate operation as it returns a new stream
+				
+			Stream map(mapper)
+				a mapper is a functional interface that has a function which accepts one arg and returns one result
+				
+				x -> x*x
+				x -> Math.sqrt(x)
+				
+				bankAccount -> bankAccount.getBalance()
+				
+				'map' will execute the mapper on each element of the stream and returns a new stream containing
+				all the results
+				this is a intermediate operation as it returns a new stream
+				
+	Multi-Threads
+		Thread is a isloated process
+		if multiple processes share the same heap, they are said to be a group of threads or multi-threading
+		Each java application is a thread by itself
+		
+		java.lang.Runnable		void run()
+					|
+					java.lang.Thread
+					
+								Thread()
+								Thread(Runnable)
+								Thread(String name)
+								Thread(Runnable, String)
+								
+								String getName()
+								void setName(String name)
+								int getPriority()
+								void setPriority(int p)
+								void start()
+								void join()
+								static void sleep(long durationInMilli)
+								static Thread currentThread();
+								
+		Lifecycle-
+			constructor()
+                |
+                | start()
+                ↓
+                [...queue READY] ------ the cpu and other resources are available --|
+                            ↑                                                       |
+                            |                                                       ↓
+                        [PAUSED...]-------------sleep()----------------------- [Running (run()) ]
+                                                                                    |
+                                                                                    ↓
+                                                                                [Terminates]
+																					
+	Multi-Layer Archetecture
+
+    DAO     <-------models------> SERVICE <-------models------> UI
+
+    UI - User Interface - is responsible to 
+                            (a) accept data or instruction from the user.
+                            (b) to display information or resposne from the application
+
+    SERVICE               is responsible to
+                            (a) provide bussiness logic like caliculations, computations, validations ..etc.,
+                            (b) it generally accepts a model from UI layer, validates or computes on the model
+                                and passes model to the DAO layer for persistence.
+
+    DAO - DataAccessObject -    is responsible to
+                                    (a) interact with a data store like a file/ or a databases etc.,
+                                            and persist the data into the data store.
+                                    (b) it receives the model from service layer and after persisting
+                                            will inform the service layer with the outcome of the
+                                            data operation and the service layer will
+                                            pass on the outcoem to the UI layer 
+                                            and the UI layer will according inform the user.
+		
+																					   
+	java.io, java.nio
+		java.io provides a classical InputOutput API
+		java.nio provides a novel / new InputOutput API, and also a few non-blocking InputOutput API
+		
+			Files
+			Paths
+			Path
+			Directories
+			
+			Non-blocking api replaced IO-Streams with Channels, Buffers and Selectors
+				Channel is a flow of data
+				Buffer is a temporary memory location to store data from a channel or into a channel
+				Selector is a monitor on a buffer that responds when ever a reading or writing happens on the buffer
+
+	JDBC
+		Oracle 			<-> Thin Driver <->
+		MySQL			<->ConnectorJ Driver <-> JDBC-API <--> [DAO <-model-> SERVICE <-model-> UI ] <--> End User
+		Ms SQL Server	<-> Jet Driver <->
+		
+		A Jdbc is a database connectivity specification (only declarations [interfaces and abstract class])
+		Each Database driver is an implementation of this specification
+		
+			Oracle 		jdbc:oracle:thin:@serverName:5314/OracleServiceName
+			MySQL		jdbc:mysql://serNameOrIP:3306/databaseName
+			
+	java.sql
+		Connection con=DriverManager..getConnection(dbConnectionString,userId,password)
+					|
+			--------------------------------------------------------------------------
+			|										|								|	
+		Statement st=con.createStatement();			|			CallableStatement cst=con.preppareCall(call);
+										PreparedStatement pst=con.prepareStatement(qry)
+										
+		Statement and PreparedStatement are used to execute DDL/DML/DRL queries
+		CallableStatement is used to execute a database procedure or function
+		
+		Statement							used to handle dynamic queries
+			int executeUpdate(qry);			used to execute insert/update/delete queries and return affectedRowCount
+			boolean execute(qry);			used to execute create/alter/drop queries and return isDoneOrNot
+			ResultSet executeQuery(qry);		used to execute Select query and the data is returned as a ResultSet Obj
+			
+		PreparedStatement					used to handle static queries and supports parameters
+			int executeUpdate();			used to execute insert/update/delete queries and return affectedRowCount
+			boolean execute();				used to execute create/alter/drop queries and return isDoneOrNot
+			ResultSet executeQuery();		used to execute Select query and the data is returned as a ResultSet Obj	
+			void set<Type>(paramIndex,paramValue)
+			
+		ResultSet
+			is an interface that hold the data returned by the Select query
+			
+			boolean next()
+			<Type> get<Type>(colIndex)
+			<Type> get<Type>(colLabel)
+	
+create database adbdb;
+use adbdb;
+create table contacts(
+cid int primary key auto_increment,
+fnm varchar(50) not null,
+mob char(10) not null,
+mid varchar(100) not null,
+dob date not null,
+age double
+);
+wrapper classes are required to provide object status
+wrapper classes can hold null but primitive variables cant	
+wrapper classes have inbuilt methods to help us perform certain operations
+
+1. Accept the date of birth of a user, assuming 70 years as the retriment age, compute and print his retirement date.
+ 
+2. Accept the principal, rate, time period, and disbursal date of a loan, compute and print the EMI and loan closure date.
+
+Assignment:
+(a) Create a Model called "Item". Item will have itemCode:int,title:string,price:double,packageDate:LocalDate as fields
+(b) Make the Item implement Comparable interface and override compareTo method to compare two items based on their itemCode
+(c) Create a List<Item> and display them using an ApplicationClass
+(d) Pick up the names of all those items that has price between 100 and 300 and print them
+(e) Add two more fields to the Item model, expiryDate:LocalDate and category:String ["BEVERAGES","CEREALS","PULSES","ACCESSORIES"]
+(f) Assuming the shelfLife of each time as 40 days for CEREALS and PULSES, 80 days for BEVERAGES and 5 years for ACCESSORIES,
+compute the expiryDate of each item
+(g) Pick up the costliest beverage and print it
+
+LocalDate cerealsAndPulseExpiryDate = LocalDate.of(2024,6,13).plusDays(cerealsAndPulseShelfLife);
+System.out.println("Cereals And Pulse will be expired on: "+cerealsAndPulseExpiryDate);
+		
+LocalDate beveragesExpiryDate = LocalDate.of(2024,6,13).plusDays(beveragesShelfLife);
+System.out.println("Beverages will be expired on: "+beveragesExpiryDate);
+		
+LocalDate accessoriesExpiryDate = LocalDate.of(2024,6,13).plusDays(accessoriesShelfLife);
+System.out.println("Accessories will be expired on: "+accessoriesExpiryDate);
+
+==========================================================================
+
+JAVA-
+
+Objectives
+----------------------------------
+
+    1. Java Intro
+    2. OOP
+    3. Working with Strings, Math, System and Object classes
+    4. Exception Handling
+    5. Generics And Collections
+    6. Functional Interfaces, Lambda Expressions and Stream API 
+    7. Multi-Threading and Concurrency
+    8. Java Database Connectivity
+    9. Java 9 to 17 Features
+
+Lab Setup
+-----------------------------------
+
+    JDK 8
+    Eclipse IDE
+    MySQL or any other RDBMS
+
+Java Into
+-----------------------------------
+
+    is a high level strictly but partially object oriented general purpose programming language.
+
+    Features
+        Simple
+        Robust
+        Multi-Threaded
+        Distributed
+        Secure
+        Self Documented
+        Arch., Neutral
+        Platform Independent
+            
+            JRE         Java Runtime Env.,          JVM - JAva Virtual Machine, 
+                                                    JIT - Just In Time interpreter
+                                                    Class Loaders, Garbbage Collector ...etc.,
+
+            JDK         Java Development Kit        JRE + development tools like java compiler ...etc.,
+
+            Prog.java   ----javac------>    Prog.class (is a intermediate byte code understood only to JVM)
+
+            this 'Prog.class' can be executed on any OS in the world provided the respective JVM is installed on it.
+            
+    Characteristics
+        1. Case Senstitive
+        2. C, C++ sytax similarity
+        
+    Evolution
+        Editions
+            JSE     Java Standard Edition       offers basic language support needed for 
+                                                any console base applications
+                                                JDK - installs JSE
+                                                
+            JEE     Java Enterprise Edition     offers all that is needed to develop distributed enterprise level 
+                                                app like web-apps, web-services ...etc.,
+
+            JME     Java Micro Edition          used for mobile app development and for programming IoTs
+
+        Industry Adopted Versions
+            Java 2
+            Java 4
+            Java 5
+            Java 8
+            Java 9
+            Java 11
+            Java 17
+
+    Tokens
+        is the msot indivisible piece of code.
+
+        Identifiers
+            is a name given any resource like variables, objects, methods, classes ....etc.,
+
+            Rules
+                1. an identifier can be alpha numberic but can not start with a number
+                2. it can not match with any keyword
+                3. no two resources can have the same identifier
+                4. no special symbol except _ (Underscore) are allowed in a identifer
+
+            Naming Concentions
+                Varaibles, Objects, Method          identfiers of these resources must start in lower case
+                                                    and continue in lower case , but from second word onwards
+                                                    init-capital are observed.
+
+                                                    age
+                                                    dateOfBirth
+                                                    length
+                                                    totalSurfaceArea
+
+                                                    display()
+                                                    toString()
+
+                Classes, Enums, Interfaces          identfiers of these resources must observe init-caps
+
+                                                    String
+                                                    Exception
+                                                    ArithmeticException
+                                                    ArrayIndexOutOfBoundsException
+
+                Constants                           identfiers of these resources must be all upper case
+                                                    and we use '_' to seperate words.
+
+                                                    PI
+                                                    MIN_LIMIT
+                                                    MAX_LIMIT
+
+
+        Operators
+            Binary
+                Arithmetic      +   -   *   /   %
+                Assignment      =   +=  -=  *=  /=  %=
+                Relational      ==  <   >   <=  >=  !=
+                Logical         &&  ||  !
+            Ternary Pair        cond ? true_exp : false_exp;        g = a>b ? a : b;
+            Unary               ++  --  -
+            BitWise             &   |   ^   ~
+            Misc                .   ,   [ ] ( ) { } ; ->  ....etc.,
+
+        Keywords
+            are reserved words in a programming language - 53 keywords
+
+        Comments
+            // end-of-line comment
+
+            /*
+                block comment
+            */
+
+        Literals
+            is a hard-coded value in to the source code
+
+                circumfrence  = 2 * Math.PI * radius;
+
+                identifiers     circumfrence    radius  Math    PI
+                operators       =   *   .   ;
+                literal         2
+
+            Integer - Decimal (0 to 9)              int x = 90;     int num = 1_23_456;
+            Integer - Octal   (0 to 7)              int y = 077;           
+            Integer - HexDecimal (0 to 9, A to F)   int z = 0xA1;
+
+            Floating Point                          3.14
+
+            Boolean                                 true, false
+
+            Reference                               null
+
+            String                                  "hello world"
+
+            Charecter                               'p' '%'
+
+memory allocation in java is dynamic
+local variable
+block scope variable
+
+Language Fundamentals
+Data Types
+	Primitive Data Types
+		byte
+		short
+		int
+		long
+		double
+		float
+		
+		boolean
+		char
+		void
+		
+	User Defined Data Types
+		class
+		interface
+		enum
+		annotation
+
+Variable Scope-
+class MyClass{
+int field; //fields are allocated as and when an object is created for the class
+		   //all the fields are initialized with their default values based on the data type
+		   //byte,short,int,long=0
+		   //double,float=0.0
+		   //boolean=false
+		   //char=' '
+		   //any object=null
+
+public void method(int parameterOrArgument){
+int localVariable; //these variables are not allocated until they are assigned with a value
+
+while(true){
+boolean blockScopedVariable; //these variables are not allocated until they are assigned with a value
+}
+}
+}
+
+Control Structures
+
+            Decision Making / Branching Control Structures
+                if
+                    Simple If:
+                        if(cond){
+                            //statements that execute only when the cond is true
+                        }
+
+                    If-Else:
+                        if(cond){
+                            //statements that execute only when the cond is true
+                        }else {
+                            //statements that execute only when the cond is false
+                        }
+
+                    If-Ladder:
+                        if(cond1){
+                            //statements that execute only when the cond1 is true
+                        }else if(cond2){
+                            //statements that execute only when the cond2 is true
+                        }else if(cond3){
+                            //statements that execute only when the cond3 is true
+                        }......
+                        ..else {
+                            //statements that execute only when all the given conds are false
+                        }
+
+                    Nested If:
+                        if inside another if
+
+                switch
+                    switch(expr) {
+                        case value1: 
+                            //statements that execute when expr==value1
+                            break;
+                        case value2: 
+                            //statements that execute when expr==value2
+                            break;
+                        case value3: 
+                            //statements that execute when expr==value3
+                            break;
+                        ....
+                        ..
+                        default:                            
+                            //statements that execute when expr does not equals to any given value                                
+                    }
+
+                    switch supports expr that return either a char / int / string / enum
+
+            Loops / Iterative Control Structures
+
+                do..while
+                    do {
+                        //these statements are executed surely once
+                        //the next iteration happens only whent the cond is true
+                        //this loop is called indefinite exit-check loop.
+                    }while(cond);
+
+                while
+                    while(cond) {
+                        //these statements are execute repeatedly as long as the cond is true                         
+                        //this loop is called indefinite entry-check loop.
+                    }
+
+                for
+                    for(initialization;cond;inc/dec){
+                        //these statements are execute repeatedly as long as the cond is true                         
+                        //this loop is called finite entry-check loop
+                    }
+
+                enhanced-for / for-each :
+                    for(loopingVar : arrayOrListorSetorAnyOtherCollection) {
+
+                    }
+            
+            Non Conditional Control Structures
+
+                break           used for premeture exit of a loop
+                continue        used for cancelling the current iteration and skip to next iteration of a loop
+                return          used to return a value from a method or even to exit from a method abruptly.
+
+
+Arrays
+	an array is a homogeneous linear fixed-in-size collection of elements
+	
+	datatype[] arrName;			//declaration
+	arrName=new datatype[size]; //instantiation
+	
+	int[] nums;
+	nums=new int[10];
+	
+	datatype[] arrName=new datatype[size]; //declaration and instantiation
+	datatype arrName[]=new datatype[size]; //declaration and instantiation
+	
+	String[] names=new String[10];
+	double data[]=new double[10];
+	
+	datatype[] arrName=new datatype[]{val1,val2,val3,...}; //initialization
+	datatype arrName[]=new datatype[]{val1,val2,val3,...}; //initialization
+	
+	String[] friends=new String[] {"Vamsy","Latha","Sita","Prem"};
+	
+	1.index is zero-based
+	2.every array has 'length' property to find out the size of the array
+
+	for(int i=0;i<friends.length;i++){
+		System.out.println(friends[i]);
+	}
+	
+	for(String f : friends){
+		System.out.println(f);
+	}
+	
+	multi-dimensional array:
+	
+		int[][] matrix=new int[5][3];
+		int[][][] array3d=new int[5][5][5];
+		
+		for(int r=0;r<matrix.length;r++){
+			for(int c=0;c<matrix[r].length;c++){
+				System.out.println(matrix[r][c]);
+			}
+		}
+		
+	jagged arrays:
+		
+		int[][] jagged=new int[4][];
+		jagged[0]=new int[2];
+		jagged[1]=new int[4];
+		jagged[2]=new int[3];
+		jagged[3]=new int[5];
+	
+		for(int r=0;r<jagged.length;r++){
+			for(int c=0;c<jagged[r].length;c++){
+				System.out.println(jagged[r][c]);
+			}
+		}
+
+Object Oriented Programming
+	this is a coding concept that brought the real-time very near to the programming world
+	
+	Class and Object
+	Encapsulation
+	Inheritance
+	Polymorphism
+	Abstraction
+	
+	Class
+		is a user-defined data type to represent a real-time entity in terms of its properties and behaviours.
+		Properties are represented by variables called fields and Behaviours are represented by functions called methods.
+		
+		class Student{
+			int admNo;
+			String fullName;
+			int[] scores;
+			
+			int getTotal(){
+				int total=0;
+				for(int score : scores){
+					total += score;
+				}
+				return total;
+			}
+		}
+		
+	Object
+		is a variable of class-type. default value of a object is null.
+
+		Student s;			//declaration and is not allocated in the memory
+		s=new Student();	//instantiation, here memory is allocated
+		
+		Student s2=new Student();
+		
+		Student[] students = new Student[10];
+		
+		for(int i=0;i<students.length;i++){
+			students[i]=new Student();
+		}
+
+	Java Objects are reference type
+
+	Constructor
+		is a method of a class that gets invoked immediately after the memory allocation of an object
+		Constructors are mostly used for initialization of fields of a class
+		
+		1.Constructors must have the same name as that of a class
+		2.Constructors should not return any value
+		
+		class Student{
+			int admNo;			//defaults to 0 being an int
+			String fullName;	//defaults to null being an object of String class	
+			int[] scores;		//defaults to null as arrays are also objects
+			
+			Student(){
+				scores=new int[4];	//initializing the array to accomodate 4 ints
+			}
+			
+			int getTotal(){
+				int total=0;
+				for(int score : scores){
+					total += score;
+				}
+				return total;
+			}
+		}
+		
+		1.If a class is not written with any constructor, java compiler adds a default constructor to it
+		2.A class can have any number of constructors as long as they have different parameters
+		3.A constructor having no parameters is called a default constructor
+		4.A constructor having atleast one parameter is called a parameterized constructor
+		5.If atleast one of the parameters of a parameterized constructor is an object of the same class, then it is called a copy constructor
+		
+	Encapsulation
+		is also called data hiding
+		is the way of providing an indirect access to the fields and a few methods of a class
+		encapsulation in java is implemented with the help of access specifiers and setters / getters
+		
+		access-specifiers
+			default 	If a field or method is not given any of the keywords like public/private/protected, then it is said to have 
+						default access specifier. Fields and methods with default access specifier are accessible within the host class 
+						and within any other class that belongs to the package of the host class
+						
+			public 		Fields and methods that are marked with public access specifier are accessible anywhere throughout the application
+			
+			protected	Fields and methods that are marked with protected access specifier are accessible within the host class and 
+						within the sub classes of the host class
+						
+			private 	Fields and methods that are marked with private access specifier are accessible only within the host class
+			
+		Setter	is a method that can accept and assign a value into a field
+		Getter 	is a method that returns a value of a field
+		
+		If a field is marked private and has
+		no setter and no getter		then it is an inaccessible field
+		only setter					then it is a write only field
+		only getters				then it is a read only field
+		both setter and getter		then it is a fully accessible field
+		
+		class Circle{
+			private double radius;
+			
+			public void setRadius(int x){
+				radius=x;
+			}
+			
+			public double getRadius(){
+				return radius;
+			}
+			
+			public double getDiameter(){
+				return radius*2;
+			}
+		}
+		
+		Circle c1=new Circle();
+		c1.setRadius(90.9);
+		System.out.println(c1.getRadius());
+		System.out.println(c1.getDiameter());
+		
+		Circle c2=new Circle();
+		c2.setRadius(90.9);
+		System.out.println(c2.getRadius());
+		System.out.println(c2.getDiameter());
+		
+	this keyword- refers to the object that is accessing a method		
+		class Circle{
+			private double radius;
+			
+			public void setRadius(int radius){
+				this.radius=radius;
+			}
+			
+			public double getRadius(){
+				return this.radius;
+			}
+			
+			public double getDiameter(){
+				return this.radius*2;
+			}
+		}
+		
+		Circle c1=new Circle();
+		c1.setRadius(90.9);
+		System.out.println(c1.getRadius());
+		System.out.println(c1.getDiameter());
+		
+		Circle c2=new Circle();
+		c2.setRadius(90.9);
+		System.out.println(c2.getRadius());
+		System.out.println(c2.getDiameter());
+
+		'this' can also be used to invoke one constructor from another of the same class
+
+		every object has a hashcode
+		
+		this keyword refers to the object that is accessing a method. 
+		'this' can also be used to invoke one constructor from another of the same class
+		
+		static keyword static can be applied on
+					   a field static fields are also called class variables because every object of the class shares the same copy of these fields
+							   non-static fields are also called instance variable, as each object of the class is allocated its own copy of 
+							   these fields
+							   
+					   a method a static method can acccess only other static fields. a static method is never associated with an object but is 
+								invoked associating it with the class name
+								
+					   a class a static class can be created only inside another class
+							   a class inside another class is called
+									Inner class	are non-static
+												these have access to all fields and methods of the outer class
+												
+									Nested class are static
+												 do not have access to non-static members of the outer class
+												 
+					   static blocks 
+									static{
+										//the code written here is executed just before the class is accessed for the first time
+									}
+									
+	Inheritance
+		is about creating a class from an existing class
+		
+		class Pen{
+			Nib nib;
+			Barrel barrel;
+			Refill refill;
+			
+			void write(Paper paper,String text){
+			
+			}
+		}
+		
+		class Marker extends Pen{
+			void write(Whiteboard board,String text){
+			
+			}
+		}
+		
+		We are deriving Marker from Pen and in this case, Pen is called super class and the Marker is the sub class
+		
+		Object of the super class will be allocated with all the fields in the super class
+		Objects of the sub class will be allocated with all the fields in the super and sub classes
+		
+		Simple Inheritance/Single Inheritance
+			Employee(empId,fullName,sal)<-----Manager(...,allowance)
+			
+		Multi-level Inheritance
+			Employee(empId,fullName,sal)<-----Manager(...,allowance)<-----Director(...,share)
+			
+		Hierarchical Inheritance
+			Employee(empId,fullName,sal)
+				|
+				|<-----ContractEmployee(...,contractDuration)
+				|
+				|<-----Manager(...,allowance)
+			
+		Hybrid Inheritance
+			Employee(empId,fullName,sal)
+				|
+				|<-----ContractEmployee(...,contractDuration)
+				|
+				|<-----Manager(...,allowance)
+						|
+						|<-----Director(...,share)
+						
+		Multiple Inheritance
+			is where two or more super-types commonly are derived into one sub-type
+			java classes do not support multiple inheritance due to ambiguity issues
+			
+		Points to Remember
+			1.Whenever an object of a sub class is allocated, the constructors of all the super class are invoked from top to bottom
+				for instance, in the same hybrid inheritance, creating an object to Director will invoke constructors of 
+				Employee(), Manager(), Director()
+				
+			2.A reference of a super type can refer to an object of its sub type
+				Employee e1=new ContractEmployee();
+				Employee e2=new Manager();
+				Employee e3=new Director()
+				
+				Manager m1=new Director();
+				
+			3.Object type casting
+				ContractEmployee c1=(ContractEmployee) e1;
+				ContractEmployee c2=(ContractEmployee) e2; //raises a ClassCastException as e2 is a Manager
+				
+		
+	Polymorphism
+		is where we can define more than one method in the same scope with the same name
+		
+		Overloading
+			two methods are said to be overloaded if
+				(a)both of them belong to the same class or to a super and a sub class
+			and (b)both of them have the same name
+			and (c)they have different number of parameters or different types of parameters
+			
+			class HumanBeing{
+			 void eat(Fruit fruit){
+				wash(fruit);
+				peel(fruit);
+				Piece ps[]=cut(fruit);
+				for(Piece p:ps){
+					chewAndSwallow(p);
+				}
+			 }
+			 
+			 void eat(IceCream iceCream){
+				while(iceCream.exists()){
+					lickAndSwallow(iceCream);
+				}
+			}
+			
+		Overriding
+			two methods are said to be overriden if
+				(a)both of them belong to a super and a sub class
+			and (b)both of them have the same name, same number of parameters and same type of parameters
+			
+			class Monkey{
+				void eat(IceCream iceCream){
+				while(iceCream.exists()){
+					lickAndSwallow(iceCream);
+				}
+				}
+				
+				void eat(Fruit fruit){
+				while(fruit.exists()){
+					biteAndChewAndSwallow(fruit);
+				}
+				}
+			}
+			
+			class HumanBeing extends Monkey{
+				void eat(Fruit fruit){ //overloads Monkey::eat(IceCream) and overrides Monkey::eat(Fruit)
+				wash(fruit);
+				peel(fruit);
+				Piece ps[]=cut(fruit);
+				for(Piece p:ps){
+					chewAndSwallow(p);
+				}
+				}
+			}
+		
+		converts an object to a string--toString() method
+		
+	Abstraction
+		is also called behaviour hiding
+		is a practice of declaring a method and implementing it at a later stage
+		for example, bird and airplane both have fly behaviours but the manner in which they fly are different
+		
+		(a)abstract class
+			if a class is marked abstract we can not create objects to that class
+			this is mainly used for code reusability so object creation is not required so we mark it as abstract
+			
+			Lets consider a school automation app:
+			
+				abstract class Person		id,name,dob,bloodGroup,gender,height
+					|<--Student				...,class,section
+					|<--Teacher				...,subject,salary
+					|<--NonTeachingStaff	...,designation,salary
+					|<--Principal
+					|<--Parent
+			
+		(b)abstract function
+			if a function can not be implemented right away, then we mark it as abstract
+			only abstract classes and interface can accomodate abstract functions
+			any sub class deriving an abstract class or an interface must implement all abstract methods in them or else 
+			the sub class is also to be marked as abstract
+			
+			abstract class GeometricShape{
+				protected int[] sides;
+				
+				public int getPerimeter(){
+					int p=0;
+					for(int s:sides){
+						p+=s;
+					}
+					return p;
+				}
+				
+				public abstract double getArea();
+			}
+
+			class Rectangle extends GeometricShape{
+				public Rectangle(){
+					this.sides=new int[4];
+				}
+				
+				public double getArea(){
+					return sides[0]*sides[1];
+				}
+			}
+
+			class Circle extends GeometricShape{
+				public Circle(){
+					this.sides=new int[1];
+				}
+				
+				public double getArea(){
+					return 3.14*sides[0]*sides[0];
+				}
+			}
+			
+		(c)interface
+			are user defined data type that do not have fields and support multiple inheritance
+			
+			interface GeometricShape{
+				double getPerimeter();
+				double getArea();
+				
+				public default double estimatePaintingCost(double paintingRate){
+					return getArea()*paintingRate;
+				}
+			}
+
+			class Rectangle implements GeometricShape{
+				private int length;
+				private int breadth;
+				
+				public double getPerimeter(){
+					return 2*(length+breadth);
+				}
+				
+				public double getArea(){
+					return length*breadth;
+				}
+			}
+
+			class Circle implements GeometricShape{
+				private double radius;
+				
+				public double getPerimeter(){
+					return 2*3.14*radius;
+				}
+				
+				public double getArea(){
+					return 3.14*radius*radius;
+				}
+			}
+		
+		
+		'final' keyword
+			is used on
+				a variable		to make that variable a constant
+				a method		to make that method non-overridable
+				a class			to make that class non-inheritable
+				
+		the final and abstract keywords can not be used at a time because they are contradictory
+
+	Java Packages and Modules
+		A package is a collection of classes, interfaces, enums, annotations and sub-packages as well
+		in java, packages are used to represent different layers of an application
+			Repositories/DAOs
+			Services
+			User Interfaces
+			Library
+			Utility
+			
+		Modules was introduced from Java 9 is a collection of packages. A module is described by a module descriptor file
+		that names the module and gives the list of exposed packages and also gives the list outside packages that are
+		required by the current module
+		
+	Java Built-In Packages
+	-----------------------
+		java.lang	
+					is said to be an implicit package as it need not be formally imported to access any of its classes
+					classes present-Object, System, Math, String, StringBuffer, StringBuilder, Wrapper-Classes,
+					concept of Exceptions, concept of Threads	
+		
+		java.time   is a date-time api
+		
+		java.regexp is a regular expression utility package
+		
+		java.util	Random, StringTokenizer
+					concept of Collections
+					
+		java.util.Function		Functional interfaces			
+		java.util.stream		Streams API
+
+		java.io			input output streams
+		java.nio	    non blocking input output streams
+		
+		java.sql 	    Java database connectivity
+		
+	java.lang.Object
+	----------------
+		this class is an implicit super class for all java classes
+		
+		this class has many important methods
+		
+		this class offers
+			int hashcode() - numerical representation of data in an object, magnitude of an object in a number, default implementation 
+			                 is to convert memory address into a number
+			boolean equals(Object) - comparing two objects, obj1.equals(obj2)
+			String toString() - converts object to a string
+			
+	Working with Strings
+	--------------------
+		java.lang.String
+			has a lot of methods (see documentation)
+			Strings are immutable (not editable)
+			if you modify, it will create a new string
+			everytime we modify a string, a new string object is created, this makes modifying string very costly
+			
+		java.lang.StringBuilder 	is not thread-safe
+		java.lang.StringBuffer		is thread-safe
+		
+			these two classes are used to manipulate or modify a string without creating
+			multiple new objects, relatively less costlier
+			
+	java.lang.System
+	----------------
+		public static InputStream in;	//represents the standard input stream (keyboard)
+		public static PrintWriter out;  //represents the standard output stream (monitor)
+		public static PrintWriter err;  //represents the standard error stream (monitor)
+		
+		public static void gc();	//used to request garbage collection
+		public static int nativeHashcode(Object);	//this returns the hashcode of an object based on its memory address
+		
+	java.lang.Math
+	--------------
+		this class offers a list of public static methods representing a variety of 
+		arithmetic and trigonometric operations
+		
+	java.util
+	---------
+		Scanner
+			is used to scan different types of values from any input stream
+			
+			Scanner(InputStream)
+				Scanner kbin=new Scanner(System.in)
+				
+			int nextInt();
+			float nextFloat();
+			double nextDouble();
+			String next();
+			...etc
+			
+		Random
+			is used to generate pseudo random numbers
+			
+			Random()
+			Random(int seed)
+			
+			int nextInt(upperLimit);	//generates a random int between zero and the given upper limit
+			
+	Assignment#1
+		write a java application that generates 15 random numbers and prints them. Analyze and print
+		the min, max, sum and avg of the generated random numbers.
+		
+	Wrapper classes, AutoBoxing, AutoUnBoxing
+	
+	Exception Handling
+	------------------
+		Exception refers to a senario of mis-fed inputs or mis-managed operations that lead to
+    abornmal termination of the program.
+
+    Exception Handling refers to react when an exception occurs, avoiding the abnormal termination of the program.
+
+    java.lang.Throwable (i)
+                |
+                |<- java.lang.Error         represents a system level error like stack-overflow ...etc.,
+                |
+                |<- java.lang.Exception                         
+                                |
+                                |<- java.lang.RuntimeException
+
+    sub-Classes of Exception are called CHECKED-EXCEPTIONS
+    EXCEPTIONS are verified by the compiler wheather they are handled or not, and if not handled a compile-time
+    error is raised. It means it is compulsory to handle CHECKED-EXCEPTIONS
+
+    sub-Classes of RuntimeException are called UNCHECKED-EXCEPTIONS
+    UNCHECKED-EXCEPTIONS are not verified by the compiler wheather they are handled or not.
+    UNCHECKED-EXCEPTIONS are not supposed to be handled , but they are supposed to avoided.
+
+        class EmployeeService {
+            public double computeTotalPay(Employee emp){
+                double tPay = emp.getBasic() + emp.getHra() + emp.getTa() - emp.getTax(); //there is a chance of NullPointerException
+                return tPay;
+            }
+        }
+
+        class EmployeeService {
+            public double computeTotalPay(Employee emp){
+                double tPay = 0;
+                
+                if(emp!=null){ //avoiding NullPointerException
+                    tPasy = emp.getBasic() + emp.getHra() + emp.getTa() - emp.getTax(); 
+                }
+
+                return tPay;
+            }
+        }
+
+    Hanlding Checked-Exceptions
+
+        try-catch Statement
+
+            try {
+                //the statement that may throw an exception are written here
+            }catch(ExceptionType1 e){
+                //the alternate code that has to execute when an exception of ExceptionType1 occurs
+            }catch(ExceptionType2 e){
+                //the alternate code that has to execute when an exception of ExceptionType2 occurs
+            }catch(ExceptionType3 e){
+                //the alternate code that has to execute when an exception of ExceptionType3 occurs
+            }finally {
+                //the code that ahs to execute irrespective of an exception occuring or not is written here.
+                //finally block is designed to close any connectiosn or stream or other closables.
+            }
+
+        try-with-resources
+
+            try(
+                //all closables are declared here.
+            ) {
+                //the statement that may throw an exception are written here
+            }catch(ExceptionType1 e){
+                //the alternate code that has to execute when an exception of ExceptionType1 occurs
+            }catch(ExceptionType2 e){
+                //the alternate code that has to execute when an exception of ExceptionType2 occurs
+            }catch(ExceptionType3 e){
+                //the alternate code that has to execute when an exception of ExceptionType3 occurs
+            }
+
+        try-with-multiCatch
+
+            try(
+                //all closables are declared here.
+            ) {
+                //the statement that may throw an exception are written here
+            }catch(ExceptionType1 | ExceptionType2 | ExceptionType3 e){
+                //the alternate code that has to execute when an exception of 
+                // ExceptionType1 or ExceptionType2 or ExceptionType3 occurs
+            }
+
+    User Defined Exceptions
+
+        We will have to create a sub-class to Exceptiofn or RuntimeException classes to
+        create our own exceptions.
+
+        throw       is a keyword used to raise a exception programatically.
+
+                    throw new InsufficientBalanceException();
+
+        throws      is a keyword used to transfer an exception from its a method to the caller method
+		
+	Date-Time Api
+--------------------------------
+
+    java.util.Date - is depricated
+
+    java.time                       static methods
+        LocalDate               of(year,month,day)
+                                now()
+
+        LocalTime               of(hour,min,sec)
+                                now()
+
+        LocalDateTime           of(year,month,day,hour,min,sec)
+                                now()
+
+        ZonedDateTime           now(zoneId)
+
+        
+        Non-Static-Methods
+            getHour(),getMinute(),getSeconds(), getDay(),........................
+            before
+            after
+            equals
+            plusHours , plusMinute, plusYears, ....
+            minusHours , minusMinute, minusYears, ....
+
+        Period.between(date1,date2)
+        Duration.between(time1,time2)
+
+        DateTimeFormatter
+
+Generics
+-----------------------------------
+
+    Generics also known as ADT (AbstractDataTypes) are imaginary data types
+    that are realized at the time of execution.
+
+    public class Swapper<T> {
+        public void doSwap(T a,T b){
+            T t = a;
+            a = b;
+            b = t;
+        }
+    }
+
+    Swapper<Integer> s1 = new Swapper<>();
+    s1.doSwap(10,80);
+    
+    Swapper<String> s2 = new Swapper<>();
+    s2.doSwap("Hello","Hai");
+    
+    Swapper<ComplexNumber> s3 = new Swapper<>();
+    s3.doSwap(new ComplexNumber(10,9),new ComplexNumber(9,-8));
+
+    //Generics do not support primitive data types, instead we use wrapper classes
+	
+	Collections API
+----------------------------------
+
+    This is the java representation of data structures.
+
+     java.util
+            |- interface Collection
+                |           represents a generic data structure
+                |           add(E),remove(E),contains(E),size(),isEmpty(),stream()
+                |
+                |<- interface Set       represents a non-linear data structure
+                |                       does not support index, or index based operations
+                |                       duplicate elements are not supported
+                |                       only maximum one null element
+                |               |
+                |               |<- class HashSet           uses HashMap internally, and the order of retrival 
+                |               |                           of elements is not pridictable
+                |               |
+                |               |<- class LinkedHashSet     uses a HashMap and a LinkedList internally
+                |               |                           and retrives the elements in entry order
+                |               |
+                |               |<- class TreeSet           uses an RedBlack Binary Search Tree algorithm
+                |               |                           and retrives the elements in natural sorted order
+                |
+                |<- interface List      represents a Linear data structure
+                |                       supoort index and index based operatrions
+                |                       get(int index),removeAt(int index),first(),last(),indexOf(e)
+                |                       duplicate elements are allowed
+                |                       multiple null elements are as well allowed.
+                |               |
+                |               |<- class Vector        is a synchronized grwable array
+                |               |<- class ArrayList     is a non-synchronized growable array
+                |               |<- class LinkedList    is a doublly linked list algorithm
+                |
+            |- interface Map    represents a group of key-value pairs
+                         |      key can not repeat and cannot be null
+                         |      put(k,v),set(k,v),get(k),keySet(),containsKey(k),size(),isEmpty()    
+                         |
+                         |<- class HashMap           order of retrival of elements is not pridictable
+                         |
+                         |<- class LinkedHashMap     retrives the elements in entry order
+                         |
+                         |<- class TreeMap           retrives the elements in natural sorted order
+                    
+        class java.util.Collections     it is a utility class offering a lot of static methods each for
+                                        a particular utility operation on the collections
+
+        interface java.lang.Comparable  
+                represents a natural sorting order.
+                int compareTo(Object);
+
+                class Employee implements Comparable {
+                    //fields, construcors, getters and setters ...etc
+
+                    public int compareTo(Employee e){
+                        //this is compared with e
+                        //return +ve value if this>e , -ve valeu if this<e and zero if this = e
+                    }
+                }
+
+                int x = e1.compareTo(e2);
+
+                if x>0 then e1 is greater than e2
+                if x<0 then e1 is less than e2
+                oreelse e1 and e2 are equal
+
+        interface java.util.Comparator
+                represents customized sorting order
+                int compare(Object,Object)
+
+                class EmployeeCustomeCaomparator implements Comparator {
+                    public int compare(Employee e1,Employee e2){
+                        //e1 is compared with e2
+                        //return +ve value if e1>e2 , -ve valeu if e1<e2 and zero if e1 = e2
+                    }
+                }
+	
+	Functional Programming
+	----------------------
+	
+	Functional programming is to represent an entire job in a sequence of steps
+	
+	a)each step is a method (function)
+	b)the output of one function will be input for the next function in chain (sequence)
+	c)the advantage of this approach is that any step at any time can be either added or removed
+	
+	Java achieved this through three new features
+	1)Functional Interface
+	2)Lambda expression
+	3)Streams API
+	
+	A functional interface is an interface that has exactly one abstract mehtod
+	'java.util.function' is a built-in package that offers a list of many functional interfaces
+	
+	Consumer that accept params but do not return
+	Supplier that do not accept but returns
+	Predicate returns a boolean
+	
+	A functional interface can be implemented and instantiated using a lambda expression
+	A lambda expression is a mapping from a set of params to a return value
+	
+	params -> returnValue
+	
+	public class MyBinaryOperator implements BinaryOperator<Integer> {
+		public Integer apply(Integer a, Integer b){
+			return a+b;
+		}
+	}
+	
+	BinaryOperator<Integer> s =new BinaryOperator();
+	int ans=s.apply(9,100);
+	
+	BinaryOperator<Integer> s2=(a,b)->a+b;
+	int result=s2.apply(9,100);
+	
+	Supplier<String> greet=()->"Helllo";
+	
+	Supplier<String> greetAsPerTime=()->{
+		int h=LocalTime.now().getHours();
+		String greeting="";
+		
+		if(h>3 && h<=11) greeting="Good Morning";
+		else if(h>11 && h<=15) greeting="Good Noon";
+		else greeting="Good Evening";
+		
+		return greeting;
+	};
+	
+	Streams API
+	---------------
+
+        a stream represents a flow of data from a source to a sink.
+
+        source (array/list/set...etc)
+            ↓
+            |---- ele1,ele2,ele3 ...... ------> (OPERATION-1) 
+                                                    ↓
+                                                    |---- res1,res2,res3 ...... ------> (OPERATION-2) 
+                                                                                            ↓
+                                                                                            |---- res1,res2,res3 ...... ------> |
+                                                                                                                                ↓
+                                                                                                        (array/list/set...etc)sink
+
+        java.util.stream
+                    |- Stream
+
+                        Stream s1 = Stream.of(ele1,el2,el3,...);
+                        Stream s2 = set.stream();
+                        Stream s3 = list.stream();
+                        Stream s4 = Arrays.stream(anArray);
+
+                        forEach     accepts a 'consumer' and executes tha consuemr on each ele of the stream.
+                                    as this does not return anything, chaining another operation is not possible.
+                                    for this, this method is called a terminal.
+
+                                    int[] nums = new int[] {1,2,3,4,5,6,7,8,9};
+                                    Arrays.stream(nums).forEach( x -> { System.out.println(x); } );
+                        
+                        collect     accepts a collector and creates a new list or set ..etc with the values in a stream using
+                                    the collector. 
+
+                                    List list = stream2.collect(Collectors.toList());
+
+                                    Here as well , a stream is not returns and hence chaining is not possible, for this, this method is also called a terminal.
+
+                        reduce      accepts an identity and a  'BinaryOperator' and execute cumilativly on the 
+                                    elements of the stream and return the final reduced result.
+
+                                    int[] nums = new int[] {22,33,11};
+                                    BianryOperator<Integer> sum = (a,b) -> (a+b);
+                                    int result1 = Arrays.stream(nums).reduce(0,sum); 
+                                        // sum(sum(sum(0,22),33),11)    -----> 66
+                                                                            
+                                    int result2 = Arrays.stream(nums).reduce(1,(a,b) -> (a*b)); 
+                                        
+                                    Here as well , a stream is not returns and hence chaining is not possible, for this, this method is also called a terminal.
+                        
+                        map         accepts a 'function (functioanlInterface)' and executes it on each ele of the stream,
+                                    and returns a new stream of all those results.
+
+                                    int[] nums = new int[] {1,2,3,4,5};
+                                    Arrays.stream(nums)
+                                        .map( a -> a*a )
+                                        .forEach( x -> { System.out.println(x); } );    // 1,4,9,16,25
+
+                                    'map' returns a stream nd hence it can be chained with another operation, thus it is called intermidiate.
+
+                        filter      accepts a 'predicate' and executes the predicate on each ele of the stream,
+                                    and it returns a new stream of those ele that get true on the predicate.
+                                    
+                                    int[] nums = new int[] {1,2,3,4,5,6,7,8,9};
+                                    Arrays.stream(nums)
+                                        .filter( n -> n%2==0 )
+                                        .forEach( x -> { System.out.println(x); } );    // 2,4,6,8
+                                    
+                                    Arrays.stream(nums)
+                                        .filter( n -> n%2!=0 )
+                                        .forEach( x -> { System.out.println(x); } );    // 1,3,5,7,9
+
+                                    'filter' returns a stream and hence it can be chained with another operation, thus it is called intermidiate.
+
+                        Chaining in action
+
+                            Arrays.stream(nums)
+                                .filter( n -> n%2==0 )
+                                .map( a -> a*a )
+                                .forEach( x -> { System.out.println(x); } );    // 4,16,36,64
+                            
+    Method References
+
+        A functional interface can be assigned with a method of any class or any object provided
+        that the method signature matches with the abstract method of the functional interface
+
+        @FunctionalInterface
+        interface Dummy {
+            void doThat(Object obj);
+        }
+
+        Dummy d = System.out::println;
+        d.doThat("Hello World");
+
+        int[] nums = new int[] {1,2,3,4,5,6,7,8,9};
+        //Arrays.stream(nums).forEach( x -> { System.out.println(x); } );
+        Arrays.stream(nums).forEach(System.out::println);
+
+		
+	JDBC-Java Database Connectivity
+	-------------------------------
+	
+	RDBMS	<----DRIVER/JDBC----> 	JavaApp
+	
+	Driver is the implementation of JDBC specifications
+	
+	JDBC specification is a package of interfaces called java.sql. Driver will contain classes that implement
+	these interfaces. Driver for each RDBMS is different from one another as the RDBMS product itself is different
+	
+	RDBMS		Driver
+	Oracle		Thin Driver
+	MySQL 		ConnectorJ Driver
+	MS SQL Server	MS Jet Driver
+	...etc
+	
+	Oracle		<----Oracle Thin Driver----->
+	MySQL		<----ConnectorJ Driver------> JDBC <----->JavaApp
+	MSSQL Server<----MS Jet Driver---------->
+	
+	java.sql
+	
+		DriverManager		is to load the relevant driver and is used to create a connection
+		Connection			is used to create a Statement or a Prepare Statement
+		Statement			is used to execute any SQL query but does not support query parameters
+		PreparedStatement   is used to execute any SQL query and supports query parameters 
+		ResultSet			is returned when a 'select' query is executed and contains the results of the 'select' query
+		SQLException
+		
+		Connection con=DriverManager.getConnection(dbUrl,dbUsername,dbPwd);
+		
+		Statement st=con.createStatement();
+			boolean isDone=st.execute(ddlQuery); //CREATE/ALTER/DROP
+			int rowsAffected=st.executeUpdate(dmlQuery); //INSERT/UPDATE/DELETE
+			ResultSet results=st.executeQuery(selectQuery);
+			
+		PreparedStatement pst1=con.prepareStatement(ddlQuery); //CREATE/ALTER/DROP with query params
+		boolean isDone=pst1.execute();
+		
+		PreparedStatement pst2=con.prepareStatement(dmlQuery); //INSERT/UPDATE/DELETE with query params
+		int rowsAffected=pst2.executeUpdate();
+		
+		PreparedStatement pst3=con.prepareStatement(selectQuery); //with query params
+		ResultSet results=pst3.executeQuery();
+		
+		Maven Dependency
+		
+			H2DB
+				<dependency>
+				<groupId>com.h2database</groupId>
+				<artifactId>h2</artifactId>
+				<version>2.2.224</version> <!--use a recent version-->
+				</dependency>
+				
+				dbUrl->jdbc:h2:~/testdb
+				dbUrl->jdbc:h2:mem:testdb
+				
+			MySQL
+				<dependency>
+				<groupId>mysql</groupId>
+				<artifactId>mysql-connector-java</artifactId>
+				<version>8.0.33</version> <!--use a recent version-->
+				</dependency>
+				
+				dbUrl->jdbc:mysql://localhost:3306/<database_name>
+				
+			Oracle
+				<dependency>
+				<groupId>com.oracle.jdbc</groupId>
+				<artifactId>ojdbc14</artifactId>
+				<version>10.2.0.4</version>
+				</dependency>
+				
+				dbUrl->jdbc:oracle:thin:@//<host>:<port>/<service_name>
+				
+	Multi - Threading
+------------------------------------------
+
+    Thread is a asynchrnous stub of a program that executes parellel to the main program.
+    
+    Time Of Excution:   0min     10min   20min   30min   40min
+    Synchronous:        Job1, Job2, Job3 .....
+    Asynchronous:       Job1 ....
+                        Job2 ..
+                        Job3 .....
+
+    Each java app is a thread by default.
+
+    java.lang.Runnable      void run()
+                |
+                |<- java.lang.Thread
+                                Thread();
+                                Thread(name);
+                                Thread(name,runnable);
+
+                                void start()
+                                static void sleep(duration);
+                                String getName();
+                                void setName(String name);
+                                int getPriority();
+                                void setPriority(int);
+                                static Thread currentThread(); 
+
+    new Thread()
+        ↓
+        [ Initiated ]   --- start()-----> [ Ready.../ Queued... ] --- When the CPU and other resources are available --|
+                                                    ↑                                                                  |
+                                                    |                                                                  ↓
+                                               [Paused..] <---------sleep(duration)--------------------------- [ Running ..] 
+                                                     
+	
+	shallow copy-when we reference an object and assign
+	deep copy-when we create a new object and assign
+	
+	modules and packages, sealed class and interface -- java 17 check
+	
+	

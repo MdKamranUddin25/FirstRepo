@@ -1,0 +1,61 @@
+ROLE DESCRIPTION :
+
+Experienced Technical Lead with involvement and participation in developing, designing, integrating, and enhancing client applications. Applying an in-depth understanding of business and client requirements to streamline processes, resulting in increased automation and operational efficiency.
+
+Manage multiple projects simultaneously. Learn and apply new technologies quickly. Team player with good interpersonal skills. Excellent communication, presentation, analytical, and problem-solving skills with the ability to effectively interact with the end user and resolve their concerns. Able to prioritize effectively and achieve objectives within established timelines. Acquiring foundational learning in Generative AI and exploring more in this expanding domain.
+
+TECHNICAL SKILLS :
+
+Primary Languages: Java, HTML, CSS, JavaScript, Angular, Spring Boot, Rest API
+Secondary Skill Set: React, JSP, Basic Python, Unix
+Databases: Oracle SQL
+Development Tools: VS Code, IntelliJ, Eclipse
+Documentation Tools: Microsoft Office Tools
+Other Tools: Git, Pivotal Cloud Foundry (PCF), Adobe Experience Manager (AEM), Alfresco, Camunda, Postman, Jira, Bitbucket and GitLab
+
+PROJECT OVERVIEW :
+
+Project: 1
+Role: Technical Lead
+Technology: Java, Spring Boot
+
+
+Project 1 Description : 
+
+Evolution application can perform New Business, Underwriting, MTA/Endorsements, Renewals, and Reporting functions. Evolution platform is an underwriting and rating application for non-life products. Predominately used for underwriting (Quote, NB (New Business), Renewals, MTA (Mid-Term Adjustment), and Reporting.
+
+Application caters to HNI (High Net Worth Individuals) and MHNI (Mid-High Net Worth Individuals). This application has a holistic view of activity across all products, including 'upcoming renewals'. ‘Upcoming Renewals’ functionality feature helps to avoid policy issuance delays or policy lapses during renewal.
+
+Project 1 Roles and Responsibilities :
+
+Undergone Knowledge Transformation to understand the project flow.
+Analyzing the different application architectures and code structure.
+Setting up the infrastructure of the application.
+Interacted with Senior Leads for requirement understanding and implementation.
+Making suitable code changes for the upgrade of application from Java 8 to Java 17 along with maintaining code compatibility.
+Working on the Application Level Encryption and documenting the suitable mechanisms.
+Effective analysis of the task assigned and documenting the same.
+Collaborating and Coordinating with the other members of the team with respect to technical discussions and code reviews.
+Actively participate in daily calls and important meetings.
+Followed standards of software development and other codes of conduct, as applicable.
+
+Project: 2
+Role: Technical Lead
+Technology: Java, JSP, HTML, CSS, JavaScript, Angular
+
+Project 2 Description : 
+
+Account Services Application enables the business to maintain and modify the accounts for different IBD’s (Introducing Broker Dealers). This application provides IBD’s with the ability to open new accounts, update customer account information, and manage existing accounts. To summarize, Account Services mainly deals with opening an account, inquire an account, modifying account details, workflow, and account maintenance.
+
+Project 2 Roles and Responsibilities :
+
+Develop the code as per the quality standards and deliver the application enhancements within timelines.
+Providing creative prototypes according to design specifications.
+Troubleshoot and resolve major application issues reported by QA.
+Handling Production incidents with respect to different modules of the application.
+Proposed design changes for some functionalities for a better user experience.
+Developing technical design documents to accurately represent application design as per the changes.
+Interacted with the onsite coordinator/clients for requirement gathering and effective analysis.
+Helped the team with respect to different modules and aspects of the project.
+Cross skilling with different technologies as per the necessity and sharing the knowledge with fellow team mates.
+Followed standards of software development and other codes of conduct, as applicable.

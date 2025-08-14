@@ -1,0 +1,219 @@
+Amazon Macie - data security and data privacy service 
+AWS Glue - extract, transform, and load (ETL) service 
+Amazon Polly - service that turns text into lifelike speech
+AWS Secrets Manager - The service enables you to easily rotate, manage, and retrieve database credentials, API keys, and other secrets throughout their lifecycle
+Identity and Access Management (IAM) - IAM is a feature of your AWS account offered at no additional charge
+AWS Auto Scaling - AWS Auto Scaling is available at no additional charge
+Elastic Compute Cloud (Amazon EC2) - Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides secure, resizable compute capacity in the cloud
+Simple Storage Service (Amazon S3) - Amazon Simple Storage Service (Amazon S3) is an object storage service that offers industry-leading scalability, data availability, security, and performance
+DynamoDB - Amazon DynamoDB is a key-value and document database that delivers single-digit millisecond performance at any scale
+AWS CodeDeploy - AWS service used to automate code deployment to EC2 instances as well as on-premises instances
+AWS CodeCommit - AWS CodeCommit is a fully-managed source control service that hosts secure Git-based repositories
+AWS CloudFormation - AWS CloudFormation allows you to use programming languages or a simple text file to model and provision, in an automated and secure manner, all the resources needed for your applications across all regions and accounts
+AWS CodePipeline - AWS CodePipeline is a continuous delivery service that enables you to model, visualize, and automate the steps required to release your software
+AWS Quick Starts references - A start-up would like to quickly deploy a popular technology on AWS. As a Cloud Practitioner, which AWS tool would you use for this task
+AWS Forums - AWS Forums is an AWS community platform where people can help each other
+AWS Whitepapers - AWS Whitepapers are technical content authored by AWS and the AWS community to expand your knowledge of the cloud
+AWS Acceptable Use Policy - policy describes prohibited uses of the web services offered by Amazon Web Services
+AWS Trusted Advisor - AWS Trusted Advisor is an online tool that provides you real-time guidance to help you provision your resources following AWS best practices on cost optimization, security, fault tolerance, service limits, and performance improvement
+•	AWS is responsible for Security "of" the Cloud
+•	For abstracted services like Amazon S3, AWS operates the infrastructure layer, the operating system, and platforms
+For a service like Amazon EC2, that falls under Infrastructure as a Service, Customer is responsible for maintaining guest operating system 
+Configuration Management is the responsibility of the customer 
+AWS trains AWS employees, but a customer must train their own employees.
+Amazon Elastic Container Service (Amazon ECS) - Amazon Elastic Container Service (Amazon ECS) is a highly scalable, fast, container management service that makes it easy to run, stop, and manage Docker containers on a cluster. This is not a fully managed service and you can manage the underlying servers yourself.
+AWS Fargate - AWS Fargate is a serverless compute engine for containers. 
+AWS Lambda - AWS Lambda is a compute service that lets you run code without provisioning or managing servers. 
+Amazon Elastic Container Registry (ECR) - Amazon Elastic Container Registry (ECR) can be used to store, manage, and deploy Docker container images. 
+Amazon S3 Glacier - Amazon S3 Glacier (S3 Glacier), is a storage service optimized for infrequently used data, or "cold data. Data at rest stored in S3 Glacier is automatically server-side encrypted using 256-bit Advanced Encryption Standard (AES-256) with keys maintained by AWS.
+AWS Storage Gateway - AWS Storage Gateway is a hybrid cloud storage service that gives you on-premises access to virtually unlimited cloud storage. All data transferred between the gateway and AWS storage is encrypted using SSL (for all three types of gateways - File, Volume and Tape Gateways).
+Which of the following AWS Support plans provides access to online training with self-paced labs?
+•	Enterprise
+AWS Enterprise Support provides customers with concierge-like service where the main focus is on helping the customer achieve their outcomes and find success in the cloud. With Enterprise Support, you get access to online training with self-paced labs, 24x7 technical support from high-quality engineers, tools and technology to automatically manage the health of your environment, consultative architectural guidance, a designated Technical Account Manager (TAM) to coordinate access to proactive/preventative programs and AWS subject matter experts.
+Developer - AWS recommends Developer Support if you are testing or doing early development on AWS and want the ability to get technical support during business hours as well as general architectural guidance as you build and test.
+Business - AWS recommends Business Support if you have production workloads on AWS and want 24x7 access to technical support and architectural guidance in the context of your specific use-cases.
+"S3 Glacier Deep Archive" - S3 Glacier Deep Archive is Amazon S3’s lowest-cost storage class and supports long-term retention and digital preservation for data that may be accessed once or twice in a year. It is designed for customers — particularly those in highly-regulated industries, such as the Financial Services, Healthcare, and Public Sectors — that retain data sets for 7-10 years or longer to meet regulatory compliance requirements. S3 Glacier Deep Archive can also be used for backup and disaster recovery use cases. It has a retrieval time (first byte latency) of 12 to 48 hours.
+S3 Standard - S3 Standard offers high durability, availability, and performance object storage for frequently accessed data. S3 Standard has a retrieval time (first byte latency) of milliseconds.
+S3 Intelligent-Tiering - The S3 Intelligent-Tiering storage class is designed to optimize costs by automatically moving data to the most cost-effective access tier, without performance impact or operational overhead. It works by storing objects in two access tiers: one tier that is optimized for frequent access and another lower-cost tier that is optimized for infrequent access. S3 Intelligent-Tiering has a retrieval time (first byte latency) of milliseconds.
+S3 Glacier - Amazon S3 Glacier is a secure, durable, and extremely low-cost Amazon S3 cloud storage class for data archiving and long-term backup. It is designed to deliver 99.999999999% durability, and provide comprehensive security and compliance capabilities that can help meet even the most stringent regulatory requirements. S3 Glacier has a retrieval time (first byte latency) of minutes or a few hours.
+•	Operational Excellence--pillar of the AWS Well-Architected Framework recommends maintaining infrastructure as code
+Cost Optimization - Cost Optimization focuses on avoiding un-needed costs
+Performance Efficiency - The performance efficiency pillar focuses on using IT and computing resources efficiently. 
+Security - The security pillar focuses on protecting information & systems. 
+•	AWS Service Health Dashboard--AWS service used to subscribe to an RSS feed to be notified of the status of all AWS service interruptions
+Amazon SNS - Amazon Simple Notification Service (Amazon SNS) is a highly available, durable, secure, fully managed pub/sub messaging service that enables you to decouple microservices, distributed systems, and serverless applications. It can be used to deliver notifications, but it does not provide current services' status.
+AWS Personal Health Dashboard - AWS Personal Health Dashboard provides alerts and remediation guidance when AWS is experiencing events that may impact you. It does not provide updates about the general status for all AWS services.
+""While the Service Health Dashboard displays the general status of AWS services, Personal Health Dashboard gives you a personalized view of the performance and availability of the AWS services underlying your AWS resources.""
+AWS Lambda - AWS Lambda lets you run code without provisioning or managing servers. 
+•	AWS OpsWorks--A developer would like to automate operations on his on-premises environment using Chef and Puppet. AWS OpsWorks is a configuration management service that provides managed instances of Chef and Puppet. 
+AWS CloudFormation - AWS CloudFormation gives developers and systems administrators an easy way to create and manage a collection of related AWS resources, provisioning and updating them in an orderly and predictable fashion. 
+AWS CodeDeploy - AWS CodeDeploy is a service that automates code deployments to any instance, including EC2 instances and instances running on premises. 
+AWS Batch - AWS Batch enables developers, scientists, and engineers to easily and efficiently run hundreds of thousands of batch computing jobs on AWS. 
+What is the primary benefit of deploying an RDS database in a Multi-AZ configuration?
+•	Multi-AZ enhances database availability
+Read Replicas allow you to create read-only copies that are synchronized with your master database. Read Replicas are used for improved read performance.
+You need to use RDS in Multi-Region deployment configuration to protect from a regional failure. 
+Multi-AZ RDS increases the database costs compared to the standard deployment.
+Which of the following are the serverless computing services offered by AWS (Select two)
+•	AWS Fargate
+•	AWS Lambda
+AWS Elastic Beanstalk - AWS Elastic Beanstalk is an easy-to-use service for deploying and scaling web applications and services. 
+Amazon Lightsail - Lightsail is an easy-to-use cloud platform that offers you everything needed to build an application or website, plus a cost-effective, monthly plan. 
+•	Virtual MFA device--A financial services enterprise plans to enable Multi-Factor Authentication (MFA) for its employees. For ease of travel, they prefer not to use any physical devices to implement MFA. 
+A company would like to optimize Amazon EC2 costs. Which of the following actions can help with this task? (Select TWO)
+•	Set up Auto Scaling groups to align the number of instances with demand
+•	Purchase EC2 Reserved instances
+•	APN Consulting Partner--A multi-national corporation wants to get expert professional advice on migrating to AWS and managing their applications on AWS Cloud. The AWS Partner Network (APN) is the global partner program for technology and consulting businesses that leverage Amazon Web Services to build solutions and services for customers.
+APN Technology Partner - APN Technology Partners provide hardware, connectivity services, or software solutions that are either hosted on or integrated with, the AWS Cloud. 
+AWS Trusted Advisor - AWS Trusted Advisor is an online tool that provides you real-time guidance to help you provision your resources following AWS best practices on cost optimization, security, fault tolerance, service limits, and performance improvement. 
+Concierge Support Team - The Concierge Support Team are AWS billing and account experts that specialize in working with enterprise accounts. 
+Which AWS service will you use to provision the same AWS infrastructure across multiple AWS accounts and regions?
+•	AWS CloudFormation
+AWS Systems Manager - AWS Systems Manager gives you visibility and control of your infrastructure on AWS. Systems Manager provides a unified user interface so you can view operational data from multiple AWS services and allows you to automate operational tasks across your AWS resources. 
+•	AWS Pricing Calculator--A financial services company wants to migrate from its on-premises data center to AWS Cloud. As a Cloud Practitioner, which AWS service would you recommend so that the company can compare the cost of running their IT infrastructure on-premises vs AWS Cloud. AWS Pricing Calculator lets you explore AWS services and create an estimate for the cost of your use cases on AWS. 
+AWS Trusted Advisor - AWS Trusted Advisor provides recommendations that help you follow AWS best practices. 
+AWS Cost Explorer - AWS Cost Explorer has an easy-to-use interface that lets you visualize, understand, and manage your AWS costs and usage over time. 
+AWS Budgets - AWS Budgets gives the ability to set custom budgets that alert you when your costs or usage exceed (or are forecasted to exceed) your budgeted amount. 
+What is the primary benefit of deploying an RDS database in a Read Replica configuration?--•	Read Replica improves database scalability
+An IT company has a hybrid cloud architecture and it wants to centralize the server logs for its EC2 instances and on-premises servers. Which of the following is the MOST effective for this use-case?--•	Use CloudWatch Logs for both the EC2 instance and the on-premises servers
+AWS CloudTrail is a service that enables governance, compliance, operational auditing, and risk auditing of your AWS account. 
+AWS Config is a service that enables you to assess, audit, and evaluate the configurations of your AWS resources. 
+Amazon Inspector is an automated security assessment service that helps improve the security and compliance of applications deployed on AWS. Amazon Inspector automatically assesses applications for exposure, vulnerabilities, and deviations from best practices.
+Amazon Inspector security assessments help you check for unintended network accessibility of your Amazon EC2 instances and for vulnerabilities on those EC2 instances.
+A startup wants to provision an EC2 instance for the lowest possible cost for a long-term duration but needs to make sure that the instance would never be interrupted. As a Cloud Practitioner, which of the following options would you recommend?--•	Reserved Instance
+On-Demand Instance - An On-Demand Instance is an instance that you use on-demand. 
+Spot Instance - A Spot Instance is an unused EC2 instance that is available for less than the On-Demand price. 
+Dedicated Host - Amazon EC2 Dedicated Hosts allow you to use your eligible software licenses from vendors such as Microsoft and Oracle on Amazon EC2 so that you get the flexibility and cost-effectiveness of using your licenses, but with the resiliency, simplicity, and elasticity of AWS. 
+Multi AZ (Availability Zone) deployment is an example of which of the following?
+•	High Availability
+Horizontal Scaling - A "horizontally scalable" system is one that can increase capacity by adding more computers to the system. 
+Vertical Scaling - Vertical Scaling is adding more resources (like CPU, RAM) to a single node or machine. Example- Resizing an instance of EC2.
+Which of the following are the best practices when using AWS Organizations? (Select TWO)
+•	Restrict account privileges using Service Control Policies (SCP)
+•	Create accounts per department
+A company's flagship application runs on a fleet of Amazon EC2 instances. As per the new policies, the system administrators are looking for the best way to provide secure shell access to AWS EC2 instances without opening new ports or using public IP addresses.
+Which tool/service will help you achieve this requirement?
+•	AWS Systems Manager Session Manager
+Amazon EC2 Instance Connect - Amazon EC2 Instance Connect provides a simple and secure way to connect to your Linux instances using Secure Shell (SSH). 
+Amazon Inspector - Amazon Inspector is an automated security assessment service that helps improve the security and compliance of applications deployed on AWS. Amazon Inspector automatically assesses applications for exposure, vulnerabilities, and deviations from best practices. After performing an assessment, Amazon Inspector produces a detailed list of security findings prioritized by level of severity. 
+Amazon Route 53 - Amazon Route 53 is a highly available and scalable cloud Domain Name System (DNS) web service. It is designed to give developers and businesses an extremely reliable and cost-effective way to route end users to Internet applications by translating names like www.example.com into the numeric IP addresses like 192.0.2.1 that computers use to connect to each other. 
+A gaming company is looking at a technology/service that can deliver a consistent low-latency gameplay to ensure a great user experience for end-users in various locations. Which AWS technology/service will provide the necessary low-latency access to the end-users?
+•	AWS Local Zones
+AWS Edge Locations - An AWS Edge location is a site that CloudFront uses to cache copies of the content for faster delivery to users at any location.
+AWS Wavelength - AWS Wavelength extends the AWS cloud to a global network of 5G edge locations to enable developers to innovate and build a whole new class of applications that require ultra-low latency. 
+AWS Direct Connect - AWS Direct Connect is a cloud service that links your network directly to AWS, bypassing the internet to deliver more consistent, lower-latency performance. 
+Which entity ensures that your application on Amazon EC2 always has the right amount of capacity to handle the current traffic demand?
+•	Auto Scaling
+Network Load Balancer - Network Load Balancer is best suited for load balancing of Transmission Control Protocol (TCP), User Datagram Protocol (UDP) and Transport Layer Security (TLS) traffic where extreme performance is required. It distributes traffic, does not scale resources.
+Application Load Balancer - An Application Load Balancer serves as the single point of contact for clients. The load balancer distributes incoming application traffic across multiple targets, such as EC2 instances, in multiple Availability Zones. It distributes traffic, does not scale resources.
+A photo sharing web application wants to store thumbnails of user-uploaded images on Amazon S3. The thumbnails are rarely used but need to be immediately accessible from the web application. The thumbnails can be regenerated easily if they are lost. Which is the most cost-effective way to store these thumbnails on S3?--•	Use S3 One-Zone Infrequent Access (One-Zone IA) to store the thumbnails
+Use S3 Standard Infrequent Access (Standard-IA) to store the thumbnails - S3 Standard-IA storage class is for data that is accessed less frequently but requires rapid access when needed. 
+Use S3 Standard to store the thumbnails - S3 Standard offers high durability, availability, and performance object storage for frequently accessed data. 
+Use S3 Glacier to store the thumbnails - S3 Glacier is a secure, durable, and low-cost storage class for data archiving. Although Glacier is cheaper than One Zone-IA, however the retrieval time ranges from a minute to hours, so this option is also ruled out for the given use-case.
+A medical device company is looking for a durable and cost-effective way of storing their historic data. Due to compliance requirements, the data must be stored for 10 years. Which AWS Storage solution will you suggest?--•	S3 Glacier Deep Archive
+AWS Storage Gateway - AWS Storage Gateway is a hybrid cloud storage service that gives you on-premises access to virtually unlimited cloud storage.
+Amazon EFS - Amazon Elastic File System (Amazon EFS) provides a simple, scalable, fully managed elastic NFS file system for use with AWS Cloud services and on-premises resources. 
+Which of the following is a container service of AWS?--•	AWS Fargate
+Amazon SageMaker - Amazon SageMaker is a fully managed service that provides every developer and data scientist with the ability to build, train, and deploy machine learning (ML) models quickly. 
+A cyber-security agency uses AWS Cloud and wants to carry out security assessments on their own AWS infrastructure without any prior approval from AWS. Which of the following describes/facilitates this practice?--•	Penetration Testing
+Network Stress Testing - AWS considers "network stress test" to be when a test sends a large volume of legitimate or test traffic to a specific intended target application. 
+Amazon Inspector - Amazon Inspector is an automated, security assessment service that helps you check for unintended network accessibility of your Amazon EC2 instances and for vulnerabilities on those EC2 instances. 
+AWS Secrets Manager - AWS Secrets Manager helps you protect secrets needed to access your applications, services, and IT resources. 
+A financial services company wants to ensure that its AWS account activity meets the governance, compliance and auditing norms. As a Cloud Practitioner, which AWS service would you recommend for this use-case?
+•	CloudTrail
+Config - AWS Config is a service that enables you to assess, audit, and evaluate the configurations of your AWS resources. 
+CloudWatch - Amazon CloudWatch is a monitoring and observability service built for DevOps engineers, developers, site reliability engineers (SREs), and IT managers. CloudWatch provides data and actionable insights to monitor applications, respond to system-wide performance changes, optimize resource utilization, and get a unified view of operational health. This is an excellent service for building Resilient systems.
+Trusted Advisor - AWS Trusted Advisor is an online tool that provides you real-time guidance to help you provision your resources following AWS best practices on cost optimization, security, fault tolerance, service limits and performance improvement.
+Think resource performance monitoring, events, and alerts; think CloudWatch.
+Think account-specific activity and audit; think CloudTrail.
+Think resource-specific change history, audit, and compliance; think Config.
+Which AWS service can help you analyze your infrastructure to identify unattached or underutilized EBS volumes?
+•	AWS Trusted Advisor
+A company would like to separate cost for AWS services by the department for cost allocation. Which of the following is the simplest way to achieve this task?--•	Create tags for each department
+An organization maintains a separate Virtual Private Cloud (VPC) for each of its business units. Two units need to privately share data. Which is the most optimal way of privately sharing data between the two VPCs?--•	VPC Peering
+Site to Site VPN - AWS Site-to-Site VPN creates a secure connection between your data center or branch office and your AWS cloud resources. This connection goes over the public internet. Site to Site VPN cannot be used to interconnect VPCs.
+AWS Direct Connect - AWS Direct Connect creates a dedicated private connection from a remote network to your VPC. This is a private connection and does not use the public internet. Takes at least a month to establish this connection. Direct Connect cannot be used to interconnect VPCs.
+VPC Endpoint - A VPC endpoint enables you to privately connect your VPC to supported AWS services and VPC endpoint services powered by AWS PrivateLink without requiring an internet gateway, NAT device, VPN connection, or AWS Direct Connect connection. You cannot connect two VPCs using a VPC endpoint.
+A data analytics company is running a proprietary batch analytics application on AWS and wants to use a storage service which would be accessed by hundreds of EC2 instances simultaneously to append data to existing files. As a Cloud Practitioner, which AWS service would you suggest for this use-case?--EFS
+EBS - Amazon Elastic Block Store (EBS) is an easy to use, high-performance block storage service designed for use with Amazon Elastic Compute Cloud (EC2) for both throughput and transaction-intensive workloads at any scale. 
+Instance Store - An instance store provides temporary block-level storage for your instance. This storage is located on disks that are physically attached to the host computer. 
+S3 - Amazon Simple Storage Service (Amazon S3) is an object storage service that offers industry-leading scalability, data availability, security, and performance. S3 is object storage and it does not support file append operations, 
+An IT company wants to run a log backup process every Monday at 2 AM. The usual runtime of the process is 5 minutes. As a Cloud Practitioner, which AWS services would you recommend to build a serverless solution for this use-case? (Select two)
+•	Lambda
+•	CloudWatch
+Step Function - AWS Step Function lets you coordinate multiple AWS services into serverless workflows. You can design and run workflows that stitch together services such as AWS Lambda, AWS Glue and Amazon SageMaker. 
+An organization deploys its IT infrastructure in a combination of its on-premises data center along with AWS Cloud. How would you categorize this deployment model?--•	Hybrid deployment
+AWS Compute Optimizer delivers recommendations for which of the following AWS resources? (Select two)
+•	Amazon EBS volumes, AWS Lambda functions
+•	Amazon EC2 instances, Amazon EC2 Auto Scaling groups
+AWS Compute Optimizer helps you identify the optimal AWS resource configurations, such as Amazon EC2 instance types, Amazon EBS volume configurations, and AWS Lambda function memory sizes, using machine learning to analyze historical utilization metrics. AWS Compute Optimizer delivers recommendations for selected types of EC2 instances, EC2 Auto Scaling groups, EBS volumes, and Lambda functions.
+Which of the following AWS authentication mechanisms supports a Multi-Factor Authentication (MFA) device that you can plug into a USB port on your computer?--•	U2F security key
+U2F security key - Universal 2nd Factor (U2F) Security Key is a device that you can plug into a USB port on your computer. U2F is an open authentication standard hosted by the FIDO Alliance. When you enable a U2F security key, you sign in by entering your credentials and then tapping the device instead of manually entering a code.
+Which AWS service would you choose for a data processing project that needs a schemaless database?--•	Amazon DynamoDB
+Amazon DynamoDB is a key-value and document database that delivers single-digit millisecond performance at any scale. It's a fully managed, multi-Region, multi-master, durable database with built-in security, backup and restore, and in-memory caching for internet-scale applications. DynamoDB is schemaless. DynamoDB can manage structured or semistructured data, including JSON documents.
+Amazon RedShift - Amazon Redshift is a fully-managed petabyte-scale cloud-based data warehouse product designed for large scale data set storage and analysis. Amazon Redshift requires a well-defined schema.
+Amazon Aurora - Amazon Aurora is an AWS service for relational databases. Aurora requires a well-defined schema.
+Amazon RDS - Amazon RDS is an AWS service for relational databases. RDS requires a well-defined schema.
+An IT company is on a cost-optimization spree and wants to identify all EC2 instances that are under-utilized. Which AWS services can be used off-the-shelf to address this use-case without needing any manual configurations? (Select two)--
+•	AWS Trusted Advisor
+•	AWS Cost Explorer
+AWS Cost and Usage Reports - The AWS Cost and Usage Reports (AWS CUR) contains the most comprehensive set of cost and usage data available. You can use Cost and Usage Reports to publish your AWS billing reports to an Amazon Simple Storage Service (Amazon S3) bucket that you own. 
+AWS Budgets - AWS Budgets gives the ability to set custom budgets that alert you when your costs or usage exceed (or are forecasted to exceed) your budgeted amount. 
+The DevOps team at an e-commerce company is trying to debug performance issues for its serverless application built using a microservices architecture. As a Cloud Practitioner, which AWS service would you recommend addressing this use-case?
+•	AWS X-Ray
+Amazon Pinpoint - Amazon Pinpoint allows marketers and developers to deliver customer-centric engagement experiences by capturing customer usage data to draw real-time insights. Pinpoint cannot be used to debug performance issues for this serverless application built using a microservices architecture.
+Due to regulatory and compliance reasons, an organization is supposed to use a hardware device for any data encryption operations in the cloud. Which AWS service can be used to meet this compliance requirement?
+•	AWS CloudHSM
+AWS CloudHSM is a cloud-based Hardware Security Module (HSM) that enables you to easily generate and use your encryption keys on the AWS Cloud. With CloudHSM, you can manage your encryption keys using FIPS 140-2 Level 3 validated HSMs. 
+AWS Key Management Service (KMS) - AWS Key Management Service (KMS) makes it easy for you to create and manage cryptographic keys and control their use across a wide range of AWS services and in your applications. 
+Which of the following AWS services offer block-level storage? (Select two)
+•	EBS
+•	Instance Store
+A company uses reserved EC2 instances across multiple units with each unit having its own AWS account. However, some of the units under-utilize their reserved instances while other units need more reserved instances. As a Cloud Practitioner, which of the following would you recommend as the most cost-optimal solution?--•	Use AWS Organizations to manage AWS accounts of all units and then share the reserved EC2 instances amongst all units
+An AWS user is trying to launch an EC2 instance in a given region. What is the region-specific constraint that the Amazon Machine Image (AMI) must meet so that it can be used for this EC2 instance?--•	You must use an AMI from the same region as that of the EC2 instance. The region of the AMI has no bearing on the performance of the EC2 instance
+Which of the following are advantages of using the AWS Cloud? (Select TWO)
+•	Stop guessing about capacity
+•	Increase speed and agility
+--Trade capital expense for variable expense
+--Benefit from massive economies of scale
+--Stop spending money running and maintaining data centers
+--Go global in minutes
+Which of the following AWS services can be used to forecast your AWS account usage and costs?
+•	AWS Cost Explorer
+AWS Pricing Calculator - AWS Pricing Calculator lets you explore AWS services and create an estimate for the cost of your use cases on AWS. 
+A unicorn startup is building an analytics application with support for a speech-based interface. The application will accept speech-based input from users and then convey results via speech. As a Cloud Practitioner, which solution would you recommend for the given use-case?--•	Use Amazon Transcribe to convert speech to text for downstream analysis. Then use Amazon Polly to convey the text results via speech
+Which of the following statements is the MOST accurate when describing AWS Elastic Beanstalk?--•	It is a Platform as a Service (PaaS) which allows you to deploy and scale web applications and services
+It is an Infrastructure as Code which allows you to model and provision resources needed for an application - This is the definition of AWS CloudFormation. 
+It is a Platform as a Service (PaaS) which allows you to model and provision resources needed for an application - AWS Elastic Beanstalk 
+Which service gives a personalized view of the status of the AWS services that are part of your Cloud architecture so that you can quickly assess the impact on your business when AWS service(s) are experiencing issues?
+•	AWS Personal Health Dashboard
+AWS Service Health Dashboard - AWS Service Health Dashboard publishes most up-to-the-minute information on the status and availability of all AWS services in tabular form for all Regions that AWS is present in. 
+While the Service Health Dashboard displays the general status of AWS services, Personal Health Dashboard gives you a personalized view of the performance and availability of the AWS services underlying your AWS resources.
+Which AWS Route 53 routing policy would you use to route traffic to multiple resources and also choose how much traffic is routed to each resource?
+•	Weighted routing policy
+Failover routing policy - This routing policy is used when you want to configure active-passive failover.
+Simple routing policy - With simple routing, you typically route traffic to a single resource, for example, to a web server for your website.
+Latency routing policy - This routing policy is used when you have resources in multiple AWS Regions and you want to route traffic to the region that provides the best latency.
+A company wants to improve the resiliency of its flagship application so it wants to move from its traditional database system to a managed AWS database service to support active-active configuration in both the East and West US AWS regions. The active-active configuration with cross-region support is the prime criteria for any database solution that the company considers.
+Which AWS database service is the right fit for this requirement?
+•	Amazon DynamoDB with global tables
+An intern at an IT company provisioned a Linux based On-demand EC2 instance with per-second billing but terminated it within 30 seconds as he wanted to provision another instance type. What is the duration for which the instance would be charged?--60 seconds
+A Cloud Practitioner would like to get operational insights of its resources to quickly identify any issues that might impact applications using those resources. Which AWS service can help with this task?--•	AWS Systems Manager
+Which of the following options are the benefits of using AWS Elastic Load Balancing (ELB)? (Select TWO)
+•	Fault tolerance
+•	High availability
+A corporation would like to have a central user portal to log in to third-party business applications as well as accounts managed under AWS Organizations. As a Cloud Practitioner, which AWS service would you use for this task?--•	AWS Single Sign-On (SSO)
+AWS Cognito - Amazon Cognito lets you add user sign-up, sign-in, and access control to your web and mobile apps quickly and easily. 
+AWS Identity and Access Management (IAM) - AWS Identity and Access Management (IAM) enables you to securely control access to AWS services and resources for your users. 
+AWS Command Line Interface (CLI) - The AWS Command Line Interface (CLI) is a unified tool to manage your AWS services. 
+A Cloud Practitioner would like to deploy identical resources across all regions and accounts using templates while estimating costs. Which AWS service can assist with this task?--•	AWS CloudFormation
+AWS Directory Service - AWS Directory Service for Microsoft Active Directory, also known as AWS Managed Microsoft AD, enables your directory-aware workloads and AWS resources to use managed Active Directory in the AWS Cloud. It is not used to deploy resources.
+Amazon LightSail - Amazon Lightsail is designed to be the easiest way to launch and manage a virtual private server with AWS. 
+AWS CodeDeploy - AWS CodeDeploy is a service that automates code deployments to any instance, including EC2 instances and instances running on-premises. 
+Which of the following AWS services are part of the AWS Foundation services for the Reliability pillar of the Well-Architected Framework in AWS Cloud? (Select two)
+•	AWS Trusted Advisor
+•	AWS Service Quotas
+Service Quotas enables you to view and manage your quotas for AWS services from a central location. Quotas, also referred to as limits in AWS, are the maximum values for the resources, actions, and items in your AWS account. Each AWS service defines its quotas and establishes default values for those quotas.
+AWS CloudTrail - AWS CloudTrail is a service that enables governance, compliance, operational auditing, and risk auditing of your AWS account. With CloudTrail, you can log, continuously monitor, and retain account activity related to actions across your AWS infrastructure. CloudTrail provides the event history of your AWS account activity, including actions taken through the AWS Management Console, AWS SDKs, command-line tools, and other AWS services. Think account-specific activity and audit; think CloudTrail.
+AWS CloudFormation - AWS CloudFormation provides a common language to model and provision AWS and third-party application resources in your cloud environment. AWS CloudFormation allows you to use programming languages or a simple text file to model and provision, in an automated and secure manner, all the resources needed for your applications across all Regions and accounts. Think infrastructure as code; think CloudFormation.
+Amazon CloudWatch - Amazon CloudWatch is a monitoring and observability service built for DevOps engineers, developers, site reliability engineers (SREs), and IT managers. CloudWatch provides data and actionable insights to monitor applications, respond to system-wide performance changes, optimize resource utilization, and get a unified view of operational health. This is an excellent service for building Resilient systems. Think resource performance monitoring, events, and alerts; think CloudWatch.

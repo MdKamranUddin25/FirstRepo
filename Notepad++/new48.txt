@@ -1,0 +1,35 @@
+Personal Excellence--
+Completed all the Mandatory Training's assigned till now and filled all the timesheets on time. Learning JSP for the client requirement assigned and skill up goal is in progress.
+
+Stakeholder Satisfaction--
+Have started working on the client deliverables and currently focusing on the Design as well as the Development of the tasks assigned.
+
+Operational Excellence--
+Have completed the Project setup and documented as well and shared with the Team Lead. Currently understanding the Project Code and Architecture and working on the development of the tasks assigned along with adequate testing.
+
+Effective People Management--
+Interacting with the Team Lead and fellow team mates to understand more about the project and the application functionalities.
+
+Delivery Excellence--
+Currently focusing on the tasks assigned in the sprint and updating the progress for the same in the JIRA as well as to the Team Lead and Scrum Master. Working towards the completion of the deliverables within the SLA and documenting the details of the design and development of the task.
+
+Testing Scenarios--
+Always taken care of preparing the test cases during the design phase of the requirements and getting it reviewed as well during the design call. Also, collaborated with the QA to execute the test cases after completing the Development in the local as well as lower region environments.
+
+Operational Excellence--
+Always worked towards refining the requirements with the client during the Design phase as well as highlighting the existing scenarios during the Development phase to proceed for the new enhancements.
+
+BU/Practice level Activities/Contribution--
+Have submitted Idea in Bluebolt for CII in the ADM BFS Ideathon 2023 (Idea ID : 41669). Helped in mentoring new team members. Going to nominate as a Trainer for GenC program and participate in the PDP associates technical evaluation in the coming months. Also, preparing for the GCP Associate Cloud Engineer certification, 45% learning completed till now in the Cloud Skills Boost platform.
+
+Stakeholder Satisfaction--
+Working on the client deliverables and currently focusing on the Design as well as the Development of the tasks assigned. Always following the best practices for coding in the development tasks and helping the QA team to understand the requirement for testing in the lower environments.
+
+Personal Excellence--
+Completed all the Mandatory Training's assigned till now and filled all the timesheets on time. Learnt different aspects of JSP for the client requirements assigned and completed the Skill Up Goal.
+
+Effective People Management--
+Interacting with the Team Lead and fellow team mates to understand more about the project and the application functionalities. Helping fellow team members when required.
+
+Delivery Excellence--
+Currently focusing on the tasks assigned in the sprint and updating the progress for the same in the JIRA as well as to the Team Lead and Scrum Master. Working towards the completion of the deliverables within the SLA and documenting the details of the design and development of the task.

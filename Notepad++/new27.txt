@@ -1,0 +1,24 @@
+300--change to 400
+
+400--retuurn data correction
+
+AWSAcademy2@cognizant.com
+
+HOLIDAY CHECKER check angular google
+INC0037098671
+
+make the changes in the files
+mvn clean install
+deploy the files using powershell
+
+check the maven versions
+check the files errors
+raise admin access
+
+evolution rules serves -- release 2.0.0
+
+because we still need to get a more basic understanding and basic examples of gen AI before going to elaborate use cases
+
+adm cmt verizon springboot microservices certified path
+
+GitHub Copilot – JAVA Developer  https://onecognizant.cognizant.com/Home?GlobalAppID=1738&URL=https://onecognizantazrapps.cognizant.com/1738/MLSApp/Pathway/viewpathway?page=All%20Learning%20Paths|90928246|PathwayImage2.jpg                                                                                                  GitHub Copilot – .NET Developer  https://onecognizant.cognizant.com/SAMLSSO/AuthServices/SignIn?ReturnUrl=%2FHome%3FGlobalAppID%3D1738%26URL%3Dhttps%3A%2F%2Fonecognizantazrapps.cognizant.com%2F1738%2FMLSApp%2FPathway%2Fviewpathway%3Fpage%3DAll%20Learning%20Paths|90928311|PathwayImage1.jpg                                                                                                                                                                                                                      GitHub Copilot – Python Developer https://onecognizant.cognizant.com/Home?GlobalAppID=1738&URL=https://onecognizantazrapps.cognizant.com/1738/MLSApp/Pathway/viewpathway?page=All%20Learning%20Paths|90930434|PathwayImage9.jpg

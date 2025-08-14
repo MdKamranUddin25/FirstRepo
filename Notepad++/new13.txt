@@ -1,0 +1,42 @@
+
+
+employee class having 3 objects
+age of the employee
+
+employeeList
+
+employee implements comparable<Employee>
+
+id, name,age
+
+@ove
+compareTo
+
+
+employeeList.stream().compare
+
+int arr[] = new int[1,2,3,4,5,6,7,]
+
+newArr = 
+{1, 20, 3, 19, 17, 18, 5, 6, 15};
+
+int add=0;
+int temp=[];
+for(int i=0;i<newArr.lenght();i++){
+add=newArr[i];
+if(add == 20){
+temp = temp[i]+temp[i+1];
+}else{
+some code
+}
+}
+
+client_id, state, lob, claim amt, etc
+
+myservice interface
+
+service a imp myservice, service b imp myservice
+
+controller autowiring myservice
+
+

@@ -1,0 +1,120 @@
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.function.*;
+import java.util.regex.*;
+import java.util.stream.*;
+import static java.util.stream.Collectors.joining;
+import static java.util.stream.Collectors.toList;
+
+
+class Result {
+
+    /*
+     * Complete the 'getOpenApplications' function below.
+     *
+     * The function is expected to return a STRING_ARRAY.
+     * The function accepts STRING_ARRAY commands as parameter.
+     */
+
+    public static List<String> getOpenApplications(List<String> commands) {
+    // Write your code here
+        //final Integer count=0;
+        List<String> myList=new ArrayList<>();
+        commands.stream().forEach(c->{
+            if(c.startsWith("open")){
+                myList.add(c.substring(5));
+            }else if(c.startsWith("close")){
+                int count=Integer.parseInt(c.substring(6));
+                if(count>1){
+                myList.remove(c);
+                myList.remove(c);
+                }
+            }else{
+                myList.clear();
+            }
+        });
+        return myList;
+    }
+
+}
+
+-------------------------------------------------------
+
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.function.*;
+import java.util.regex.*;
+import java.util.stream.*;
+import static java.util.stream.Collectors.joining;
+import static java.util.stream.Collectors.toList;
+
+
+class Result {
+
+    /*
+     * Complete the 'numDuplicates' function below.
+     *
+     * The function is expected to return an INTEGER.
+     * The function accepts following parameters:
+     *  1. STRING_ARRAY name
+     *  2. INTEGER_ARRAY price
+     *  3. INTEGER_ARRAY weight
+     */
+
+    public static int numDuplicates(List<String> name, List<Integer> price, List<Integer> weight) {
+    // Write your code here
+        int count=0;
+        List<obj> classList = new ArrayList<obj>();
+        for(int i=0;i<name.size();i++){
+            obj holder=new obj(name.get(i),price.get(i),weight.get(i));
+            classList.add(holder);
+        }
+        for(int i=0;i<classList.size();i++){
+            for(int j=i+1;j<classList.size();j++){
+                if(classList.get(i).isDuplicate(classList.get(j))){
+                    count++;
+                    classList.remove(classList.get(j));
+                    j--;
+                }
+            }
+        }
+        return count;
+    }
+
+}
+
+class obj{
+    String name;
+    int price;
+    int weight;
+    
+    public obj(String name, int price, int weight){
+        this.name=name;
+        this.price=price;
+        this.weight=weight;
+    }
+    public boolean isDuplicate(obj x){
+        if(this.name.equals(x.name) && this.price==x.price && this.weight==x.weight){
+            return true;
+        }
+        return false;
+    }
+}
+
+--------------------------------------------------------------
+
+int count=Integer.parseInt(c.substring(6));
+                List<String> tempList=new ArrayList<>();
+                tempList=myList;
+                for(int i=0;i<=count;i++){
+                    tempList.remove(c);
+                }
+                myList=tempList;

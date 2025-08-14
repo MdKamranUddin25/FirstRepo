@@ -1,0 +1,127 @@
+5631224 - corelogic - can go, indrajit roy, ramp up, tomorrow, pinged but no response
+5527524 - directtv - cant go
+5643957 - comcast - cant go
+5630250 - aig synergy - can go, anburaj nataraj, ramp up, cant go as support
+5637470 - pepsi - cant go
+5550843 - quantum - cant go as pure backend
+5640291 - verizon - can go, santosh kumar padakanti, project manager, no reply, position filled
+5619127 - toronto bank - cant go, seems support, pushpa arumugam, waiting, on hold
+5582459 - humana - cant go as pure backend
+5573019 - aws proserve - cant go
+5602766 - electrolux - cant go as support
+5629915 - Optum/UHG - cant go as hybrid
+5632919 - ameriprise - cant go
+5566317 - jpmc - can go, selvam ramalingam, ramp up, location problem, cancelled
+5647408 - bayer - can go, hemalatha singh, new, no updates
+5641487 - rabo bank - can go, hemalatha singh, ramp up
+ING, hema, given backend interview, not going
+toronto, development, interview given, on hold
+
+==========================
+
+5460203 , credit suisse, app
+5653906,5635702 , farmers, speak to ramraj, not going as hybrid
+5548172 , td bank, app
+5498818 app,5555257,5624136,5601256,5393997 app,5653058 , visa
+5641426 , nationwide insurance, not sure, Sreekumar.Prabhakaran@cognizant.com
+5550149 , td bank, on hold
+5628425,5597763,5649585,5676789 , lpl finance, all are web dev, ARUNBIKASH.MOHANTY@cognizant.com
+5585902-Raghuram.Kumar@cognizant.com,5429014-SenthilKumar.Muthusamy@cognizant.com,5621417,5588388,5588413,5558506,5495982,5556335,5565428,5672982,5672877,5672882-all , world bank group, all are web dev
+5608860 , pnc finance, web dev, Jaydeep.Sengupta@cognizant.com
+5596105-Arvind Gopal Varadarajan (431268 ),5506453-Anand G (227088 ),5493424-Vimala Purushothaman (131086 ),5311674-Visagan U (482542 ),5650748-Arvind Gopal Varadarajan (431268 ),5573328,5499673,5639325-Sathya Narayanan P (2107565 ),5547121-Arvind Gopal Varadarajan (431268 ),5580030,5381710-not there,5672580,5672547 , rabo bank, all are web dev
+5580211 , pearson, app
+5575993 , aig insurance, app
+5586358 , daimler, app
+5515850 , arch capital, app
+5476691 , kbc belgium, not sure, not there
+5518461 app,5518484,5482491-closed,5521257,5521211,5521187,5521236,5625648 , hartford, done
+5637687,5631299,5554703,5550557,5550619,5559450-cancelled,5631308,5631281,5646675,5604221,5567163,5554681,5632307,5481162,5631320 , corelogic, last, Senthilkumar M Sundaresan (293946 ), Indrajit.Roy@cognizant.com
+5611122,5634966-cancelled , kaiser, web dev, KrishnaKumar.Ramachandran@cognizant.com
+5643086 , tiaa, its project manager
+5607376,5620468,5671683 , first data, web dev, Priyojit.Roy@cognizant.com, Karthik.Krishnamurthy4@cognizant.com
+5625247 , astra zeneca, web dev, Srinivasan.Chockalingam@cognizant.com
+5526684 , caterpillar, web dev, LakshmiPriya.RV@cognizant.com
+5648931-cancelled , citizens bank, not there
+5626015,5584632 , mercedes, web dev, Sujit Varghese (191491 )
+5589920 , mgm, can apply, Subhajit.Sen@cognizant.com
+5612549-Diwakar Sadasivam,5612545-same,5612542-same,5612530-same,5613710-same , directtv, web dev
+5645551,5658832 , sun trust bank, web dev, Dasi.Raghu@cognizant.com
+5624718-Viswanath Dhanapalan , tmg health, can apply
+5610827-web dev,5647418-not there,closed , bayer, Ismail Pasha (2059537 )
+5625454-Balaji Jai Krishnamoorthy , toyota, can apply
+5655326 , aws health, web dev, Indra.B@cognizant.com
+5656120-Nitin Bharat Mehta,5656120-same , qvc inc
+5643298-cancelled,5643294-cancelled,5643292-cancelled , hdfc, web dev, Sujit Varghese
+5625243,5625275 , fidelity, web dev, Anirban.Pal3@cognizant.com
+5642641, ul llc, web dev, Ranjan.De2@cognizant.com
+5628810 , kpn bv, web dev, Pratibha Rajderkar (137542 )
+5631846, american express, web dev, Sujit Varghese
+5623194 , global fund, not there, closed
+5660768,5660788,5660776 , modernizing medicine, Kamal Kumar Rajanbabu, can apply
+5658264 , network rail ltd, web dev, Sandhya Mohit Jha
+5662180-Kumaran Kannabiran,5662251,5476681,5662218,5662238,5662075,5662232,5662242,5662262,5662225,5662228,5662265,5662215 , kbc belgium, can apply
+5626000 , hartford, afzal nt, Subhasish Mohapatra(876069), closed
+5661108 , jpmc, web dev, Kishore.Eamani@cognizant.com
+5524580 , onsite, MeenakshiSundaram.A@cognizant.com, netherland
+5655616-cancelled,5654005 , onsite, arvind patel-need to ping, syed illiyas b- pinged, Kiran.Khilari@cognizant.com-need to ping
+5657341 , pm, pinged
+5564680 , onsite, 173061, pinged
+5605864 , onsite, 944018, pinged
+5583754 , onsite, leave
+5642519,5642496,5644677 , onsite, 942264, pradip mukherjee, 330609, Venkata Subrahmanyam Avvaru, pinged
+5592249 , onsite, 477798, Visuprasanna NatesanSekar, need to msg, pinged
+5658669 , onsite, done
+5635834 , onsite, Dolly Chitranjan(688915), Ravi Shankar Sharan, saravan perumal, bny mellon, pinged
+5635671 , onsite, dolly, pinged	, farmers, canada, hm,pm -ramraj ramadass
+5658270 , onsite, done
+5658427 , onsite, done
+5627726 , onsite, Rupesh Saxena, not there
+5658497 , onsite, done
+5407782 , onsite, Rahul Thatal 364847, Ajeesh Vijayan, pinged
+5642051 , onsite, Dolly Chitranjan(688915), pinged, novartis, HM -Jayanth Kumar N P pinged, PM - Nagarajan Ramachandran
+5657341 , onsite, Priya Nagamuthu(219775), pinged
+5658703 , onsite, done
+5658510 , onsite, hemalatha
+5661773 , onsite, Praseeja Vaka, Avanthi Kalidindi (212521 ), u.s.a
+5486884 , onsite, u.s.a
+ping tania banerjee
+5372049 , onsite, Priyanka S(507927) pinged, Maite Abia Castrillo, ping Akash Venkatesan
+saideepthi.uppuluru@cognizant.com - arch capital
+DilipKumar.Kumar@cognizant.com - rabo bank 5663777 5663782
+EDURNE.BALMORI@cognizant.com - ing spain 5605864 5605932
+Thilakavathe.Sellakutty@cognizant.com - qatar airways 5663807
+Maite.AbiaCastrillo@cognizant.com - kbc belgium 5372049
+Raghuram.Kumar@cognizant.com - world bank 5592709
+MeenakshiSundaram.A@cognizant.com - rabo bank 5524580
+Prashanth.Kulkarni@cognizant.com - nextera 5637436, Raghunath Chandrasekar (233808)
+Nagarajan Ramachandran (207309 ) - Jayanth Kumar N P - novartis 5642051
+Pavithra V (557944 ) - qatar airways 5666852 5663807
+Syimah Nadhirah Rogaizat(722393) - Ammu Sebastian - chubb 5491496
+akash venkatesan - rabo bank
+5665814,5665789 - National Securities Depository Limited, Paramita.Chatterjee@cognizant.com
+5663751 - Chubb INA Holdings Inc., Dheenadayalan.Venkatesan@cognizant.com
+5666830 - BETA PLUS TECHNOLOGIES, Rejesh.TH@cognizant.com, Eswaravaraprasad.Moida@cognizant.com
+5662790,5662669 - S&P Global Inc, Visweswaran.K@cognizant.com
+5662576 - J.P.Morgan Services India Private Ltd, Pratik.Roy@cognizant.com
+5663917 - DFS Venture Singapore (Pte) Limited, Gurumoorthy.Ganesan@cognizant.com
+5665251 - WM Morrison Supermarkets Limited, SenthilKumar.Palani@cognizant.com
+LeelaMaheswari.A@cognizant.com - service now 5668219
+Thilakavathe.Sellakutty@cognizant.com - qatar bank 5669015
+Esha.Ghosh@cognizant.com - credit suisse 5667794 5667839 - full stack
+Srinivasan.Chockalingam@cognizant.com - astra zeneca 5669091
+Sivakumar.Pichumani@cognizant.com - cvs pharmacy 5667732
+KrishnaKumar.Ramachandran@cognizant.com - Kaiser 5669368 -applied
+SenthilKumar.B3@cognizant.com - AbbVie Inc. 5669149
+Pavithra V (557944 ) - qatar airways 5670482
+Praveen.Saxena@cognizant.com - Altera Healthcare 5669300
+Arvind Gopal Varadarajan (431268 ) - rabo bank 5669564
+Harikrishnan.Panneerselvam@cognizant.com - PricewaterhouseCoopers 5668809
+Eswaravaraprasad.Moida@cognizant.com - Vinodhini R(327108) - BETA PLUS TECHNOLOGIES 5666792
+SanjeevKumar.ThembaraiVaradarajan@cognizant.com - FAB GLOBAL BUSINESS SERVICES PVT LTD 5675485
+Debarghya.Bagchi@cognizant.com - Intact Financial Corporation 5676484
+Sripathi.S@cognizant.com - Kotak Mahindra Life Insurance Co. Ltd. 5676376
+Sujit.Varghese@cognizant.com - Schneider Electric Private Limited 5677816
+onsite- A.R. Subhichaa(332453) Surendra.Puduru@cognizant.com - Branch Banking & Trust Company 5672068
+onsite- SivaKumar.ShanmughamUmaskandan@cognizant.com - CITIZENS BANK N.A - 5678609
+
+Charted Communication Ltd Account and there requirement is on Networking protocols with C Lang.

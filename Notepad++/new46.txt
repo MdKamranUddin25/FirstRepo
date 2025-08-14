@@ -1,0 +1,164 @@
+A company plans to use reserved instances to get discounted pricing for Amazon EC2 instances. The company may need to change the EC2 instance type during the one year period.
+Which instance purchasing option is the MOST cost-effective for this use case?
+--•	Convertible Reserved Instances
+Which of the following represents a value proposition for using the AWS Cloud?
+--•	It is not necessary to enter into long term contracts.
+Which AWS service provides a managed software version control system?
+--•	AWS CodeCommit
+What are AWS Identity and Access Management (IAM) access keys used for?
+--•	Making programmatic calls to AWS from AWS APIs.
+A company must provide access to AWS resources for their employees. Which security practices should they follow? (Select TWO.)
+--•	Enable multi-factor authentication for users.
+--•	Create IAM policies based on least privilege principles.
+A company is planning to deploy an application with a relational database on AWS. The application layer requires access to the database instance’s operating system in order to run scripts.
+The company prefer to keep management overhead to a minimum. Which deployment should be used for the database?
+--•	Amazon EC2
+Which of the following can an AWS customer use to launch a new ElastiCache cluster? (Select TWO.)
+--•	AWS CloudFormation
+--•	AWS Management Console
+Customers using AWS services must patch operating systems on which of the following services?
+--•	Amazon EC2
+What can a Cloud Practitioner use to categorize and track AWS costs by project?
+--•	Cost Allocation Tags
+An application uses a PostgreSQL database running on a single Amazon EC2 instance. A Cloud Practitioner has been asked to increase the availability of the database so there is automatic recovery in the case of a failure.
+Which tasks can the Cloud Practitioner take to meet this requirement?
+--•	Migrate the database to Amazon RDS and enable the Multi-AZ feature.
+A website has a global customer base and users have reported poor performance when connecting to the site.
+--•	Amazon CloudFront
+A company needs to publish messages to a thousands of subscribers simultaneously using a push mechanism.
+Which AWS service should the company use?
+--•	Amazon Simple Notification Service (Amazon SNS)
+Which benefits can a company gain by deploying a relational database on Amazon RDS instead of Amazon EC2? (Select TWO.)
+--•	Software patching
+--•	Automated backups
+A company is deploying an application in the AWS Cloud. How can they secure the application? (Select TWO.)
+--•	Enable encryption for the application data at rest.
+--•	Limit access privileges according to the principal of least privilege.
+A company is designing a new a service that must align with the operational excellence pillar of the AWS Well-Architected Framework.
+Which design principles should the company follow? (Select TWO.)
+--•	Anticipate failure.
+--•	Perform operations as code.
+A company is deploying a new workload and software licensing requirements dictate that the workload must be run on a specific, physical server.
+Which Amazon EC2 instance deployment option should be used?
+--•	Dedicated Hosts
+Which of the following is a sole responsibility of AWS?
+--•	Availability Zone management
+Which AWS services can a company use to gather information about activity in their AWS account? (Select TWO.)
+--•	AWS CloudTrail
+--•	Amazon CloudWatch
+A company is launching a new website which is expected to have highly variable levels of traffic. The website will run on Amazon EC2 and must be highly available.
+What is the MOST cost-effective approach?
+--•	Create an Amazon EC2 Auto Scaling group and configure an Elastic Load Balancer.
+When running applications in the AWS Cloud which common tasks can AWS manage on behalf of their customers? (Select TWO.)
+--•	Taking a backup of a database
+--•	Patching database software
+A financial services firm wants to build a real-time analytics platform where data can be streamed and analyzed on the fly. They are looking to use Apache Kafka for this, but they want to avoid the overhead of managing the Kafka infrastructure.
+Which AWS service would be the best fit for this requirement?
+--•	Amazon MSK
+Which type of credential should a Cloud Practitioner use for programmatic access to AWS resources from the AWS CLI/API?
+--•	Access keys
+A company runs a batch job on an Amazon EC2 instance and it takes 6 hours to complete. The workload is expected to double in volume each month with a proportional increase in processing time.
+What is the most efficient cloud architecture to address the growing workload?
+--•	Run the batch workload in parallel across multiple Amazon EC2 instances.
+Which resource should a new user on AWS use to get help with deploying popular technologies based on AWS best practices, including architecture and deployment instructions?
+--•	AWS Partner Solutions
+AWS are able to continually reduce their pricing due to:
+--•	Economies of scale.
+A company uses Amazon EC2 instances to run applications that are dedicated to different departments. The company needs to break out the costs of these applications and allocate them to the relevant department. The EC2 instances run in a single VPC.
+How can the company achieve these requirements?
+--•	Create tags by department on the instances and then run a cost allocation report.
+A company has multiple AWS accounts and is using AWS Organizations with consolidated billing. Which advantages will they benefit from? (Select TWO.)
+--•	They may benefit from lower unit pricing for aggregated usage.
+--•	They will receive one bill for the accounts in the Organization.
+A company has many underutilized compute resources on-premises. Which AWS Cloud feature will help resolve this issue?
+--•	Elasticity
+Which tasks require the use of the AWS account root user? (Select TWO.)
+--•	Changing the account name.
+--•	Changing AWS Support plans.
+A company plans to deploy a relational database on AWS. The IT department will perform database administration. Which service should the company use?
+--•	Amazon EC2
+What is one method of protecting against distributed denial of service (DDoS) attacks in the AWS Cloud?
+--•	Configure a firewall in front of resources.
+A user is planning to launch three EC2 instances behind a single Elastic Load Balancer. The deployment should be highly available. How should the user achieve this?
+--•	Launch the instances across multiple Availability Zones in a single AWS Region.
+Which AWS service can a company use to discover and protect sensitive data that is stored in Amazon S3 buckets.
+--•	Amazon Macie
+A Cloud Practitioner needs to monitor a new Amazon EC2 instances CPU and network utilization. Which AWS service should be used?
+--•	Amazon CloudWatch
+A company is deploying a new web application in a single AWS Region that will be used by users globally.
+Which AWS services will assist with lowering latency and improving transfer speeds for the global users? (Select TWO.)
+--•	Amazon CloudFront
+--•	AWS Global Accelerator
+What is the best practice for managing AWS IAM access keys?
+--•	Customers should rotate access keys regularly.
+Which of the following AWS features or services can be used to provide root storage volumes for Amazon EC2 instances?
+--•	Amazon Elastic Block Store (EBS)
+How does the AWS cloud increase the speed and agility of execution for customers? (Select TWO.)
+--•	Fast provisioning of resources
+--•	Scalable compute capacity
+A user needs to identify underutilized Amazon EC2 instances to reduce costs.
+Which AWS service or feature will meet this requirement?
+--•	AWS Trusted Advisor
+A company is planning to move a number of legacy applications to the AWS Cloud. The solution must be cost-effective. Which approach should the company take?
+--•	Rehost the applications on Amazon EC2 instances that are right-sized.
+Which of the following will help a user determine if they need to request an Amazon EC2 service limit increase?
+--•	AWS Trusted Advisor
+Which tasks can a user complete using the AWS Cost Management tools? (Select TWO.)
+--•	Create budgets and receive notifications if current or forecasted usage exceeds the budgets.
+--•	Automatically terminate AWS resources if budget thresholds are exceeded.
+A company is deploying a MySQL database on AWS. The database must easily scale and have automatic backup enabled.
+Which AWS service should the company use?
+--•	Amazon Aurora
+Which of the following statements best describes the concept of agility in relation to cloud computing on AWS? (Select TWO.)
+--•	The ability to experiment quickly.
+--•	The speed at which AWS resources can be created.
+According to the AWS shared responsibility model, which of the following is a responsibility of AWS?
+--•	Updating the firmware on the underlying EC2 hosts.
+Which AWS Cloud service provides recommendations on how to optimize performance for AWS services?
+--•	AWS Trusted Advisor
+A startup is developing a web application where users can find articles based on various criteria such as keywords, authors, or topics. They seek an AWS service that can handle this function efficiently.
+Which service should they use?
+--•	Amazon OpenSearch Service
+An Amazon Virtual Private Cloud (VPC) can include multiple:
+--•	Availability Zones.
+Which AWS feature can be used to launch a pre-configured Amazon Elastic Compute Cloud (EC2) instance?
+--•	Amazon Machine Image (AMI)
+A Cloud Practitioner anticipates an increase in application traffic at a future date and time when a sales event will take place. How can the Cloud Practitioner configure Amazon EC2 Auto Scaling to ensure the right number of Amazon EC2 instances are available ahead of the event?
+--•	Configure a scheduled scaling policy.
+An individual IAM user must be granted access to an Amazon S3 bucket using a bucket policy. Which element in the S3 bucket policy should be updated to define the user account for which access will be granted?
+--•	Principal
+A company is deploying an application on Amazon EC2 that requires low-latency access to application components in an on-premises data center. Which AWS service or resource can the company use to extend their existing VPC to the on-premises data center?
+--•	AWS Outposts
+Which AWS service can a team use to deploy infrastructure on AWS using familiar programming languages?
+--•	AWS Cloud Development Kit (AWS CDK)
+Which of the following deployments involves the reliability pillar of the AWS Well-Architected Framework?
+--•	Amazon RDS Multi-AZ deployment
+Which AWS service or feature can assist with protecting a website that is hosted outside of AWS?
+--•	AWS Web Application Firewall (WAF)
+How much data can a company store in the Amazon S3 service?
+--•	Virtually unlimited
+Which of the following are valid benefits of using the AWS Cloud? (Select TWO.)
+--•	Ability to go global quickly.
+--•	Fast provisioning of IT resources.
+For what purpose would a Cloud Practitioner access AWS Artifact?
+--•	Gain access to AWS security and compliance documents.
+Which design principles are enabled by the AWS Cloud to improve the operation of workloads? (Select TWO.)
+--•	Remove single points of failure
+--•	Loose coupling
+A media company wants to find and subscribe to third-party data sources to enrich their existing datasets with new insights.
+--•	AWS Data Exchange
+A Cloud Practitioner is developing a new application and wishes to integrate features of AWS services directly into the application.
+Which of the following is the BEST tool for this purpose?
+--•	AWS Software Development Kit
+A company is migrating a monolithic application that does not scale well into the cloud and refactoring it into a microservices architecture.
+Which best practice of the AWS Well-Architected Framework does this plan relate to?
+--•	Implement loosely coupled services.
+A company is building a serverless workflow that coordinates multiple AWS services into a reliable application. They want a visual workflow that can track the status of each step in the application.
+Which AWS service would facilitate creating this kind of workflow?
+--•	AWS Step Functions
+A Cloud Practitioner needs a tool that can assist with viewing and managing AWS costs and usage over time. Which tool should the Cloud Practitioner use?
+--•	AWS Cost Explorer
+Which of the following AWS services are compute services? (Select TWO.)
+--•	AWS Batch
+--•	AWS Elastic Beanstalk
+==================================================================================

@@ -1,0 +1,29 @@
+Are you opting for new tax regime u/s 115BAC ? No
+
+Are you filing return of income under Seventh proviso to section 139(1) but otherwise not required to furnish
+return of income? No
+
+Are you required to file a return as per other conditions prescribed under clause (iv) of seventh proviso to
+section 139(1) (If yes, please select the relevant condition from the drop down menu) No
+
+Residential Status in India (for individuals) Resident	
+You were in India for 182 days or more during the previous year [section 6(1)(a)]
+
+Do you want to claim the benefit under section 115H? (applicable in case of resident) No
+
+Are you governed by Portuguese Civil Code as per section 5A?(If "YES" please fill Schedule 5A) No
+
+Whether this return is being filed by a Representative Assesse? No
+
+Whether you are an FII/FPI?  No
+
+Whether you were Director in a company at any time during the previous year?  No
+
+Whether you have held unlisted equity shares at any time during the previous year?  No
+
+
+Currently, our project application uses .NET as a frontend framework which gives us the option of having very minimal designs and has a very basic look and feel as compared to the modern frameworks which we have now.
+
+Data has always been the main and integral part of an organization's core. But, we see that these data are often cluttered and very unorganized which leads to cumbersome search and tedious processes for anything to by. 
+
+The idea is to built a Generative AI virtual assistant or virtual agent to improve experiences for customers, agents, agency staff members and employees. This will heighten productivity and efficiency benefits like summarizing and synthesizing large volumes of content gathered during the claims lifecycle, including call transcripts, notes, and legal and medical paperwork, which is particularly useful in property and casualty insurance domain. Also, this will enhance the automation and decision making in underwriting processes and policy issuance to a broader range of customers.

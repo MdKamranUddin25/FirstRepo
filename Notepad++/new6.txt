@@ -1,0 +1,11 @@
+duplicated effort--have some words earmarked for assigning to correct teams different issues
+
+have a common platform for all the teams to colloborate effectively
+
+SCAMPER technique
+
+
+The idea is to develop a Conversational AI platform powered by Generative AI to answer specific, customer inquiries and questions about policy coverage and terms and claims processing. It will also help to automate personalized communication with policy holders by sending reminders for premium payments, providing policy updates and delivering relevant content to enhance customer engagement and retention.
+
+
+It will bring numerous benefits to the client like the potential for cost savings by reducing the need for live customer support agents and training Generative AI on customers policy preferences and claims history to make personalized insurance product recommendations. This will lead to Cognizant contributing towards increasing client satisfaction and technology efficiency.

@@ -1,0 +1,63 @@
+obsevability===logging
+
+event=change in state
+
+materalised view
+virtual view
+fact table
+
+compensatory calls is for data integrity
+
+https://github.com/aws-samples/anti-corruption-layer-pattern
+
+export PATH="$PATH:/home/ec2-user/.dotnet/tools"
+
+https://apc01.safelinks.protection.outlook.com/?url=https%3A%2F%2Flaas.makemylabs.in%2Fwsm%2FCOG-AWS-NB01-01-skip20240805093936%3Finvitation_id%3D069bf34b-5143-4cdc-b258-e1c9f6f18e48%26context%3DTrue&data=05%7C02%7CMd.Kamran.Uddin%40cognizant.com%7C5ef284e8c2e74c773d0908dcb69fad5a%7Cde08c40719b9427d9fe8edf254300ca7%7C0%7C0%7C638586044136151801%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=RB9%2BeDvIEA2VyIX4dGpBnMkzj9MFbgWjad9c9LsqyWA%3D&reserved=0
+
+JuvAScxZ
+awsuser3153@mml.local
+
+https://laas.makemylabs.in/wsm/IIHTJavaHackathon20240823120645?invitation_id=282bbbd2-eb03-4c75-834e-4888734d2276&context=True
+
+
+https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practices/tagging-best-practices.html
+https://aws.amazon.com/fsx/when-to-choose-fsx/
+
+vpc's are restricted per region
+hub and spoke model
+
+ipv4-nat gateway
+ipv6-egress gateway
+s3 to vpc-gateway
+ec2 to s3-interface
+http://www.faqs.org/rfcs/rfc1918.html
+ 
+https://docs.aws.amazon.com/vpc/latest/userguide/vpc-cidr-blocks.html
+
+https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html
+
+AWS Trusted Advisor offers a rich set of best practice checks and recommendations across five categories: cost optimization, security, fault tolerance, performance, and service limits.
+
+Think of CloudTrail is an auditing service (who did what and when), and CloudWatch as a performance monitoring service (how much resource was used).
+
+Elasticity is the ability to dynamically adjust the capacity of a service or resource based on demand. Scaling can be vertical (e.g. increase instance size) or horizontal (e.g. add more EC2 instances).
+
+Please raise a H1B Amendment request in Visa Request App under one cognizant (Click here :One cognizant )Navigation :United States ->H1B Amendment – > Self-alone -> Initiate request.
+
+migration in scope
+functionalities out of scope
+
+use case is migration and modernization
+
+totality going to break as subset and in long term, will go for totality
+
+flowchart break in 2
+
+TSC poc for bangalore location
+ 
+HI can anyone let me know who is TMP poc for bangalore location
+ 
+Gaurav Singh (2262464) – Chennai & Kochi
+Dachapalli, Rachana (2031712) - Hyderabad & Coimbatore, Mangalore
+Irshad Khan (622506) - Pune, Noida, Mumbai, Kolkata & Gurgaon, Bangalore
+ 

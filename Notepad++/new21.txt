@@ -1,0 +1,11 @@
+meredian - policy storage
+prism/prima - previous claim details
+
+decline is quote fresh again
+reject is can reactivate again
+
+
+.et_pb_button_0_tb_header_wrapper .et_pb_button_0_tb_header, .et_pb_button_0_tb_header_wrapper .et_pb_button_0_tb_header:hover {
+    padding-right: 22px!important;
+    padding-left: 22px!important;
+}

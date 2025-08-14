@@ -1,0 +1,33 @@
+{
+        "vendorName": "James",
+        "vendorMobileNumber": "9999988888",
+        "vendorMailId": "james@gmail.com",
+        "vendorLocation": "Haryana",
+        "vendorOnboardingDate":"2023-02-02"
+}
+
+{
+        "orderNumber": "xyz123",
+        "orderDetails": "Mobile Iphone",
+        "orderedDate": "2024-01-01",
+        "orderValue": "90000",
+}
+
+{
+	"orderDetails":"",
+	"orderDate":"",
+	"orderValue":"",
+	"vendor":{
+		"vendorId":123
+	}
+}
+ 
+class Order {
+ 
+	private Integer orderId;
+	private String orderDetailsl	
+	.......
+ 
+	@ManyToOne
+	private Vendor vendor;
+}

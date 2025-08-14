@@ -1,0 +1,1362 @@
+Spring Framework--
+
+Objetives
+1.Spring Core and Dependency Injection
+2.Spring Data anf Spring Data JPA
+3.Spring Boot
+4.Spring Web MVC
+
+Pre-Requisites
+1.Maven
+2.JDK 1.8/Java 8
+3.JPA-Hibernate/any other ORM
+
+Lab Setup
+1.JDK 1.8
+2.STS (latest) IDE
+3.MySQL for RDBMS / H2DB
+
+Introduction--
+Spring Framework is a development platform and a JavaEE framework that offers dependency injection as a core-feature.
+
+Dependency-
+If an artifact (say A) of an application is functionally dependent on another artifact (say B), then A is said to depend on B or B is a dependency for A
+
+interface EmpDao{
+Employee add(Employee emp);
+}
+
+class EmpDaoImpl implements EmpDao{
+//all code here...
+}
+
+interface EmpService{
+Employee add(Employee emp);
+}
+
+class EmpServiceImpl implements EmpService{
+private EmpDao dao;
+
+public EmpServiceImpl(){
+this.dao=new EmpDaoImpl();
+}
+
+public Employee add(Employee emp){
+dao.add(emp);
+}
+}
+
+//Service depends on DAO
+//DAO is the dependency
+//Service is the site
+
+Dependency Injection-
+Supplying dependencies into the site (place of injection) externally is called dependency injection
+
+interface EmpDao{
+Employee add(Employee emp);
+}
+
+class EmpDaoJdbcImpl implements EmpDao{
+//all code here...
+}
+
+class EmpDaoJpaImpl implements EmpDao{
+//all code here...
+}
+
+interface EmpService{
+Employee add(Employee emp);
+}
+
+class EmpServiceImpl implements EmpService{
+private EmpDao dao;
+
+public EmpServiceImpl(EmpDao dao){
+this.dao=dao;
+}
+
+public Employee add(Employee emp){
+dao.add(emp);
+}
+}
+
+//somewhere in main or so
+EmpService service = new EmpServiceImpl(new EmpDaoJdbcImpl());
+
+//or
+EmpService service = new EmpServiceImpl(new EmpDaoJpaImpl());
+
+Dependency Injection helps in optimizing development cost and faster development time
+
+Spring Modules--
+Spring is highly modularized
+
+Spring 
+	Core 			Base fundamental module needed for all other modules to work, this is where DI is offered
+	Context			Offers ApplicationContext and auto-wiring on top of DI
+	SpEL			Stands for Spring Expression Language - offers injecting expressive part of beans
+	AOP				Stands for Spring Aspect Oriented Programming
+	Web				Helps building MVC web apps and rest-apis
+	Data			Offers dynamically implemented Repositories/DAOs
+	Boot			Rapid Application Development through auto-configuration...
+	
+	Batch			Used to build batch processing applications
+	WebFlux			Used to build asynchronous applications
+	Secure			Offers Authorization and Authentication
+	Test			It is a testing framework for all spring modules based applications
+	...etc.,
+	
+Spring Core, Spring Context, Spring EL--
+These modules of Spring Framework offer Inversion Of Control (an implementation style of DI concept)
+
+Inversion of Control (IoC) is a principle of DI that says "DO NOT CALL; WE WILL CALL"
+
+The Life Cycle of the Artifact (Service/DAOs) Objects are managed automatically. Like object creation/injection or destruction is all automated
+
+Terms To Remember-
+	Component		is a class whose objects are to be managed (by Container)
+	Bean			is an object of the Component OR is the object being managed by the Container	
+	Container		is the class offered in Spring Framework that manages the life cycle of the bean. Container creates, injects and destroys a Bean 
+					where the class of a Bean is called a Component
+	Bean Configuration	is to inform the container the list of Components or list of Beans (only when the class is 3rd party) and their dependencies
+	
+Container--
+Spring Framework offers two interfaces as containers:
+BeanFactory				from Spring Core Module
+ApplicationContext		from Spring Context Module
+
+BeanFactory is less capable than ApplicationContext
+
+Bean Configuration--
+It is to inform the Container - list of Components, list of Beans and dependency between them
+
+Xml Based Configuration
+Annotation Based Configuration
+Java Based Configuration
+
+Annotation Based Configuration
+	@Configuration
+	@ComponentScan(basePackage)
+	@Component("beanName")
+	|--@Service
+	|--@Controller
+	|--@Repository
+	|--@RestController
+	|--@Advise ......etc,
+	
+@Scope("singleton|prototype|request|session|global-session") 
+//lifecycle of an instance, directly used on the class itself
+request|session|global-session are used for web apps
+default scope value is singleton
+whenever scope is singleton, single object is created and passed everytime
+whenever scope is prototype, new object is created each time and passed everytime
+
+@PropertySource("") //inform the name of the external properties source file
+
+@Value("springExpression") //inject primitive or strings values from external source into our component
+
+//Field Injection
+@Value("${app.name:UnNamed Application}")
+private String appName;
+
+//Constructor Injection
+@Value("${app.name:UnNamed Application}")
+public className(String appName){
+this.appName=appName;
+}
+
+//Setter Injection
+@Value("${app.name:UnNamed Application}")
+public void setAppName(String appName){
+this.appName=appName;
+}
+
+@Autowired
+It is used to inject a bean into another bean
+default is byType
+
+byType  --a site is inject with a dependency as and when they are of the same type, @Primary annotation can be used to pick a default matching bean 
+		  in case of having multiple matchings
+byName  --injects a dependency whose name is mentioned using @Qualifier("beanName")
+
+Java Based Configuration--
+create a bean programmatically and register it with the Container
+we can only do it in the @Configuration class
+@Bean will register it with the container
+
+@Configuration
+class MyConfig(){
+
+@Bean
+public className beanName(){
+return new className();
+}
+}
+
+the objects managed are called as Bean
+the classes managed are called as Component
+
+Spring Boot--
+It is a spring framework module that offers auto-configuration resulting in Rapid Application Development
+
+Configuration as in-
+Dependency Injection    Spring Context Module, Configuration Class, Property Source, etc, has to be configured
+WebApplication          Spring Web Module, DispatcherServlet, View Resolvers, etc, has to be configured
+Add Security            Spring Security Module, UserDetailsService, AccessRules, AuthenticationType, etc, has to be configured
+Add Data Impl           Spring Data JPA, Connection Pools, Transaction Management , etc, has to be configured
+ and so on....
+ 
+Spring Auto-Configuration is about providing default configs for any spring module, eliminating the necessity of the repetitive bolier-plate code and that makes the application ready-to-cook out of the box adding to the productivity
+
+Spring Auto-Configuration is possible due to '-starter-' dependencies. Each spring module is defined with a '-starter-' module that encapsulates the original dependency along with the default configs needed
+
+Spring Boot also offers embedded servers. Servers like Tomcat can be embedded into the application as a dependency making Spring Boot Applications stand-alone. This makes the spring boot application well suited for Containerization
+
+@SpringBootApplication = @Configuration
+						 @AutoConfiguration
+						 @PropertySource			//application.properties and/or application.yaml
+						 @ComponentScan				//consider the package of the current class as basePackage
+						 
+SpringApplication.run(ConfigClass.class, commandLineArgs)
+the run method is the entire application box-
+1.it creates a container (ApplicationContext)
+2.invoke all Spring Runner Classes (if any)
+3.start the server (if any)
+4.waits until the server shuts down (if any)
+5.destroys the container
+
+A Spring Runner is any class that implements the below interfaces
+CommandLineRunner interface    offers public void run(String[] args)
+ApplicationRunner interface	   offers public void run(Argument[] args)
+
+Assignment1--AddressBook
+We need a console based menu driven application to ADD/LIST/DELETE contacts  where each contact has an id, fullName, dateOfBirth, mobileNumber, mailId as properties
+class com.cts.adb.models.Contact
+interface com.cts.adb.service.ContactService
+	Contact add(Contact contact)
+	void deleteById(int contactId)
+	List<Contact> getAll()
+class com.cts.adb.service.ContactServiceImpl implements ContactService
+	is expected to a hypothetical list of contacts
+class com.cts.adb.view.ContactsView
+
+Spring Data--
+It is a spring framework module that offers dynamic implementation of repositories
+
+Spring Data JPA--
+It is a sub-module of spring data that deals with repositories based on RDBMS
+
+CrudRepository
+	|
+	|-JpaRepository<E,pkType>
+		E save(E);
+		Optional<E> findById(pkType id);
+		List<E> findAll();
+		boolean existsById(pkType id);
+		void deleteById(pkTypeId);
+		
+@Entity
+@Table(name="contacts")
+public class Contact {
+
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private Integer contactId;
+	private String fullName;
+	private String mobileNumber;
+	private String mailId;
+	private LocalDate dateOfBirth;
+	
+	//.....
+}
+
+public interface ContactRepo extends JpaRepository<Contact, Integer>{
+	boolean existsByMailId(String mailId);
+	boolean existsByMobileNumber(String mobileNumber);
+	
+	Optional<Contact> findByMailId(String mailId);
+	Optional<Contact> findByMobileNumber(String mobileNumber);
+	
+	List<Contact> findAllByFullName(String fullName);
+	
+	@Query("SELECT c from Contact c WHERE c.dateOfBirth BETWEEN :start AND :end")
+	List<Contact> findAllBornBetween(LocalDate start, LocalDate end);
+}
+		
+Assignment2--Employee HR
+We need a console based menu driven application to ADD/LIST/DELETE employees  where each employee has an id, fullName, dateOfJoining, mailId, salary as properties
+Use Spring Data JPA for persistence
+class com.cts.adb.models.Employee
+interface com.cts.adb.service.EmployeeService
+	Employee add(Employee employee)
+	void deleteById(int employeeId)
+	List<Employee> getAll()
+class com.cts.adb.service.EmployeeServiceImpl implements EmployeeService
+	is expected to a hypothetical list of employees
+class com.cts.adb.view.EmployeesView
+
+Use custom methods in the Employee App also
+Include the clause by functions for data retrieval in the repos.
+
+Spring Web--
+Dynamic Web Applications are applications that are capable of generating html content dynamically on the server and pass that content as a response to the client
+
+Dynamic Web Application construction in JEE-
+First was using servlets and JSPs.
+Servlets were used to receive the http-request, parse the request and extract the data from the request and execute relevant operations and the final result of the operations were shared with JSP-pages
+
+JSP-pages used to receive the data(model) from Servlets and embed the data in html-content and the final html-content rendered/generated is sent as a response
+
+The above thing is called as Model-View-Controller (MVC) Architecture
+
+Repositories <--entities--> Services <--model--> Controllers <---Request-----Client
+												|							  |
+												|(model)					  |
+												|							  |
+												|							  |
+												Views  --------Response------>|
+	
+Controllers  were servlets whose job is to parse the request and extract data from request and execute the relevant services and pass the result as model to the View
+
+Views  were JSP-page / JFC / XHTML / ThymeLeaf ...etc
+
+The problem with MVC is we have dont have standards set, how many servlets we can have, how to modularize controllers, etc
+
+Model-View-Controller FrontController Architecture is followed in Spring Web--
+
+Repositories <--entities--> Services <--model--> Controllers <--model--> FrontController <---Request------Client
+													|						|	|							  |
+													|---modelAndView--------|	|(model)					  |
+																				|							  |
+																				|							  |
+																				Views  --------Response------>|
+												
+FrontController is provided by Spring Web. DispatcherServlet from Spring Web acts as FrontController.
+
+This DispatcherServlet as a FrontController is responsible to 
+1. Receive all requests from Client
+2. Extract any data or parameters from the request
+3. Identify the respective action (methods) in a Controller for the incoming requests
+4. FrontController Invokes the identified action from the Controller and pass the extracted data as model to the Controller
+5. FrontController Receive the resultant model (if any) and ViewName from the action
+6. Share the resultant model with the view (that is identified by the viewName)
+
+Views  were JSP-page / JFC / XHTML / ThymeLeaf ...etc
+
+Controller is not a Servlet in this architecture
+Controllers are any POJO class marked with @Controller annotation
+
+These Controller Classes are expected to have methods called actions
+These action methods must have relevant arguments  to receive data (model) from FrontController
+These action methods must return a viewName as a string or viewName and model as an object of ModelAndView class which is a predefined class
+
+Advantages-
+Controller class can be tested easily
+the boiler plate code is taken care by the FrontController
+
+How would a FrontController identify a relevant action from a Controller for an Incoming Request?
+Answer-- UrlHandlerMapping is an Interface 
+			|
+			|-BeanNameUrlHandlerMapping  (obsolete)
+			|-SimpleUrlHandlerMapping
+			
+SimpleUrlHandlerMapping-
+It expects each action to be marked with @RequestMapping(url,httpMethod)
+Based on the url and method of the incoming request, the relevant action is identified
+For Example, assuming the server is running on localhost:8080
+
+@Controller
+public class HomeController{
+@RequestMapping("/")			/* http://localhost:8080 any method like GET or POST will be called */
+public string indexAction(){
+return "index";
+}
+
+@RequestMapping(value="/about",method=HttpMethod.GET)		/* http://localhost:8080/about only for GET */
+public String aboutUsAction(){
+return "aboutUs";
+}
+}
+
+How would a FrontController identify a VIEW for a given viewName?
+ViewResolver is an Interface
+	|
+	|-BeanResourceViewResolver		  (we have to give a .properties file mapping viewName=ViewPath)
+	|-XmlResourceViewResolver         (we have to give a .xml file mapping viewName=ViewPath)
+	|-InternalResourceViewResolver    (default for SpringBoot)
+	
+InternalResourceViewResolver-
+ViewPath = prefix + viewName + suffix (where prefix and suffix are configurable properties of InternalResourceViewResolver)
+
+assuming prefix is '/WEB-INF/pages' and suffix is '.jsp'
+for a given viewName 'index',
+View is resolved as '/WEB-INF/pages/index.jsp'
+
+DispatcherServlet is automatically configured by SpringBoot
+
+@RequestMapping
+	|
+	|-@GetMapping
+	|-@PostMapping
+	
+The method parameter can be avoided by using above short hand mapping
+
+@RequestParam  used to retrieve one single parameter from the request, only available when the form is submitted
+
+@ModelAttribute  used to retrieve all data from a form into a java object, also used to pass data from controller to view
+
+prepare New Contact page and perform operation
+perform the same operation on employee entity
+
+Thymeleaf--
+The Thymeleaf is an open-source Java library that is licensed under the Apache License 2.0. It is a HTML5/XHTML/XML template engine. It provides full integration with Spring Framework.
+
+Thymeleaf supports-
+	variable expressions (${...}) like Spring EL and executes on model attributes
+	asterisk expressions (*{...}) execute on the form backing bean (modelAttributes)
+	hash expressions (#{...}) are for internationalization
+	link expressions (@{...}) are for rewrite URLs
+	
+<dependency>
+<groupId>org.springframework.boot</groupId>
+<artifactId>spring-boot-starter-thymeleaf</artifactId>
+</dependency>
+
+To activate thymeleaf on .html (HTML 4)
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+application.properties
+	spring.thymeleaf.cache=false
+	spring.thymeleaf.suffix=.html
+	
+Thymeleaf HTML attributes-
+th:text
+th:value
+th:field
+th:object
+th:href
+th:if
+th:class
+th:each="loopingVariable : ${arrayOrListOrSet}"
+th:insert
+th:replace
+
+data-th-text
+data-th-field
+data-th-value
+...etc, FOR HTML 5
+
+For a deep reading:
+            https://www.thymeleaf.org/doc/tutorials/2.1/usingthymeleaf.html
+
+controller advice means it will work for the entire application, like a global data supplier
+
+spring aop - addressing cross cutting concerns
+define a funntion that can execute before a function/after a function or both before and after the functions
+example like maintaining log files for success or exceptions
+we will define aspects for success and exceptions
+
+https://www.baeldung.com/spring-aop
+https://www.baeldung.com/spring-profiles
+
+
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-core</artifactId>
+    <version>5.3.27</version>
+</dependency>
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-context</artifactId>
+    <version>5.3.27</version>
+</dependency>
+[12:41 PM] Vamsy Kiran
+<!-- https://mvnrepository.com/artifact/com.h2database/h2 -->
+<dependency>
+    <groupId>com.h2database</groupId>
+    <artifactId>h2</artifactId>
+    <version>2.2.220</version>
+    <scope>test</scope>
+</dependency>
+
+
+=======================================================================================================
+
+Spring Boot--
+
+Objective-
+1.Spring Boot
+2.Profiling
+3.Testing
+4.Rest Api
+
+Pre-Requisites-
+1.Spring IOC / DI
+2.Spring Expression Language and Application Context
+3.Autowiring and External Value Injection
+4.Spring Data / Spring Data JPA
+
+Lab Setup-
+1.STS latest IDE
+2.JDK 1.8
+3.Maven
+4.Spring Boot 2.x
+5.MySQL (or other RDBMS) / H2DB
+
+Introduction--
+Spring Boot is one of the modules of Spring Framework that offers RAD as its primary feature
+RAD stands for Rapid Application Development through auto-config
+
+For each spring module, a new '-starter-' module is created
+This '-starter-' is a conjunction of the module dependencies and default configs
+
+Spring Boot supports embedded servers. This feature was proposed to support containerization.
+
+Dependency Injection--
+the word dependency means If an artifact (say A) of an application is functionally dependent on another artifact (say B), then A is said to depend on B or B is a dependency for A
+Supplying dependencies into the site (place of injection) externally is called dependency injection
+service needs dao so dao is dependency and service is the site
+if the lifecycle of an object is managed then its a Bean otherwise its an object
+the software that manages the lifecycle of a bean is a container
+container is going to create, inject, destroy a bean
+class in which a bean is created is called a component class
+
+@SpringBootApplication = @Configuration
+						 @ComponentScan
+						 @PropertySource
+						 @AutoConfiguration
+						 
+SpringApplication.run(ConfigClass.class,commandLineArgs);
+When run method is invoked-
+1.ApplicationContext is created (Container is created)
+2.CommandLineRunner and ApplicationRunner are invoked (if any)
+3.Server gets started (if any)
+4.The mainExecutor is held until the server shuts down (if any) 
+5.Container is closed and destroyed
+
+we can have multiple runner classes and it will be executed alphabetically
+
+Creating a Spring Boot Application--
+Using 'Spring Starter Project' option from STS
+Using SpringInitializr at 'http://start/spring.io'
+Using Spring Boot CLI
+
+Spring Data--
+It is a spring framework module that offers dynamically implemented repositories
+
+Spring Data JPA--
+It is a sub-module of Spring Data that provides implementations based on JPA
+JPA is an ORM mapping for talking to RDBMS databases
+
+CrudRepository
+	|-JpaRepository<E,primaryKeyType> - an interface
+		|-List<E> findAll()
+		|-Optional<E> findById(primaryKey)
+		|-boolean existsById(primaryKey)
+		|-E save(entity)
+		|-void deleteById(primaryKey)
+		
+@Entity
+@Table(name="contacts")
+public class Contact {
+
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private Integer contactId;
+	private String fullName;
+	private String mobileNumber;
+	private String mailId;
+	private LocalDate dateOfBirth;
+	
+	//.....
+}
+		
+interface ContactRepository extends JpaRepository<Contact,Integer>{
+
+	boolean existsByMobileNumber(String mobileNumber);
+	Optional<Contact> findByMobileNumber(String mobileNumber);
+	List<Contact> findAllByFullName(String fullName);
+	void deleteByMobileNumber(String mobileNumber);
+	
+	@Query("SELECT c FROM Contact c WHERE c.dateOfBirth BETWEEN :start AND :end")
+	List<Contact> getAllBornIn(LocalDate start, LocalDate end);
+	
+}
+
+create database addb;
+
+Assignment--
+Develop a spring boot and spring data jpa powered
+console application to ADD/List/DELETE an Employee where
+Employee entity has empId, fullName, dateOfJoining, mailId and salary as fields.
+
+Spring Web--
+Spring Web is a Spring Framework module that helps in developing Dynamic Web applications based on MVC architecture and for developing Rest API as well
+
+MVC stands for Model View Controller
+handle the workflow of the application for a particular request
+JSP is for views
+Controller and Views are going to exchange data through Models
+
+MVC Architecture--
+Repos  <--entities--> Services  <--models-->  Controllers  <----------Request
+													|
+													| model
+													|
+													|
+													Views  ---------->Responses
+													
+Servlets are used as Controllers
+JSP/JFC/ThymeLeaf are used as Views
+
+MVC FrontController Architecture
+Repos  <--entities--> Services  <--models-->  Controllers  <--model--> FrontController  <----------Request
+													|
+													| model
+													|
+													|
+													Views  --------------------------------------->Responses
+													
+FrontController  DispatcherServlet
+Controller       is any POJO that has actions mapped to specific urls
+JSP/JFC/ThymeLeaf are used as Views
+
+REST Api--
+REpresentational State Transfer - REST
+It is a modern model of Web Services where instead of SOAP protocol, http protocol itself is used to publish and consume web services
+
+								 <------> UI For Desktop 
+DataBase  <------>  WebServices  <------> UI For AndroidMobile
+								 <------> UI For IOSMobile 
+
+Disadvantages of SOAP-
+	only xml data can be used
+	no standard exchange system
+	no support of media type of data
+
+REST Api is Web Services hosted on http protocol deriving the advantage of Standrd Exchange System and have support for a large variety of media (including JSON and XML)
+
+REST Api standards (taking the advantage of http protocol)--
+In Rest Api, a single endPoint (URL) is enough to manage all CRUD operations, thanks to the HttpMethod system in http protocol
+/emps is the endPoint if Employee is a resource assumed
+
+Operations					http Method		endPoint 		reqBody			respBody		Success	     Failure          Failure
+																							Status       Status @Client   Status @Server
+------------------------------------------------------------------------------------------------------------------------------------------
+Create						POST			/emps			emp(json/xml)	emp(json/xml)	CREATED-201	 400-BAD REQ	  500-Internal Server Error
+Retrieve A Record			GET				/emps{empID}	NONE			emp(json/xml)	OK-200		 404-Not Found	  500-Internal Server Error
+Retrieve All Records		GET				/emps			NONE			emp[](json/xml) OK-200		 404-Not Found	  500-Internal Server Error
+Update						PUT				/emps			emp(json/xml)	emp(json/xml)	ACCEPTED-202 400-BAD REQ      500-Internal Server Error
+							PATCH			/emps			emp(json/xml)	emp(json/xml)	ACCEPTED-202 400-BAD REQ      500-Internal Server Error
+Delete						DELETE			/emps{empID}    NONE			NONE		   NoCONTENT-204 404-Not Found    500-Internal Server Error
+
+
+Patch is for updating specific property in the record
+Put is for updaing entire record
+
+Http Status Code System--
+1xx --not used by developers, signal indicating that the request is received and is being processed, between browser and server
+2xx --signals that a request is successfully processed and a response is sent
+3xx --signal redirections
+4xx --signal errors due to client side issues
+5xx --signal errors due to server side issues
+
+Spring Web Rest Api--
+Controller -- a holder of actions
+@RestController -- the views are directly models
+
+@RestController = @Controller
+				  @ResponseBody (return models)
+
+@RequestMapping(value="endPoint",method=HttpMethod)
+
+@RequestMapping()
+	|-@GetMapping("endPoint")
+	|-@PutMapping("endPoint")
+	|-@PostMapping("endPoint")
+	|-@DeleteMapping("endPoint")
+	
+@RequestBody -- will automatically read the request and put it in the model object
+
+@Consumes -- consuming the media type (pre-configured for json and xml)
+@Produces -- producing the media type (pre-configured for json and xml)
+@Valid -- check internet	
+
+@RestControllerAdvice -- class which is intended to handle exceptions
+
+@ExceptionHandler --  to be put in the methods of rest controller advice class
+
+spring boot devtools -- monitor the entire source code and whenever the source code changes, it restarts our development server automatically
+
+server.port=0 -- it will take random port number
+
+response entity -- encapsulation of request body and http status
+
+BuildFactory design pattern -- builder classes
+
+Assignment--
+Rest-api for an ecommerce application Vendor Module:
+Using this rest-api, a UI application must be able to
+1.Register a Vendor
+2.Raise a Purchase Order for the Vendor
+3.A vendor can have any number of Purchase Orders
+4.Each Purchase Order has a OrderNumber, OrderDetails (string), OrderedDate, OrderValue and Status
+5.The default status of any Purchase Order is 'BOOKED'
+6.The status can change to 'SERVED' or 'CANCELLED' or 'DROPPED' (use PATCH request)
+7.One must be able to retrieve a list of Booked Orders, Cancelled Orders, Dropped Orders and Served Orders Vendor wise
+8.One must be also able to retrieve the list of Vendors
+
+
+create own method in repo
+custom model
+path variable
+
+link vendor and order
+
+@Modifying("update query")
+public Order updateOrderStatus(@Param)
+
+[2:49 PM] Vamsy Kiran
+@Modifying
+@Query("update User u set u.active = false where u.lastLoginDate < :date")
+void deactivateUsersNotLoggedInSince(@Param("date") LocalDate date);
+[2:50 PM] Vamsy Kiran
+https://www.baeldung.com/spring-data-jpa-modifying-annotation
+Spring Data JPA @Modifying Annotation | Baeldung
+Create DML and DDL queries in Spring Data JPA by combining the @Query and @Modifying annotations
+
+Spring Profiles
+---------------------------------------------------------------------------------------------------
+
+    Profile?
+        an isolated set of configuaratiosna and choice of components for executing our application in specific
+        stage of project life cycle and/or environment.
+
+        dev,testing,deployment/production ...etc.,
+
+    @Profile("")
+        is apllied on a component or a configuaration class.
+
+    @Component
+    publi class DummyComponent{
+
+        @Autowired
+        @Qualifier("projectOwner")
+        private String projOwner;
+    }
+
+    @Configuaration
+    @Profile("dev")
+    public class Config1 {
+        @Bean
+        public String projectOwner(){
+            return "Vamsy Kiran Aripaka";
+        }
+    }
+
+    @Configuaration
+    @Profile("test")
+    public class Config2 {
+        @Bean
+        public String projectOwner(){
+            return "Sagar";
+        }
+    }
+
+    @Configuaration
+    @Profile("prod")
+    public class Config3 {
+        @Bean
+        public String projectOwner(){
+            return "Nimal Kumar";
+        }
+    }
+
+    application.properties
+        spring.profiles.active=dev
+
+    application-dev.properties
+    application-test.properties
+    application-prod.properties
+
+    application.properties
+        spring.profiles.active=dev
+
+        spring.jpa.show-sql = false
+        spring.jpa.hibernate.ddl-auto = update
+
+        #---
+        spring.config.activate.on-profile=dev
+        server.port = 8888
+        spring.datasource.url = jdbc:h2:mem:db
+        spring.datasource.driver-class-name=org.h2.driver
+        spring.datasource.username = sa
+        spring.datasource.password = sa           
+        
+        #---
+        spring.config.activate.on-profile=prod
+        server.port = 9999
+        spring.datasource.url = jdbc:mysql://localhost:3306/hrappdb
+        spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+        spring.datasource.username = root
+        spring.datasource.password = root           
+        spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL8Dialect
+		
+		
+=============================================================================================
+
+Microservices
+-----------------
+
+Pre-Requisites-
+Spring Framework
+	Spring Core, Spring Context
+	Spring EL
+	Spring Boot
+	Spring Web(Web MVC) & REST Api
+	Spring Data JPA
+	
+Lab SetUp-
+JDK 1.8
+STS 4
+Maven
+MySQL Community Server 8.0
+
+Introduction--
+Monolithical Architecture-
+1.The entire application is in one deployment-unit
+2.The entire application is modularized through layers
+3.Layers are going to offer loosely coupled components
+
+The user expectations have gone beyond the Monolithical Architecture
+The following are the problems of Monolith-
+1.Load Management via Scaling
+2.Modules cant be separated and scaled separately
+3.Interoperability-technical upgradation of modules is tough (if dao is jdbc, then like convert to orm/jpa)
+4.Management-size of the monolith application makes running the test cases bulkier
+
+Microservices--
+1.A microservice is one isolated module of an application that is independently managed as a deployment unit
+2.A group of inter-communicating microservices form an application eco-system
+3.Load Management via Scaling
+4.Interoperability - can be developed using multiple technologies but should be Rest Api based
+5.Management-managing the application is easier
+
+Challenges of Microservices-
+1.Decomposiition-moving from monolithical to microservices is tough
+2.Inter Communication-communication between different modules,due to addresses of the servers where each microservice is deployed
+3.Distributed Tracing-tracing as part of debugging process, but there are different modules in microservies so tracing becomes challenging and that's why we have distributed tracing
+4.Fault Tolerance (Fall Backs)
+5.Monitoring and Configuration
+
+Microservices Design Patterns--
+Decomposiition Design Patterns
+	Decomposiition by Domain -- divide your each functionality module of monolithic to microservice module based on basic idea of module
+	Decomposiition by Sub-domain -- context bounded-distinct context where all terms and entities have a clear and unambiguos meaning, 
+		god classes-A god class is a class which is present everywhere in the application, no need to repeat the properties
+Integration Design Patterns -- one single unit of ecosystem
+	Api Gateway Pattern -- giving single toll number for all issues, it will be redirected to the concerned department upon dialing
+	Aggregator Pattern -- everything related will be given as a single pack
+	Client Side Component Pattern -- not in scope, whatever will be ready will be served first, related to angular/react
+Database Design Patterns
+	Database Per Service -- each microservice shall have its own dedicated database, for greenfield projects
+	Shared Database -- only one single db for entire ecosystem, in case of db cannot be segregated
+	Saga Pattern -- later
+	CQRS Pattern -- later
+Observability Design Patterns
+	Log Aggregator -- logging that is generated in diff microservices should be collectively maintained at a central location
+	Performance Metrics Aggregator -- measure the performance of the application, the metrics like response time,threshold,etc should be collected 	
+										from diff microservices and send to a central location
+	Distributed Tracing -- log aggregator + performance metrics aggregator, each and upcoming request is given a unique request identification 
+							number, when the request is forwarded from one microservice to another microservice, using this id's we can monitor the request and send to a cental microservice and reported
+Cross Cutting Design Patterns
+	Discovery Service -- is another microservice for helping in inter communication of microservices, it will maintain a register, each time a 
+							microservice comes up, the server address and other details will be stored in the register and each time, the microservice will hit the discovery service and find the status of the microservice and then hit it
+	Circuit Breaker -- concept of fallback will come here, a visitor came from diff location to meet us, he is going to approach security desk and 
+						confirm us about the visitor before allowing. when the visitor has come but employee is busy for 1 hour and so the visitor has to wait or go back, for same employee, another visitor has come in the same duration, so the security no need to check with the employee again till the time employee is busy, when the employee got free after 2 hours, another visitor comes so the security will ask to the employee again. Microservice A needs to check with Microservice B before it answers a request, maybe Microservice B not running at that time so Microservice A will go into a fallback mechanism with a threshold which can be number of request (10 request will have same fallback) or the time duration (10 mins it will give same fallback). this concept is called circuit breaker
+	External Configuration -- it is going to all managing microservices configuaration extternally
+
+
+fresh project--greenfield projects
+existing project-brownfield projects
+
+A Case Study--
+Budget Tracker
+1.Each user is represented as an AccountHolder
+2.Each AccountHolder can save a transaction into the system
+3.A Transaction can be either CREDIT or DEBIT
+4.The system must be able to generate Periodic statements
+
+Microservice Design of Budget Tracker--
+Decomposiition by Domain-
+Profiles -- A microservice for User Management
+Txns -- A microservice for Transaction Management
+Statement -- A microservice for generating Statements
+
+Decomposiition by Sub-Domain-
+Identify the God Classes and Define Bounded Contexts for them
+
+Profiles -- A microservice for User Management
+	AccountHolderEntity -- the god class here
+		int ahId          --bounded context
+		String fullName   --bounded context
+		String mobile     --bounded context
+		String mailId     --bounded context
+		
+Txns -- A microservice for Transaction Management
+	AccountHolderEntity -- the god class here
+		int ahId              --bounded context
+		double currentBalance --bounded context
+		List<Txn> txns        --bounded context
+		
+	TxnEntity -- the god class here
+		int txnId               --bounded context
+		double txnAmount        --bounded context
+		double txnType          --bounded context
+		LocalDate txnDate       --bounded context
+		AccountHolderEntity holder    --bounded context
+		
+Statement -- A microservice for generating Statements
+	StatementModel
+		AccountHolderModel details
+		List<TxnModel> txns
+		LocalDate startDate
+		LocalDate endDate
+		double totalCredit
+		double totalDebit
+		
+	AccountHolderModel
+		ahId
+		fullName
+		mobile
+		mailId
+		currentBalance
+	
+	TxnModel
+		int txnId
+		double txnAmount
+		double txnType
+		LocalDate txnDate
+		
+		
+Database Per Service-
+profiles-service					txns-service 						stmt-service
+		|								|
+	profilesDB						  txnsDB
+	
+
+Aggregator Pattern- Internal Communication
+when a group of data is required, user should send request to one microservice
+
+profiles-service
+				   going to send subsequent requests to profile and txn microservices<--------stmt-service<-------REQ(for statement)----Client   
+txns-service
+
+profiles-service <-------=--------	|
+				 ---profileData---> |							  | <-----REQ (for statement)<---------Client
+									| stmt object --> stmt-service|
+txns-service     <----------------  |	generated				  | ----->RESP (aggregated statement)---->Client
+				 ---txnsList------> |
+
+				 
+Api Gateway Pattern-it is also a microservice
+responsible to receive any kind of request and response from the client, external communication till statement service and then internal communication from statement service to profile and txns microservices
+client
+up-arrow
+  |		|
+  |		|
+  |		|
+  |		|
+		down-arrow
+api-gateway
+  ||
+-------------------------------------------------------------------------------------
+  ||									||									||
+  ||									||									||
+profiles-service					txns-service 						stmt-service
+		|								|
+	profilesDB						  txnsDB
+
+
+Distributed Tracing-
+client
+up-arrow
+  |		|
+  |		|
+  |		|
+  |		|
+		down-arrow
+api-gateway
+  ||
+-------------------------------------------------------------------------------------
+  ||									||									||
+  ||									||									||
+profiles-service					txns-service 						stmt-service
+		|								|
+	profilesDB						  txnsDB
+	tracingClient					tracingClient						tracingClient
+	  ||									||									||
+	  ||									||									||
+-------------------------------------------------------------------------------------
+	||
+tracing-service
+	||
+tracingInfoDB
+
+Every microservice will have a Component called as TracingClient, record the data of all the requests
+tracing-service --another microservice,may have its own database
+
+
+Discovery Service-
+one microservice cannot talk to each other because they are dynamic in nature
+It will maintain registry of service locations
+api-gateway will also depend on discovery service to know the location of any microservice
+
+client
+up-arrow
+  |		|
+  |		|
+  |		|
+  |		|
+		down-arrow
+api-gateway  <--------------------------------------> discovery-service(registry of service locations)
+  ||																		     ||	
+---------------------------------------------------------------------------------------------
+  ||									||									||
+  ||									||									||
+profiles-service					txns-service 						stmt-service
+		|								|
+	profilesDB						  txnsDB
+	tracingClient					tracingClient						tracingClient
+	  ||							  ||									||
+	  ||							  ||									||
+-------------------------------------------------------------------------------------
+	||
+tracing-service
+	||
+tracingInfoDB
+
+
+Circuit Breaker-it doesnt create any microservice, its only implementation
+
+External Configuaration-
+It provides us with another microservice called ConfigService, its attached to a file repository
+we will provide all our configuration properties files here
+when application is starting, it will hit the config service which will have bootstrap properties in the properties files for the startup
+
+client
+up-arrow
+  |		|
+  |		|
+  |		|
+  |		|
+		down-arrow
+api-gateway  <--------------------------------------> discovery-service(registry of service locations)
+  ||																		     ||	
+---------------------------------------------------------------------------------------------
+  ||									||									||
+  ||									||									||
+profiles-service					txns-service 						stmt-service
+		|								|
+	profilesDB						  txnsDB
+	tracingClient					tracingClient						tracingClient
+	  ||							  ||									||
+	  ||							  ||									||
+-------------------------------------------------------------------------------------
+	||																		||
+tracing-service															config-service
+	||																		||
+tracingInfoDB															fileRepo(git/...)
+																			profiles-service.properties
+																			txnx-service.properties
+																			stmt-service.properties
+																			api-gateway.properties
+																			
+OAuth Authentication Module, JWT Token -- check internet, it will be handle by api-gateway
+
+open feign - third party dependency for inter service commuication
+
+rest template - has a lot of boiler plate code so open feign is taken to avoid boiler plate code, all the things will be automated
+
+rest template for inter service as well as inter application communication
+
+  Step#1  implementing decomposed services and do inter-service communication and aggregator
+                    in.bta:bta-profiles
+                        dependencies
+                            org.springframework.boot:spring-boot-starter-web
+                            org.springframework.boot:spring-boot-devtools
+                            org.springframework.cloud:spring-cloud-openfeign
+                            mysq1:mysql-connector-java
+                            org.springframework.boot:spring-boot-starter-data-jpa
+                        configuaration
+                            spring.application.name=profiles
+                            server.port=9100
+ 
+                            spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+                            spring.datasource.username=root
+                            spring.datasource.password=root
+                            spring.datasource.url=jdbc:mysql://localhost:3306/bapsDB?createDatabaseIfNotExist=true
+                            spring.jpa.hibernate.ddl-auto=update
+ 
+                    in.bta:bta-txns
+                        dependencies
+                            org.springframework.boot:spring-boot-starter-web
+                            org.springframework.boot:spring-boot-devtools
+                            org.springframework.cloud:spring-cloud-openfeign
+                            mysq1:mysql-connector-java
+                            org.springframework.boot:spring-boot-starter-data-jpa
+                        configuaration
+                            spring.application.name=txns
+                            server.port=9200
+ 
+                            spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+                            spring.datasource.username=root
+                            spring.datasource.password=root
+                            spring.datasource.url=jdbc:mysql://localhost:3306/batxnsDB?createDatabaseIfNotExist=true
+                            spring.jpa.hibernate.ddl-auto=update
+ 
+                    in.bta:bta-statement
+                        dependencies
+                            org.springframework.boot:spring-boot-starter-web
+                            org.springframework.boot:spring-boot-devtools
+                            org.springframework.cloud:spring-cloud-openfeign
+                        configuaration
+                            spring.application.name=statement
+                            server.port=9300
+							
+							
+bta-profiles--account holders record on the db
+bta-txns--transactions record on the db
+
+https://github.com/avamsykiran/SpringBootMicroservices_20Mar24_12Apr24_2to4.git
+
+ChildVaccinationTracker
+-----------------------------------
+1.Each Parent must register with fatherName,motherName,mobile,mailId
+2.A Parent may have multiple children
+3.Each child must be registered with childName,gender,dateOfBirth
+4.Each time a child is given a vaccine, we need to record that info as vaccineName,dateOfAdministration,dosage
+5.A child can be administered with multiple vaccines or multiple times
+6.Generate a report of vaccines given to a child for a given childId
+7.Generate a report listing all the children who are administered a specific vaccine
+
+
+load balancer client -> discovery client -> eureka server
+
+load balancer follows round robin algorithm
+
+always start discovery server first
+
+api gateway -> discovery service -> resp microservice
+
+always start discovery followed by gateway
+
+cohesion--single unit of code for similar dependecies and coupling
+cohesion must be high and coupling must be low
+
+Single Responsibility Principle--
+Each class should be responsible for only task
+
+Open Closed Principle--
+units of code should be open for extension but closed for modification
+
+Liskov Substitution Principle & Interface Segregation Principle--
+
+interface Vehicle{
+void accelerate();
+}
+
+interface Stoppable{
+void applyBreaks();
+}
+
+interface Ignitable{
+void turnOnEngine();
+}
+
+class BullockCart implements Vehicle{
+public void accelerate(){
+
+}
+}
+
+public MotorCar implements Vehicle,Ignitable,Stoppable{
+
+public void turnOnEngine(){
+
+}
+
+public void accelerate(){
+
+}
+
+public void applyBreaks(){
+
+}
+
+}
+
+class ElectricCar implements Vehicle,Stoppable{
+public void accelerate(){
+
+}
+
+public void applyBreaks(){
+
+}
+}
+
+Dependency Inversion Principle--
+you dont call us, we will call you
+
+solid principles design patterns--
+structural and behavioral design patterns
+
+vamsy.kiran@iiht.com
+
+put all the application.properties of diff microservices in btaconfigrepo folder and rename them accordingly
+
+then do git init in btaconfigrepo
+
+then do git add and git commit 
+
+
+external config
+circuit breaker
+bear minimum are the 6 steps
+aes algorithms
+
+@json property write only
+inner join using jpql query
+
+
+=====================================================================================
+
+Java SE 8--
+
+Objectives-
+1 Introduction to Java
+2 Classes and Objects
+3 Methods, Encapsulation, and Conditionals
+4 Data Manipulation and Inheritance
+5 Encapsulation, Polymorphism, and Abstraction
+6 Interfaces, Lambda Expressions, Collections, and Generics
+7 Inheritance, Interfaces, Exceptions, and Deployment
+8 Date/Time API, I/O and File I/O (NIO.2), and Concurrency
+9 Concurrency, Parallelism, The JDBC API, and Localization
+10 JDBC
+
+Introduction to Java--
+History-
+James Gosling, Sun Microsystems-taken over by Oracle
+Jave is shipped in two main parts - JDK and JRE
+JDK-Java Development Toolkit (all the java libraries, java source code, java tools, JRE)
+JRE-Java Runtime Environment (class loaders, JIT, JVM, GC, etc)
+
+Evolution-
+Java SE- Java Standard Edition (Core Java) - Serve as the very base and support standalone application development
+Java EE- Java Enterprise Edition - Supports developing Distributed Applications
+Java ME - Java Mobile Edition - Supports developing Mobile based Java Application
+
+Java 1.1, Java 1.2(Java 2), Java 1.4(Java 4), Java 1.5(Java 5), Java 1.8(Java 8), Java 1.11(Java 11), Java 1.17(Java 17), Java 1.21(Java 21)
+
+Features-
+Simple - minimum keywords
+Robust - very good exception handling
+Distributed - java ee edition
+MultiThreaded - already available
+Self Documented - good documentation technique
+Platform Independent - check below
+Architecture Neutral - can be developed in any system
+
+JRE contains JVM which runs the class file which makes the Java platform independent
+
+JDk, JRE, JVM are not platform independent
+But the compiled codes are platform independent
+
+Characteristics-
+	Case sensitive
+	Each statement terminates with a semi-colon (;)
+	Each block of statements are enclosed in a pair of curly-braces {}
+	
+Standards or Coding Conventions-
+Tokens-
+a smallest unit of a program that we are going to write
+based on tokens we are going to define syntax
+
+Tokens-
+Identifiers-is a name of a variable / object/ user defined datatype/ method / etc
+			Variable Identifier or a Method Identifier or a Object Identifier 
+			must start and continue in lowercase and if it comprises of more than one word, 
+			each word from the second word onwards must be initial capitalized
+			
+			Examples-
+			length
+			boxLength
+			
+			equals()
+			toString()
+			
+			empObj
+			contractEmpObj
+			
+			UDT (classes, enums, interfaces, annotations) Identifier
+			must follow initial capitalization
+			
+			Examples-
+			Exception
+			RuntimeException
+			ArrayIndexOutOfBoundsException
+			
+			Constant Identifier
+			must be fully capitalized and must use '_' underscore to separate words
+			
+			PI
+			MAX_LIMIT
+			MIN_LIMIT
+			
+Keywords-
+reserved words / vocabulary of the language
+most of the keywords are lowercase
+
+designed to identify control structure, data type of a variable, etc
+
+Comments-
+End-Of-Line Comment- used to describe a declaration
+Examples-
+int empNo; //represents employee number
+
+Block Comment- used to describe a method or a class or an algorithm
+
+/*
+*The swap method will swap the values of the given params
+*params: obj1 and obj2
+*return nothing
+*/
+public void swap(Object o1, Object o2){
+Object t=o1;
+o1=o2;
+o2=t;
+}
+
+Operators-
+Binary Operators-
+	Arithmetic 			+  -  *  /  %
+	Assignment			+  +=  -=  *=  /=  %=
+	Relational			==  <  >  <=  >=  !=
+	Logical				&&  ||  !
+	
+Unary Operators-
+	Unary Minus 		a = -b;
+	Increment			++
+	Decrement			--
+	
+Conditional Operator-		cond ? exp_to_evaluate_if_true : exp_to_evaluate_if_false;
+							a = x>y ? x : y;
+							
+Miscellaneous Operators- 	;  ,  ()  []  {}  instanceof
+
+Bitwise Operators-			&  |  ^  >>  << 
+
+Literals-

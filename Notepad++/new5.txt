@@ -1,0 +1,37 @@
+Personal Excellence
+Always ready to UpSkill and Learn new things for delivering better to the client. Complete all Mandatory learnings, timesheets and Skillup goals without default.
+Notes
+(1) 100% Learning and Zero Negligence
+Complete by: 30-Jun-2023
+
+Status: Completed
+Stakeholder Satisfaction
+Always striving to work at the best level and providing positive impact to the client through our development and enhancements.
+Notes
+(1) Zero Escalations
+Complete by: 30-Jun-2023
+
+Status: Completed
+Operational Excellence
+Understand and clarify requirements with the client as well as Highlight any potential risks within time.
+Zero Post Delivery Defects
+Always adhering to the deliverables scheduled and completing them on time with Team reviews and Regression testing to avoid rework.
+Notes
+(1) Zero Post Delivery Defects Zero Defect leaked to QA
+Complete by: 30-Jun-2023
+
+Status: Completed
+Effective People Management
+Helping the Team members in all the tasks as per my experience and knowledge. Having Team Conversation on regular basis to become a cohesive unit.
+Notes
+(1) 100% Team & Client Cooperation
+Complete by: 30-Jun-2023
+
+Status: Completed
+Delivery Excellence
+Complete all the assigned stories and deliver as per sprint, without defects. Always ready to take up the client requirements and deliver them on time.
+Zero number of defects / stories carried forward to future Sprint
+
+Testing Scenarios
+Prepare and execute unit test cases with respect to the Development and Enhancements completed.
+Zero Defect leaked to QA

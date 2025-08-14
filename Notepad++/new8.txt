@@ -1,0 +1,34 @@
+There are incidents that are created for Prod/Non-Prod regions in the Service Now application for issues. As the Pershing team is divided into different teams, it takes a lot of time to acknowledge that which team is going to work on the resolution.
+
+
+The idea is to streamline the process in a way in which the Service Now application helps to integrate all the teams together and on the basis of a dictionary of keywords and important notes that can help to identify the teams who can pick up the issue. The next step is to also integrate the JIRA tool with the Service Now wherein; when an incident gets created, a JIRA also gets created automatically with the Scrum Masters of the closest PODS/Teams who can fix the issue mentioned in the comment section. The selection of the teams is based on a designed algorithm mentioned on the first two lines above. The JIRA can then be discussed by the respective Scrum Masters in their scrum calls and the team to take up the resolution can add a new comment with the ownership intake as well as updating the Service Now incident.
+
+
+The benefit to the Client will be an enhanced Business User Incident Resolution and an overall Improved Performance. Simultaneously, Cognizant will be benefitted in adding more Customer Value and happy Customer Experience.
+
+There are legacy applications in the project which can be modernized to enhance the user experience as well as help the developers align the project with current technologies and make it feasible for the client to achieve better productivity.
+
+The idea is to modernize and re-develop the current application which is a legacy project build on SOAP webservices with the new technology stack involving Spring Boot and REST webservices. This will help to streamline it with all the modern projects existing in the client domain and also help to integrate better with the other applications. The next step is to also integrate it with logging tools for better debugging and issues resolution whenever we get challenges from the end user for any application feature or during the production deployments or UAT testing. The modernization change will make the application more efficient and also help in galvanizing it with certain other applications and rolling out new features with quicker timelines.
+
+Spring Boot, REST APIs, Microservices, Copilot
+
+The benefit to the Client will be an enhanced Business User Experience with new look and feel as well as the faster response time in the application and an overall Improved Performance. Simultaneously, Cognizant will be benefitted in adding more Customer Value and Revenue generation through the new project development.
+
+
+2b.#0Y,|.)yUj\>
+
+
+[9/1 4:44 PM] M, Vijayalakshmi (Cognizant)
+
+ADMConsulting (Cognizant) <ADMConsulting@cognizant.com>
+Pls drop a mail to ADMConsulting@cognizant.com DL. They will assist you.
+
+milan singh, venkatesh sanem
+
+
+50 questions, 2 hours, 70% passing, no negative marking - GCP ACE
+
+ask for external certification to Rohit whether to complete this year or can be done in Q4(jan to mar) 2024
+
+cant add the external certification done in 2023 to 2024 in skillup goals so plan accordingly
+in 2023, the skills were added Role based but in 2024, its yet to be decided - vijayalakshmi.m@cognizant.com

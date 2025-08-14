@@ -1,0 +1,20 @@
+controller and rest controller difference
+api gateway mechanisms
+cache in spring boot
+hash collision in java
+map and flat map
+removing duplicates in list java 8
+top salary employee for each department, java 8 and sql
+parallel stream
+devops mechanisms like git and docker
+cloud exposure and working
+
+
+@Controller is used to mark classes as Spring MVC Controller., @RestController annotation is a special controller used in RESTful Web services, and it’s the combination of @Controller and @ResponseBody annotation.
+
+It is a specialized version of @Component annotation., It is a specialized version of @Controller annotation.
+
+In @Controller, we can return a view in Spring Web MVC., In @RestController, we can not return a view.
+
+Primarily used for traditional web applications to return a view., Used for building RESTful web services, returning data in JSON or XML format, Designed to return data directly to the client.
+

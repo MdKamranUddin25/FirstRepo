@@ -1,0 +1,43 @@
+[ERROR] Failures: 
+
+[ERROR]   ApplicationTests.status400WhenInValidRequest:60 Status expected:<400> but was:<201>
+
+[ERROR]   ApplicationTests.statusCode200whenExistentRequested:78 Status expected:<200> but was:<400>
+
+[ERROR]   ApplicationTests.statusCode404WhenNonExistentRequested:69 Status expected:<404> but was:<400>
+
+[ERROR] Errors: 
+
+[ERROR]   ApplicationTests.status200WhenValidRequest:39 » Servlet Request processing fai...
+
+[INFO] 
+
+[ERROR] Tests run: 4, Failures: 3, Errors: 1, Skipped: 0
+
+
+[ERROR] Failures: 
+
+[ERROR]   ApplicationTests.status400WhenInValidRequest:60 Status expected:<400> but was:<201>
+
+[ERROR]   ApplicationTests.statusCode200whenExistentRequested:78 Status expected:<200> but was:<404>
+
+[ERROR] Errors: 
+
+[ERROR]   ApplicationTests.status200WhenValidRequest:39 » Servlet Request processing fai...
+
+[INFO] 
+
+[ERROR] Tests run: 4, Failures: 2, Errors: 1, Skipped: 0
+
+
+[ERROR] Failures: 
+
+[ERROR]   ApplicationTests.statusCode200whenExistentRequested:78 Status expected:<200> but was:<404>
+
+[ERROR] Errors: 
+
+[ERROR]   ApplicationTests.status200WhenValidRequest:39 » Servlet Request processing fai...
+
+[INFO] 
+
+[ERROR] Tests run: 4, Failures: 1, Errors: 1, Skipped: 0

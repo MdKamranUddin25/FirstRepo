@@ -1,0 +1,275 @@
+Everyone: We are having project requirement for Java + Angular and Angular + Node skillset with required 5+ year of hands on experienced.
+If anyone having matching skillset with 5+ year of experience. Please reach out to me and gautam.k@cognizant.com.
+
+Onsite Manager has to try below:-
+ 
+1.Go to Review Tab -> Acknowledge the comments given by case manager -> Save it ->check the "View Comments History" 
+2.Check if your acknowledged comments are reflecting .
+3.Now, your onsite Manager would be able to upload new ML and Submit 
+
+
+on demand
+increased, stop spending
+backlog,increment,burndown
+resilience
+oauth1.0,ldap
+false
+true
+data
+operating system, hardware
+authorization, sso
+
+on demand
+increased, stop spending
+backlog,increment,burndown,dod
+resilience
+ldap
+false
+true
+data
+operating system, application
+authorization, sso
+
+on demand
+increased, stop spending
+backlog,increment
+resilience
+ldap
+false
+true
+data
+operating system
+authorization
+
+Upgrade2Architect – Week 4 – Quiz
+1.
+Fill in the blanks:
+
+OAUTH2.0 is used for _______________.
+
+Correct Answer
+Authentication;Authorization;SSO;
+Your Answer
+Authorization;
+2.
+Fill in the blanks:
+
+When we are talking of 64 bit, we are talking of __________________.
+
+Correct Answer
+Application;Operating System;Hardware;
+Your Answer
+Operating System;
+3.
+Fill in the blanks:
+
+'Data in transit(Motion)', 'Data in rest' and 'Data in Use' are the 3 states/principles of _________________
+
+Correct Answer
+Data
+Your Answer
+Data
+4.
+State True or False:
+
+Architecture is an Artifact.
+
+Correct Answer
+False
+Your Answer
+True
+5.
+State True or False:
+
+The Aggregation is stronger than Composition
+
+Correct Answer
+False
+Your Answer
+False
+6.
+Fill in the blanks:
+
+Authentication as well as Authotization is supported in _________________.
+
+Correct Answer
+Oauth 2.0;SAML 1.0;SAML 2.0;
+Your Answer
+LDAP;
+7.
+Fill in the blanks:
+
+In computer networking, _______________ is the ability to "provide and maintain an acceptable level of service in the face of faults and challenges to normal operation.
+
+Correct Answer
+Resilience
+Your Answer
+Resilience
+8.
+What are the artifacts of Agile Scrum ?
+
+Correct Answer
+Product backlog;Product Increment;Burndown Chart;Definition of Done;
+Your Answer
+Product backlog;Product Increment;
+9.
+What is cloud computing?
+
+Correct Answer
+On-demand delivery of IT resources and applications through the internet with pay-as-you-go pricing
+Your Answer
+On-demand delivery of IT resources and applications through the internet with pay-as-you-go pricing
+10.
+What are the benefits of cloud computing?
+
+Correct Answer
+Increase speed and agility.;Stop spending money running and maintaining data centers.;
+Your Answer
+Stop spending money running and maintaining data centers.;Increase speed and agility.;
+
+=================================================================================================
+
+1.
+What are 4 most common layers of Layered or n-Tier Architecture?
+
+Correct Answer
+1. Presentation Layer 2. Controller Layer 3. Business Layer 4. Persistence Layer
+Your Answer
+1. Presentation Layer 2. Business Layer 3. Persistence Layer 4. Data Storage Layer
+2.
+State True or False:
+
+In Micro-service architecture, service discovery mechanism is a must for implementing client side load balancing.
+
+Correct Answer
+True
+Your Answer
+True
+3.
+What is the purpose of Gateway component in Micro-service architecture?
+
+Correct Answer
+1. Secure application from attacks 2. Reduced number of requests from clients 3. Protocol translation
+Your Answer
+1. API Versioning 2. Hide services from clients 3. Provides authentication for clients
+4.
+In MVC Architecture, which of the statements are correct?
+
+Correct Answer
+Controller responds to events from triggered from View and acts on Model;Model holds only the data and is not responsible for logic or presentation;View is responsible for rendering data and does not deal with what the data represents.;
+Your Answer
+Controller responds to events from triggered from View and acts on Model;Model holds only the data and is not responsible for logic or presentation;
+5.
+Identify possible filters that can be implemented in MVC architecture.
+
+Correct Answer
+Action Filter;Error Filter;Authentication Filter;
+Your Answer
+Action Filter;Aspect Filter;Error Filter;Authentication Filter;
+6.
+Fill in the blanks:
+
+Service Oriented Architecture is best suited for ________________.
+
+Correct Answer
+Reusable code;Distributed transactions;Independent service lifecycle;
+Your Answer
+Reusable code;Distributed transactions;Independent service lifecycle;
+7.
+What features does an Event Router / Broker provides in an Event Driven Architecture?
+
+Correct Answer
+Persists events until events are consumed;Ease of Audit;Inter-application communication;
+Your Answer
+Inter-application communication;Ease of Audit;
+8.
+What is the common practice to illustrate Architecture Vison?
+
+Correct Answer
+Conceptual Diagrams
+Your Answer
+Conceptual Diagrams
+9.
+What are the objectives of Architecture Vision?
+
+Correct Answer
+To provide Key stakeholders with a formally agreed outcome. ;To focus on the detail necessary to validate feasibility as early outcome agreement is already done by architects;
+Your Answer
+To provide Key stakeholders with a formally agreed outcome. ;Identify Deliverables, locate re-usable assets, and publish outputs to stakeholders and other interested parties.;To focus on the detail necessary to validate feasibility as early outcome agreement is already done by architects;
+10.
+Fill in the blanks:
+
+Problem description of the Architecture Vision contains _________________.
+
+Correct Answer
+All of the listed options
+Your Answer
+All of the listed options
+11.
+Architecture Vision helps to capture the concerns and viewpoints that are not relevant to the project. 
+
+Correct Answer
+False
+Your Answer
+False
+12.
+What are the inputs for the Architect vision phase?
+
+Correct Answer
+Business principles, business goals, and business drivers.;Architecture reference materials;Populated Architecture Repository.;
+Your Answer
+Architecture reference materials;Business principles, business goals, and business drivers.;
+13.
+Which of the below statements are true?
+
+A. Sinlgle business scenarios may be used to generate a single Architecture Vision
+B. Architecture Vision may also be referred to as a "conceptual-level architecture"
+C. Enterprise-wide constraints and project-specific constraints considered in Architecture Vision
+
+Correct Answer
+B and C
+Your Answer
+B and C
+14.
+Match the key word and definition.
+
+Correct Answer
+Review	Ensure that the existing definitions are current, and clarify any areas of ambiguity
+Scope	The level of detail to be defined
+Business Requirements	concerns/objectives
+Business Scenarios	Actors
+Your Answer
+Scope
+The level of detail to be defined
+Business Scenarios
+Actors
+Business Requirements
+concerns/objectives
+Review
+Ensure that the existing definitions are current, and clarify any areas of ambiguity
+15.
+Identify one out of scope component in Architecture Vision. 
+
+Correct Answer
+Deployment architecture details
+Your Answer
+Deployment architecture details
+16.
+Identify which of the following statements are true.
+
+A. The Architecture Vision includes a initial high level description of the baseline and target environments
+B. The Architecture Vision built for only technical perspective.
+
+Correct Answer
+Only A
+Your Answer
+Only A
+17.
+What are the risks associated with the Architecture Vision?
+A. Initial Level of Risk
+B. Residual Level of Risk
+
+Correct Answer
+Both A&B are true
+Your Answer
+Both A&B are true

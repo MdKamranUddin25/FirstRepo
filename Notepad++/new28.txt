@@ -1,0 +1,2085 @@
+REACT TRAINING
+-----------------------------------------------------------
+js is dynamically typed language
+no data type need to put
+same variable can m=be given different types of data
+automatically inferred
+
+restructured assignment--
+let eid=101;
+let ename="Vamsy";
+let basicpay=45000;
+let emp={eid, ename, basicpay}
+console.log(emp);
+
+setInterval(callback, duration);
+|----duration---|callback()|----duration---|callback().....(until clearInterval)
+setTimeout(callback, duration);
+|----duration---|callback()
+Promise p = new Promise((resolve, reject)=>{
+//resolve is used to signal successful completion of the job
+//reject is used to signal error some abruption of the job
+});
+p.then(okcallBack, errCallback)
+p.then(okCallBack).catch(errCallBack)
+
+async is used to convert a normal function into asynchronous function
+async functions always return a Promise
+const f1 = async () => {
+//a very time consuming algorithm
+return result;
+}
+await is used to wait for the completion of an async function and extract the value from the Promise
+await can only be used inside a method that is marked as async
+let x = f1(); //x refers to Promise
+let y = await f1(); //y receives the result after completion of f1
+
+Lab Setup
+NodeJS  Dev platform
+VSCode  IDE
+Chrome  Browser/Client
+
+NodeJS supports execution of the development tools like building tool, testing tool, package/dependency management, etc
+But the final app is executed in a browser
+
+Working with NodeJS
+npm as a build tool (node package manager) (package refers to one JS project)
+To create a JS project on NodeJS--
+md proj-name
+cd proj-name
+npm init -y
+
+'package.json' is the build file for npm
+npm i package-name --save
+npm i package-name --dev-save
+npm i -g package-name
+npm uninstall package-name --save
+
+'node_modules' folder that houses all the downloaded dependencies
+'npm i' will get back the 'node_modules' folder along with all the required dependencies as per the list of dependencies in the package.json
+
+Each JS file is a module, able to share resources with help of export and import
+
+REACT JS--
+It is a SPA (single page application) framework based on JavaScript
+A spa is a web application that has only one html page (index.html)
+The javascript attached to the application will generate html dynamically on the client itself and will update the content of index.html from time to time. Which means no html needs to be generated on the server or transfer from the server to the client or unload and reload of a page wont be needed.
+
+ReactJS like many other SPA-frameworks also works based on html extendability
+HTML extendability means that we can create our own html elements in RaectJS
+HTML elements created in ReactJS are called ReactJS components
+
+Creating ReactJS App--
+Create a Node project
+Install all the required react-scripts into the project
+configure the react-scripts and build configs
+
+(or)
+npm i -g creat-react-app
+creat-react-app app-name
+
+(or)
+npx create-react-app app-name
+
+React Components--
+JSX- JavaScript eXtended
+JSX is a html embedded JavaScript
+
+Function Components-
+A function component is any function that returns an html-element or another react-component
+example- const Header = () => (
+<header>
+<h2> HR Automation Portal </h2>
+</header>
+);
+
+const Dashboard = () => (
+<div>
+<Header />
+<h2> This is my dashboard </h2>
+</div>
+);
+<Dashboard />
+ 
+Class Components-
+It is a JavaScript class that extends Component from 'react.js' module
+React.Component provides-
+(a)state
+(b)setState()
+(c)render
+(d)and a few more lifecycle methods
+
+example- import {Component} from 'react';
+class EmployeesList extends Component {
+constructor(){
+super();
+//state contains all the data needed to be managed by the component
+this.state={
+title:"My HR App";
+};
+}
+render(){ //it is this method that gives the html dom of the component
+return (
+<div>
+<h2>{this.state.title}</h2>
+</div>
+);
+}
+}
+
+High Order Components-
+It is a component that returns another component
+
+JSX- JavaScript eXtended
+JSX is a html embedded JavaScript
+.js--
+let myPara = document.createElement("p");
+myPara.innerText = "Hello, this is a para";
+
+let friends = ["Vamsy","Rahul","Sharma","Avinash"];
+let myList = document.createElement("ol");
+for(let i=0;i<friends.length;i++){
+let myLi = document.createElement("li);
+myLi.innerText = friends[i];
+myList.append(myLi);
+}
+
+.jsx--
+let myPara = <p>Hello, this is a para</p>
+
+let friends = ["Vamsy","Rahul","Sharma","Avinash"];
+let myList = (
+<ol>
+{friends.map(f=> <li>{f}</li> )}
+</ol>
+);
+
+JSX Rules--
+1. JSX is case sensitive
+2. use all html in lower case only
+3. any react components are expected to be initial capitals
+4. attribute name should follow camel case
+5. 'class' is not a valid attribute as it is a keyword in JavaScript so use 'className' instead
+
+React Application Design--
+index.html
+|-body
+|-div#root  //nothing from this point to the top is altered
+|-App  //top level component, from this point to the bottom is what we control
+|-Component1 |-InnerComponent1 |-MoreInnerComponent1
+|-Component2
+|-Component3
+
+state, render(), setState() --
+state is the field inherited from React.component and is used to hold all the data the component needs to work with
+state whenever gets modified, will invoke the 'render()' and updates the html-content on the screen
+state is immutable (means we cannot change any part of the state)
+state is always replaced using 'setState()' method
+'setState()' is going to accept full or partial state
+
+Working with Forms--
+Controlled Form Component-
+Eact Input element of a form is attached to a 'ref' variable
+a 'ref' variable is a variable created outside the component state
+whenever the form is submitted, we have to collect data from all the 'ref' variables
+'ref' variables are very costly on the memory and they actually have a diffferent purpose
+
+Uncontrolled Form Component-
+Each input element is attached to a field in the 'state'
+as state is immutable, the input fields are not editable
+we will use onChange event of the input field to receive the new value into the respective state field
+when the form is submitted, the data is already inside the state
+this ensures 'single source of truth' and less costly memory wise
+
+ReactJS Props--
+'props' stand for properties is used to ship the data from parent to child or vice-versa
+a parent component can pass the data through attributes of a child component
+and a child component can access that data through 'props'
+
+Integrating Bootstrap with ReactJS--
+npm i bootstrap
+import bootstrap.bundle JS and bootstrap.min.css CSS file into index.js
+
+Inventory App
+ 
+    Item
+        id
+        title
+        unit
+        costPrice
+        sellingPrice
+        packageDate
+
+Shadow DOM / Virtual DOM--
+It is a temporary DOM copy maintained by React
+Any rendering will result in regenrating the Shadow DOM first and this is very less costly as it is not directly linked to the browser rendering
+After the entire Shadow DOM is regenerated, it is compared with the actual DOM and the differences are identified and then the actual DOM is managed to suit the differences. This it is less costly than regenerating the entire actual DOM
+"key" is an attribute that is expected to have unique value for each record as it is used to compare records from shadow dom with records on actual dom
+
+Class Component Life Cycle Methods--
+constructor() //purpose of initializing state -> render() //generate and return the html-dom -> componentDidMount() //execute any task immediately after the first render()
+
+/*************************************************************/
+|--->any sort of event handling can happen
+|	 as part of it, 'setState()' may get called
+|/*************************************************************/
+|setState() is if invoked, then render() will be called again
+|setState() -> render() -> componentDidUpdate() --->| //executing any tasks after each render() from 2nd render onwards
+|---------------------------------------------------|
+
+React Hooks--
+A react hook is a pure function that provides additional enhancement to a function component.
+A hook must be invoked in the top-most lines of code of a function component
+useState Hook-
+let [reader,writer]=useState(fieldInitialValue);
+let [fullName,setFullName]=useState("Vamsy");
+let [skills,setSkills]=useState(["java","angular","reactjs"]);
+let [address,setAddress]=useState({flatNo:9015,area:"MVV City",city:"Visakhapatnam"});
+
+useEffect Hook-
+useEffect(() => {},[]);
+the callBack is equivalent to componentDidMount(), the callBack is executed only once that too after the first render of the component
+
+useEffect(() => {},[field1,field2,...]);
+the callBack is equivalent to componentDidUpdate(), the callBack is updated after every render of the component but only when any of the fields in the dependency array had their values changed
+
+useEffect(() => {});
+the callBack executes unconditionally after every render
+
+React Hook form--
+npm i react-hook-form
+
+useForm({default Values}); return an object that has
+a register method
+a handleSubmit method
+a setValue method
+a reset method
+a formState: {errors} to pick errors
+
+State Management Using Redux and React Redux--
+npm i redux react-redux
+
+Redux is a state management library that can handle state centrally and isolatedly for an app
+store     is a global object that has all the data/state of the application.
+		  an app has one and onle one store.
+		  
+		  let myStore=createStore(myReducer);
+		  
+reducer   is a user defined pure javascript function. it takes the currentState and an action as params and returns the modified state.
+
+		  const myReducer=(state,action)=>{
+		  //based on the action, state is modified
+		  return modifiedState;
+		  }
+		  
+action    is a object that has a payload and an action type.
+		  'type' is the operation to be executed,
+		  'payload' is the data needed for the operation to take place.
+		  
+		  const action1={type:"ADD",emp};
+		  const action2={type:"REMOVE",empID:101};
+		  
+dispatch  is a built-in method used by a component to send an action to the reducer.
+		  dispatch(action1);
+		  
+react-redux is the integration library for redux into react.
+
+<Provider></Provider>
+it is used to wrap the store on to the top-level-component of our Application
+<Provider store={myStore}>
+<App />
+</Provider>
+
+useSelector()
+it is a hook that is used to select only the required part of the global state into our component.
+
+let emps=useSelector(state=>state.emps);
+let empCount=useSelector(state=>state.emps.length);
+
+useDispatch()
+it is going to return a 'dispatch' method related to the current store.
+
+const dispatch=useDispatch();
+
+Using these libraries, we can eliminate state management from components.
+
+store(all state)->----------------------------------------------
+^						|						       |		
+|						|							   |
+|						|							   |
+|						useSelector()				   useSelector()
+|						|							   |
+|						Component1					   Component2
+|						|							   |
+|						| dispatch=useDispatch()       | dispatch=useDispatch()
+|						| dispatch(action)			   | dispatch(action)
+|						|						       |	
+|						|                              | 
+|						|                              | 
+|modifiedState			|                              | 
+reducer<----------------------------------------------------
+
+Fake Rest-Api using json-server--
+md contacts-api
+cd contacts-api
+npm init -y
+npm i json-server@0.17.4
+
+create a contacts-api/data.json and populate it with hypothetical data
+modify contacts-api/package.json file to put "start":"json-server --port 9999 --watch ./data.json"
+npm start
+
+Rest-Api calls using Axios--
+npm i axios
+
+axios.get(endPoint) returns Promise
+axios.delete(endPoint) returns Promise
+axios.post(endPoint,reqBody) returns Promise
+axios.put(endPoint,reqBody) returns Promise
+
+Thunk Middleware to handle asynchronous calls--
+npm i redux-thunk
+
+Generally action are objects 
+    But a thunkAction is a function that sits between component and reducer and
+    keeps dispatching action objects to the reducer alongside an asynchronous call.
+
+    store (all state) →------------------------------------------
+    ↑                               |                           |
+    |                               ↓                           ↓
+    |                               |                           |
+    |                               useSelector()              useSelector() 
+    |                               ↓                           ↓ 
+    |                               Component1              Component2
+    |                               |                           |
+    |                               | dispatch = useDispatch()  | 
+    |                               | dispatch(action)          | dispatch = useDispatch()
+    |                               |                           | dispatch(thunkAction)
+    |                               |                           |
+    ↑                               |                           ↓
+    | modifedState                  ↓         -------[Thunk Action Function]------    
+    reducer | ←---------------------←         |                                  |
+            | ←-------------------------------|    dispatch(waitActionObj)       |
+            |                                 |    axiosCall                     |
+            | ←-------------------------------|    ifOK, dispatch(dataActionObj) |
+            | ←-------------------------------|    ifERR, dispatch(errActionObj) |
+                                              |                                  |
+                                              ------------------------------------
+
+React Routing--
+npm i react-router react-router-dom --save
+
+        <BrowserRouter>
+
+            <Header />
+
+            <Routes>
+                <Route path="/" element={<C1 />} />
+                <Route path="/a" element={<C2 />} />
+                <Route path="/b" element={<C3 />} />
+                <Route path="/c/:pathVariable" element={<C4 />} />
+            </Routes>
+
+            <Footer />
+
+        </BrowserRouter>
+
+
+        <Link to"" ></Link>       instead of <a></a>
+
+        <Navigate to="" />  
+
+
+================================================================================================
+ANGULAR TRAINING
+---------------------------------------------------------
+single page application spa framework--
+server                     REQ <-        client
+spa-bundle							index.html along with JS code is loaded in the browser
+(index.html+JS code)				any event/form submission/etc occurs is handled by the JS on the client itself and the relevant html is generated
+	--(spa-bundle)RESP->			the generated html can be tailored to the existing html page (no concept of unloading or reloading a page)
+									
+rest-api <-data operation request----spa
+----->response(data.json/data.xml)-->spa
+
+npm install -g @angular/cli
+
+Angular Architecture
+
+node js is an alternate runtime for JS
+node js offers a developmet platform where tools for compiling, testing, bundling, etc can be executed upon and application is developed
+
+Any angular application comprises of modules, components, directives, services and pipes
+
+Each of these is a typescript class 
+Each of these is marked with a Decorator for role identification
+Each of these decorators are passed with a json object called meta-data that contains the config
+
+Module
+@NgModule({
+declarations:[],
+imports:[],
+exports:[],
+providers:[],
+bootstrap:[]
+})
+class SalesModule{
+}
+
+Component
+@Component({
+selector:"",
+templateUrl:"",
+styleUrls:[],
+providers:[]
+})
+class DashboardComponent{
+}
+
+Directive
+@Directive({
+selector:"",
+providers:[]
+})
+class FastMovingSirective{
+}
+
+Service
+@Injectable({
+providedIn:"root",
+providers:[]
+})
+class SalesService{
+}
+
+Pipe
+@Pipe({
+name:'',
+providers:[]
+})
+class numberToWordsPipe{
+}
+
+Angular CLI--
+ng new app-name
+ng new app-name --standalone=false
+cd app-name
+ng generate module (no shortcut) ModuleName
+ng generate (g) component (c) ComponentName --skip-tests
+ng generate directive (no shortcut) DirectiveName --skip-tests
+ng generate service (no shortcut) ServiceName --skip-tests
+ng generate pipe (no shortcut) PipeName --skip-tests
+ng generate class (no shortcut) ClassName --skip-tests
+ng generate interface (no shortcut) InterfaceName
+
+ng build -- build the application and the bundle is placed inside a 'dist' folder
+ng test -- build the application and execte the test cases
+ng serve -- build the application and the bundle is hosted on a development server @4200
+			the port number can be customised using '--port' flag
+
+Angular Modules--
+what is a module in javascript, what is import, export, export default
+
+Javascript Module--
+Each file is a module in JS/TS
+Resources contained in a file can be exported and imported using export and import keywords
+
+Angular Modules--
+A module in Angular is a class that encapsulates Components, Pipes, Directives, Services and other Angular Modules
+
+@NgModule({
+declarations:[/*list of components,pipes and directives that belong to this module*/],
+imports:[/*list of modules we want to import into the current module*/],
+exports:[/*list of components,pipes and directives we want to export from the current module*/],
+providers:[/*list of services that are injectable at the current module level*/],
+bootstrap:[/*list of components to be loaded initially when the current module loads*/]
+})
+class SalesModule{
+
+}
+
+Every Angular App is housed inside a top level module call ROOT MODULE generally named as app.module
+Other sub-modules are called as FEATURE MODULES
+
+the 'exports' section of the metadata is absent for Root Module
+the 'bootstrap' section is absent for other Feature Modules
+
+index.html calles main.ts
+
+Angular Component--
+Angular offer html extendability, means we can create our own html elements
+Components are custom html elements
+Component = Behaviour    +         DOM      +   Style
+			component.ts     component.html    component.css
+			(fields & methods) (display)       (style)
+			
+Dashboard.component.ts
+@Component({
+selector:"app-dashboard",
+templateUrl:"dashboard.component.html",
+styleUrls:["dashboard.component.css"],
+providers:[]
+})
+class DashboardComponent{
+noOfMsgs:number;
+noOfReadMsgs:number;
+constructor(){
+this.noOfMsgs=100;
+this.noOfReadMsgs=90;
+}
+}
+dashboard.component.html--
+<div>Message: {{noOfMsgs-noOfReadMsgs}}/{{noOfMsgs}}</div>
+dashboard.component.css--
+div{border:1px solid black;}
+<app-dashboard></app-dashboard> --> <div>Message: 10/100 </div>
+
+Data Binding--
+using the fields and methods of component.ts inside the component.html is called data binding
+different types of data binding-
+Interpolation-
+we can render the output of any angular expression on to the html-dom
+<tag>{{angular-expression}}</tag>
+for any reason, if the fields are updated, the expression is reevaluated and the output is also automatically updated
+
+Two-way Data Binding-
+we use this to bind a field with an input element of an html form 
+we have to use an attribute called ngModel from 'FormsModule' from '@angular/forms' to perform two-way data binding
+<input type="text" name="tb1" [(ngModel)]="field" />
+
+One-way Data Binding-
+Attribute Binding-
+to bind the value of a field with an attribute of an element
+<tagName [attrubuteName]="field"> </tagName> //property binding also called
+<tagName attrubuteName="value"> </tagName>
+<td colspan="5"></td>
+<td [colspan]="x"></td>
+ 
+Style Binding-
+to bind the value of a field with a css-property of an element
+<tagName [style.cssProperty]="field"> </tagName>
+
+Css Class binding-
+to switch a css class on or off using the booleanField
+<tagName [class.className]="booleanField"> </tagName>
+
+Event Binding-
+to invoke a method when an event occurs
+<tagName (event-directive)="method()"> </tagName>
+html elements--            		event-directives--
+------------------------------------------------------
+onload							load
+onblur							blur		
+onfocus							focus
+onchange						change
+onclick							click
+ondblclick						dblclick
+onsubmit						ngSubmit	
+
+Angular Directives--
+Angular offers html extendability, means we can create our own html elements and attributes
+Components are custom html elements 
+Directives are custom html attributes
+in-built attribute directives--
+ngModel
+ngForm
+ngClass
+...etc
+in-built structural directives--
+*ngIf
+*ngFor
+ngSwitch    *ngSwitchCase     *ngSwitchDefault
+
+custom directive--
+@Directive({
+selector:"[directiveName]",
+providers:[]
+})
+class DirectiveName{
+}
+
+Integrating Bootstrap with Angular--
+install bootstrap
+npm i bootstrap
+
+include bootstrap js and bootstrap css into scripts and styles section of angular.json
+
+Angular Pipes--
+a pipe is used to transform a piece of data into another just before rendering
+
+in-built pipes-
+lowercase
+uppercase
+titlecase
+number
+percent
+currency
+date
+
+custom pipe-
+@Pipe({
+name:'',
+providers:[]
+})
+class numberToWordsPipe implements PipeTransform{
+transform(value:any):any {
+return transformedValue;
+}
+}
+
+EMI Assignment--
+Principal
+Time Period
+Rate of Interest
+EMI = 
+
+Pipe Assignment--
+assuming num=1234567.89
+{{num|formatNumber}}
+12,34,567.89
+
+Angular Routing--
+Routing allows us to display only one component at a designated area of the index page depending on the URL
+Router Module from @angular/router provides the below services, classes and methods to manage the same
+Routes--array of routes
+[{path:'abc', component:Component1},
+{path:'xyz', component:Component2},
+]
+RouterModule.forRoot(routes);
+
+router-outlet--
+it is a built in component to preserve the designated area where we want the components to appear
+
+routerLink--
+it is a directive for anchor 'a' tag, this takes the path where to go when clicked on the link
+
+routerLinkActive--
+it is a directive that takes a css-class and applies that class to the link that is currently active
+
+Router--
+it is a service that offers two methods-
+navigate(['/sales','/offers']);
+navigateByUrl("/sales/offers");
+
+Angular Services--
+Service is a class that hold business or data logic
+Angular supports Dependency Injection for Services
+@Injectable
+constructor(private myService:MyService){
+}
+
+Inter-Component Communication--
+The parent component can pass data through attributes of the child component
+We can mark fields of a child component as an attribute using '@Input()' decorator
+
+Event Propagation-
+The child component can create its own events using EventEmitter
+And this objects must be marked with '@Output()' decorator
+'emit' is a method of EventEmitter that raises an event and can pass some data to the parent
+The event handler of the parent can receive this data using $event object
+
+default type of a button is submit
+
+Template Driven Forms vs Reactive Forms (Model Driven Forms)--
+FormsModule 				ReactiveFormsModule
+ngModel						FormControl
+ngForm						FormGroup
+
+RxJS - Observables--
+Observable is an enhanced Promise
+
+let ob = new Observable( observer => {
+//the asynchronous operaion job
+//observer.next(val)  to emit intermediate results of the job
+//observer.error(err)  to emit any error while doing the job
+//observer.complete()  to indicate the successful completion of the job
+});
+
+ob.subscribe({
+next: val => {/* the values are received */}
+err: err => {/* the error is received */ }
+complete: () => {/* we will do something after completion of the job */ }
+}); //job execution starts
+
+Rest-Api Communication--
+HttpClientModule from '@angular/commons/http'
+|
+|-HttpClient
+get(endPoint): Observable<data>
+post(endPoint,reqBody): Observable<data>
+put(endpoint,reqBody): Observable<data>
+delete(endPoint): Observable<void>
+
+Fake Rest-Api using json-server
+md contacts-api
+cd contacts-api
+npm init -y
+npm i json-server@0.17.4
+
+create a contacts-api/data.json and populate it with hypothetical data
+modify contacts-api/package.json file to put "start":"json-server --port 9999 --watch ./data.json"
+npm start
+
+Angular LifeCycle Hooks for a Component--
+    constructor-
+    This is invoked when Angular creates a component or directive by calling new on the class.
+
+    ngOnChanges-
+    Invoked every time there is a change in one of the input properties of the component.
+
+    ngOnInit-
+    Invoked when given component has been initialized.
+    This hook is only called once after the first ngOnChanges
+
+    ngDoCheck-
+    Invoked when the change detector of the given component is invoked. It allows us to implement our own change detection algorithm for the given component.
+
+ng-template is used for reserving space in the DOM
+ng-container is used for holding ngIf or ngFor conditions when you do not want to apply them in an existing DOM
+
+Custom Directives--
+@Input() for receiving any values from the Host
+@HostListener() is used to handle events that occur on the element
+ElementRef represents the element on which the directive is applied
+
+==============================================================================================
+
+In a dynamic web application, we will have things that are capable of generating HTML dynamically
+
+Angular Introduction--
+Angular is a typescript based SPA framework
+AngularJS
+Angular 2
+Angular 4
+......
+Angular 15
+
+Typescript--
+TypeScript=JavaScript+DataTypes
+Typescript is transpiled into Javascript
+increases the prodcutivity of our application
+
+Lab Setup--
+VSCode     IDE
+NodeJS     Development Platform https://nodejs.org (16.x-18.x) node --version
+Angular CLI PMT   npm i -g @angular/cli@16.1.3   ng version
+
+Why NodeJS--
+NodeJS is a alternate runtime for javascript
+NodeJS is used for javascript that doesnt need any UI
+Browsers are used for javascript that needs UI
+
+An application development involvs:
+        compose                                 IDE                 VSCode
+        compile/transpeelling                   compiler            tsc
+        manage dependencies                     build tool          npm
+        build and pack the app-bundle           build tool          npm
+        test                                    testing lib         jasmine and karma
+        deploy on to a server                   build tool/PMT      angular cli
+        execution                               run-time            Browser
+
+NodeJS is used to execute the tools needed for developing the application.
+
+NPM-Node Package Manager
+NPX-Node Package Executor
+
+TypeScript--
+Creating a project:
+npm init -y
+npm i typescript --save-dev
+npx tsc --init
+npx tsc filename.ts
+
+Datatypes:
+number
+string
+boolean
+bigint
+symbol
+
+Special Datatypes:
+any - can allow any type of value in the memory, will not force you to verify the datatype of the variable
+unknown - can allow any type of value in the memory, will force you to verify the datatype of the variable
+never - variable is not assigned any value but cannot use return statement, similar to void 
+void - variable is not assigned any value but void allows return statement
+undefined - no variable in the memory
+null - variable in the memory but no value
+
+typeof x ==="number"
+
+tscofig.json--
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "target": "es6",
+    "moduleResolution": "node",
+    "sourceMap": false,
+    "outDir": "dist"
+  },
+  "lib": ["es2015"]
+}
+
+? operator means optional parameter meaning may pass or may not pass value to a parameter
+?? coalesce operator is similar to isNull function in oracle, if variable is there it will be used otherwise default value will be used, it is a new syntax for ternary operator
+
+Angular Architecture--
+Any Angular application is made up of five main artifacts-Modules,Directives,Component,Pipes,Services
+Each Angular artifact is a class
+Each of these classes are marked with decorators to identify their roles
+These artifacts have config and the config is passed as json object to the decorator and is called meta-data
+
+Modules
+@NgModule({
+declarations:[],
+imports:[],
+exports:[],
+providers:[],
+bootstrap:[]
+})
+class SalesModule{
+}
+
+Directives
+@Directive({
+selector:'[fastMovingStock]'
+})
+class FastMovingStockDirective{
+}
+
+Components
+@Component({
+selector:'app-dashboard',
+templateUrl:'',
+styleUrls:[]
+})
+class DashboardComponent{
+}
+
+Pipes
+@Pipe({
+name:'intoWord'
+})
+class InToWordsPipe{
+}
+
+Services
+@Injectable({
+providedIn:'root'
+})
+class OrdersService{
+}
+
+Angular CLI--
+Angular CLI is a frontier tool provided by angular team to manage the project structure and project development phases like creating, building, executing, testing, etc
+CLI commands-
+ng version
+ng new app-name
+cd app-name
+ng g (generate) module ModuleName
+ng g c ComponentName --skip-tests
+ng g directive DirectiveName --skip-tests
+ng g service ServiceName --skip-tests
+ng g pipe PipeName --skip-tests
+ng g interface InterfaceName
+ng g class ClassName
+
+ng build  - will compile .ts into .js , package and put them in 'dist' folder
+ng serve - will build and hosts the package on development server on port 4200
+ng serve --port 8888 - will build and hosts the package on development server on port 8888
+ng serve --port 8888 -o - will build and hosts the package on development server on port 8888, launches the app on a browser
+ng test - will build and invoke all the test cases
+
+Angular Modules--
+In JS, each file is one module, resources defined in one file can be used in another file, it helps to manage/modularize the source code
+In Angular, Angular Modules helps to define the scope of access
+Each Angular Module can group components, pipes, directives, services and other modules also into them
+Artifacts belonging to a specific module have access to one another but they wont have access to artifacts of other modules
+A module (moduleA) can be imported into another module (moduleB) so that moduleB artifacts can access exported artifacts of moduleA
+Each Angular app must be mandatorily housed in one top-level module and is referred to as ROOT MODULE
+AppModule is the default name for ROOT MODULE
+
+@NgModule({
+declarations:[], --list of components,pipes and directives that are grouped under this module
+imports:[], --list of modules to be imported into this
+exports:[], --list of artifacts of this module that are allowed to be accessed out side
+providers:[], --list of services that are managed by the injector of this module
+bootstrap:[] --list of components to be instantiated immediately after loading this module
+})
+class SalesModule{
+}
+
+meta-data of ROOT MODULE will not have 'exports' section
+meta-data of ROOT MODULE only has the 'bootstrap' section
+
+Angular Directives and Components--
+Angular offers html-extendability as a feature
+It means that we can create our own html elements and attributes in angular
+
+Attribute Directive / Directive - are custom made attributes in angular
+@Directive({
+selector:'[fastMovingStock]'
+})
+class FastMovingStockDirective{
+}
+<input type="text" ngModel="x" />  --ngModel is inbuilt directive
+<div fastMovingStock="true"> --fastMovingStock is custom directive
+<!--details of stock items-->
+</div>
+
+Structural Directives - are attribute directive that can control the rendering of an element
+*ngIf
+*ngFor
+ngSwitch *ngSwitchCase *ngSwitchDefault
+
+Component Directive / Components - are custom made elements/tags in angular
+An Angular Component is made up of 3 things
+Component = State & Behaviour  (controlled by .component.ts file)
+				+ 
+			HTML DOM Content   (controlled by .component.html file)
+				+ 
+			Style              (controlled by .component.css file)
+			
+dashboard.component.ts--
+@Component({
+selector:'app-dashboard',
+templateUrl:'dashboard.component.html',
+styleUrls:['dashboard.component.css']
+})
+class DashboardComponent{
+numberOfMessagesRead:number=12;
+}
+
+dashboard.component.html--
+<div class="dashboard">
+You have {{numberOfMessagesRead}} messages read already
+</div>
+
+dashboard.component.css--
+.dashboard{
+margin:10px;
+border: 1px solid black;
+}
+
+<app-dashboard></app-dashboard>
+
+Angular Application Flow--
+index.html --> main.ts --> AppModule --> AppComponent
+
+Data Binding--
+It is about accessing the fields and the methods of component.ts file inside the component.html file
+It can be done in the following ways-
+
+Interpolation-
+It is to bind an angular field or expression onto the content directly
+Whenever the field bound here has its value changed, the rendered content also gets updated automatically
+<tagName>{{fieldOrAngularExpression}}</tagName>
+
+Two-Way Data Binding-
+It is to bind the field with an input-element, so that the input-elemt will show the value of the field initially and whenever the input-element is edited, the value of the field also is updated
+We have to use ngModel attribute-directive defined in 'FormsModule' from '@angular/forms' for two-way binding
+<input type="text" [(ngModel)]="userName" />
+
+One-Way Data Binding-
+Attriubute Data Binding-
+It is to bind a field with an attribute
+<tagName attribute="value></tagName>
+<tagName [attribute]="fieldOrAngularExpression></tagName>
+
+<img src="abcd" />    <!-- abcd itself is the image url -->
+<img [src]="abcd" />  <!-- abcd is the field that has the image url -->
+
+Event Binding-
+It is to bind a method with an event
+<tagName (event-directive)="method()"></tagName>
+html-event-attribute			event-directive
+-------------------------------------------------
+onSubmit						ngSubmit
+onClick							click
+onblur							blur
+onFocus							focus
+onChange						change
+.....etc
+
+Style Binding-
+It is to bind a field with a css-property
+<tagName [style.cssProperty]="field"></tagName>
+
+field={"css-property1:angularExpression1","css-property2:angularExpression2"};
+<tagName [ngStyle]="field"></tagName>
+
+CSS Class Binding-
+It is to control if a css class is applied on an element or not
+<tagName [class.className]="booleanExpression"></tagName>
+
+<tagName ngClass="cssClass1 cssClass2 cssClass3"></tagName>
+
+myClasses:string="cssClass1 cssClass2 cssClass3";
+<tagName [ngClass]="myClasses"></tagName>
+
+myClasses:string[]=["cssClass1","cssClass2","cssClass3"];
+<tagName [ngClass]="myClasses"></tagName>
+
+myClasses={cssClass1:true,cssClass2:false};
+<tagName [ngClass]="myClasses"></tagName>
+
+ngClass is an attribute binding
+check for ngStyle attribute binding as well
+
+Custom Directive--
+<div fastMovingStock="true">
+<!-- details of stock items -->
+</div>
+
+<p fastMovingStock="true">
+<!-- details of stock items -->
+</div>
+
+@Directive({
+selector:'[fastMovingStock]'
+})
+class FastMovingStockDirective{
+//access the hostElement via ElementRef class
+//@HostListener decorator to respond to the event that happen on the host-element
+//@Input decorator is used to receive the data from a host-element into the attribute directive
+}
+
+Structural Directives--
+ng-template is an in-built component
+
+*ngIf-
+<ng-template [ngIf]="booleanExpression">
+<p>This is a test para</p>
+</ng-template>
+
+<p *ngIf=booleanExpression">This is a test para</p>
+
+*ngFor-
+<ng-template [ngFor]="let ele of anArray;index as i">
+<p>{{ele}} is available at {{i}}</p>
+</ng-template>
+
+<p *ngFor=let ele of anArray;index as i">{{ele}} is available at {{i}}</p>
+
+ngSwitch	*ngSwitchCase	*ngSwitchDefault
+<div [ngSwitch]="day">
+<span *ngSwitchCase="1">Monday</span>
+<span *ngSwitchCase="2">Tuesday</span>
+<span *ngSwitchCase="3">Wednesday</span>
+<span *ngSwitchCase="4">Thursday</span>
+<span *ngSwitchCase="5">Friday</span>
+<span *ngSwitchCase="6">Saturday</span>
+<span *ngSwitchCase="7">Sunday</span>
+<span *ngSwitchDefault>No Such Day</span>
+</div>
+
+default type of button element is type="submit"
+ng-container is also an in-built component for holding ngIf and ngFor conditions and the ng-template can hold the view
+
+Angular Pipes--
+A pipe is used to transform a value into another just before rendering
+{{valueOrFieldOrExpression | pipeName:'pipeInputs'}}
+
+in-built pipes-
+lowercase
+uppercase
+titlecase
+number
+currency
+date
+...etc
+
+custom pipe-
+@Pipe({
+name:'intoWord'
+})
+class IntoWordPipe implements PipeTransform{
+transform(value:any):any{
+//here goes the transformation code..
+return transformedValue;
+}
+}
+
+Angular Services--
+A service is a injectable object carrying business logic or api calls
+
+Assignment-create a pipe called 'capitals'
+let stateName:string="Andhra Pradesh";
+{{stateName|capitals}} ---> Hyderabad
+
+Integrating Angular with Bootstrap--
+npm i bootstrap
+include the below paths-
+node_modules/bootstrap/dist/css/bootstrap.min.css   - in 'styles' section of angular.json
+node_modules/bootstrap/dist/js/bootstrap.min.js     - in 'scripts' section of angular.json
+
+Angular Routing--
+Routing allows us to load one component at a time based on the url
+We can map urls one for each component and to load one component at a time based on the url
+
+RouterModule from '@angular/router'
+Routes -- model  Route[]
+
+Route --  model  {path:'',pathMatch:'full|startsWith',component:Component,redirect:''}
+For Example: {path:'abc',component:DashboardComponent}
+assuming port 8888
+http://localhost:8888/abc
+http://localhost:8888/abc/123
+http://localhost:8888/abc/xyz
+ will result in loading Dashboard Component
+ 
+For Example: {path:'abc',pathMatch:'full',component:DashboardComponent}
+assuming port 8888
+http://localhost:8888/abc
+ will result in loading DashboardComponent
+ 
+http://localhost:8888/abc/123
+http://localhost:8888/abc/xyz
+ will not work!
+ 
+router-outlet -- component  this is used in the top-level component to reserve space for the router output
+
+routerLink -- attribute directive  it is used on 'a' tag instead of its 'href' attribute
+
+routerLinkActive -- attribute directive  it accepts a css-class and that css-class is applied only when that link is active
+
+Router -- service  navigateByUrl("/sales/dailyReport")
+				   navigate(['/sales','/dailyReport'])
+				   
+ActivatedRoute -- service  it is used to extract the data (like path parameters/query string,..etc) from the current URL
+
+Angular Forms--
+Template Driven Form							Model Driven Form
+FormsModule from '@angular/forms' is used		ReactiveFormsModule from '@angular/forms' is used
+ngForm											FormGroup
+ngModel											FormControl
+												formControlName
+												
+Validations are limited							Has an extensive Validation framework and custom validators are seamlessly supported
+
+Used in simple context where not more			Used in all complex and nested form and regular
+than two input controls exist					form scenarios
+
+Testing is difficult as the form structure		Testing is easy as the form is modelled in the TS class and is only structured
+and behaviour are defined in the template		in the template
+
+				Both ngForm and FormGroup support valid and invalid properties
+				Both ngModel and FormControl support touched and untoched, dirty and pristine, valid and invalid properties
+
+InBuilt Validators:
+        Validators from '@angular/forms'
+            offers
+                    requried
+                    min
+                    max
+                    minLength
+                    maxLength
+                    email
+                    pattern
+
+    Custom Validators:
+
+        is any function that accepts an object of 'AbstractControl' and returns an object of ValidationErrors or null.
+
+        customValidator(control:AbstractControl) : ValidationErrors | null {
+            let isValid:boolean = true;
+
+            //validation logic.
+                
+            return isValid ? null : {"validatorName":true };
+        }
+		
+//Employee Management System--exercise
+Assignment#1
+
+    Create an angular SPA that does CRUD operation on 
+    Employee
+        id
+        fullName
+        basicPay
+        dateOfJoining
+        designation     ASSOCIATE / Jr ASSOCIATE / Sr ASSOCIATE / MANAGER
+
+    Custome Validator to check that the dateOfJoining can not be a future date.
+
+Observable from 'rxjs'--
+Observable is an enhanced Promise
+
+A Promise can emit only one value that too after the completion of the async job
+An Observable can emit any number of values while the async job is in progress
+
+A Promise has to be subscribed using 'then()' method for the async job to start and only one subscription can happen
+An Observable has to be subscribed using 'subscribe()' method for the async job to start and any number of subscription can happen
+
+A Promise once subscribed can not be unsubscribed
+An Observable can be unsubscribed using 'unsubscribe()' method
+
+let bgJob = (resolve,reject) => {
+//resolve is used to signal completion and also to carry the end result
+//reject signals error
+};
+
+let p = new Promise(bgJob);
+
+p.then(
+val => {/*success callback*/ },
+err => {/*error callback*/ }
+);
+
+let bgJob2 = observer => {
+//observer.next(val)   used to emit intermediate results while the job is in progress
+//observer.error(err)  used to signal error
+//observer.complete()  used to signal completion
+};
+
+let ob = new Observable(bgJob2);
+
+ob.subscribe({
+next: val => {},
+error: err => {},
+complete: () => {}
+});
+
+Observable class has a method called 'pipe()' used to pipe operations on an existing observable to generate a new observable
+let ob2 = ob1.pipe(operation1(), operation2());
+
+Calling Rest-Api using HttpClient--
+HttpClient is a service from HttpClientModule (import in AppModule) from '@angular/common/http'
+get(endPoint): Observable
+post(endPoint,reqBody): Observable
+put(endPoint,reqBody): Observable
+delete(endPoint): Observable
+
+Generating fake rest-api using json-server--
+md adb-api
+cd adb-api
+npm init -y
+npm i json-server@0.17.4
+
+create a json file containing hypothetical data in the adb-api folder
+say adb-api/data.json
+
+include the start command in package.json as below-
+"start":"json-server --watch ./data.json --port 9999"
+
+npm start
+
+Content vs View--
+All the DOM written inside the template of a component is called its view  (ViewChildren or ViewChild)
+Anything written inside the <tagName></tagName> of a component is called its content (ContentChildren or ContentChild)
+<app-component-a>here goes the content</app-component-a>
+
+Angular Component or Directive Life Cycle Hooks--
+constructor()                gets invoked after the allocation of the object
+ngOnChanges(SimpleChanges)   gets invoked every time when the @Input() fields change
+ngOnInit()                   gets invoked after the first render (only once)
+ngDoCheck()                  is used to detect and act upon changes that angular cannot detect on its own. invoked after ngOnInit() for the first
+							 time and then after ngOnChanges()
+ngAfterContentInit()         gets invoked after the content is initialized
+ngAfterContentChecked()      gets invoked after the content is checked
+ngAfterViewInit()            gets invoked after the view is initialized
+ngAfterViewChecked()         gets invoked after the view is checked
+ngOnDestroy()                gets invoked just before the component in unloaded
+
+Content Projection--
+ng-content
+ng-container
+ng-template
+
+We can't put form in a table
+
+Command for creating environment files-
+ng generate environments
+
+ng build --production
+ng build --test
+ng build --dev
+
+lazy module--
+ng g module Dummy --route dummy --module app.module
+
+normal module--
+ng g module Dummy2 --module app.module
+
+Learn for Advanced Concepts--TODO
+ng update @angular/cli@15.1.0
+
+================================================================================
+HTML, CSS, JAVASCRIPT
+---------------------------------------------------------
+Lab Setup--
+Chrome(or any other browser)
+VSCode(or any other text editor)
+NodeJS(as javascript runtime)
+
+HTML was started to design/create documents
+
+HTML- Hyper Text Mark Up Language--
+It is used to write a document that can be shared across HTTP protocol
+
+Hyper Text (Hyper Media) is a collection of plain text, formatted text, graphics and links
+
+Mark up is a practice used in literature
+
+WWW (World Wide Web) is quite ancient now.
+"This is your first day. Have a blast" said my manager.
+Vizag - the steel city - is my hometown
+
+The symbols used to mark up are called HTML elements
+Each html element is made up of a opening tag + content + closing tag
+<p id="para1">This is a para element and para content goes here</p>
+
+HTML is a scripting language because it is not compiled, it is only interpreted by other softwares like a browser
+
+a sample html document
+<!DOCTYPE html> --preprocessor statement
+<html>
+<head>
+<!--meta data about about the current page, metadata is data about data-->
+</head>
+<body>
+<!-- the page content -->
+</body>
+</html>
+
+Typography--
+h1 to h6   heading elements  		              block element
+p		   para 				       			  block elelemt
+b,u,i      bold,underline,italicized   			  inline element
+strong,em  sematic elements for bold and italics  inline element
+sup,sub    superscript, subscript  				  inline element
+
+div - container block element
+
+nav,header,section,footer,article,main,aside - sematic container block elements, alternates to div
+
+span - inline group element
+
+kbd,code,date,mail,address,phone - inline group element, alternates to span
+
+Sematic elements are only introduced in html5, will alert the search engine for highlighting search mechanisms in the web
+purpose of a sematic element is search engine optimization
+div is called a container and span is an inline element
+
+No 2 block elements will appear side by side, it will appear one below the other
+Inline element means inline to text, it will appear side by side
+
+Lists - both ul and ol are block level elements
+ul - unordered lists
+type circle/dot/square
+
+ol - ordered lists
+type 1/a/i/I/A
+
+li - list item
+
+HTML Tables--
+table  -  to create a table
+border -  attribute takes 1 to 5
+width  -  attribute takes a value in px/%/em/pt/in/cm
+height -  attribute takes a value in px/%/em/pt/in/cm
+cellspacing - attribute takes a value in px/%/em/pt/in/cm and controls the spacing between two cells
+cellpadding - attribute takes a value in px/%/em/pt/in/cm and controls the spacing between the cell border and its content
+
+caption  -  sub-element to give a heading to the table
+thead  -  sub-element of table element and holds the header rows
+tfoot  -  sub-element of table element and holds the footer rows
+tbody  -  sub-element of table element and holds the data rows
+tr  -  table row is a sub element representing one row and can be used inside thead/tbody/tfoot/table
+th  -  table header cell, a sub-element of tr
+td  -  table data cell, a sub-element of tr
+rowspan  -  attribute of th and td representing the number of rows to be occupied, default is 1
+colspan  -  attribute of th and td representing the number of columns to be occupied, default is 1
+												  cellspacing
+													 ^
+				   ------------------------------	 |		-------------------------
+				   | 	|						|	 |		|	 					|	
+cellpadding -------|--->|						|	 |	    |						|		
+				   | 	|						|-----------|						|	
+				   | Some content in the cell   |			|						|	
+				   |							|			|						|	
+				   ------------------------------			-------------------------
+HTML Media--
+img  -  inline element that injects an image into the page and is a self-closing element 
+src  -  attribute of img tag to hold the relative or absolute or virtual path of the image
+
+audio - inline element to inject an audio
+video - inline element to inject a video
+source - sub-element of audio and video to supply the audio file or video file, a single audio or video element can house any number of source tags each representing a different format of audio or video
+src - attribute of source to hold the relative or absolute or virtual path of the audio or video file
+iframe - used to embed an external web page into our own web page
+src - attribute to hold the web address of the webpage you wish to embed
+
+HTML Links--
+a - anchor tag
+href - attribute takes the destination path
+target - attribute takes _self,_blank,iframeName
+
+HTML Form Elements--
+form - it is used to group a set of fields that have to be submitted to a server program
+action - attribute takes the path of the server program to which the data has to be submitted
+method - attribute that takes GET/POST
+
+label - it is used to carry a text related to a field like field names
+for - attribute takes the id of the input element to which the label is related to
+
+input - it is used to create a form field control that enable inputting data
+type -  text
+		file
+		passowrd
+		checkbox
+		radio
+		
+		number
+		range
+		decimal
+		email
+		date
+		datetime-locale
+		
+id - attribute is used to give an id to the input element
+name - attribute is used to give a field name that is carried along with its value to the server
+value - attribute takes the inital value of the field
+
+required - attribute ensures that the field is given a value mandatorily
+min - attribute that takes a minimum possible value for type="number/decimal/date"
+max - attribute that takes a maximum possible value for type="number/decimal/date"
+minlength - attribute that takes a minimum length of the value while type="text"
+maxlength - attribute that takes a maximum length of the value while type="text"
+pattern - attribute that takes a regular expression to validate the value while type="text"
+
+textarea - used to accept multi line text
+select - used to create a drop-down or a list box
+multiple - attribute makes the drop-down into a list enabling multiple option selection
+option - is a sub-element of select used to provide the options
+value - attribute of option tag that takes the value to be submitted if this option is selected
+
+button - used to create a push button
+type -  submit (default)
+		reset
+		button
+		
+HTML Layouts and sematic elements--
+
+    <header>    - Defines a header for a document or a section
+    <nav>       - Defines a set of navigation links
+    <section>   - Defines a section in a document
+    <article>   - Defines an independent, self-contained content
+    <aside>     - Defines content aside from the content (like a sidebar)
+    <footer>    - Defines a footer for a document or a section
+    <details>   - Defines additional details that the user can open and close on demand
+    <summary>   - Defines a heading for the <details> element
+    <figure>    - Defines a self-contained content, like illustrations, diagrams, photos, code listings..etc
+    <figcaption>- Defines a caption for a <figure> element.
+    <time>	    - Defines a date/time
+	
+HTML entities--
+
+    Result	        Description	            Entity Name	    Entity Number
+    =============================================================================
+    non-breaking    space	                &nbsp;	        &#160;
+    <	            less than	            &lt;	        &#60;
+    >	            greater than	        &gt;	        &#62;
+    &	            ampersand	            &amp;	        &#38;
+    "	            double quotation mark	&quot;      	&#34;
+    '	            single quotation mark 	&apos;      	&#39;
+    ¢	            cent	                &cent;	        &#162;
+    £	            pound	                &pound;	        &#163;
+    ¥	            yen	                    &yen;	        &#165;
+    €	            euro	                &euro;	        &#8364;
+    ©	            copyright	            &copy;	        &#169;
+    ®	            registered trademark	&reg;	        &#174;
+	
+College Admission Form- exercise
+
+id attribute is used in the javascript logic
+name attribute is used to pass the field value name to the server
+
+CSS3-
+
+CSS 3 - Intro
+-----------------------------------
+
+    Cascading Style Sheet
+
+    purpose is to provide styling to an html document.
+
+    + CSS offers common uniform properties unlike html
+    + CSS can provide styling across grouped elements.
+    + CSS can isolate styling from content. It adds to maintainability.
+
+    Mode Of CSS
+        Inline Style Sheets
+        Embeded Style Sheets
+        External Style Sheets
+    
+    Inline Style Sheet
+
+        it is applied using 'style' attribute.
+        Inline style sheet is the least used method. It is applied only to the element
+        on which it is written. 
+
+        <tagName style="css-property:value;css-property:value;">
+            content
+        </tagName>
+
+        <p style="text-align:justified;font-size:11pts;">
+            this is a apra.
+        </p>
+
+    Embeded Style Sheet
+
+        it is applied using a tag called <style></style>, style elements
+        is a sub-element of <head></head>
+
+        <head>
+            <style>
+                selector {
+                    css-property:value;
+                    css-property:value;
+                }
+            </style>
+        </head>
+
+    External Style Sheet
+
+        style is defiend in a seperate file with extension .css
+        and that cna be linked to any number of html pages using
+            
+            <link href="fileName.css" rel="stylesheet" />
+
+    
+    Selector is a string that qualfies the elements to be applied with the style.
+
+        1. Tag Name
+                each tag name itself is a selector.
+                
+                tagName{
+                    css-property:value; 
+                }
+
+                p{
+                    text-align:center;
+                }
+
+        2. Attribute
+                attribute selector groups elements having the mentioned attribute.
+                
+                [attributeName]{
+                    css-property:value;
+                }
+                
+                [attributeName=""]{
+                    css-property:value;
+                }
+
+                [src] {
+                    width:50%;
+                }
+
+                [type="number"] {
+                    text-align:right;
+                }
+
+        3. Class
+
+                is any usr defiend string. that should start with dot(.)
+                to apply the class on a element the element class attribute 
+                should be assigned with the class name.
+
+                .className{
+                    css-property:value;
+                }
+
+                <tagName class="className1 className2">
+                </tagName>
+
+                .important {
+                    background-color:#00000;
+                    color:#ffffff;
+                }
+
+                .highlight{
+                    border:1px solid white;
+                }
+
+                <p class="important"></p>
+
+                <h3 class="important highlight"></h3>
+
+                <tr class="important"></tr>
+
+        4. Id
+                if a style swhould be applied to an elemnt hving 
+                a specific id, then id selector is used.
+
+                #id{
+                    css-property:value;
+                }
+
+        5. Psuedo
+
+
+CSS - unit of measure
+------------------------------------
+
+    absolute		(irrespective of screen size)
+        in
+        mm
+        cm
+        pt		1 in = 72 pt
+        pc		1 in = 6  pc   1 pc = 12 pt
+    
+    relative 	(to screen size)
+    
+        px
+        
+        %
+        
+        em			relative the font-size
+                    1 em = complete font-size
+                                        
+                    font-size: 12pt;
+                    width: 8em;	8*12pt = 96pt;
+                    
+        vh			1% of viewport height
+        vw			1% of viewport width
+        vmin		min of vh or vw
+
+CSS Box Model Properties--
+
+margin - amount of space we have to maintain across the element
+margin: top left bottom right;
+margin-top
+margin-bottom
+margin-left
+margin-right
+
+border: border-size border-style border-color;
+border-top
+border-bottom
+border-left
+border-right
+
+padding - space between the content and the element border
+padding: top left bottom right;
+padding-top
+padding-bottom
+padding-left
+padding-right
+
+border-radius - radius of the corners of the element
+border-top-left-radius
+border-top-right-radius
+border-bottom-left-radius
+border-bottom-right-radius
+
+width
+height
+min-width
+min-height
+max-width
+max-height
+
+width and height will work for only block/inline-block elements
+
+display - inline/block/inline-block
+position - relative/absolute
+
+top
+left
+bottom
+right
+z-index
+
+CSS Background color and image related properties--
+background-color
+color
+background-image: url("image/path")
+background-repeat: no-repeat/repeat/repeat-x/repeat-y;
+background-position
+
+CSS Font related properties--
+font-family
+font-size
+font-variant  normal or small-caps
+font-weight   bold or bolder or boldest or any number like 300,400,500,..etc
+font-style    italic or oblique (default)
+
+CSS Text related properties
+color
+direction
+letter-spacing
+word-spacing
+text-align
+text-indent
+text-decoration   none | underline| line-through | overline
+
+Table related CSS properties--
+border-collapse   collapse or separate
+border-spacing
+caption-side      top left right bottom
+
+CSS List related properties--
+list-style-type   disc circle square none   for ul
+				  decimal decimal-leading-zero lower-alpha upper-alpha lower-roman upper-roman   for ol
+
+list-style-position   outside or inside
+list-style-image:     url('imgs/note.png')
+marker-offset
+
+controlling scroll bars
+------------------------------------
+    
+    overflow
+                visible
+                scroll
+                auto
+                hidden
+            
+CSS Operators
+-------------------------------------
+    s1		applies to elements that have s1 as tag name
+    .s1		applies to elements that have s1 as class
+    #s1		applies to elements that have s1 as id
+
+    s1,s2	applies to elements that match both selectors
+    s1 s2	applies to all elements that match s2 and are inside s1
+    s1>s2	applies to all elements that match s2 whose parent is s1
+    s1+s2	applies to all elements that match s2 and are immediately after s1
+    s1~s2	applies to every element that match s2 and is preceded by s1
+	
+	<div>
+	<p></p>                                div p {}   div>p {}
+	<section>
+	<p></p>                                div p {}
+	<p></p>                                div p {}
+	</section>
+	<p></p>                                div p {}   div>p {}
+	</div>
+	<p></p>                                div~p {}   div+p {}
+	<p></p>                                div~p {}
+
+                    applies to all elements that have
+                    ------------------------------------
+    [s1]			 s1 as attribute
+    [s1='v1']		 s1 attrib with v1 value
+    [s1~='v1']		 s1 attrib value containes word v1
+    [s1*='v1']		 s1 attrib value containes word v1
+    [s1!='v1']		 s1 attrib value not equal to v1
+    [s1^='v1']		 s1 attrib value starts with the word v1
+    [s1$='v1']		 s1 attrib value ends with the word v1
+
+Psuedo selectors
+    ----------------------------------------------------------------------------
+    input:enabled	Selects every enabled <input> element
+    p:first-child	Selects every <p> element that is the first child 
+                    of its parent
+    p::first-letter	Selects the first letter of every <p> element
+    p::first-line	Selects the first line of every <p> element
+    p:first-of-type	Selects every <p> element that is the first <p> 
+                    element of its parent
+    input:focus		Selects the input element which has focus
+    a:hover			Selects links on mouse over
+    input:in-range	Selects input elements with a value within a specified range
+
+    input:indeterminate		
+                    Selects input elements that are in an indeterminate state
+
+    input:invalid	Selects all input elements with an invalid value
+    input:optional	Selects input elements with no "required" attribute
+
+    p:last-child	Selects every <p> element that is the last child of its parent
+    p:last-of-type	Selects every <p> element that is the last <p> element of its parent
+
+    a:link			Selects all unvisited links
+    :not(p)			Selects every element that is not a <p> element
+    p:nth-child(2)	Selects every <p> element that is the second child of its parent
+    p:nth-last-child(2)	
+                    Selects every <p> element that is the second child of its parent, 
+                    counting from the last child
+
+    p:nth-last-of-type(2)	
+                    Selects every <p> element that is the second <p> element of its parent, 
+                    counting from the last child
+    p:nth-of-type(2)	
+                    Selects every <p> element that is the second <p> element of its parent
+					
+HTML & CSS Assignment
+---------------------------------------------------------------------------
+ 
+    Digital resume:
+        Banner Section
+                Photo
+                Name
+                Contact details
+        Skill Set
+        Technical Qualifications
+        Academic Qualification
+        Experience And Recent Projects
+        Achivments And Publications
+        Personal Details
+		
+
+JavaScript (ES6)--
+Javascript Basics
+
+        is a scripting language that can execute its scripts
+        both on a browser and in a stand alone mode too.
+
+        we need a javascript runtime to execute the script
+        without a browser. And NodeJS is one such runtime.
+
+        1. javascript inherits it syntx from c and cpp,hence case sensitive
+        2. is a dynamically typed language
+            a. variables need not be declared
+            b. even if we declare using var/let/const keywords, we dont specfiy the datatype
+            c. the type of a variable is decided after it is assigned a value
+            d. a variable can hold data of different types.
+            
+           number,strings,null,array,function,undefined
+
+    Datatypes
+    Variables and scopes (let,var), operators
+    Control Structures
+    Program Flows
+    String, Math, Date
+
+String Methods
+        String length
+        String slice()
+        String substring()
+        String substr()
+        String replace()
+        String replaceAll()
+        String toUpperCase()
+        String toLowerCase()
+        String concat()
+        String trim()
+        String trimStart()
+        String trimEnd()
+        String padStart()
+        String padEnd()
+        String charAt()
+        String charCodeAt()
+        String split()
+        String indexOf()
+        String lastIndexOf()
+        String search()
+        String match()
+        String matchAll()
+        String includes()
+        String startsWith()
+        String endsWith()
+		
+Math Methods
+        Math.E        // returns Euler's number
+        Math.PI       // returns PI
+        Math.SQRT2    // returns the square root of 2
+        Math.SQRT1_2  // returns the square root of 1/2
+        Math.LN2      // returns the natural logarithm of 2
+        Math.LN10     // returns the natural logarithm of 10
+        Math.LOG2E    // returns base 2 logarithm of E
+        Math.LOG10E   // returns base 10 logarithm of E
+        Math.round(x)	Returns x rounded to its nearest integer
+        Math.ceil(x)	Returns x rounded up to its nearest integer
+        Math.floor(x)	Returns x rounded down to its nearest integer
+        Math.trunc(x)	Returns the integer part of x (new in ES6)
+        abs(x)	        Returns the absolute value of x
+        acos(x)	        Returns the arccosine of x, in radians
+        acosh(x)	    Returns the hyperbolic arccosine of x
+        asin(x)	        Returns the arcsine of x, in radians
+        asinh(x)	    Returns the hyperbolic arcsine of x
+        atan(x)	        Returns the arctangent of x as a numeric value between -PI/2 and PI/2 radians
+        atan2(y, x)	    Returns the arctangent of the quotient of its arguments
+        atanh(x)	    Returns the hyperbolic arctangent of x
+        cbrt(x)	        Returns the cubic root of x
+        ceil(x)	        Returns x, rounded upwards to the nearest integer
+        cos(x)	        Returns the cosine of x (x is in radians)
+        cosh(x)	        Returns the hyperbolic cosine of x
+        exp(x)	        Returns the value of Ex
+        floor(x)	    Returns x, rounded downwards to the nearest integer
+        log(x)	        Returns the natural logarithm (base E) of x
+        max(x, y, z, ..., n)	Returns the number with the highest value
+        min(x, y, z, ..., n)	Returns the number with the lowest value
+        pow(x, y)	    Returns the value of x to the power of y
+        random()	    Returns a random number between 0 and 1
+        round(x)	    Rounds x to the nearest integer
+        sign(x)	        Returns if x is negative, null or positive (-1, 0, 1)
+        sin(x)	    Returns the sine of x (x is in radians)
+        sinh(x)	    Returns the hyperbolic sine of x
+        sqrt(x)	    Returns the square root of x
+        tan(x)	    Returns the tangent of an angle
+        tanh(x)	    Returns the hyperbolic tangent of a number
+        trunc(x)	Returns the integer part of a number (x)		
+
+Javascript OOPs+
+Javascript Functions
+    Arrow Functions
+    Memeber Functions and this keyword
+    call and apply
+    call backs and closures
+
+Javascript Arrays
+    1. let arr = [];
+    2. let arr = new Array();
+
+    3. arrays are not homoginous
+    4. arrays are not fixed in size
+
+    Array properties
+        arr.length
+
+    Array functions
+        arr.push(ele);
+        arr.pop();
+        arr.concat(anotherArr);
+        arr.splice(startIndex,deleteCount);
+
+    Array Prototype Functions
+        
+        arr.forEach(ele => {}); 
+            //will execute the given callback function on each and every ele of the array
+        
+        arr.sort((ele1,ele2) => { return -1 if ele1<ele2 or return 1 if ele1>ele2 else return 0 })
+            //will sort the array and uses the given callback function to compare.
+            //and the sort function returns the sorted array.
+
+        arr.map(ele => { write code to transform ele to anuthing else and return it })
+            //the map function will execute the givne callback on each ele
+            //of the array and returns a new array containing the transformed values.
+
+            let arr = [1,2,3,4,5];
+            let arr2 = arr.map( ele => ele*ele);
+
+            arr2 will be [1,4,9,16,25]
+
+        arr.reduce((ele1,ele2) => { return any binary output of ele1 and ele2 })
+            //the reduce function will execute the passed binary operation on
+            //first two eles of the array, and then that result paired with third ele
+            //of the array is again passed to the binary operation and son on...
+            //until no more eles left and final reduced value is returned.
+
+            let arr = [1,2,3,4,5];
+            let sum = (n1,n2) => n1+n2;
+
+            arr.reduce(sum); 
+                //is as same as 
+                // sum(sum(sum(sum(arr[0],arr[1]),arr[2]),arr[3]),arr[4])
+                // which is 15
+       
+ES6 Enhancements
+    Modules
+    Template Literals
+    Arrow Functions
+    Destructuring
+    Spread and Rest operators
+
+Javascript Asynchronous Programming
+    setInterval
+    clearInterval
+    setTimeout
+    clearTimeout
+
+    async, await and Promise
+
+        a Promise is a class whose object accepts a job-function.
+        a job-function accepts two callbacks resolve and resposne and
+            excutes a task asynchronously. it invokes resilve incase of
+            successful completion of the job and invoke reject incase of error.
+
+        let p = new Promise( 
+            (resolve,reject) => {
+                ....async code will go
+                    if done call resolve
+                    if err call reject
+            }
+        );
+
+        p.then(
+            () => { to respond if job done},
+            () => { to respond if job got error}
+        );
+
+PROMISE--
+Promise is a javascript class
+It encapsulates any async function and allows the function to communicate either an error or a completion of the job to the main executor (the place where the function is called)
+
+const theJob = (resolve,reject) => {
+//goes here, the asynchronous code...
+//resolve is called here to signal completion, can also carry any end-result
+//reject is called to signal error, can carry the error
+};
+
+let p = new Promise(theJob);
+
+p.then(
+endResult => { /*gets invoked once the job is done */ },
+error => { /*gets invoked if the job encounters an error */ }
+)
+
+p.then(endResult => { /*gets invoked once the job is done */ })
+.catch(error => { /*gets invoked if the job encounters an error */ });
+
+Javascript BOM & DOM--
+Browser Object Model-
+window
+	navigator
+		appName  --browser name
+		appCodeName  --usually will be browser name
+	history
+		back()
+		forward()
+	location  --related to the url
+		href
+		hostname
+		protocol
+		assign(url)
+	document  --body of the window
+	
+	alert()
+	prompt()
+	confirm()
+	open()
+	close()
+	
+Document Object Model-
+document
+	elements
+	forms
+	
+	createElement()
+	removeElement()
+	replace(oldEle,newEle)
+	append()  --element adding after
+	prepand()  --element adding before
+	getElementById(id)
+	getElementByName(name)
+	querySelector("css-selector")  --can be id,class,tag,etc
+	
+Event Handling-
+	htmlEventAttribute="method()"
+	
+	eleObject.addEventListener("eventName",methodRef)
+	
+	eventName			htmlEventAttribute
+	--------------------------------------
+	click				onClick
+	dblClick			onDblClick
+	
+	mouseOver			onMouseOver
+	mouseLeave			onMouseLeave
+	
+	keyUp				onKeyUp
+	keyDown				onKeyDown
+	keyPress			onKeyPress
+	
+	blur				onBlur
+	change				onChange
+	focus				onFocus
+	
+	submit				onSubmit
+	
+blur, change, focus are only for Input Elements
+submit is only for Forms
+

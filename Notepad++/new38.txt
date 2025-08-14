@@ -1,0 +1,74 @@
+ROLE DESCRIPTION :
+
+Joined as a Technical Lead with experiences in developing, designing, integrating, and enhancing client applications. Applying an in-depth understanding of business and client requirements to streamline processes, resulting in increased automation and operational efficiency.
+
+Manage multiple projects simultaneously. Learn and apply new technologies quickly. Team player with good interpersonal skills. Excellent communication, presentation, analytical, and problem-solving skills with the ability to effectively interact with the end user and resolve their concerns. Able to prioritize effectively and achieve objectives within established timelines.
+
+TECHNICAL SKILLS :
+
+Primary Languages: Java, HTML, CSS, JavaScript, Angular, Spring Boot, Rest API
+Secondary Skill Set: React, JSP, Basic Python, Unix
+Databases: Oracle SQL
+Development Tools: VS Code, IntelliJ, Eclipse
+Documentation Tools: Microsoft Office Tools
+Other Tools: Git, Pivotal Cloud Foundry (PCF), Adobe Experience Manager (AEM), Alfresco, Camunda, Postman
+
+PROJECT OVERVIEW :
+
+Project: 1
+Role: Technical Lead
+Technology: Java, Spring Boot
+
+
+Project 1 Description: 
+
+Evolution application can perform New Business, Underwriting, MTA/Endorsements, Renewals, and Reporting functions. Evolution platform is an underwriting and rating application for non-life products. Predominately used for underwriting (Quote, NB (New Business), Renewals, MTA (Mid-Term Adjustment), and Reporting.
+
+Application caters to HNI (High Net Worth Individuals) and MHNI (Mid-High Net Worth Individuals). This application has a holistic view of activity across all products, including 'upcoming renewals'. ‘Upcoming Renewals’ functionality feature helps to avoid policy issuance delays or policy lapses during renewal.
+
+Project 1 Roles and Responsibilities:
+
+Undergone Knowledge Transformation to understand the project flow.
+
+Setting up the infrastructure of the application.
+
+Interacted with Senior Leads for requirement understanding and implementation.
+
+Upgrading the applications from Java 8 to Java 17.
+
+Working on the Application Level Encryption.
+
+Effective analysis of the task assigned and documenting the same.
+
+Code reviews with fellow team members before pushing the code to lower environments.
+
+Actively participate in daily calls and important meetings.
+
+Followed standards of software development and other codes of conduct, as applicable.
+
+
+Project: 2
+Role: Technical Lead
+Technology: Java, JSP, HTML, CSS, JavaScript, Angular
+
+Project 2 Description: 
+
+Account Services Application enables the business to maintain and modify the accounts for different IBD’s (Introducing Broker Dealers). This application provides IBD’s with the ability to open new accounts, update customer account information, and manage existing accounts. To summarize, Account Services mainly deals with opening an account, inquire an account, modifying account details, workflow, and account maintenance.
+
+Project 2 Roles and Responsibilities:
+
+Interacted with the onsite coordinator/clients for requirement gathering and effective analysis.
+
+Designed and developed the UI screens as per the client requirements.
+
+Analyzed and resolved functional issues as reported by QA.
+
+Worked on Production Incidents and came up with solutions to address them.
+
+Proposed design changes for some functionalities for a better user experience.
+
+Helped the team with respect to different modules and aspects of the project.
+
+Cross-skilled in different technologies as per necessity.
+
+Followed standards of software development and other codes of conduct, as applicable.

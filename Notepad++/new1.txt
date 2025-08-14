@@ -1,0 +1,16 @@
+function getMaxScore(arr,k) {
+        var score = 0;
+        var num = 0;
+        var ind = 0;
+        while (k > 0) {
+            num = Math.max(arr);
+            score += num;
+            ind = arr.indexOf(num);
+            arr[ind] = Math.ceil(num / 3);
+            k -= 1;
+        }
+        return score;
+    }
+var k = 4;
+var A = [ 20, 4, 3, 1, 9 ];
+document.write(getMaxScore(A, k));	

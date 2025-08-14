@@ -1,0 +1,11 @@
+Delivery Goal - Complete all the assigned stories and deliver as per sprint, without defects. Measured based on the number of defects / stories carried forward to future Sprint
+Compliance Goal - Complete all Mandatory learnings, timesheets and Skillup goals without default
+
+Always following the best practices for coding in the development tasks and getting reviewed by fellow team mates and team lead. Always aiming to complete all the tasks with regressive testing before raising the merge request.
+
+
+
+Have completed the Project setup and documented as well and shared with the Team Lead. Currently understanding the Project Code and Architecture and working on the development of the tasks assigned along with adequate testing.
+
+
+Create a Java Spring Boot application with an Employee entity with id, employee name, salary, mobile, mail Id as the fields and perform CRUD operations on it. Also, please provide encryption mechanism in this project on the mobile and mail Id fields. The data should be persisted in a MS SQL Server database. Please write appropriate test cases as well. And create a Gitlab pipeline for this project.

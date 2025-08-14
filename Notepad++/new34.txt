@@ -1,0 +1,79 @@
+Amazon Web Services Terms and Conditions
+By registering for this exam, you agree to the AWS Certification Program Agreement governing our program.
+
+Amazon Web Services Policies
+Admission Policy
+Please note this exam is proctored in the proctoring language you selected during registration. This means you must communicate with a proctor in the language you selected during exam registration to complete the exam, regardless of the language in which you are taking the exam.
+
+Before the exam:
+
+Visit the AWS Online Proctoring page and review information on exam policies and procedures, OnVUE technical requirements, and the System Test.
+Complete the required System Test from the same computer and in the same location you'll be using on exam day. *Corporate firewalls often cause issues while trying to take your exam. Please consider taking your exam in a setting without a corporate firewall.*
+It is crucial that you review the OnVUE technical requirements and run the System Test on this webpage (https://home.pearsonvue.com/aws/onvue) prior to your exam to minimize the risk of technical issues you may experience.
+Review the identification requirements below.
+Please be prepared to show one (1) valid form of unexpired, Government-issued personal ID. The Government-issued ID must have your signature and must have your photo.
+
+The name on the registration must match the names on the Government issued ID exactly. Please verify that your name listed on your confirmation email matches your identification. If your identification is not considered valid, you will not be permitted to complete your exam and are unlikely to receive a refund.
+
+Examples of acceptable identification:
+
+Passport
+Driver's license
+Identification card (national or local)
+Registration card (such as green card, permanent resident, visa)
+By law, certain IDs must not be photocopied, digitized, or captured on camera. Because of this, Pearson VUE cannot accept restricted IDs (including but not limited to U.S. military or certain secure access IDs) as identification for online testing.     
+
+The first name/given name and the last name/surname must be identical to the first and last names on the valid forms of identification that you are required to present at your exam appointment or you will not be permitted to test.
+
+To correct your first name(s) and/or last name(s), please follow the steps below immediately:
+
+Click here to submit a ticket for AWS Support
+Complete all required fields in the form
+In the Inquiry Type * field, select "Account Assistance"
+In the Additional Details * field, select "Name Change"
+In the How can we help you? * field, please ask us to change your name, then enter your name as it is listed on your valid forms of identification.
+Click the Submit button
+Your name will be changed within two business days and automatically updated in Pearson VUE's systems. If your appointment is within 48 hours, you may not be allowed to test and you may need to cancel and/or reschedule your exam. See the Cancellation Policy below.
+
+Please note that we are unable to accept the following IDs for an online proctored exam.
+
+Renewal forms with expired IDs
+Government-issued name change documents with Government ID.
+On exam day:
+
+We recommend logging into your account 30 minutes early to start the check-in process and to allow for any troubleshooting. If you are more than 15 minutes late after your scheduled exam time you will be unable to begin your exam and are unlikely to receive a refund.
+
+To log into your account:
+
+Log in to your AWS Certification Account
+On the homepage, click "Manage Pearson VUE Exams", you are taken to the Pearson VUE dashboard
+Click on your scheduled exam under "Purchased Online Exams"
+Click "Begin Exam" and follow the on-screen prompts to complete the check-in process
+Once you have completed the check-in process you will be contacted by a Proctor to begin your exam
+Please note that you are required to have a clean and clutter free workstation. During check in, the Proctor will ask you to perform a room and desk scan using your webcam and will inspect any materials near your workstation.
+
+
+Reschedule Policy
+You must contact Pearson VUE or access your online Pearson VUE account to reschedule your exam at least a minimum of 24 hours prior to your appointment. Exams cannot be rescheduled less than 24 hours prior to your appointment. Failure to reschedule in time or failure to appear for your appointment will result in the forfeiture of your exam fee. 
+
+You may only reschedule two times after the original appointment. If you wish to reschedule a third time, you must cancel and schedule a new appointment. The reschedule limit will apply to the new appointment. Exam appointments cannot be cancelled less than 24 hours prior to your appointment.
+
+Cancellation Policy
+You must contact Pearson VUE or access your online Pearson VUE account to cancel your exam at least a minimum of 24 hours prior to your appointment. Exams cannot be cancelled less than 24 hours prior to your appointment. Failure to cancel in time or failure to appear for your appointment will result in the forfeiture of your exam fee. 
+
+If you wish to reschedule your exam, please log into your AWS Certification Account to complete the scheduling process.
+
+Additional Information
+Accommodations for your exam must be requested through your AWS Certification Account prior to scheduling your exam. If you have not made these arrangements prior to scheduling your exam, please cancel your scheduled exam and then submit your accommodation requests using the instructions provided on the accommodations page. You can access this page by clicking the “Request Exam Accommodation” button in your AWS Certification Account. Cancellation policies are applicable to all scheduled exams. To avoid forfeiture of your exam fee, please be sure to cancel more than 24 hours prior to your scheduled exam.
+
+Online Proctored Exam Policies
+
+You must abide by all of the rules, policies, and procedures above as well as the following:
+
+You understand that all personal items must be stored out of reach during the entirety of the exam and cannot be possessed or accessed at any time during the exam.
+Personal items include, but are not limited to, electronic devices (including mobile phones), watches, cameras or other recording equipment, bags, briefcases, purses, books, and notes.
+You understand that you are not permitted to stand up from or leave your workstation for any reason for the duration of the exam, including for restroom or any other kind of break.
+You will not be permitted to use scratch paper or take notes during the exam.
+Mumbling or speaking out loud is not permitted unless you are communicating with the Greeter or Proctor.
+You must follow all instructions communicated to you by the remote proctor.
+You understand that food, beverage, and personal hygiene products may not be accessed during the exam since those items cannot be within reach and you are not permitted to stand up or leave the workstation for any reason.

@@ -1,0 +1,26 @@
+school
+
+number of standards
+
+number of students
+
+present or absent
+
+apis - getstandards
+getstudentswrtstandard
+getpresentornot
+postpresentornot
+
+controller
+
+entity
+
+service
+
+repo
+
+
+*Openings at Cognizant (Internal or External profiles)
+We have plenty of demands for Java API leads and developers, ReactJs, Angular, .Net API, Scrum Master skills with 5-8 years of experience. If you find the roles/ tech stack suitable feel free to send desired profiles to mailbox at Subhasis.Kar2@cognizant.com  with subjectline <Name>_<Role>_Cognizant Opening Fulfillment
+
+

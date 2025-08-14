@@ -1,0 +1,68 @@
+Java Spring SpringBoot
+
+Angular Javascript
+
+SQL, PLSQL
+
+Azure, Openshift - OpenShift supports the application development lifecycle, provisioning and managing container images and workloads into a total ecosystem. By using Docker as its model, OpenShift enables any app created with it to run anywhere that Docker containers are supported.
+
+Qatar Airways
+===========================
+Job description for the Master Screen Development project. Solid working experience in Java, Spring framework and Spring Boot. Working experience in Angular and JavaScript. Knowledge in Node JS. Working experience in creating and exposing REST APIs. Knowledge in Graph Query Language is preferred. Solid understanding of the collections frameworks. Working experience in developing web services using HTTP REST/JSON. Working experience in Oracle SQL queries and PL/SQLObject-oriented & service-oriented design concepts, principles, and design patterns. Comprehensive knowledge of Web design patterns and front end technologies like HTML5, JQuery and MVC framework like spring and Spring Boot. Hand-on experience with unit testing and working with continuous integration environment. Experience with agile development methodology. Good knowledge in JUnit Testing Experience working with Azure services and Open shift is preferred
+=============================
+
+[4:39 PM] Bethi, Praveen (Cognizant)
+
+1. Given a list of integers, find out all the even numbers that exist in the list using Stream functions?
+numbers.stream().filter(value -> value % 2 == 0).forEach(System.out::println);
+
+2. 2. Given a list of integers, find out all the numbers starting with 1 using Stream functions?
+myList.stream().map(s -> s + "").filter(s -> s.startsWith("1")).forEach(System.out::println);
+
+3. How to find duplicate elements in a given integers list in java using Stream functions?
+List<Integer> myList = Arrays.asList(10,15,8,49,25,98,98,32,15);
+ Set<Integer> set = new HashSet();
+myList.stream().filter(n -> !set.add(n)).forEach(System.out::println);
+
+4. Given a list of integers, find the maximum value element present in it using Stream functions?
+int max =  myList.stream().max(Integer::compare).get();
+System.out.println(max);
+
+5. Given a String, find the first repeated character in it using Stream functions?
+String input = "Java Articles are Awesome";
+          Character result = input.chars() // Stream of String       
+                                  .mapToObj(s -> Character.toLowerCase(Character.valueOf((char) s))) // First convert to Character object and then to lowercase         
+                                  .collect(Collectors.groupingBy(Function.identity(), LinkedHashMap::new, Collectors.counting())) //Store the chars in map with count and used linked hash map to maintain insertion order
+                                  .entrySet()
+                                  .stream()
+                                  .filter(entry -> entry.getValue() > 1) //for repeated or .filter(entry -> entry.getValue() == 1) //for non-repeated
+                                  .map(entry -> entry.getKey())
+                                  .findFirst()
+                                  .get();
+          System.out.println(result);  
+
+joins - The biggest difference between an INNER JOIN and an OUTER JOIN is that the inner join will keep only the information from both tables that's related to each other (in the resulting table). An Outer Join, on the other hand, will also keep information that is not related to the other table in the resulting table.
+
+union and unin all - sample query -- UNION only returns unique. UNION ALL returns all records, including duplicates
+
+Java 8 features with code
+
+Spring boot flow
+
+Spring concepts - Dependency injection (DI) is a process whereby objects define their dependencies (that is, the other objects with which they work) only through constructor arguments, arguments to a factory method, or properties that are set on the object instance after it is constructed or returned from a factory method.
+
+DevOps model
+
+myList.stream().sorted().forEach(System.out::println);
+myList.stream().sorted(Collections.reverseOrder()).forEach(System.out::println);
+integerList.stream().map(i -> i*i*i).filter(i -> i>50).forEach(System.out::println);
+names.stream().map(String::toUpperCase).collect(Collectors.toList());
+myList.stream().distinct().forEach(System.out::println);
+
+@Controller is used to mark classes as Spring MVC Controller., @RestController annotation is a special controller used in RESTful Web services, and it’s the combination of @Controller and @ResponseBody annotation.
+
+It is a specialized version of @Component annotation., It is a specialized version of @Controller annotation.
+
+In @Controller, we can return a view in Spring Web MVC., In @RestController, we can not return a view.
+
+Primarily used for traditional web applications to return a view., Used for building RESTful web services, returning data in JSON or XML format, Designed to return data directly to the client.

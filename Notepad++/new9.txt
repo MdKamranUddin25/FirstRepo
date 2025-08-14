@@ -1,0 +1,110 @@
+Quantum Wealth BNYM
+============================
+Expertise in core Java programming, multi-threading, and memory management.
+
+In-depth understanding of Java ecosystem and latest language features.
+
+Solid grasp of distributed systems principles, such as scalability, fault-tolerance, consistency, and concurrency control.
+
+Familiarity with distributed data storage and processing paradigms (e.g., distributed databases, message queues, caching mechanisms).
+
+Ability to design and implement distributed systems using appropriate architectural patterns, such as microservices, event-driven architecture, and service-oriented architecture (SOA).
+
+Strong understanding of the trade-offs between inheritance and composition, and the ability to select the appropriate pattern for a given scenario.
+
+Thorough understanding of concurrent programming in Java, using frameworks like Java Concurrency API and Executor framework.
+
+Experience in handling parallel processing and synchronization challenges in distributed environments.
+
+Proficiency in network protocols and communication mechanisms like HTTP, TCP/IP, UDP, RPC, and RESTful APIs.
+
+Understanding of how to optimize network performance and minimize latency.
+
+Familiarity with data replication techniques, consistency models (e.g., eventual consistency, strong consistency), and data partitioning strategies.
+
+Knowledge of techniques for ensuring fault tolerance and high availability in distributed systems, such as replication, redundancy, and failover mechanisms
+
+Proficiency in identifying performance bottlenecks in distributed systems and employing tools to monitor and optimize system performance
+
+Awareness of security principles in distributed systems, including authentication, authorization, and secure communication
+
+Skill in writing effective unit tests, integration tests, and end-to-end tests for distributed systems.
+
+Experience with debugging distributed systems issues using various tools and techniques.
+
+Ability to mentor and lead a team, providing technical guidance and code reviews
+
+Familiarity with containerization technologies like Docker and container orchestration platforms like Kubernetes
+
+Proficiency in version control systems like Git and experience with Continuous Integration/Continuous Deployment (CI/CD) pipelines
+
+Experience with cloud platforms like AWS, Azure, or Google Cloud, and knowledge of relevant services for building distributed systems.
+
+Ability to deploy, manage, and scale distributed applications in a cloud environment.
+
+Understanding of fundamental distributed algorithms like distributed consensus (e.g., Paxos, Raft), distributed locking, and distributed caching
+
+1. Tell me about your project and technologies used? And raised questiones related to the project.
+2. what is your recently working project?
+3. What is entitlement?
+4. How to create a spring boot application and Angular from scratch and expecting what are the other things which are done in the project?
+5. Authentication and authorization in Spring Boot/secure an API?
+6. Design pattern followed in your project?
+7. How to create a Spring boot profiles?
+8. How do you handle exception in your application?
+9. How do you fetch top 100 records from a Database with complex query?
+Explain Event driven Architecture
+How to address data inconsistency issue with Event driven architecture
+What Swagger is used for
+Have you used JOOQ
+What are the concerns when you develop UI code and Server side code by different teams ?
+How do they work independently before knowing the data that is exchanged between two layers ?
+How would you synchronize the data across Microservices ?
+How to address concurrency issues with Microservices ?
+Explain how Publish Subscribe model works
+What is your experience with Docker and Kubernetes
+How do you handle graceful shutdown of applications
+Questions on last project.
+JWT
+Docker implementation
+Kafka implementation
+
+ 1. Rest API vs gRPC highlevel, Java vs GoLang highlevel, Kafka vs NATS/MQ highlevel, Reduce latency of app (for ex. CDN, query optimization, use of gRPC instead of Rest APIs etc. or anything else you could suggest)
+       2. Event Driven Architecture, SAGA pattern, CQRS pattern (it helps to reduce latency as well)
+
+       3. Java 17 features added, Java 21 features being added
+===================================================	
+
+Electrolux
+=====================
+Back-End	
+	   
+Java programming language
+Java JWT library
+JSON library
+MSSQL JDBC connector/driver
+Azure Function Java library
+Azure Key Vault library
+Testing methodologies and tools
+Azure core services knowledge
+
+Front-End
+
+Angular, built on TypeScript
+Yarn package manager
+Angular Material Library
+PrimeNG Library
+Testing methodologies and tools
+=======================
+
+UHG
+============
+[Wednesday 8:28 PM] Das, Sakti (Cognizant)
+
+Please do some prep in Java , MSB, Angular , basic VueJS
+
+[Wednesday 8:28 PM] Das, Sakti (Cognizant)
+
+Basic front end , JS, Typescript also..
+================
+

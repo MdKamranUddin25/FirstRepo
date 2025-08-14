@@ -1,0 +1,39 @@
+[ERROR] Failures: 
+
+[ERROR]   ApplicationTests.statusCode200whenExistentRequested:75 Status expected:<200> but was:<401>
+
+[ERROR]   ApplicationTests.statusCode400WhenInvalidIdRequested:85 Status expected:<400> but was:<401>
+
+[ERROR]   ApplicationTests.statusCode404WhenNonExistentRequested:65 Status expected:<404> but was:<401>
+
+[ERROR] Errors: 
+
+[ERROR]   ApplicationTests.status200WhenValidRequest:46 » Servlet Request processing fai...
+
+
+[ERROR] statusCode400WhenInvalidIdRequested  Time elapsed: 0.036 s  <<< FAILURE!
+
+java.lang.AssertionError: Status expected:<400> but was:<401>
+
+
+[ERROR] Failures: 
+
+[ERROR]   ApplicationTests.statusCode200whenExistentRequested:75 Status expected:<200> but was:<401>
+
+[ERROR]   ApplicationTests.statusCode400WhenInvalidIdRequested:85 Status expected:<400> but was:<401>
+
+[ERROR]   ApplicationTests.statusCode404WhenNonExistentRequested:65 Status expected:<404> but was:<401>
+
+[ERROR] Errors: 
+
+[ERROR]   ApplicationTests.status200WhenValidRequest:46 » Servlet Request processing fai...
+
+[INFO] 
+
+[ERROR] Tests run: 4, Failures: 3, Errors: 1, Skipped: 0
+
+
+C:\Users\2267152\AppData\Roaming\npm
+
+npm install -g npm@10.2.5
+
