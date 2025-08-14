@@ -1,0 +1,23 @@
+https://oneaccordforkids2--gallery.sandbox.my.salesforce.com/home/home.jsp
+
+https://oneaccordtx.org/project/jay/
+
+https://oneaccordforkids2--gallery--c.sandbox.vf.force.com/apex/OATX_Heart_Gallery_Profile?id=a0wD5000004ctgO
+
+https://oneaccordforkids2--gallery.sandbox.my.salesforce.com/066D5000000CWbo/e
+
+first copy- header-bg, donate-changes, margin-top: -65,70
+1. Arrow with sub menu- done
+submit button- done but not sure
+back to gallery- done
+space between header and text- done
+inquire about specific child to be bigger- done
+total footer- done
+
+update resume, bill in billable
+onboard from 1st feb
+see for onsite
+send updated resume to Ammu
+they dont require now so have to release
+available in tmp in jan
+pragati

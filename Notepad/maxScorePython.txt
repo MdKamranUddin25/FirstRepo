@@ -1,0 +1,15 @@
+import math
+def getMaxScore(arr,k):
+        score = 0;
+        num = 0;
+        ind = 0;
+        while (k > 0):
+            num = max(arr)
+            score += num
+            ind = arr.index(num)
+            arr[ind] = math.ceil(num / 3)
+            k -= 1;
+        return score;
+arr=[20, 4, 3, 1, 9]
+k=4
+print(getMaxScore(arr, k))

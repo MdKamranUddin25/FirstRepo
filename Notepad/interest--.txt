@@ -1,0 +1,286 @@
+interest--
+2609
+2876
+2374
+2220
+total--303400.98
+final--293321.98
+
+interest--
+7249
+8686
+10536
+11349
+total--2018344.40
+final--1980524.40
+10383
+total--238294.00
+final--227911
+
+interest--
+339,334,340,334=1347
+total--48103.70
+final--46756.70
+
+lic--2018,2019,2020,2021,2022
+66676*5=333380
+
+cash--1833, new-1050
+
+all cash--2883975.08, new-2882944.08
+zakat-72100, new-72075 (2000 given)
+
+==============================================
+boi--
+326
+331
+329
+329
+=1315
+total--45771.05
+final--44456.05
+
+icici--
+2733
+2034
+3197
+3773
+=11737
+total--544133.87
+final--532396.87
+
+hdfc--
+14709
+15403
+12621
+3190
+=45923
+total--568006.54
+final--522083.54
+
+ppf--
+10383, 22031 = 32414
+total--415325
+final--382911
+
+lic--
+lic till now--2018,2019,2020,2021,2022,2023
+66676*6=400,056
+
+pf--
+techm-
+5
+1154
+4440
+9023
+7735
+------
+mphasis-
+7867
+5332
+5901
+10318
+--------
+wipro-
+648
+2510
+------
+=54933
+total--6,05,453
+final--550520
+
+coin album--296.19
+
+cash--2000(notes)+41(coins)=2041
+
+all cash total--2435390.65, new-2434760.65
+zakat total--60884.76625, new-60869.01625
+
+=======================================
+zakat 2025
+boi--
+316
+319
+321
+317
+=1273
+total--44729.05
+final--43456.05
+
+icici--
+3582
+3448
+3038
+=10068
+total--313952.21
+final--303884.21
+
+hdfc--
+2398
+4441
+7658
+=14497
+total--1635784.72
+final--1621287.72
+
+ppf--
+10383, 22031 = 32414
+total--550325
+final--517911
+
+lic--
+lic till now--2018,2019,2020,2021,2022,2023,2024
+66676*7=466732
+
+pf--
+techm-
+5
+1154
+4440
+9023
+7735
+------
+mphasis-
+7867
+5332
+5901
+10318
+--------
+wipro-
+648
+2510
+-------
+cts-
+17173
+=72106
+total--8,14,536
+final--742430
+
+coin album--296.19, new-336.225
+
+cash,coins=7893
+
+all cash total--3703930.205, new-3803930.205
+zakat total--92598.255=92600, new-95100
+
+later--from march next year (25th ramzan)
+172495, 2205
+
+check all the things of priya and pf also and remind her
+
+mails check, project work
+jobs list from naukri and linkedin-todo
+
+call madhuvanthi tomorrow about interview update
+extend washing machine warranty
+
+code of sts and vscode
+hashset string pool pagination(limit,offset) foreach,reduce funcInterface examples
+
+ask onil for test again, call onil when np is 45 days, albert adp
+
+washing machine warranty extension-todo
+ping Prasant on Tuesday for project discussion
+
+raise ticket for paper back process
+I just wanted to ask if our NP can be shrunk or some process is there if you can guide me or buyout
+091901514597
+
+D+ approval need to come for early release
+for LWD mailer, wait today eod or monday eod
+talk to subbu lti tomorrow and nooh capg
+
+neelam chhabra
+Java Full Stack Developer working for a Banking Cleint with Java, Angular, Spring Boot, HTML, Javascript, SQL, AWS as the technical skills.
+
+gap declaration mail
+the reason along with training
+
+call haseena tuesday opentext
+call kritya next week publicis sapient
+IP issue cookie/header research on xhr request
+
+2 hours 65 ques 70% passing ghcp exam
+NPPAX74B
+RYE4C9QD
+
+java javascript revise
+mary.olivia@cai.io
+kritya publicis sapient sunday tech clear but salary only 24.67 for 5years exp so another technical will happen on saturday for java
+surabhi.seth@coforge.com
+
+call onil, syed adp tomorrow 530pm, chandana value labs- all connected
+
+linkedin, naukri, apna, indeed, shine, timesjobs
+dubai valuelabs position on hold, wait 2 days for update
+kafka,executor,microservices,java,spring
+call mounika hcl on monday evening-offer in process, 
+krishnaveni-client interview,chandana-position hold,shalini monday morning-drop mail
+sutherland manager round will happen next week
+infosys finacle sharanya max is 25
+kritya publicis sapient max is 24
+
+flexible-monthly, bonus, wfh-remote, designation, probation
+provident fund- employee/employer, hcl software/hcl tech?
+
+onsite role valuelabs, working on legacy angular app, feature developments, production bugs, enhancements, developer role
+
+18000 dirhams -> 424000/month 
+5% variable
+17500->412000/month
+500->april october
+
+2 years 6 months emirates national bank of dubai
+todo-digicert, nextiva, experian, intellect, linkedin, luxoft, 
+done-syngenta, intellias, nielsen
+
+Please find the below details-
+Total Experience: 8.7
+Relevant Experience: 6.5
+Current CTC: 28.5
+Expected CTC: 37.0
+Notice Period: Serving, LWD-14th August, 2025
+
+Alihana@2521985, Kamran@2521985, Go4outlook@2521985
+Farewell@2521985
+
+Java FullStack Developer
+
+afternoon
+evening
+
+gmail linkedin, hclFill ctsBackup, outlook notepad++
+hcl-onboarding form,recruiter clearance;cts-backup,mail drop,ping everyone;
+asset and id card return tomorrow,reach by 330pm
+salary slips, form 16, text files, certificates, mails
+
+For any questions, please email ITAssetRecovery@cognizant.com 
+
+Dear User, As you have opted for the hardware asset release, all the software assets associated with this hardware will be automatically released. To ensure a smooth transition, kindly raise a request for Software Remap (https://ctsccprod.service-now.com/ss?id=kb_article&sys_id=7d8bc9ac97cf0610c1363b371153afa4&table=kb_knowledge) to remap the software you need on the new asset.
+
+1.40cr ps jade grove , 3.40cr mani crest
+1.55cr arctic and gardenia 3rd floor 
+
+g+4 dreamland 708sqft 2bhk 25% 9000/sqft
+
+g+4 13000 1355 550 650 +25% 20m piling only 1st floor
+
+aws ai practitioner pdf
+
+==================================
+
+fill esa and clarity
+defaulter seat, 
+
+keep meetings biweekly/monthly
+improve communication
+
+**architecture-approach problems, research
+NFR, FR--document them
+WHY, HOW
+SECURITY PERSPECTIVE on APIs
+CACHING MECHANISM, DESIGN WISE THINK
+SCALING DECISIONS
+REUSABLE CODE VERSION WISE
+3-4 years its stable, easy modifications
+AUTOMATION WORK STUDY and SUGGEST

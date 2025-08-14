@@ -1,0 +1,19 @@
+Monolithic app
+	- UI
+	- API
+	- ORM
+ 
+IN On prem - Websphere, Oracle(RDS)
+ 
+Cloud- aws
+ 
+- Need to create micro services 
+- New technologies suitable for containerization
+ 
+Cons - time consuming and cost
+1st Approach - refactoring, monolithic to microSvc and then deploy
+----------------
+Alternate - Rehost the entire app and DB to cloud, as have time constraint
+ 
+Approach: Entire Application -> Ec2(complex set up)/plan -B :With single container if fit in docker with smaller app
+RDS -> RDS

@@ -1,0 +1,8 @@
+Java String class
+Java Collections--Array List, Set, HashMap, LinkedHashMap
+Synchronization
+Java Exceptions--try, catch, finally, throws
+Javascript--splice, slice
+Javascript validation
+CSS styling--external, internal, inline
+DevOps idea

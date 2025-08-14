@@ -1,0 +1,16 @@
+prudential insurance- america
+new development project
+angular, java, springboot, rest api's
+2 days mandate office
+
+ajeesh vijayan 5407782 American Express Services Europe Limited, not there
+dilip kumar kumar, ooo, 5663782 Rabobank
+Jishnujyoti Sinha (172459 ) 5642496 Hartford
+Sri Hari Subramanyam (337131 ) 5716304 Santander Global Technology, S.L.
+manikandan m - qatar airways
+
+can we have encryption mechanism in a java spring boot project
+can we encrypt a string in a java srping boot project
+can we encrypt an integer or long value in a java spring boot project
+https://medium.com/@oguz.topal/spring-boot-encryption-using-jasypt-fa32340adb2c - this link is not working, can you please check on this
+how to create a gitlab pipeline for a java spring boot project
