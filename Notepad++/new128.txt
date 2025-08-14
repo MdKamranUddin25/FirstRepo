@@ -1,0 +1,38 @@
+
+//angular
+
+@Injectable
+export class ApiService{
+
+private api="http:localhost:8080";
+
+constructor(private http:HttpClient){}
+
+getApiData(){
+return this.http.get(this.api);
+}
+
+}
+
+@Component({
+selector
+templateUrl
+styleurls
+})
+export class ApiComponent{
+
+apiData;
+
+constructor(private api:ApiService){}
+
+ngOnInit(){
+this.getApiData();
+}
+
+getApiData(){
+this.api.getApiData().subscribe({
+next: data=>{this.apidata=data; console.log(this.apidata);
+error: err=>console.log(err);
+})
+
+}

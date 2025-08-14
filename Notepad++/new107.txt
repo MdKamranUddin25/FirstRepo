@@ -1,0 +1,40 @@
+Steps to complete your mid-year review:
+
+Access GoPerform
+Review H1 goals
+Add notes
+Seek feedback from relevant stakeholders
+Submit your H1 self-evaluation by June 30
+
+Productivity
+Always focused on completing the user stories assigned within the SLA along with code review and proper testing.
+
+Design Development
+Working on the Research and Design of the Requirements assigned as well as the Development. Using all the essential tools and software's for proceeding towards development.
+
+Contribution to Technology Thought Leadership
+Have done the analysis and code changes for Technology version upgradation in multiple applications and implementing Application Level Encryption in the previous project and Technology version and Code upgration in the application along with SAML SSO integration in the current project.
+
+Customer Satisfaction
+Working on the client deliverables and Always following the best practices for coding in the development tasks and getting reviewed by fellow team mates and team lead. Always aiming to complete all the tasks with regressive testing before raising the merge request.
+
+Testing Scenarios
+Always taken care of executing the integration and unit testing after completing the Development in the local as well as lower region environments. Also, collaborated with the QA for explanation of the developments done and if any modifications required.
+
+Effective People Management
+Interacting with the Team Lead and fellow team mates to understand more about the project and the application functionalities. Helping fellow team members as and when required.
+
+Operational Excellence
+Currently understanding the Project Code and Architecture and working on the development of the tasks assigned along with adequate testing. Also, working towards the improving the user experience by making suitable enhancements.
+
+Stakeholder Satisfaction
+Working on the client deliverables and currently focusing on the Design as well as the Development of the tasks assigned. Always following the best practices for coding in the development as well as enhancement tasks.
+
+Delivery Excellence
+Currently focusing on the tasks assigned in the sprint and updating the progress for the same in the Rally board as well as to the Team Lead and Scrum Master. Working towards the completion of the deliverables within the SLA and showcasing the same in the Spring Review meeting.
+
+Personal Excellence
+Completed all the Mandatory Training's assigned till now and filled both the ESA and Client timesheets on time every week. Learnt different aspects of the Client's Design System to build Angular 18 applications as well as learnings on the Application Level Encryption. Completed all the SkillUp Goals and Phase 1 & Phase 2 of the Upgrade2Architect (U2A) program. Currently in the final phase of the U2A program.
+
+Innovation
+Submitted Idea in Bluebolt in the AI Minds - ADM Insurance Gen AI Hackathon 2024 (Idea ID : 88238). Received "Creating conditions for everyone to thrive" award for the selection of the mentioned idea during the Ideation Phase and "Daring to innovate" award for movement of the idea to the Prototype Phase of the Hackathon. Also, preparing for the AWS Cloud Practitioner certification.

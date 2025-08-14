@@ -1,0 +1,24 @@
+List<Integer> all = List.of(12,14, 93,17,73, 77);
+
+all.stream().reduce((n1,n2)->n1+n2).forEach(num->System.out.println(num));
+
+try {
+...
+..
+}catch (Exception e){
+}
+catch (EmpNotFound e){
+}
+ 
+List<Integer> all = List.of(12,14, 93,17,73, 77);
+ 
+String str1 = "abc"
+String str2 = "abc"
+String str3 = new String ("abc)
+sysout (str1 == str2)
+sysout(str1--str3)
+ 
+List<Integer> all = List.of(12,14, 93,17,73, 77);
+
+Sistla, Vijayadeepthi (External)
+1:35 PM

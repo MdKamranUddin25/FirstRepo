@@ -1,0 +1,81 @@
+
+we have employee list. we want to sort the employees by salary. Write a program using stream api.
+
+emplist.stream().map(Employee::getSalary).sorted().forEach(System.out::println);
+
+emplist.stream().sorted(Comparator.comparingInt(Employee::getSalary)).collect(Collectors.toList());
+
+
+class Parent{
+       Parent(){
+           System.out.println("Parent class default constructor.");
+       }
+   }
+class Child extends Parent{
+       Child(){
+	             System.out.println("Child class default Constructor");
+       }
+   }
+public static void main(String args[]) {
+     Parent demoObject=new Child();
+  Parent demoObject1=new Parent ();
+  Child demoObject2=new Child();
+}
+
+
+@restcontroller
+
+@autowired
+service
+
+@getmapping("/getallemployee")
+public responsentity<Employee> getALlEmployeee(){
+try{
+this.service().gteall();
+return ResponseEntity.ok(); //200
+}catch(exception e){
+sysout(e.getmessage();
+}
+
+
+stack stores method execution and local variables
+heap stores dynamically allocated objects
+metaspace stores class metadata
+
+
+==================================================
+
+we have employee list. we want to sort the employees by salary. Write a program using stream api.
+
+ 
+class Parent{
+
+       Parent(){
+
+           System.out.println("Parent class default constructor.");
+
+       }
+
+   }
+
+class Child extends Parent{
+
+       Child(){
+
+	             System.out.println("Child class default Constructor");
+
+       }
+
+   }
+
+public static void main(String args[]) {
+
+     Parent demoObject=new Child();
+  Parent demoObject1=new Parent ();
+
+}
+ 
+     Child demoObject2=new Child();
+	 
+ Pravin Mule (Unverified)
+10:04 AM

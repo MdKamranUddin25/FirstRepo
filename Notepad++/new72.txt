@@ -1,0 +1,17 @@
+OE- Always worked towards refining the requirements with the client during the Analysis phase as well as highlighting the existing scenarios during the Development phase to proceed for the new enhancements.
+
+SS- Working on the client deliverables and currently focusing on the Research, Design as well as the Development of the tasks assigned. Always following the best practices for coding in the development tasks and testing in the lower environments.
+
+PE- Completed all the Mandatory Training's assigned till now and filled all the timesheets on time. Learnt different aspects of Application Technology Upgradation as well as learnings on the Application Level Encryption. Completed all the SkillUp Goals and Phase 1 of the Upgrade2Architect program.
+
+DE- Currently focusing on the tasks assigned in the sprint and updating the progress for the same in the JIRA as well as to the Team Lead and Scrum Master. Working towards the completion of the deliverables within the SLA and documenting the details of the design and development of the task.
+
+Inno- Have submitted Ideas in Bluebolt for CII in the AI Minds - ADM Insurance Gen AI Hackathon 2024 (Idea IDs : 88238, 96379). Also, preparing for the AWS certification through the Udemy platform. Analysis and code changes for Technology version upgradation in multiple applications and implementing Application Level Encryption.
+
+P- Always focused on completing the user stories assigned within the SLA along with code review and proper testing.
+
+DD- Working on the Research and Design Documenting of the Requirements assigned as well as the Development. Using all the essential tools and software's for proceeding towards development.
+
+CTTl- Have done the analysis and code changes for Technology version upgradation in multiple applications and implementing Application Level Encryption.
+
+CS- Working on the client deliverables and Always following the best practices for coding in the development tasks and getting reviewed by fellow team mates and team lead. Always aiming to complete all the tasks with regressive testing before raising the merge request.

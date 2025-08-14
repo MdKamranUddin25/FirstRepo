@@ -1,0 +1,101 @@
+TCS #Personal# TR1 _Interview_EP2021CN785886_Md. Kamran Uddin_7003590829_Java8, SpringBoot, JPA/Hibernate_Exp:8
+
+Binod Sabat (Unverified)
+4:54 PM
+find out all the numbers starting with 1 using Stream functions
+    10,15,8,49,25,98,32
+nums=[10,15,8,49,25,98,32]; nums.stream().m... by Uddin, Md. Kamran (Cognizant)
+4:55 PM
+Edited
+Uddin, Md. Kamran (Cognizant)
+nums=[10,15,8,49,25,98,32];
+nums.stream().map(s->s+"").filter(s->s.startsWith("1").forEach(System.out::println);
+Given a String, find the first non-repeated... by Binod Sabat (Unverified)
+Binod Sabat (Unverified)
+4:57 PM
+Given a String, find the first non-repeated character in it using Stream functions?
+ 
+input = "Java articles are Awesome";
+input.stream().map(String::toTitleCase) by Uddin, Md. Kamran (Cognizant)
+5:05 PM
+Uddin, Md. Kamran (Cognizant)
+input.stream().map(String::toTitleCase)
+input.split(" ").toArray(); by Uddin, Md. Kamran (Cognizant)
+5:07 PM
+Uddin, Md. Kamran (Cognizant)
+input.split(" ").toArray();
+for(i=0;i<arr.length;i++){ by Uddin, Md. Kamran (Cognizant)
+5:08 PM
+Uddin, Md. Kamran (Cognizant)
+for(i=0;i<arr.length;i++){
+Meeting ended: at 5:20 PM after 54 minutes 54 seconds
+5:20 PM Meeting ended: 54m 54s
+Binod Sabat (Unverified) left the chat.
+Binod Sabat (Unverified) left the chat.
+Uddin, Md. Kamran (Cognizant) left the chat.
+Uddin, Md. Kamran (Cognizant) left the chat.
+has context menu
+You can't send messages because you are not a member of the chat.
+has context menu
+
+
+
+employee object id,name,age,exp
+collection of emp list
+
+emp1=emp.stream().max(e->e.getExp()).get(); //10 -> 5
+emp1.stream().map(e->e.getName()).collect(Collectors.toList());
+
+
+list of integers -> 10,12,15,18,12,21,18 ->duplicates
+
+list.stream().sort().filter(compare(i1,i2)->i1==i2).forEach(sysout);
+
+
+=======================================
+
+Murali (Unverified)
+4:05 PM
+Emp (String name, Long empId, String department, String grade, String role, String managerName, Long managerId)
+ 
+I have List of Emp
+ 
+Map<managerName, List<role>>
+ 
+Anand (Unverified) was invited to the meeting.
+
+ 
+mylist.stream().collect(Collectors.groupingBy(Function.identity, LinkedHashMap::new)).entrySet().map(entry->entry.getManagerName(),entry.getRole())
+ 
+Anand (Unverified) left the chat.
+
+ 
+Write an algortihm to identify the count of prime numbers between 1 to 100
+ 
+1.we will first identify if input<=1, then break
+ 
+2.then we will loop over the iteration
+ 
+if(input<=1){
+ 
+boolean prime;
+int count=0;
+if(input<=1){
+break;
+}
+for int(i=2;i<=100;i++){
+if((input%i)==0){
+prime=false}
+else{
+prime=true;
+count++
+}}
+ 
+if((input%1)==0){
+prime=false}
+else{
+prime=true;
+count++
+}}
+ 
+

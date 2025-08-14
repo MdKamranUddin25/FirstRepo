@@ -1,0 +1,24 @@
+SQL
+ 
+	Department 
+	Dept_id(PK) Dept_name(Unique)
+ 
+	Employee
+	emp_id(PK) emp_name dept_id(FK)
+ 
+	i)write a sql query to find out the dept_name and no of employees in a dept
+	where no of employees are more than  than 10 in a dept
+ 
+	ii) create Bidirectional Entity  Mapping using Hibernate/ , see if there is any One  to Many/Many to One assocaition, 
+	use the proper annotation to establish relation
+	
+	
+	select d.dept_name,count(e.emp_name) from department d join employee e 
+	where e.dept_id in (select d.dept_id from department d)
+	group by d.dept,e.emp_name having e.dept_id>10;
+	
+	SELECT d.dept_name, COUNT(e.employee_id) AS num_employees
+	FROM Departments d
+	JOIN Employees e ON d.dept_id = e.dept_id
+	GROUP BY d.dept_name
+	HAVING COUNT(e.employee_id) > 10;

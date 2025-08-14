@@ -1,0 +1,19 @@
+
+
+map- string, list of strings 
+map-> {abc,[a,b,c]},{cde,[c,d,e} ->i/p
+o/p - > a,b,c,c,d,e
+
+//Map stream=Arrays.stream(map)
+//stream.map()flatMap(
+
+map.forEach(k,v)->{
+sysout("value:"+v).
+}
+
+map.entrySet(k,v).forEach(
+String v=entry.getValue();
+}
+
+
+

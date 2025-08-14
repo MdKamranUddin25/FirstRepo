@@ -1,0 +1,160 @@
+
+service B service A
+
+
+@Hysterix (url=, fallback=serviceB method name)
+serviceA method name
+
+
+@HystrixCommand(fallbackMethod='fallback')
+public string callExtService(){
+return resttemplate.getforobject('http)
+}
+
+public string fallbackMethod(){
+return "Please wait"
+}
+
+
+serverPort=8080
+
+@Value("${serverPort}")
+private String portValue;
+
+Logger logger;
+
+
+intA
+Add
+intB
+Add
+
+
+childclassA impl intA
+
+childclassB impl intB
+
+
+list of numbers nth number
+
+mylist.stream().reduce((n1,n2)->n1<n2?n1:n2))
+
+str="kamran1234"
+
+wordfre=str.chars.mapToObj(c->(charc).collect(collectors.groupingby(function.identity,collectors.counting))
+
+wordfreq.foreach(word,fre)->sysout(word->fre).collectors.toList();
+
+charlist
+numlist
+word.freq.instanceof(Character,Integer)->charlist.add(char).orelse(numlist.add(char))
+
+Sunil Kumar N
+n_sunilkumar@hcltech.com
+
+
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
+
+public class NthHighestNumber {
+
+    public static Integer findNthHighest(List<Integer> numbers, int n) {
+        return numbers.stream()
+                .distinct() // Remove duplicates, if needed
+                .sorted(Comparator.reverseOrder()) // Sort in descending order
+                .skip(n - 1) // Skip the first n-1 elements
+                .findFirst() // Get the nth element
+                .orElse(null); // Return null if not found (e.g., n is out of bounds)
+    }
+
+    public static void main(String[] args) {
+        List<Integer> numbers = Arrays.asList(10, 5, 20, 8, 15, 20);
+        int n = 3;
+        Integer nthHighest = findNthHighest(numbers, n);
+        System.out.println("The " + n + "th highest number is: " + nthHighest); // Output: 15
+
+        n = 1;
+        nthHighest = findNthHighest(numbers, n);
+        System.out.println("The " + n + "th highest number is: " + nthHighest); // Output: 20
+
+        n = 5;
+         nthHighest = findNthHighest(numbers, n);
+        System.out.println("The " + n + "th highest number is: " + nthHighest); // Output: null
+    }
+}
+
+
+import java.util.Arrays;
+
+class Solution {
+    public static int findNthSmallest(int[] nums, int n) {
+        return Arrays.stream(nums)
+                .distinct() // Remove duplicates
+                .sorted()    // Sort in ascending order
+                .skip(n - 1) // Skip the first n-1 elements
+                .findFirst() // Get the first element (nth smallest)
+                .orElse(Integer.MIN_VALUE); // Return a default value if not found
+    }
+
+    public static void main(String[] args) {
+        int[] numbers = {5, 2, 8, 1, 9, 4};
+        int n = 3;
+        int nthSmallest = findNthSmallest(numbers, n);
+        System.out.println("The " + n + "th smallest number is: " + nthSmallest); // Output: 4
+    }
+}
+
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.regex.Pattern;
+import java.util.stream.Collectors;
+
+public class AlphanumericSeparator {
+
+    public static List<String> separateAlphanumeric(String input) {
+        return Pattern.compile("(?<=\\D)(?=\\d)|(?<=\\d)(?=\\D)")
+                .splitAsStream(input)
+                .collect(Collectors.toList());
+    }
+
+    public static void main(String[] args) {
+        String text = "ab12cd3ef45";
+        List<String> parts = separateAlphanumeric(text);
+        System.out.println(parts); // Output: [ab, 12, cd, 3, ef, 45]
+
+        String text2 = "abc123def4ghi56";
+         List<String> parts2 = separateAlphanumeric(text2);
+        System.out.println(parts2); // Output: [abc, 123, def, 4, ghi, 56]
+
+        String text3 = "12abc34def";
+        List<String> parts3 = separateAlphanumeric(text3);
+        System.out.println(parts3); // Output: [12, abc, 34, def]
+
+    }
+}
+
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+
+public class OddEvenPartition {
+
+    public static void main(String[] args) {
+        List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+
+        Map<Boolean, List<Integer>> partitionedNumbers = numbers.stream()
+                .collect(Collectors.partitioningBy(number -> number % 2 == 0));
+
+        List<Integer> evenNumbers = partitionedNumbers.get(true);
+        List<Integer> oddNumbers = partitionedNumbers.get(false);
+
+        System.out.println("Even numbers: " + evenNumbers);
+        System.out.println("Odd numbers: " + oddNumbers);
+    }
+}
+
+

@@ -1,0 +1,74 @@
+
+{12,2,4,-6,8,16,18,26}
+ 
+I want Sum of pair is 20 like 18+2, 26-6,16+4, 8+12. Print the pair of numbers
+ 
+ int[] array={12,2,4,-6,8,16,18,26};
+ 
+ Arrays.stream
+ 
+ int sum=20;
+ List<Integer> pair=new ArrayList();
+ 
+ for(int i=0;i<array.length();i++){
+	for(int j=i+1;j<array.length();j++){
+	if(sum==array[i]+array[j]){
+		pair.add(array[i]);
+		pair.add(array[j);
+	}
+	}else{
+	sysout("no pairs found");
+	}
+	
+//How to find only duplicate elements with its count from the String ArrayList in Java8?
+
+List<String> words=Arrays.asList("abc","abc","cde","def","xyz","xyz");
+
+Set<String> set=new HashSet();
+
+//dupWords=words.stream().filter(s->!set.add(s)).forEach(System.out::println);
+
+Map<String,Long> dupCount=Arrays.stream(words).collect(Collectors.groupingBy(word->word,Collectors.counting()));
+
+dupCount.forEach((dupWord,count)->{
+if(count>1){
+system.out.println(word+":"+count);
+}else{
+sysout(no duplicates found");
+});
+
+
+contructor
+setter
+@autowired
+
+
+@Autowired
+private service ApiService;
+
+private repo;
+public Person(private EmpRepo repo){
+this.repo=repo;
+)
+
+public Employee setEmployee(private EmpRepo repo){
+this.repo=repo;
+}
+
+=====================================================
+
+{12,2,4,-6,8,16,18,26}
+ 
+I want Sum of pair is 20 like 18+2, 26-6,16+4, 8+12. Print the pair of numbers
+
+ 
+How to find only duplicate elements with its count from the String ArrayList in Java8?
+
+List<String> words=Arrays.asList("apple","banana","apple","orange","banana","grape","banana");
+
+Map<String,Long> dupsCount=words.stream.collect(Collectors.groupingBy(Function.identity(),Collectors.counting()))
+							.entrySet().stream().filter(entry->entry.getValue>1)
+							.collect(Collectors.toMap(Map.Entry::getKey,Map.Entry::getValue));
+							
+ Ramadevi Jeedipally01 (Unverified)
+4:11 PM

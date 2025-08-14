@@ -1,0 +1,51 @@
+
+
+String input = "javaarticles";
+
+//first non-repeated character
+
+Character result=input.chars().mapToObj(c->(char) c).collect(Collectors.groupingBy(Function.identity(),LinkedHashMap::new,Collectors.counting()))
+					.entrySet().stream().filter(entry->entry.getValue()==1).map(entry->entry.getKey()).findFirst().get();
+					
+
+List<String> list = Arrays.asList("apple", "banana", "apple", "orange", "banana", "apple");
+
+//duplicate elements and count of each word
+
+Set<String> set=new HashSet();
+
+String[] dup=list.stream().filter(s->!set.add(s)).forEach(System.out::println);
+
+Map<String,Long> wordfre=Arrays.stream(dup).collect(Collectors.groupingBy(word->word,Collectors.counting()));
+wordfre.forEach((word,freq)->Sysout(word+":"+freq);
+
+
+//get highest salary dept wise
+//emp table, dept table
+
+select distinct e.salary from emp e join dept d on e.deptid=d.deptid
+group by d.deptname
+limit 1 offset n-1
+
+Map<String,List<Employee>> highestByDept=emplist.stream().collect(Collectors.groupingBy(Employee::getDept,
+											Collectors.maxBy(Comparator.comparingDouble(Employee::getSalary))));
+											
+highestByDept.forEach((dept,emp)->sysout(dept+emp));
+
+select d.deptname,max(e.salary) as maxsalary
+from employee e join dept d on e.deptid=d.deptid
+groupby d.deptname;
+
+========================================
+
+String input = "javaarticles";
+ 
+List<String> list = Arrays.asList("apple", "banana", "apple", "orange", "banana", "apple");
+
+ 
+https://leetcode.com/problems/two-sum/description/
+Two Sum - LeetCode
+Can you solve this real interview question? Two Sum - Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+ 
+ Vinit Bolla (Unverified)
+11:33 AM

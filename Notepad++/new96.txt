@@ -1,0 +1,14 @@
+https://jsonplaceholder.typicode.com/users
+ 
+ 
+
+@Injectable() 
+private api=https://jsonplaceholder.typicode.com/users
+ 
+ 
+List<Integer> mylist=Arrays.asList(1,2,3,2,4,3,6,7);
+Set<Integer> set= new HashSet();
+mylist.stream().filter(n->!set.add(n)).forEach(System.out::println);
+ 
+https://jsonplaceholder.typicode.com/users
+ 

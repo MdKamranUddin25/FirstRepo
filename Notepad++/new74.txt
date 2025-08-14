@@ -1,0 +1,55 @@
+The Security Specification consists mainly of APIs, while the Authorization and Authentication Specifications consist mainly of SPIs.
+
+A simple way to restrict access to authenticated users with specific roles.
+
+It is good because CDI beans cover the entire application scope.
+
+Security Logging.
+
+PreparedStatement.executeQuery
+
+Because leaked certificates containing private keys can cause identity spoofing attacks.
+
+When the declarative security model that is enforced by the container is not sufficient.
+
+Three, the Jakarta EE Platform, and the Jakarta EE Core & Web Profiles.
+
+Classifying users into groups simplifies data governance.
+
+
+__Host-mycookie=myvalue; Secure; HttpOnly; SameSite
+
+JWTs including request metadata that are signed with a private key
+
+CORS can be used as a defense against CSRF attacks.
+
+The secret is exposed to intermediate devices handling the request.
+
+Using an out-of-band mechanism to distribute keys
+
+Enforcing authorization decisions
+
+
+They can analyze more code in less time than manual review.
+
+Throughout the development lifecycle
+
+Before core design is stabilized
+
+Finding and fixing security errors is cheaper.
+
+Strategy and metrics
+
+
+Using infrastructure-as-code vault schemes
+
+De-duplicating credential ciphertexts and complicating pre-computation of lookup tables
+
+Separates decryption (read) from verification privileges
+
+User ability to remember complex passwords
+
+Attempting to brute-force the password through the application’s UI
+
+
+Have excellent knowledge on Azure Matillion ETL tool along with significant project experince to Dataware House concepts and Data transformation to Cloud. Proficient in SQL technology and also gaining exposure on Snowflake and Python in the current project.

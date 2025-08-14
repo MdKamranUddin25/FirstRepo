@@ -1,0 +1,27 @@
+int num=2345;
+//op=5432
+
+int rev=0;
+
+while(num!=0){
+
+int digit=num%10; //2345 //345
+rev=rev*10+digit; 
+num=num/10;
+}
+sysout(rev);
+
+student table, stdid, name, subject, marks
+
+1 , abc, eng, 75
+2, abc, maths 85
+3 , xyz, sci 65
+4, xyz, ssc 75
+
+//group students and rank the marks of subject
+
+select name,subject,marks,row_number() over( order by (marks)) group by (name) from student;
+
+SELECT stdid,name,subject,marks,RANK() OVER (PARTITION BY subject/name ORDER BY marks DESC) as rank FROM students;
+
+

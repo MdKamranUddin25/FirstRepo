@@ -1,0 +1,21 @@
+
+List<String> stationeryList = Arrays.asList("Pen", "Eraser", "Note Book", "Pen", "Pencil", "Stapler", "Note Book", "Pencil");
+
+//print frequency of each word
+
+Map<String,Long> wordFreq=stationeryList.stream().collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
+
+wordFreq.forEach((word,count)->System.out.println(word+"->"+count));
+
+
+List<Integer> listOfIntegers = Arrays.asList(71, 18, 42, 21, 67, 32, 95, 14, 56, 87);
+
+//odd and even numbers
+
+Map<Boolean,List<Integer>> oddEven=listOfIntegers.stream().collect(Collectors.partitioningBy(n->n%2==0));
+
+List<Integer> evens=oddEven.get(true);
+List<Integer> odds=oddEven.get(false);
+
+Satheesh Sethupathi
+1:16 PM

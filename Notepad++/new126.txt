@@ -1,0 +1,118 @@
+
+//save a customer with multi address
+
+@SpringBootApplication--> scan the base packages
+
+@RestController
+@RequestMapping("/cust")
+public class CustController{
+
+@Autowired
+private CustService service;
+
+@PostMapping
+public ResponseEntity<Customer> addCust(@RequestBody Customer cust){
+
+	return new ResponseEntity(service.add(cust),HttpStatus.CREATED);
+	
+}
+
+@Service
+public class CustService{
+
+@Autowired
+private CustRepo repo;
+
+public String addCust(Customer cust){
+repo.save(cust);
+}
+
+}
+
+@Entity
+@Table(name="customer")
+public class Customer{
+
+@Id
+@GeneratedType
+private Integer custId;
+private String fullName;
+private String emailId;
+
+@OnetoMany(targetEntity=Address.class)
+@JoinColumn(name="custId",referencedColumnName="custId",insertable=false,updatable=false)
+private List<Address> addresses;
+
+}
+
+//angular component
+
+ng new Customer
+
+ng g c CustomerSave
+ng g service CustService
+
+//cust-service.service.ts
+@Injectable
+export class CustService{
+
+private api="http://localhost:9000";
+
+constructor(private http:HttpClient){}
+
+saveCust(cust){
+return this.http.post(this.api,cust);
+}
+
+}
+
+
+//customer-save.component.html
+//customer-save.component.css
+//customer-save.component.spec.ts
+
+//customer-save.component.ts
+@Component({
+selector:
+templateUrl:view
+styleUrls:css
+})
+export class CustomerSave{
+
+nameFc:FormControl;
+emailfc:FormControl;
+addressFc:FormControl;
+custGroup:FormGroup;
+
+constructor(private serv:CustService){}
+
+ngOnInit(){
+this.nameFc=new FormControl("",[Validators.required,Validators.minlength(5),Validators.maxlength(50)]);
+this.emailfc=new FormControl("",[Validators.required,Validators.minlength(5),Validators.maxlength(100),Validators.email]);
+this.address=new FormControl("",[Validators.required,Validators.minlength(5),Validators.maxlength(100)]);
+
+this.custGroup({
+name:nameFc,email:emailfc,address:addressFc
+})
+
+this.saveData(this.custGroup.value);
+}
+
+saveData(custdata){
+this.serv.saveCust(custData).subscribe(x->{
+next: data=>this.router.navigate(['/home']);
+error: err=>console.log(err);
+})
+);
+}
+
+}
+
+//html
+<form [formGroup]="custGroup" (ngSubmit)="saveCust()">
+<input Name formControlName="name" />
+<div><p></p><div>
+<input email formControlName="email" />
+<input address formControlName="address" />
+<button [disabled]=custGroup.values!=="" >SAVE</button>
+</form>

@@ -1,0 +1,917 @@
+Capgemini | Opportunity for Java Developerr
+1.Name
+Md. Kamran Uddin
+2.Email ID
+kamran.uddin2525@gmail.com
+3.Contact No
+7003590829
+4.Total Years of Expereince
+8.2, out of which 4 years are in Angular, HTML, Javascript, Rest years of experience are below
+5.Years of Experience in Java
+3.0
+6.Years of Experience in Springboot
+2.0
+7.Years of Experience in Microservice
+0.6
+8.Years of Experience in AWS
+0.3
+9.Years of Experience in Azure
+NA
+10.Years of Experience in Docker
+only training experience
+11.Years of Experience in Kubernetes
+NA
+12.Years of Experience in Openshift
+NA
+13.Current Location
+Kolkata
+14.Prefered location
+Kolkata, Hyderabad
+15.Current Company
+Cognizant
+16.Payroll Company
+Cognizant
+17.Current CTC
+28.0
+18.Expected CTC
+36.0
+19.Notice Period
+
+0 - 15 Days
+
+15 - 30 Days
+
+45 Days
+
+60 Days
+
+90 Days
+20.Gender
+
+Male
+
+Female
+21.Have you worked with Capgemini before
+
+Yess
+
+No
+22.Available for Virtual Interview
+
+28-Feb-25
+
+03-Mar-25
+
+04-Mar-25
+
+=========================================================
+
+Java Developer-LTIMindtree
+Job Description
+
+Java Backend Developer:
+Experience: 8-12 Yrs
+Location:Chennai,Bangalore,GurgaonSkills:Java + Springboot + Microservices
+
+Java Tech Lead:
+10-15 Yrs
+Location:Bangalore.Chennai
+Skills:Java + Springboot + Microservices + No SQL + Rest API
+1.Full Name
+Md. Kamran Uddin
+2.Email ID
+kamran.uddin2525@gmail.com
+3.Mobile number
+7003590829
+4.Total years of experience
+8.2, out of which 4 years are in Angular, HTML, Javascript, Rest years of experience are below
+5.Relevant experience with Java+Springboot+Microservices 
+3.0
+6.Current Employer/Latest employer
+Cognizant
+7.Current CTC
+28.76
+8.Expected CTC
+36.0
+9.Current Location 
+Kolkata
+10.Preferred Location 
+Kolkata, Hyderabad
+11.Notice period 
+
+Immediate joiner
+
+0-15 Days
+
+15-30 Days
+
+30-60 Days
+
+60-90 Days
+12.We are hiring this position for Bangalore, Chennai, Gurgaon locations only-Please choose your preferred location 
+
+Bangalore
+
+Chennai
+
+Gurgaon
+
+None of the above
+
+=====================================================
+
+Hexaware:- Java Full Stack Engineer (Career site)
+Essential Skills·         7+ years of in-depth knowledge in Core Java, REST, JMS, Hibernate, JDBC, PL/SQL, Design Patterns, OOAD.·         3+ years of experience in spring boot·         3+ years of experience in RESTful Http services design·         2+ years in designing applications and applied design patterns·         3+ years of Strong experience in Angular/ React latest version.·         3+ years of experience in Java script, JQuery, Bootstrap, Html 5, CSS3·         3+ years of experience with SQL Server, Postgre SQL writing stored procedures, performance tuning and identifying deadlocks, transactions, and data locking/blocking scenarios·         Working knowledge of Webpack, Angular CLI and Agile Scrum framework·         Good communication and unit testing knowledge.·         Good to have knowledge in one of the cloud platforms like AWS/Azure/PCF·         Work experience in frameworks like JPA, Struts/Spring MVC, Spring Core, Spring AOP, and Spring Data·         Familiar with Continuous Integration methodologies and tools, including Jenkins·         Good to have: Exposure to Microservices, Docker, Kubernetes, cloud deploymenthas context menu
+1.Full name
+Md. Kamran Uddin
+2.Phone Number
+7003590829
+3.Email Id
+kamran.uddin2525@gmail.com
+4.Do you have Java Core as one of your skill?
+
+Yes
+
+No
+5.Do you have Angular or React?
+
+Angular
+
+React
+
+None of the above
+6.List your key skills (Please separate each skill with a comma):
+Java, Angular, HTML, Javascript, Spring boot, SQL
+7.Your current Location
+Kolkata
+8.Preferred Joining Location (Available locations are :- Chennai, Pune, Bangalore, Mumbai, Hyderabad, Gurgaon)
+Kolkata, Hyderabad
+9.Highest educational Qualification
+B.Tech
+10.Total years of experience
+8.2
+11.Relevant Years of experience in Java Fullstack
+3.0
+12.Name of the current company ?
+Cognizant
+13.Designation in the company?
+Senior Associate
+14.Current CTC?
+28.76
+15.Expected CTC?
+36.0
+16.Are you an immediate joiner, if so please mention your last working day at your organization 
+NA
+17.If you are not currently serving notice period, Mention your official notice period at the organization
+
+90
+
+60
+
+45
+
+30
+18.Do you have any counter offer? ( if yes please add your offer CTC and location offered)
+NA
+19.Have you attended or received any offers from Hexaware in prior to this? 
+(If yes please mention the Date of the interview attended)
+No
+20.Remarks:-
+Please let me know interview details once form information is reviewed
+
+==============================================
+
+Java Backend Developer
+  Essential Skills:
+ Java - Proficiency in core Java for backend develop
+ REST API Development - Designing, developing, and consuming RESTful API
+ Coding exercise - Testing candidates’ coding abilities in Java
+OR
+ Java & Spring Boot - Strong expertise in Java and Spring Boot framework is needed in both variants.
+Frontend Development (React or Angular) - Experience in front-end technologies like ReactJS or Angular
+Coding exercise - Testing candidates’ coding abilities in Java, Oracle, PL SQL, 
+1.Full name
+Md. Kamran Uddin
+2.Phone Number
+7003590829
+3.Email Id
+kamran.uddin2525@gmail.com
+4.Do you have Java Core as one of your skill?
+
+Yes
+
+No
+5.Do you have React/ Oracle/ Unix/ PLSQL experience?
+
+Yes
+
+No
+6.List your key skills (Please separate each skill with a comma):
+Java, Angular, HTML, Javascript, Spring boot, SQL
+7.Your current Location
+Kolkata
+8.Preferred Joining Location (Available locations are :- Chennai, Pune, Bangalore, Mumbai)
+Kolkata, Chennai
+9.Highest educational Qualification
+B.Tech
+10.Total years of experience
+8.2
+11.Relevant Years of experience in Java Development
+3.0
+12.Name of the current company ?
+Cognizant
+13.Designation in the company?
+Senior Associate
+14.Current CTC?
+28.76
+15.Expected CTC?
+36.0
+16.Are you an immediate joiner, if so please mention your last working day at your organization 
+NA
+17.If you are not currently serving notice period, Mention your official notice period at the organization
+
+90
+
+60
+
+45
+
+30
+18.Do you have any counter offer? ( if yes please add your offer CTC and location offered)
+NA
+19.Have you attended or received any offers from Hexaware in prior to this? 
+(If yes please mention the Date of the interview attended)
+No
+20.Remarks:-
+Please let me know interview details once form information is reviewed
+
+==================================================
+
+Java Developer-LTIMindtree
+Job Description
+
+Java Backend Developer:
+Experience: 8-12 Yrs
+Location: Hyderabad
+1.Full Name
+Md. Kamran Uddin
+2.Email ID
+kamran.uddin25786@gmail.com
+3.Mobile number
+7003590829
+4.Total years of experience
+8.2
+5.Relevant experience with Java+Springboot+Microservices 
+3.4 in Java+Springboot+Microservices, 4.0 years in Angular, HTML Javascript
+6.How many years of experience do you have in GCP?
+Learning Experience, Basic training
+7.Current Employer/Latest employer
+Cognizant
+8.Current CTC
+28.76
+9.Expected CTC
+36.0
+10.Current Location 
+Kolkata
+11.Preferred Location 
+Kolkata, Hyderabad
+12.Notice period 
+
+Immediate joiner
+
+0-15 Days
+
+15-30 Days
+
+30-60 Days
+
+60-90 Days
+13.We are hiring this position for Hyderabad location ..would you like to join us for Hyderabad 
+
+Yes
+
+No
+
+============================================
+
+Java Fullstack Developer-Hyderabad
+Job Title: Senior Java Full Stack Developer (Tech Lead)
+Location: Hyderabad
+Job Type: Fulltime
+Experience Level: 8+ years
+Overview: We are seeking an experienced and highly skilled Senior Java Full Stack Developer to join our growing team. The ideal candidate will have over 8 years of hands-on experience in developing robust, scalable, and maintainable applications using Java, React JS, and SQL. This role will require a deep understanding of both front-end and back-end technologies, enabling you to design, develop, and deploy full-stack solutions to meet business needs.
+1.Full Name
+Md. Kamran Uddin
+2.Mobile Number
+7003590829
+3.Email ID
+kamran.uddin25786@gmail.com
+4.Total years of experience  
+8.2
+5.Relevant years of experience with Java technologies
+3.0 in Java, Spring Boot
+6.Relevant years of experience with ReactJs?
+0.6 in React, 4.0 in Angular, Javascript, HTML
+7.Current/Latest Employer
+Cognizant
+8.Current CTC
+28.76
+9.Expected CTC
+36.0
+10.Current Location
+Kolkata
+11.Preferred Location 
+Kolkata, Hyderabad
+12.Notice Period 
+
+Immediate 
+
+0-15 Days
+
+15-30 Days
+
+30-45 Days
+
+45-60 Days
+
+60-90 Days
+13.We are hiring this position for HYDERABAD location ..Would you like join us for HYDERABAD?
+
+Yes
+
+No
+14.Have you sent your resume with baikadi.rohithkumar@ltimindtree.com
+
+Yes
+
+No
+
+Will be sharing in a while
+
+
+==========================================================
+
+Java Fullstack Developer-Hyderabad
+Job Title: Senior Java Full Stack Developer (Angular/React)
+Location: Hyderabad
+Job Type: Fulltime
+Experience Level: 5+ years
+Overview: We are seeking an experienced and highly skilled Senior Java Full Stack Developer to join our team. skills: Java,Springboot,Hibernate Angular OR React JS, and SQL. 
+1.Full Name
+Md. Kamran Uddin
+2.Mobile Number
+7003590829
+3.Email ID
+kamran.uddin25786@gmail.com
+4.Total years of experience  
+8.3
+5.Relevant years of experience with Java technologies
+4.0
+6.Relevant years of experience with ReactJs?
+6 months in React, 5.0 years in Angular
+7.Current/Latest Employer
+Cognizant
+8.Current CTC
+28.76
+9.Expected CTC
+35.0
+10.Current Location
+Kolkata
+11.Preferred Location 
+Kolkata, Hyderabad, Pune
+12.We are hiring this position for Pune & Hyderabad Only-Which location you are preferring to 
+
+Hyderabad
+
+Pune
+
+Other
+13.Notice Period 
+
+Immediate 
+
+0-15 Days
+
+15-30 Days
+
+30-45 Days
+
+45-60 Days
+
+60-90 Days
+14.Have you sent your resume with baikadi.rohithkumar@ltimindtree.com
+
+Yes
+
+No
+
+Will be sharing in a while
+
+================================================================
+
+Thank you for your interestwith Tata Elxsi!Kindly provide basicdetails Java full stck-8 feb
+1.Your Name
+Md. Kamran Uddin
+2.Contact Number
+7003590829
+3.Email ID
+kamran.uddin25786@gmail.com
+4.Qualification
+B.Tech
+5.Current Company Name
+Cognizant
+6.Total Experience
+8.4
+7.Relevant Experience in Java Angular Developer
+5.0
+8.Current CTC
+27.7
+9.Expected CTC
+33.0
+10.Notice Period
+90 days (negotiable)
+11.Preferred Location Bangalore
+
+Yes
+
+No
+12.Current Location
+Kolkata
+13.Holding any offer ?
+No
+14.Value of offer ?
+NA
+15.Pls provide Date and time slot for interview
+21st April, 4:00 PM
+
+
+================================================================
+
+Sr Angular (Modern) Developer FS
+1.Candidate Name
+Md. Kamran Uddin
+2.Total years of IT Experience (example : 5 years)
+8.4 years
+3.Contact Number
+7003590829
+4.Email ID
+kamran.uddin25786@gmail.com
+5.Current CTC
+27.7
+6.Expected CTC
+33.0
+7.Notice Period
+3 months (negotiable)
+8.If serving NP, when is LWD:
+NA
+9.Current Location
+Kolkata
+10.Preferred location
+Kolkata, Hyderabad
+11.How many years of experience into Modern Angular ? (example : 5 years)
+5.2 years
+12.How many years of experience into NO SQL Database ? (example : Mongodb : 1 year)
+Training experience in Mongodb
+13.Do you have experience with IDE (example : intelli J : 1 year)
+4.0 years
+14.Do you have experience with Azure AD (JWT Token) (example: JWT : 1 year)
+No
+15.Do you have experience with GIT (example : 1 year)
+6.0 years
+16.Can you work from office - Hybrid mode - 3 days per week
+
+Yes
+
+No
+
+==============================================================================
+
+Java Developer-LTIMindtree
+1.Full name
+Md. Kamran Uddin
+2.Email ID
+kamran.uddin25786@gmail.com
+3.Mobile number
+7003590829
+4.Current employer
+Cognizant
+5.Are you a Java backend Developer OR Fullstack Developer
+
+Java backend Developer
+
+Java Fullstack Developer
+6.Career experience (Eg:2 years or 2.5 years)
+8.4 years
+7.Relevant experience with java (Eg:2 years or 2.5 years)
+4.5 years
+8.Current CTC
+28.5
+9.Expected CTC
+33.5
+10.Current location 
+Kolkata
+11.Preferred location 
+Hyderabad
+12.We are hiring this position for Hyderabad & Noida location-Plese confirm your preferred location 
+
+Hyderabad
+
+Noida
+
+Other
+13.Official notice period 
+
+Immediate
+
+15-30 Days
+
+30-45 Days
+
+60-90 Days
+
+90 Days
+14.we are looking for resource who can join within 30 days -will you be able join us?
+
+Yes
+
+No
+
+Maybe
+
+==========================================================
+
+Capgemini | Opportunity for Java Developersss.
+1.Name
+Md Kamran Uddin
+2.Email ID
+kamran.uddin25786@gmail.com
+3.Contact NO
+7003590829
+4.Current Company
+Cognizant
+5.Payroll Company
+Cognizant
+6.Total Years of Experience
+8.5
+7. Years of Experience in Java
+5.0
+8. Years of Experience in Springboot
+4.5
+9. Years of Experience in Microservice
+0.6
+10.Years of Experience Rest API
+4.5
+11.Current Location
+Hyderabad, Serving NP (86 days left)
+12.Preferred location
+Kolkata, Hyderabad, Pune, Chennai
+13.Current CTC
+27.7
+14.Expected CTC
+33.0
+15.Notice Period
+
+0 - 15 Days
+
+15 - 30 Days
+
+45 Days
+
+60 Days
+
+90 Days
+16.Have you worked with Capgemini before?
+
+Yess
+
+No
+17.Available for Virtual Interview 
+
+22-May-25
+
+23-May-25
+
+24-May-25
+18.Gender
+
+Male
+
+Female
+
+================================================
+
+Frontend Developer-Chennai
+Frontend Developer-Angular
+Experience:5+ Years
+Location: Chennai
+Mode of work:5 Days work from office
+Mandatory Skills: HTML 5, CSS 3, Java Script, JQUERY, Angular 13+
+
+Responsibilities ·      
+Develop and maintain responsive web applications using HTML5, CSS3, and JavaScript.
+ Implement dynamic features and interactivity using jQuery.
+Design and create advanced front-end solutions using Angular 13+.
+Collaborate with backend developers and UI/UX designers to ensure seamless integration and user experience.
+Optimize applications for maximum speed and scalability.
+ Ensure cross-browser compatibility and address technical challengesFollow best practices in coding, testing, and documentation. Requirements
+ Proficiency in HTML5, CSS3, JavaScript, jQuery, and Angular 13+.
+Minimum 5 years of experience in front-end development.
+Strong understanding of web development principles and modern frameworks.
+Excellent problem-solving skills and attention to detail. Ability to work both independently and collaboratively in a fast-paced environment.
+1.Full name
+Md. Kamran Uddin
+2.Email ID
+kamran.uddin2525@gmail.com
+3.Mobile number
+7003590829
+4.Total years of experience 
+
+1+ Year
+
+3+ Years
+
+4+ Years
+
+5+ Years
+
+8+ Years
+5.Relevant years of experience with Frontend Development ?
+
+1+Years
+
+3+ Years
+
+4+ Years
+
+5+ Years
+
+6+ Years
+
+8+ Years
+6.Relevant years of experience in Angular
+5.5
+7.Do you have any experience with Angular 13+ (version) 
+
+Yes
+
+No
+8.Current CTC 
+27.7
+9.Expected CTC
+33.0
+10.Current Employer/Previous employer
+Cognizant
+11.Current location
+Kolkata
+12.Preferred location 
+Kolkata, Hyderabad, Chennai
+13.We are hiring this position for Chennai location only-Would be able relocate/Join us for Chennai location
+
+Yes
+
+No
+
+Maybe
+14.Official Notice period 
+
+Immediate
+
+15-30 Days
+
+30-45 Days
+
+60 Days
+
+90 Days 
+
+=========================================================
+
+HCL Tech: Opportunities for Multiple Role
+Complete the below form to understand your experience.
+
+Please Fill all Relevant Skills
+Once shortlisted, you will get a call from the concerned Recruiter. 
+
+1.Skills (Relevant Skills)
+Java, Angular, Spring Boot, HTML, Javascript, SQL, AWS
+2.Name (as per 10th Marksheet/Passport):
+Md. Kamran Uddin
+3.Contact No.
+7003590829
+4.Email ID
+kamran.uddin25786@gmail.com
+5.Current / Previous Company:
+Cognizant
+6.Total Experience (in Years):
+8.5
+7.Relevant Experience (in Years):
+6.0
+8.Current CTC:
+27.7
+9.Expected CTC:
+34.0
+10.Notice Period:
+
+Immediate Joiner
+
+30 Days
+
+45 Days
+
+60 Days
+
+90 Days
+
+83 days
+11.Preferred Location:
+
+Bengaluru/Bangalore
+
+Chennai
+
+Hyderabad
+
+Pune
+
+Noida
+12.Comments (If Any):
+Please review and let me know on the interview opportunities
+
+====================================================
+
+Capgemini | Opportunity for Java Developersss for Chennai and Pune.
+1.Name
+Md. Kamran Uddin
+2.Email ID
+kamran.uddin25786@gmail.com
+3.Contact NO
+7003590829
+4.Current Company
+Cognizant
+5.Payroll Company
+Cognizant
+6.Total Years of Experience
+8.5
+7. Years of Experience in Java
+5.0
+8. Years of Experience in Springboot
+4.5
+9. Years of Experience in Microservice
+0.6
+10.Years of Experience Rest API
+4.5
+11.Current Location
+Hyderabad
+12.Preferred location
+Chennai
+13.Current CTC
+27.7
+14.Expected CTC
+35.0
+15.Notice Period
+
+0 - 15 Days
+
+15 - 30 Days
+
+45 Days
+
+60 Days
+
+90 Days
+16.Have you worked with Capgemini before?
+
+Yess
+
+No
+17.Available for Virtual Interview 
+
+31-May-25
+
+02-June-25
+18.Gender
+
+Male
+
+Female
+
+=================================================
+
+Capgemini | Opportunity for Java Developersss for Chennai and Pune.
+1.Name
+Md. Kamran Uddin
+2.Email ID
+kamran.uddin25786@gmail.com
+3.Contact NO
+7003590829
+4.Current Company
+Cognizant
+5.Payroll Company
+Cognizant
+6.Total Years of Experience
+8.5, Serving NP-LWD: 14/08/2025
+7. Years of Experience in Java
+5.0
+8. Years of Experience in Springboot
+4.5
+9. Years of Experience in Microservice
+1.0
+10.Years of Experience Rest API
+4.5
+11.Current Location
+Kolkata
+12.Preferred location
+Kolkata, Hyderabad, Pune, Chennai
+13.Current CTC
+27.7
+14.Expected CTC
+34.0
+15.Notice Period
+
+0 - 15 Days
+
+15 - 30 Days
+
+45 Days
+
+60 Days
+
+90 Days
+16.Have you worked with Capgemini before?
+
+Yess
+
+No
+17.Available for Virtual Interview 
+
+14-June-25
+
+16-June-25
+18.Gender
+
+Male
+
+Female
+
+=========================================
+
+Capgemini | Opportunity for Java Developersss for Chennai and Pune.
+1.Name
+Md. Kamran Uddin
+2.Email ID
+kamran.uddin25786@gmail.com
+3.Contact NO
+7003590829
+4.Current Company
+Cognizant
+5.Payroll Company
+Cognizant
+6.Total Years of Experience
+8.6
+7. Years of Experience in Java
+5.6
+8. Years of Experience in Springboot
+5.0
+9. Years of Experience in Microservice
+1.0
+10.Years of Experience Rest API
+5.0
+11.Current Location
+Kolkata
+12.Preferred location
+Kolkata, Hyderabad, Pune, Chennai
+13.Current CTC
+28.5 (including variable), 27.7 (fixed)
+14.Expected CTC
+35.0
+15.Notice Period
+
+0 - 15 Days
+
+15 - 30 Days
+
+45 Days
+
+60 Days
+
+90 Days
+16.Have you worked with Capgemini before?
+
+Yess
+
+No
+17.Available for Virtual Interview 
+
+21-June-25
+
+23-June-25
+
+24-June-25
+18.Gender
+
+Male
+
+Female
+
+===============================================
+

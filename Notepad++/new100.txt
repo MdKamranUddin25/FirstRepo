@@ -1,0 +1,61 @@
+String s1 ="listen";
+String s2 = "silent";
+
+//anagram or not
+
+if(s1.length!=s2.length){
+return false;
+}
+else{
+Map<Character,Long> s1Freq=s1.chars().mapToObj(c->(char) c).collect(Collectors.groupingBy(Function.identity(),Collectors.counting());
+Map<Character,Long> s2Freq=s1.chars().mapToObj(c->(char) c).collect(Collectors.groupingBy(Function.identity(),Collectors.counting());
+
+s1Freq.equals(s2Freq)
+}
+
+//use one map and then compare to the second string
+
+
+Input: [1,1,1,0,0,0,1,1,0,0] //input
+ 
+Output : [1,1,1,1,1,0,0,0,0,0] //output
+
+var zero=0
+var one=1
+
+var result=[]
+var zeroA=[]
+var oneA=[]
+
+for(let i=0;i<input.length;i++){
+if(input[i]==zero){
+zeroA.push(input[i]);
+}else{
+oneA.push(input[i])
+}
+}
+
+result=oneA.concat(zeroA);
+
+var count;
+function sort1and0(inp[]){
+for(let i=0;i<inp.length;i++){
+if(inp[i]==1){
+count++
+}
+
+for(let i=0;i<count;i++){
+inp[i]=1;
+}
+
+for(let i=count;i<inp.length;i++){
+inp[i]=0;
+}
+
+for(let i=0;i<count;i++){
+inp[i]=count>0?
+}
+
+}
+
+sort1and0([1,1,1,0,0,0,1,1,0,0]);

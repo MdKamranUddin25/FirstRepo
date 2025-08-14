@@ -1,0 +1,42 @@
+Given a hotel which has 10 floors [0-9] and each floor has 26 rooms [A-Z]. You are given a sequence of rooms, where + suggests room is booked, - room is freed. You have to find which room is booked maximum number of times.
+
+
+You may assume that the list describes a correct sequence of bookings in chronological order; that is, only free rooms can be booked and only booked rooms can be freed. All rooms are initially free. Note that this does not mean that all rooms have to be free at the end. In case 2 rooms have been booked the same number of times, return the lexicographically smaller room.
+
+
+You may assume:
+
+
+N (length of input) is an integer within the range [1, 600]
+each element of array A is a string consisting of three characters: "+" or "-"; a digit "0"-"9"; and uppercase English letter "A" - "Z"
+the sequence is correct. That is every booked room was previously free and every freed room was previously booked.
+
+
+0-9 -> number of floors
+A-Z -> 26 rooms in each floor
++ -> booked
+- -> not booked
+
+input("+/-","0-9","A-Z") sequence
+
+Map<String,Long> counterRoom=new HashMap();
+int count;
+
+public checkMaxBookedRoom(char[] input){
+if(char[0]=='+'){
+char[1]=floor
+char[2]=alphabet
+inp=char[1]+char[2];
+counterRoom=inp.chars().mapToObj(c->(char) c).
+collect(Collectors.
+groupingBy(Function.identity(),LinkedHashMap::new,Collectors.counting()).
+entrySet().stream().filter(entry->entry.getValue>1).
+findFirst().get();
+}else{
+sysout("skip");
+}
+
+//kth smallest element in a 2 dimensional array using java8 streams
+
+int kthsmallest=Arrays.stream(matrix).flatMapToInt(Arrays::stream).distinct()
+				.sorted().skip(n-1).findFirst().orElseThrow(()->new IllegalArgumentException("k is out of bounds"));

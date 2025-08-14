@@ -1,0 +1,24 @@
+
+https://jsonplaceholder.typicode.com/users
+
+display in a table, sort on name
+
+
+capacity 10 lambdas aws side is there
+
+UI-> 20reuests are triggering at once
+
+lambdas are not available to serve few requests
+
+
+this.users=data.sort((a,b)=>a.name.localeCompare(b.name));
+this.users=data.sort((a,b)=>a.id-b.id);
+this.users=data.sort((a,b)=>a.email.localeCompare(b.email));
+
+names.sort((a,b)=>{
+if(a<b) return -1;
+if(a>b) return 1;
+return 0;
+});
+
+this.users=data.sort((a,b)=>a.name.toLowerCase().localeCompare(b.name.toLowerCase()));

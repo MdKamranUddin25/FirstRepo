@@ -1,0 +1,63 @@
+admin module
+//lazy loading implementation
+
+@component{(
+selector:
+templateurl:
+styleurls:
+encapsulation:viewencapsulation.emulated
+})
+//encapsulation check
+
+directive
+selector: red
+@hostlistener(event) el;
+changecolor(){
+el.nativeelemnt.style.backgroundcolor='red'
+}
+//custom directive write
+
+html
+<p  red>ABC</p>
+
+
+Comp A, comp B
+
+string: 'abc'
+
+shared service
+
+passservice
+behaviorsubject sub<string>=new BS('abc') //inoitial value
+
+comp a
+constructor(private ps:PS){};
+abc:string;
+
+ngoninit(){
+abc=this.ps.sub;
+}
+
+comp b
+
+//behaviour subject implementation
+
+
+shared service
+constructor(private http:HttpClient)
+
+public getData(){
+return this.http.get('http://getdata.com');
+}
+
+
+component
+constructor(private sharedService:SS)
+
+ngOninit(){
+this.sharedService.getData().subscribe(()=>{});
+}
+
+
+//http and subscribe call
+

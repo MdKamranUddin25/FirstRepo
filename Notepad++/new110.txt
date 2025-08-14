@@ -1,0 +1,63 @@
+
+Input: arr[] = ["act", "tub", "god", "cat", "dog", "tac", "but"]
+Output: [["act", "cat", "tac"], ["god", "dog"], ["but", "tub"]]
+
+List<String> words=Arrays.asList("act", "tub", "god", "cat", "dog", "tac", "but");
+
+//w1.chars().maptoObj(c->(char) c).collect(Collectors.groupingBy(Function.identity(),Collectors.counting));
+
+
+Map<String,List<String>> anagrams=words.stream().collect(Collectors.groupingBy(word=>{
+char[] chars=word.toCharArray();
+Arrays.sort(chars);
+return new String(chars);
+}));
+
+List<List<String>> pairs=anagrams.values.stream().filter(group->group.size()>1).collect(Collectors.toList());
+
+Table: sales
+		sale_id, product_id, quantity_sold, sale_date, total_price
+Table: product
+		product_id, product_name, category, unit_price
+		
+//productname, amount total (revenue each product generated for 2024)
+
+
+select p.product_name,sale_date,sum(s.total_price) as totalamount from 
+product p join sales s on p.product_id=s.product_id
+group by s.sale_date
+order by p.product_name
+having s.sale_date like '%2024'; //date datetime
+
+
+================================
+
+Input: arr[] = ["act", "tub", "god", "cat", "dog", "tac", "but"]
+
+Output: [["act", "cat", "tac"], ["god", "dog"], ["but", "tub"]]
+ 
+Table: sales
+
+		sale_id, product_id, quantity_sold, sale_date, total_price
+
+Table: product
+
+		product_id, product_name, category, unit_price
+ 
+Guna Pandian (Unverified)
+2:32 PM
+
+List<String> words=Arrays.asList("listen","silent","enlist","google","gooegle","rat","tar","art","evil","vile");
+
+Map<String, List<String>> grouped=words.stream().collect(Collectors.groupingBy(word->
+								  word.chars().sorted().mapToObj(c->String.valueOf((char) c))
+								  .collect(Collectors.joining())));
+								  
+List<List<String>> anagrams=grouped.values.stream().filter(group->group.size()>1).collect(Collectors.toList());
+anagrams.forEach(System.out::println);
+
+select p.product_name,sum(s.total_price) as total_revenue
+from sales s join product p on s.product_id=p.product_id
+where year(s.sale_date)=2024
+group by p.product_name
+order by total_revenue desc;

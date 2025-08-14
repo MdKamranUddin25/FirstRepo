@@ -1,0 +1,53 @@
+stats
+rs
+py
+cyber
+
+gis
+gnss
+
+
+if else
+for while
+breal continue pass
+user defined functions
+start and end assignmnts
+collab
+data structures
+
+
+angular 15 compiler
+directives in angular
+property and event binding
+track by in angular
+input and output directives
+behavior subjects
+change detection strategy
+hot and cold observables
+can activate, can deactivate
+ngondestroy angular
+specificity in CSS - inline, id, class, element
+custom validator in angular
+subject vs behaviorsubject
+dependencies vs devdependencies in package json
+
+the fednow ops application supports the inbound messages which are payment and non payment; along witht the rfrf messages, ISO 2022 payment messages, account validation messages, status request messages, reporting messages, non payment messages messages are accouint, status, reporting, 
+payment incoming/receving messages which are customer credit transfer and return of funds
+pacs-payment clearing and settlement
+admi-system messages
+to support this messages, we have done the development and deployment
+fednow service-provided by federal reserve bank of usa which we implemented
+truist tfg doesnt have this instant payments service
+domestic payments only usd currency
+truist account holders 
+full accept, partial accept, reject, blocked
+beneficiary accepts/rejects then further process will happen
+fednow service has one master account in frb
+fraud check/non fraud check-truist bank to other bank
+
+
+retail and commercial
+digital portfolio
+one view
+
+budget issue, talk to swadesh, tell about your visa status, complete document, bug fix, openshift asked, services are up, ait not running locally

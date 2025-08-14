@@ -1,0 +1,79 @@
+CASE STUDY U2A START AND COMPLETE
+
+Environment Migrate
+
+Application Upgrade
+
+Cloud Components
+
+Monitoring and Logging
+
+Diagrams, TCO
+
+Document the selections, pros and cons, in HLD
+
+Documents the explanations in LLD
+
+draw.io
+
+
+quality attributes, cost effective, time to market
+
+frontend, backend both -- newer selections reasons
+
+TCO budget present and design one
+
+deployment architecture, hardware, netwoekr, software, -- total all
+
+futuristic long time solutions and value adds
+
+Existing Application Functionalities - not mentioned
+
+app.diagrams.net
+
+Student Login (authenticate and authorize) -> Dashboard -> Student Library -> Department Wise (A,B,C)/ Subject Wise/ Author Wise -> 
+Check In -> Check Out -> 
+
+Backend -> Login Service (Student & Admin) -> Library Service -> Search Books/ Add Books/ Update Books/ Delete Books/ Check In/ Check Out
+
+Microservice Pattern (explain all pattern)/ Monolith Service - propose both, pros and cons of both
+
+which cloud provider is more secure - aws / azure
+
+PPT- 2 PARTS
+AS IS DESIGN, 
+TO BE DESIGN - BLOCK DIAGRAM, FLOW, UI SCREENSHOTS, ALL IMPLEMENTATIONS
+
+
+ASK NIRUPAM FOR THIS
+
+PREPARE ALL THE DOCUMENTS
+
+WHY USING THE TECHNOLOGIES/AWS COMPONENTS
+CHOOSE 3 ALTERNATIVES
+DEPLOYMENT STRATEGY & DEPLOYMENT VIEW
+
+SOFTWARES REQUIRED FOR LINUX SERVER
+
+
+FUNACTIONAL/NON FUNCTIONS REQUIREMENTS
+SECURITY CONSIDERATIONS
+USE CASE DIAGRAMS
+NETWORK/DEPLOYMENT DIAGRAMS
+TOOLS & TECHNOLOGIES
+SEQUENCE/CLASS Diagrams/USE CASE DIAGRAMS
+HLD ARCHITECTURE
+ARCHITECTURE FEATURES
+BENEFITS/ADVANTAGES
+TCO IF DONE to hightlight
+
+
+CONS-PREPARE/WEAKNESSES/PREVENTION, CROSS CUTTING CONCERNS
+
+
+CHECK FOR THE BEST LINUX INSTANCE WHILE EVALUATION, BETTER LINUX INSTANCE for APP UPGRADE, TCO FOR LONG YEARS, GIVE MORE PICTURE THAN TEXT IN PPT
+
+very good presentation, you covered most of the things, good tco, unique case study full technical
+
+lal, sanjay, kumaresan, sachin
+

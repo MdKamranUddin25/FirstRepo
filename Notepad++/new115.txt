@@ -1,0 +1,157 @@
+
+header, footer, sidenav (a,b,c)
+
+a comp, b comp, c comp
+
+app.component.html
+
+<h1>Welcome</h1>
+
+<div>
+<header-comp></header-comp>
+<nav-comp></nav-comp>
+<footer-comp></footer-comp>
+</div>
+
+<router-outlet></router-outlet>
+
+
+interface canActivate
+
+canActiavte(route:Route):any{
+this.userRoles;
+if(this.userRole=='admin'){
+return true;
+}else{
+this.router.navigate(['default']);
+}
+
+
+50 services, tokens
+
+implement HTTP interceptior
+intercept(request:any,repos):event
+
+header.options({
+jwt:unique JWT tokens,
+})
+
+
+common services
+
+msg=new BehaviorSubject("HELLO WORLD")
+
+currentmsg=this.msg.asObservable();
+
+updatemsg(newmsg){
+this.msg.next(newmsg)
+}
+
+display msg
+msgservice -> cons
+
+this.msgservice.currentmsg.subscribe(data=>this.msg=data);
+
+{{this.msg}}
+
+update msg
+
+handler
+this.msgservice.updatemsg(this.newmsg)
+
+[(ngModel)]=newMsg
+<button>
+
+
+forms name, 
+
+reactive forms
+
+//form control, form group
+
+name=new FormControl("",[Validators.required])
+email=new FormControl("",[Validators.required, Validators.email])
+namehtml; emailhtml;
+
+regForm=new FormGroup(this.namehtml=name,this.emaihtml=email);
+
+<form formGroup="regForm" ngSubmit="post()">
+<input formControlName=namehtml />Name:
+
+<button (click)="sendata()" [disabled]>send data</button>
+</form>
+
+sendata(this.formgroup.values){
+this.postservice.post(this.formgroup.values).subscibe({
+next:custom msg; this.spinnerSHow(true);
+error:alert
+}
+
+postservice
+http:httpclient
+private api
+
+spinnner=new BS(false)
+
+post(data){
+return this.http.post(this.api, this.data);
+}
+
+spinnerShow(flag){
+if(flag=true){
+this.spinner.next(true);
+}else{
+this.spin
+
+
+one screen, 4 backend calls
+
+convert object properties to array of rows..
+obj
+{fname: 'Kamran', lname:'Uddin'}
+ 
+[{key: fname, value: 'Kamran'},{key: lname, value:'Uddin'},...]
+
+out
+
+for(abc in obj)
+
+
+out(...obj)
+
+==================
+
+virat - 4
+dhoni - 4
+rohit - 3
+sehwag - 1
+kuldeep - 2
+sachin - 5
+ 
+List<Player> playerList
+ 
+Q: Sort the list of players based on rank and if the rank is same then sort based on name.
+ 
+playerList.stream().sorted(Comparator.comparingInt(Player::getRank)).
+compare((p1,p2)->p1.getRank==p2.getRank()).sorted(Player::getName)
+.collect(Collectors.toList()) 
+ 
+expected output:
+ 
+sehwag - 1
+kuldeep - 2
+rohit - 3
+dhoni - 4
+virat - 4
+sachin - 5
+
+
+
+college student
+
+cid, cname
+sid, sname
+
+one student->one college
+
+

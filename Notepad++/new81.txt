@@ -1,0 +1,37 @@
+
+string str = "my name is kamran";
+//replace a with u
+
+newStr="";
+char ch[]=str.chars();
+
+for(i=0;i<str.length<i++){
+if(str[i]=='a'){
+str[i]='u';
+newStr+=str[i];
+else{
+str[i]=str[i];
+}
+}
+
+public class ReplaceChar {
+    public static void main(String[] args) {
+        String str = "hello";
+        char oldChar = 'l';
+        char newChar = 'x';
+
+        char[] charArray = str.toCharArray();
+        for (int i = 0; i < charArray.length; i++) {
+            if (charArray[i] == oldChar) {
+                charArray[i] = newChar;
+            }
+        }
+        String newString = new String(charArray);
+        System.out.println("Original String: " + str);
+        System.out.println("Modified String: " + newString);
+    }
+}
+
+String str = "banana";
+String newStr = str.replace('a', 'u');
+System.out.println(newStr); // Output: bununu

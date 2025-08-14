@@ -1,0 +1,499 @@
+Please check the question test cases for the Umbrella problem, I wrote the solution and 9/12 test cases passed. Test Cases 4 & 10 were hidden so was not able to debug but Test Case 5 had the input as 10 people and sizes as 2,3,6,5 so the number of umbrellas required would be 3 to fit exact 10 people which my solution gave the output but the expected output was 2 which is clearly wrong. Please check on this Test Case 5 as well as the hidden test cases.
+
+
+
+hyderabad
+8, 28, 37
+java spring boot hibernate
+monday 4pm
+tuesday 430pm - done - not selected in final
+
+28,37,90-hyderabad-GE
+
+kolkata
+28
+37
+3 months
+wednesday 5pm - done - not selected
+angular, spring boot
+
+
+kolkata
+b.tech, cts
+8.1, 28, 37
+3 months
+friday 4pm - invite came - today
+
+
+hyderabad
+b.tech, 8.1, 28, 37
+thursday 430pm - invite not came, angular spring boot
+
+
+22feb - gitanjali park
+
+
+senior software engineer 2- core java developer, java, scratch and enhancement, hyderabad, hybrid - 3times a week, general shift
+90days, hybrid, 40LPA, 3 years java, 4 years angular, 35max due to less exp, 40 is given to equal to 8exp
+why less exp in mphasis, current work mode
+
+
+5L, my name, fath name, moth name, cog sal designation, address
+free hsbc credit card
+
+
+cts hike when to get-august, oracle 35L break up, tcs check and think
+
+
+hcl, 28.0 37.0, 
+
+
+The Umbrellas Coding question 5, had test cases 1,5 which gave wrong results as compared to the problem statement. The program which I wrote gave the right answer, but it was showing as wrong. Please rectify the test case of this coding question.
+
+
+0, 6000, last options
+
+
+angular java springboot
+
+kolkata, hyderabad
+
+90days
+
+28, 36
+
+
+13th march, 430pm
+hyderabad, b.tech, 
+28, 36.. 3months, java angular - gulafsha
+
+
+14th march, hyderabad, cts, 28, 36, 330pm , angular - jagriti
+14th march, 28, 35, 3pm, core java - priscy
+
+
+15th march 4pm, java angular - bhavna,shivani
+
+
+java spring boot angular, wed, thur, prepare
+
+java, angular - 8.2 - kol,hyd - 21st march - 4pm , 32
+
+28, 36, java angular spring boot, 33, hcl walkin
+
+java angular-4 years 8.2, 3 months, 28, 36, kolkata, hyderabad - synechron
+
+angular b.tech makaut 
+
+call kaushik 1st april accolite
+
+8.2, java angular aws, hyd, btech, 28, 35, 32, 3months, wipro, 
+
+
+20 march, 330pm 
+
+
+java springboot 330pm monday
+
+
+b.tech, cts, 8.2, 28, 36, 3 months, 3 companies, Angular walkin tcs
+
+
+hexaware 8.2 4 coding kol hyd 3months java sb angular  28 36 cts
+
+capg java springboot micro 
+
+anish bnp paribas 
+
+
+ltimindtree 8.3 kolkata java springboot angular pune chennai
+
+
+java springboot kolkata b.tech 8.3 cts 28 36 3months 
+
+
+8.3 3months 345pm java spring boot microservices
+
+
+shruti hcl kolkata hyderabad cts 3months (2.5 months) 27.7 35.0
+
+
+kolkata, blore, angular java 8.3, 27.7 35.0 3rd april b.tech cts 3mths 3 april 4pm - aman tcs
+
+java fullstack 2 april 530pm - niharika tcs - not good
+
+8.3 3months 3rd april 1130am kolkata cts 27.7 35.0 - pravin tcs
+
+
+8.3 3months  java angular lti - apeksha, only notice period serving
+
+8.3 4.5 java fullstack cts kolkata kol/hyd 90days subbu lti in pipeline
+
+
+java springboot b.tech chennai 27.7 35.0 90 days 10 to 5 interview invite will come 16 april pravin
+
+java springboot angular 16 april 5pm geethanjali 4pm
+
+8.3 27.7 34.0 90 days negotiable hackerrank rahul bnp paribas
+
+8.4 makaut cts 29 ectc monisha tcs
+
+
+8.4 java angular springboot 27.7 34.0 cts 90 days kol hyd capg vedant 
+
+8.4 java angular springboot 27.7 34.0 90 days hcl nisha
+
+cts java api 8.4 27 33 java btech kolkata kolkata,hyderabad  john tcs, 3pm
+
+430pm java angular spring boot kolkata cts 8.4 27.7 34.0(n) 430pm 
+
+8.4 4years in java cts kolkata hyderabad 90days 27.7 aws multithreading mcq 42 1hour 
+
+
+8.4 cts 90 days kolkata 28.5 35 self register java angular aws 
+
+8.4 hyd 33 90 coforge shirin jobworld
+
+8.4 4.5 swati 27.7 32 kolkata 90 days bnp thulasi
+
+
+8.4 cts 90days kolkata 4 wtmc 28.5 34.0 
+
+8.4 btech 2016 cts 27.5 33 90 days kol,hyd may3
+
+8.4 27 java fullstack 34.0 90 days kol hyd 
+
+8.4 java angular btech 27.7 33.0 90days kol pune 10may 4pm 
+
+8.4 blore 90 days 27.7 35.0 synechron sakshi
+
+ltimindtree subbulakshmi
+
+8th may b.tech cts 8.4 27.5 34.0 90days 4pm
+
+27.5 32.5 itc aisah
+
+8.4 4java 4angular 27.5 lydia hitachi
+
+bhargavi ss&c 
+
+8.4 java sql 27.7 33.0, 30budget kol 90 days shirija 15may 4pm 
+
+call subbulakshmi after 5pm
+
+cognizant kolkata,hyd 90 days, 33, 27.7 28.5 36.0, need by june, subbu lti
+
+kolkata chennai b.tech 16apr 4pm 8.4 27.7 34 90days rupali tcs
+
+8.4 kolkata kol hyd 90days bbsr 27.7 33 b.tech 85.1 24 may 4pm infosys
+
+spring aop, spring api security, spring redis memcache - to learn
+
+java sb html angular 27.7 33 90 24 may shruti tcs
+
+23rd may 4pm java ganesh tcs
+
+8.5 28.5 35 20-25 ruchi tcs hr disc
+
+27, 33, manosh itc 
+
+8.5 kol b.tech 27 34 88days cts pravin tcs
+
+8.5 java angular sb kol hyd , chennai cts 27.7 90 days urvashi tcs
+
+8.5 kol hyd 27.7 35 33 kol 4.5 pooja tekit
+
+8.5 cts 27.7  35 neg  33  faiju itc
+
+American airlines ravalikha wrong dial
+
+8.5 5.5 kol hyd-there 27.7 32  90 days shahsank capg
+
+8.5 java cts 27 34 90days rachna tcs
+
+steven coforge, albert adp
+
+8.5 5.5 java ang sb 35neg kol hyd divakar cgi 31st drive
+
+8.5 java ang sb kol,hyd 27 34 28may 3to5pm ritesh tcs done
+
+8.5 27 33 90days 30th,31st may may 4pm angular sampurna tcs mail came
+
+90days 34 27 java architect prepare 30may 5pm ratnesh tcs not yet
+
+8.5 27.7 34 90days 31st may 4pm java sb aman tcs came
+
+java sb angular micro manoj capgemini 28may 1215pm done
+
+8.5 27.7 34.0 hyd kol,hyd java ang sb chanchal nagarro
+
+8.5 hyd kol cts btech 27 34 90 30may 3pm manali tcs java sb ang not yet
+
+java sb btech cts 8.5 27 34 29may 4pm 90days vishal tcs done
+
+8.5 5.5 pune 27.7 30may 2pm angular 8+ came
+
+8.5 angular 30may 4pm akshay tcs mail came
+
+8.5 hyd btech cts 27 34 seema tcs
+
+cbre venu techstar 9063470225
+
+krithika 4pm
+
+primus global technologies permanent with dell hyd 3days wfo java sb hib cloudfoundry ang budget 32/33 8.5 5 28.5 
+
+8.5 kol 27.7 6th june 3pm madhusmita
+
+apex systems hyd 
+
+kol hyd che muthu synechron 
+
+14aug 27.7 33 8.5 5.5 java fullstack kiran coforge hybrid 
+
+28.5 36.0 manisha tcs
+
+8.5 5.5 java angular cts kol,hyd pune 28.5 36neg 30.68 32max radhika lti
+
+8.5 btech 2016 cts 27.7 35 90days shibin tcs 11june 330pm
+
+btech cts 8.5 27 35 11june 12pm pravin tcs
+
+8.5 27.7 35 14aug kritya sapient give exam
+
+8.5 java angular plsql kol hyd 27.7 34 14aug iq test 14/30 
+
+btech cts 8.5 27 33 90 walkin tcs sudeshna
+
+cts architect 14aug kol hyd btech 8.5 28.5 35 33 nttdata
+
+8.5 5.5 angular 28.5 14aug 35offer harichandana valuelabs
+
+rose nttdata, sarah mphasis, jayant nagarro
+
+8.5 cts 28.5 35 33lti vaijnath infosys ectc high
+
+8.5 14aug kol hyd cts 28.5 35 37 1130 19june java sboot hib micro reshma accolite
+
+14th aug 90%ang 8.5 37 kol kol priya concentrix
+
+kritya publicis sapient interview friday 4pm, saturday/sunday 2nd half 22june 330
+
+35 10% var 8.6 6 fullstack bang shaik ltts hr 23june 11am
+
+8.6 javascript java 14aug 28.5 35% 36.5 haseena 20june 4pm
+
+mounika hcl 21june interview 3to4 java backend
+
+5b 5a, 6 infosys brackets salary slab ankit
+
+spring security java angular spring boot chennai 8.6 5.6 cts 14aug 27.7f 37 35
+3round 1st technical offshore 2nd technical onshore 3rd manager hr - dinesh bnp paribas
+
+cts 8.6 5.6 14aug 28.5 27.7 37 hyd coding java,angular problem solving swati american airlines
+
+vasanthi techm java ang kol hyd 36
+
+tuesday 3to4 haseena opentext , hari chandana valuelabs angular next week interview
+
+14aug 27.7 8.6 37 35 35 4years usha wipro angular lead
+
+zoom interview coding angular html css valuelabs
+
+27.7 28.5 35 10%  37 hcl mounika brush up on frontend more
+
+8.6 5.6 cts 14aug kol hyd mum 27.7 36 intellect budget till 27
+
+8.6 5.6 14aug 28.5,27.7 37(neg) kol kol,hyd 1pm hcl 
+
+preethi swiss re permanent angular
+
+cts kol muthu synechron ask next week
+
+mounika hcl discussion- 37 have pushed including 10%, virtual joining, wfh talk with manager, hcl software
+mounika has pushed for 37 approval, discussion are happening for 37 total fixed and corporate bonus as 5%
+
+java angular 8.6 cts 14aug 28.5 27.7 35 38 bnym hyd 4pm bnym client krishnaveni perficient, 32fixed only offer
+
+java angular 8.6 10% 35 38 28.5 14aug kol hyd tcs prasant sutherland
+
+kol capg 8.6 14aug java angular 28.5 37 shalini capg
+
+soumya ncr voyix chennai only
+
+soumya wipro hyderabad walkin, call tomorrow
+
+jestie infosys edgeverve banglore only, budget less
+
+arbaaz ltts ask next week
+
+kol hyd 14th aug 28.5 27.7 35 10% 
+
+bhavika nielsen media analytics frontend heavy 28.5 27.7 36.30, 33fixed, 3.30var and pf 
+
+suchitra adp 14th aug angular 3pm interview
+
+kol hyd bengaluru 37 + 5% bonus mounika hcl
+
+8.6 5.6 cts 27.7 25 infosys edgeverve sharanya
+
+java spring boot react 8.6 6.0 14aug cts bang 28.5 36.5 cts java 8 features spring boot microservices basics react coding shikha capg
+
+8.6 6.6 angular java sb rest api oracle kafka aws docker 14th aug 
+kol hyd project wise hybrid 28.5 27.7 38.0 10%variable 90%fixed 35fixed offer nttdata kuldeep
+
+java angular blore hyd 8.7 7.0 cts 28.5 27.7 14aug 37 35fixed 38fixed mitali bounteous
+
+cts 14aug 8.7 5.0 0.6 28.5 38 35fixed kol hyd aastha mphasis
+
+sayantani 37lpa 35lpa hcl 36.7lpa 37fixed 14aug 18aug ltimindtree
+
+java angular cts 2.6 27.7 28.5 36 14aug virtual shivani wipro
+
+virtusa ui 37 told sruthi
+
+cts 8.7 28.5 37 fidelity client 30 max photon reena
+
+8.7 cts kol kol/hyd lead 28.5 27.7 38neg 14aug online code wecp 3hours 3 questions 60% 2nd senior manager java skills,live coding
+3rd hiring manager 4th hr discussion, one go take test coding, abrar infosys
+
+8.7 cts 28.7 21 saranya hexaware 21 max budget
+
+java angular 8.7 6.0 cts 14aug 28.5 38.0 35fixed kol hyd deeksha lti saturday interview ask
+
+27lpa including 15% variable is max budget pune joshua infosys
+
+38fixed 8.7 java angular mangani bounteous will call back 8.7 31/32 34 5% morgan account 14aug bang/mum 
+
+1130-12 interview 8.7 6.5 java angular sb micro 14aug 28.5 38 28.5 10%var annual kol kol,hyd chennai kiran capg 
+
+capg client technical round will be next, complete documentation before this, hr will be final round shalini capg
+
+EY lloyds java spring boot rest api neha EY will check and tell
+
+8.7 6.0 java angular spring boot micro cts 27.7 37 35hcl 14aug kol kol,hyd srivarshini hexaware
+
+java8 spring boot rest api micro 5rounds interview 38 8.7 6 hyd 31/30max rekha epam
+
+haseena opentext 1st round virtual 2nd round face to face mandatory, call next week monday
+
+sayantani lti delivery did not approve the ctc which i am asking, max ctc is 36.70 only
+
+ritk concentrix max 32, see the mail once
+
+kiran capg selected but another team will contact for 2nd round and might take one week
+
+sapna coforge 8.7 5.5 6.5 28.5 14aug 5months micro java sb angular 
+
+nitya straive hyd java angular 38 asked wait for update
+
+amol will check java sb angular synechron, tomorrow 5pm interview java aws angular
+
+java sb rest angular css html javascript amq/rabbit mq, aws, hyd, 35, 38fixed srinija nttdata, message queue is must, agentic ai is must
+
+prasad capg 28.5 38 java api sb kol hyd 14aug; 3pm,1230pm for tomorrow, 4pm for monday 
+
+harichandana valuelabs client interview will schedule next week and then ctc part we can discuss with the hr
+
+14aug java ang spring boot 28.5 38 8.7 kol hyd shikha coforge only noida project
+
+cts kol hyd 8.7 28.5 27.7 14aug 35.0fixed 38.0; 34.0 32fix+3.2var 3.2bonus80% sunil genpact
+
+kol hyd 14aug 28.5 35fixed 38asked 32-34fixed currently pravin synechron 6aug in person interview
+delivery changes the salary once your interview performance comes, so if we go with 38, they will tell to give 36 or less as interview was okok,
+the delivery team will manipulate the salary committed as per the performance
+
+8.7 6.0 14aug 28.5 37 35fixed 39.0 35fix including pf subject to approval kol deeksha concentrix
+
+java ang 8.7 6.0 28.5 27.7 38 35.0having 34-35 10%var pan india poonam lti
+
+bang mum java angular 35budget including 7% variable shally accolite
+
+sonatype java ang sb aws tomcat jenkins hyd 28.5 38 mounika reddy
+
+java angular nosql marklogic nitya straive
+
+14aug kol hyd bang java backend/angular 8.7 38 35.0 32max 5%variable morgan stanley client banashree accolite
+
+14aug 37 35fix 38ask 28.5 cts java angular dhananjay dxc luxoft
+
+37offer 35fixed 38.0askingfixed 14auglwd 42.25 proposal 10% variable c2 grade narinder capgemini
+
+10.30am core java nosql marklogic angular managerial questions 14aug hcl cts nitya straive
+
+28.5 27.7 38 35 37 10% var paid out in capg deepali capgemini chennai/bang/pune are the locations
+
+cgi java angular 8.7 6.0 cts 14aug 28.5 38.0 37 35 18aug usa oppor deepika
+
+insurance new project 6 years duration java spring boot angular 38.0asked deepan htc
+
+kandha hari itch infotech results to ask
+
+supriya synechron 14aug 28.5 38 35 java angular 4pm, to tell 40, call
+
+java angular devang capg only chennai will update on other locations
+
+27.7 35 kol hyd only noida gurgaon pune neha iris
+
+14aug kol hyd java angular only banglore 5days office 8.7 28.5 27.7 38can do 35fixed calyx client elanka road sandeep ltts
+
+capg java sb restapi insurance shravani will get back
+
+cts 8.7 6.5 kol hyd 14aug 37,35 28.5,27.7 38.0fixed devang capg, call him for update
+
+8.7 35fix 30/31 10% var budget only payal pwc
+
+42.25 narinder will give update tomorrow from the client
+
+hyd 8.7 28.5 27.7 35 38.0 fixed 14aug meghana caprus it
+
+java aws 35fixed 8.7 sonali atos only bang pune
+
+siva 4-5, 3-4 java angular cgi onsite golder oppor deepika
+
+28.5 38 35 115 to 2 java spring boot aws sneha capg
+
+surya capg called, i am L1 select and getting processed for hartford account, skill is java sb aws so surya will come back on the interview slots, if this client doesnt matches, then my profile will be processed for other clients as I'm L1 select, ask about the salary in next call (very imp)
+
+krishnaveni 37 fixed 38fixed will get back, 40 told
+bnym escalation global vice president remote 
+perficient cmmi level 5 full time bnym 
+hcl latest check with mounika
+
+java angular/react neha ey lloyds neha
+
+14aug 40lpa remote 40lpa venkat 39-40l lpa 
+
+6 6.5 capg anitha will get back
+
+infovision labs java react angular 38fixed 8.7 hyd meghana infovision
+
+sneha and surya are hiring for the same clients so wait for the update from surya or call her
+
+java angular mum bang 3days keerthi accolite
+
+you should explore new projects, again bnym not good, management polictics is high in bnym nowadays and they put a lot of pressure for work and  micro management can also happen in some cases, so we have to be very careful, they give more work and burden to vendors and strict timelines
+
+java angular technical round kadambari zensar
+
+=======================================================================
+
+neelam hr tcs--
+b.tech 2016
+5.5 fe, 3.5 be
+wipro tech mahindra mphasis cts
+reasons
+4 / 5 rating
+28.5, 27.7 
+32 max but 10% var will be like current only
+33 kol 35 kol
+14aug
+rating snapshot 
+
+aarif hr tcs--
+8.5 kol 28.5 35-36 neg, current budget is till 25 only
+
+priyanka hr tcs
+28.76 35 33 wait for update
+
+

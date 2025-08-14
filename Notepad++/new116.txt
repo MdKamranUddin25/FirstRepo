@@ -1,0 +1,58 @@
+Patwardhan, Karan Narendra (External)
+4:44 PM
+convert object properties to array of rows..
+
+{fname: 'Kamran', lname:'Uddin'}
+ 
+[{key: fname, value: 'Kamran'},{key: lname, value:'Uddin'},...]
+
+const rows=Object.entries(person).map(([key,value])=>({key,value}));
+
+const rows=[];
+for(const key in person){
+if(person.hasOwnProperty(key)){
+rows.push({key,value:person[key]});
+}
+}
+
+LalchandMakhija, Suraj (External)
+5:02 PM
+ 
+virat - 4
+
+dhoni - 4
+
+rohit - 3
+
+sehwag - 1
+
+kuldeep - 2
+
+sachin - 5
+ 
+List<Player> playerList
+ 
+Q: Sort the list of players based on rank and if the rank is same then sort based on name.
+ 
+playerList.stream().sorted(Comparator.comparingInt(Player::getRank).thenComparing(Player::getName))
+ .collect(Collectors.toList());
+ 
+expected output:
+ 
+sehwag - 1
+
+kuldeep - 2
+
+rohit - 3
+
+dhoni - 4
+
+virat - 4
+
+sachin - 5
+ 
+ 
+Patwardhan, Karan Narendra (External)
+5:10 PM
+Need to drop - Suraj will conclude the interview - Thanks Kamran - nice talking to you
+ 

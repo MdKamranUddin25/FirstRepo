@@ -1,0 +1,49 @@
+Left Join
+Right Join
+Full Outer Join
+Inner Join
+ 
+ 
+Find the 3rd highest salary
+	 
+ID	Salary
+
+1	1000
+
+2	2000
+
+3	5000
+
+4	3000
+
+5	6000
+ 
+select salary from employee order by salary desc limit 1 offset 2
+ 
+ 
+Delete duplicate rows from the table
+
+emp_id	emp_name
+
+5001	ABC
+
+5002	PQR
+
+5003	XYZ
+
+5001	ABC
+
+5002	PQR
+
+5002	PQR
+  
+Sandeep Kakaraparthi (Unverified)
+5:38 PM
+
+//read on angular version upgrade documentation
+//read on oauth for paid and open apis implementation
+//clarify you are working as a developer only, not architect
+
+//state management in angular, how to implement jwt tokens
+//how to navigate to a link in a grid from a parent page
+//how to secure api's in frontend and backend

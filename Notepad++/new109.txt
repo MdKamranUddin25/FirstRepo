@@ -1,0 +1,60 @@
+
+-id
+-name
+-marks
+ 
+1  naresh	70
+2  Rupa		80
+3  ramana	95
+4  RajaMohan	90
+5  Narendra	85
+
+//1000 records to student list object
+//100 students least score
+
+stuList.stream().map(s->s.getName()).reduce((s1,s2)->s1.getMark()<s2.getMark()?s1:s2).limit(100).collect(Collectors.toList());
+
+15, 12, 78, 23, 90, 200, 34, 2
+//int list
+//2 starting
+
+intList.stream().map(i->i+"").filter(s->s.startsWith("2").forEach(System.out::println);
+
+List<Student> topStudents = students.stream()
+        .sorted(Comparator.comparingInt(Student::getTotalMarks).reversed()) // Sort in descending order of marks
+        .limit(100) // Limit to the top 100 students
+        .collect(Collectors.toList()); // Collect the results into a new List
+
+    topStudents.forEach(System.out::println);
+					
+List<Student> lowestMarkStudents = students.stream()
+        .sorted(Comparator.comparingInt(Student::getMark)) // Sort by mark in ascending order
+        .limit(100) // Limit to the first 100 students (those with the lowest marks)
+        .collect(Collectors.toList()); // Collect the results into a new List
+
+    lowestMarkStudents.forEach(System.out::println);
+
+
+Naresh Marupakala (Unverified)
+1:07 PM
+Student
+
+-id
+
+-name
+
+-marks
+ 
+1  naresh	70
+
+2  Rupa		80
+
+3  ramana	95
+
+4  RajaMohan	90
+
+5  Narendra	85
+
+ 
+15, 12, 78, 23, 90, 200, 34, 2
+ 

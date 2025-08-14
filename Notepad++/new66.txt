@@ -1,0 +1,117 @@
+1. READ
+(a). Request: Read article by id
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:art="http://www.concretepage.com/article-ws">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <art:getArticleByIdRequest>
+         <art:articleId>2</art:articleId>
+      </art:getArticleByIdRequest>
+   </soapenv:Body>
+</soapenv:Envelope> Response:
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header/>
+   <SOAP-ENV:Body>
+      <ns2:getArticleByIdResponse xmlns:ns2="http://www.concretepage.com/article-ws">
+         <ns2:articleInfo>
+            <ns2:articleId>2</ns2:articleId>
+            <ns2:title>Spring Boot Getting Started</ns2:title>
+            <ns2:category>Spring Boot</ns2:category>
+         </ns2:articleInfo>
+      </ns2:getArticleByIdResponse>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope> Find the print screen.
+Spring Boot SOAP Web Service Example
+(b). Request: Read all articles
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:art="http://www.concretepage.com/article-ws">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <art:getAllArticlesRequest/>
+   </soapenv:Body>
+</soapenv:Envelope> Response:
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header/>
+   <SOAP-ENV:Body>
+      <ns2:getAllArticlesResponse xmlns:ns2="http://www.concretepage.com/article-ws">
+         <ns2:articleInfo>
+            <ns2:articleId>1</ns2:articleId>
+            <ns2:title>Java Concurrency</ns2:title>
+            <ns2:category>Java</ns2:category>
+         </ns2:articleInfo>
+         <ns2:articleInfo>
+            <ns2:articleId>2</ns2:articleId>
+            <ns2:title>Spring Boot Getting Started</ns2:title>
+            <ns2:category>Spring Boot</ns2:category>
+         </ns2:articleInfo>
+      </ns2:getAllArticlesResponse>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope> 2. CREATE
+Request:
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:art="http://www.concretepage.com/article-ws">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <art:addArticleRequest>
+         <art:title>Angular Tutorial</art:title>
+         <art:category>Angular</art:category>
+      </art:addArticleRequest>
+   </soapenv:Body>
+</soapenv:Envelope> Response:
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header/>
+   <SOAP-ENV:Body>
+      <ns2:addArticleResponse xmlns:ns2="http://www.concretepage.com/article-ws">
+         <ns2:serviceStatus>
+            <ns2:statusCode>SUCCESS</ns2:statusCode>
+            <ns2:message>Content Added Successfully</ns2:message>
+         </ns2:serviceStatus>
+         <ns2:articleInfo>
+            <ns2:articleId>3</ns2:articleId>
+            <ns2:title>Angular Tutorial</ns2:title>
+            <ns2:category>Angular</ns2:category>
+         </ns2:articleInfo>
+      </ns2:addArticleResponse>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope> 3. UPDATE
+Request:
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:art="http://www.concretepage.com/article-ws">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <art:updateArticleRequest>
+         <art:articleInfo>
+            <art:articleId>2</art:articleId>
+            <art:title>Update: Spring Boot Getting Started</art:title>
+            <art:category>Update: Spring Boot</art:category>
+         </art:articleInfo>
+      </art:updateArticleRequest>
+   </soapenv:Body>
+</soapenv:Envelope> Response:
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header/>
+   <SOAP-ENV:Body>
+      <ns2:updateArticleResponse xmlns:ns2="http://www.concretepage.com/article-ws">
+         <ns2:serviceStatus>
+            <ns2:statusCode>SUCCESS</ns2:statusCode>
+            <ns2:message>Content Updated Successfully</ns2:message>
+         </ns2:serviceStatus>
+      </ns2:updateArticleResponse>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope> 4. DELETE
+Request:
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:art="http://www.concretepage.com/article-ws">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <art:deleteArticleRequest>
+         <art:articleId>2</art:articleId>
+      </art:deleteArticleRequest>
+   </soapenv:Body>
+</soapenv:Envelope> Response:
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header/>
+   <SOAP-ENV:Body>
+      <ns2:deleteArticleResponse xmlns:ns2="http://www.concretepage.com/article-ws">
+         <ns2:serviceStatus>
+            <ns2:statusCode>SUCCESS</ns2:statusCode>
+            <ns2:message>Content Deleted Successfully</ns2:message>
+         </ns2:serviceStatus>
+      </ns2:deleteArticleResponse>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope> 

@@ -1,0 +1,100 @@
+todo app list
+
+ng new Todo
+
+@Component
+
+export class ToDoComponent{
+
+constructor(private todo:ToDoService){}
+
+task='';
+
+todoAdd(){
+this.todo.addTodo.subcribe();
+}
+
+todoDelete(){
+this.todo.deleteTodo.subcribe();
+
+}
+
+//html
+<table>
+<input type="text" [(ngModel)]="task"></input>
+<button (click)>Add Task</button>
+<button>Delete Task</button>
+</table>
+
+@Service
+//add todo, delete todo
+
+export class ToDoService{
+
+constructor(priavte httpclient:HttpClient){}
+
+private api="http://localhost:8080/api"
+
+addTodo(){
+return this.http.post(this.api);
+}
+
+deleteTodo(todoId:number){
+return this.http.delete(this.todoId);
+}
+
+}
+
+class abc
+
+
+mylist.stream().map(e->e.getName()).forEach(System.out::println);
+
+find and print the sum of all odd numbers using Java Stream  (1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+ 
+mylist.stream().filter(n->n%2!=0).reduce(n1,n2->n1+n2).getAsInt(); 
+
+
+https://jsonplaceholder.typicode.com/users
+ 
+find and print the sum of all odd numbers using Java Stream  (1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+
+====================================
+
+Uddin, Md. Kamran (Cognizant) was invited to the meeting.
+
+Siriprolu Sai Ganesh (Unverified)
+4:19 PM 
+Given a String, find the first non-repeated character in it using Stream functions?
+ 
+Input : Java articles are Awesome
+ 
+Unknown User was invited to the meeting.
+
+ 
+4:38 PM Meeting ended: 3h 2m 36s 
+
+ 
+Uddin, Md. Kamran (Cognizant) left the chat.
+
+ 
+Uddin, Md. Kamran (Cognizant) was invited to the meeting.
+
+ 
+Bandari Krishna (Unverified) was invited to the meeting.
+
+ 
+https://jsonplaceholder.typicode.com/users
+ 
+find and print the sum of all odd numbers using Java Stream  (1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+ 
+Tamilarasan Valarmathinathan (Unverified) was invited to the meeting.
+
+ 
+Jayant Gosar (Unverified) was invited to the meeting.
+
+ 
+Uddin, Md. Kamran (Cognizant) left the chat.
+
+ 
+ 

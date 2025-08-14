@@ -1,0 +1,43 @@
+
+List<String> listOfStrings = Arrays.asList("One", "2wo", "3hree", "Four", "5ive", "Six");     (12,23,   
+filter the  integer starting values in the specific List using streams
+
+listofstring.stream().filter(s->s.startsWith("2") || s.startsWith("3") || s.startsWith("5")).forEach(System.out::println);
+
+listofstring.stream().map(s->s.charAt(0).).filter(s->s.startsWith(s.instaanceof(Integer))).forEach(System.out::println);
+
+//solution
+listofstring.stream().filter(s->Character.isDigit(s.charAt(0))).forEach(System.out::println);
+
+=========================================
+
+How does Angular handle server-side rendering (SSR)
+ 
+route guards
+ 
+What is the difference between forRoot() and forChild() in Angular modules
+ 
+ 
+ReentrantLock
+ 
+hashtable , concurrent hasmap
+ 
+ 
+ECR in AWS
+ 
+scaling in microservie
+ 
+saga design patten
+ 
+spring boot sterotype anotations
+ 
+@qulifier
+ 
+List<String> listOfStrings = Arrays.asList("One", "2wo", "3hree", "Four", "5ive", "Six");        
+filter the  integer starting values in the specific List using streams
+ 
+//solution
+listofstring.stream().filter(s->Character.isDigit(s.charAt(0))).forEach(System.out::println);
+ 
+Geethachari, Vivekananthachari (External)
+11:37 AM

@@ -1,0 +1,43 @@
+customer entity store data
+
+@SBA
+@EFC
+SpringApp.run
+
+
+MS Customer/Profiles 
+
+@entity
+@table(name='cust')
+public class Customer(){
+@id(str=gene)
+id
+name, address, email,mobno
+}
+
+restcontroller
+requestmapping('/cust')
+
+@PostMapping('/add')
+public Customer add(@requestbody Customer cust)
+
+
+service
+add(customer)
+
+
+repo
+save
+
+list of integers
+odd and even grouping by partition
+
+myList.stream().filter(n->n%2==0).forEach(sytem,out::println)
+myList.stream().filter(n->n%2!=0).forEach(sytem,out::println)
+
+-----------------
+
+object int double bigdecimal
+
+objList.stream().filter(o->o.instanceOf(Integer)
+

@@ -1,0 +1,23 @@
+
+@Directive({
+selector:'[highlightcolor]'
+})
+class HighlightDirective{
+
+@Input() colorHighlight;
+
+constructor(private el:ElementRef)
+
+ngOnInit(){
+this.el.nativeelement.style.backgroundcolor=this.colorHighlight || 'greeen';
+}
+
+}
+
+//html
+
+<p colorHighlight='yellow' >Some text</p>
+
+name:ForControl;
+
+name=new FormCOntrol('',Validators.required(),Validators.minlenght(5),Validators.maxLenght(100))

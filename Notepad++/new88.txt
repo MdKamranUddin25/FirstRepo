@@ -1,0 +1,27 @@
+var myString = "this is my string";
+output:     
+
+"siht si ym gnirts"
+
+function reverseEachWord(str) {
+  const words = str.split(" ");
+  const reversedWords = words.map(word => {
+    return word.split('').reverse().join('');
+  });
+  return reversedWords.join(' ');
+}
+
+const str = "This is a test string";
+const reversedStr = reverseEachWord(str);
+console.log(reversedStr); // Output: "sihT si a tset gnirts"
+
+
+<script>
+const originalString = "this is my string";
+var reversedStr="";
+for (let i = 0; i < originalString.length; i++) {
+  reversedStr = originalString.charAt(i) + reversedStr;
+}
+document.write(reversedStr);
+</script>
+//gnirts ym si siht

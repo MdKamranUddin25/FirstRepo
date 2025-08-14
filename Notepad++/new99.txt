@@ -1,0 +1,46 @@
+
+String s = "abcdcaf" . Write java program to find count of characters. e.g. a=2, b=1, c=2, d=1, f=1
+
+String s = "abcdcaf";
+
+Map<Character,Long> charCount=s.chars().mapToObj(c-> char c).collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
+
+charCount.forEach((char,count)->System.out.println(char+"="+count));
+
+Optional<List<Employee>> employees = getEmployees();
+use java 8, use optional methods and iterate over the list. for employees whose age is > 30, provide them extra 1000 rs to their existing salary. if no employees then print employee doesnot exist. Use java 8 stream
+
+employees.ifPresent(list->list.stream()).filter(e->e.getAge()>30).map(e->e.getSalary+1000).collect(Collectors.toList()).orElse("No employee greater than 30");
+
+//employees.stream().filter(e->e.getAge()>30).map(e->e.getSalary+1000).collect(Collectors.toList()).orElse("No employee greater than 30");
+
+Map<Integer, String> map = new HashMap<>();  write program to sort Hashmap by value
+map.put(1, "c");
+map.put(2, "b");
+map.put(3, "a");
+
+map.entrySet().compare(m1,m2->m1.getValue>m2.getValue).collect
+
+account->salary (1000,20000)
+//2nd highest salary row
+
+select * from account order by salary limit 1 offset N-1;
+
+==========================================
+
+Dinesh Arun Sonar (Unverified)
+9:18 AM
+String s = "abcdcaf" . Write java program to find count of characters. e.g. a=2, b=1, c=2, d=1, f=1
+ 
+Optional<List<Employee>> employees = getEmployees();
+use java 8, use optional methods and iterate over the list. for employees whose age is > 30, provide them extra 1000 rs to their existing salary. if no employees then print employee doesnot exist. Use java 8 stream
+ 
+Map<Integer, String> map = new HashMap<>();  write program to sort Hashmap by value
+map.put(1, "c");
+map.put(2, "b");
+map.put(3, "a");
+ 
+emplist //sorting by name
+
+emplist.stream().map(e->e.getName()).sorted().forEach(System.out::println);
+emplist.stream().map(e->e.getName()).sorted(Collections.reverseOrder()).forEach(System.out::println);

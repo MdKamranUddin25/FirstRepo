@@ -1,0 +1,86 @@
+Employee
+
+id
+
+name
+
+gender
+
+salary
+ 
+Female-150000
+
+male-50000
+
+//sort the employees based on salary-descending order (high)
+
+if two employees having the same salary sort based on Name of employee
+ 
+emplist.stream().sorted(Comparator.comparingDouble(Employee::getSalary).thenComparing(Employee::getName)).collect(Collectors.toList());
+
+emplist.forEach(System.out::println);
+
+//save
+
+@RestController
+@RequestMapping("/emps")
+public class EmpCon{
+
+@Autowired
+private EmpService service;
+
+@PostMapping
+public ResponseEntity<Employee> addEmp(@RequestBody Employee emp){
+
+return new ResponseEntity(service.add(emp),HttpStatus.CREATED);
+
+}
+
+@Service
+public class EmpService
+
+=========================================
+
+Employee
+
+id
+
+name
+
+gender
+
+salary
+ 
+Female-150000
+
+male-50000
+
+//sort the employees based on salary-descending order
+
+if two employees having the same salary sort based on Name of employee
+ 
+emplist.stream().sorted(Comparator.comparingDouble(Employee::getSalary).thenComparing(Employee::getName)).collect(Collectors.toList());
+ 
+emplist.forEach(System.out::println);
+ 
+//save
+ 
+@RestController
+
+@RequestMapping("/emps")
+
+public class EmpCon{
+ 
+@Autowired
+
+private EmpService service;
+ 
+@PostMapping
+
+public ResponseEntity<Employee> addEmp(@RequestBody Employee emp){
+ 
+return new ResponseEntity(service.add(emp),HttpStatus.CREATED);
+ 
+}
+ 
+Surekha, Rayachoti (External)	4:17 PM

@@ -1,0 +1,16 @@
+{
+    "fullName":"Smita",
+    "mobile":"9922334477",
+    "mailId":"smita@gmail.com"
+}
+
+
+{
+    "header":"Petrol Monthly",
+    "txnDate":"2024-10-15",
+    "type":"DEBIT",
+	"amount":"5000",
+	"holder":{
+	    "ahId":"5"
+	}
+}

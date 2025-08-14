@@ -1,0 +1,103 @@
+
+.sqaure{
+width:200px;
+height:200px;
+border:5px solid green;
+position:
+}
+
+<div class="square"></div>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.square {
+  width:200px;
+height:200px;
+border:5px solid green;
+  background-color: grey;
+  //  border-radius: 50%; -> for circle shape
+}
+</style>
+</head>
+<body>
+
+<h2>Square CSS</h2>
+<div class="square"></div>
+
+</body>
+</html> 
+
+var myString = "this is my string";
+output:     
+
+"siht si ym gnirts"
+
+var string=mystring.split(" ");
+
+for(int i=0;i<string.length;i++){
+string[i].
+
+
+
+Akshay Khade
+3:15 PM
+<div class="my-class" id="my-id" style="color: purple;">This is my text</div>
+
+div {color: pink !important; }
+div { color: yellow; }
+#my-id { color: blue; }
+.my-class { color: red; }
+
+-> important, inline style, id, class, element
+
+Akshay Khade
+3:26 PM
+<html>
+<body>
+<footer>this is my footer</footer>
+this is my body
+<header>this is my header</header>
+</body>
+</html>
+
+-> footer, body, header
+
+Akshay Khade
+3:32 PM
+const myObj = {fname: 'xyz', lname: 'pqr'};
+
+1. myObj = {mname: 'asdf'}; -> wrong
+2. myObj.fname = 'poiu'; -> right
+
+Akshay Khade
+3:34 PM
+var myString = "this is my string";
+output:     
+
+"siht si ym gnirts"
+
+function reverseEachWord(str) {
+  const words = str.split(" ");
+  const reversedWords = words.map(word => {
+    return word.split('').reverse().join('');
+  });
+  return reversedWords.join(' ');
+}
+
+const str = "This is a test string";
+const reversedStr = reverseEachWord(str);
+console.log(reversedStr); // Output: "sihT si a tset gnirts"
+
+
+<script>
+const originalString = "this is my string";
+var reversedStr="";
+for (let i = 0; i < originalString.length; i++) {
+  reversedStr = originalString.charAt(i) + reversedStr;
+}
+document.write(reversedStr);
+</script>
+//gnirts ym si siht

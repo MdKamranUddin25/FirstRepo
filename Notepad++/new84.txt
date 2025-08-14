@@ -1,0 +1,25 @@
+String inp="My company name is xyz My company name is xyz";
+String[] words=inp.toLowerCase().split(" ");
+
+Map<String,Integer> count=new HashMap<>();
+
+for(String words: itr){
+count.put(words,count.get(word,0)+1); 
+}
+
+for(Map.Entry<String,Integer>:count.entrySet()){
+sysout(entry.getKey()+":"+entry.getValue());
+}
+
+IntStream.rangeClosed(2, 100).filter(n->IntStream.rangeClosed(2, (int)Math.sqrt(n))
+	        		.noneMatch(i->n%i==0)).forEach(num->System.out.println(num));
+	        
+	        long count=IntStream.rangeClosed(2, 100).filter(n->IntStream.rangeClosed(2, (int)Math.sqrt(n))
+	        		.noneMatch(i->n%i==0)).count();
+	        System.out.println(count);
+			
+			int result=IntStream.rangeClosed(2,15).filter(n->IntStream.rangeClosed(2,(int)Math.sqrt(n))
+				.noneMatch(i->n%i==0)).map(j->j*3).reduce((k1,k2)->k1+k2).getAsInt();
+		
+		int result2=numbers.stream().filter(n->IntStream.rangeClosed(2,(int)Math.sqrt(n))
+				.noneMatch(i->n%i==0)).map(j->j*3).reduce((k1,k2)->k1+k2).get();

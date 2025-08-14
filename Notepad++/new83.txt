@@ -1,0 +1,25 @@
+
+String str="kamran";
+
+List mylist=Arrays.asList(str);
+
+char chararr[]=str.chars();
+
+chararr.stream().map(i->).filter(i->
+
+str.chars().mapToObj(s->Character.valueOf(char (s)).collect(Collectors.groupingBy(LinkedHashMap::new)).
+entrySet().stream().filter(entry->entry.getKey*entry[
+
+
+for(int i=0;i<chararr.length;i++){
+count=0;
+tempstr="";
+tempstr=chararr[i];
+count++;
+
+Set<Integer> set=new TreeSet();
+
+return Stream.iterate(1,i->++i).filter(i->i%2!=0).filter(i->set.add
+
+prime numbers using java8
+

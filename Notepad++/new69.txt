@@ -1,0 +1,121 @@
+cyber security-t
+python-p
+research method-t
+remote sensing-p
+gis-p
+gnss, gps-p
+
+
+AG-GRID
+
+october 19th
+
+https://ctsccprod.service-now.com/$sn-va-web-client-app.do?sysparm_skip_load_history=true&sysparm_search_text=LSTOVAVAP0103339
+
+
+1:17 AM Connecting...
+1:17 AM Connected. A support representative will be with you shortly.
+1:17 AM Support session established with Annaamalai LNU.
+1:18 AM You have granted full permission to Annaamalai LNU. To revoke, click the X button on the toolbar or press Pause/Break on the keyboard.
+1:18 AM Remote Control started by Annaamalai LNU.
+
+1:18 AM Annaamalai LNU: hi
+1:18 AM Md. Kamran Uddin: hi
+1:19 AM Annaamalai LNU: to which time zone you need to change
+1:20 AM Md. Kamran Uddin: time zone is fine
+1:20 AM Md. Kamran Uddin: need help with chrome issue
+1:20 AM Annaamalai LNU: then
+1:20 AM Md. Kamran Uddin: Google Chrome is my system is not storing any history search or anything which i search
+1:21 AM Md. Kamran Uddin: this is the issue which i am facing
+1:21 AM Annaamalai LNU: sorry
+1:21 AM Annaamalai LNU: history available here
+1:22 AM Md. Kamran Uddin: now i will close the chrome
+1:22 AM Md. Kamran Uddin: everything will vanish and not come
+1:22 AM Md. Kamran Uddin: shall i proceed?
+1:23 AM Md. Kamran Uddin: shall i close the chrome?
+1:24 AM Md. Kamran Uddin: are you there
+1:24 AM Annaamalai LNU: yes
+1:24 AM Annaamalai LNU: ok
+1:25 AM Md. Kamran Uddin: closing chrome
+1:25 AM Annaamalai LNU: check now
+1:29 AM Annaamalai LNU: HERE IT IS
+1:29 AM Md. Kamran Uddin: it is not storing any recent history
+1:29 AM Md. Kamran Uddin: if you see, its till 10th September, 1 month back
+1:29 AM Md. Kamran Uddin: nothing its storing if i do any recent search or open any link
+1:30 AM Annaamalai LNU: Check  by date
+1:30 AM Annaamalai LNU: charger your laptop
+1:31 AM Md. Kamran Uddin: yes plugged
+1:31 AM Md. Kamran Uddin: let me try date thing
+1:32 AM Annaamalai LNU: ok
+1:33 AM Annaamalai LNU: kinldy don't use gmail in cognizant asset
+1:33 AM Md. Kamran Uddin: ok, sorry
+1:33 AM Md. Kamran Uddin: will logout
+1:33 AM Annaamalai LNU: If any issue security breach occurs we are not responsible
+1:33 AM Annaamalai LNU: sure
+1:34 AM Annaamalai LNU: as per our organization we should not login to gmail in cognizant asset
+1:34 AM Md. Kamran Uddin: i was trying to logout and login if that was the issue so thought
+1:34 AM Md. Kamran Uddin: wont do it again'
+1:35 AM Annaamalai LNU: no problem
+1:35 AM Annaamalai LNU: check the history now
+1:35 AM Md. Kamran Uddin: trying for any other searches
+1:35 AM Md. Kamran Uddin: and seeing the history
+1:38 AM Md. Kamran Uddin: no luck
+1:38 AM Md. Kamran Uddin: seems to be some other issue
+1:38 AM Md. Kamran Uddin: history still not getting stored
+1:43 AM Md. Kamran Uddin: shall I try again
+1:46 AM Annaamalai LNU: may i delete the browsing data?
+1:46 AM Md. Kamran Uddin: no, please
+1:46 AM Annaamalai LNU: check now
+1:47 AM Md. Kamran Uddin: ok checking with new searches
+1:47 AM Annaamalai LNU: if didn't work i need to reinstall the chrome
+1:47 AM Annaamalai LNU: if I reinstall everything will get delete
+1:47 AM Md. Kamran Uddin: i did reinstall last week via other support executive
+1:47 AM Annaamalai LNU: don't login the gmail
+1:47 AM Md. Kamran Uddin: history didnt got deleted
+1:47 AM Md. Kamran Uddin: but issue persisted
+1:47 AM Md. Kamran Uddin: yes, wont do login
+1:48 AM Annaamalai LNU: if you login everything will get save under your gmail it won't be visible under guest mode
+1:48 AM Annaamalai LNU: if you want any websites mandatory you can make it as bookmark
+1:48 AM Md. Kamran Uddin: ok, that should be fine
+1:48 AM Md. Kamran Uddin: but at least new searches and the old searches which i open back should come in history
+1:48 AM Md. Kamran Uddin: this is what i want
+1:48 AM Annaamalai LNU: check now
+1:49 AM Md. Kamran Uddin: ok
+1:50 AM Annaamalai LNU: just now I checked with my laptop
+1:50 AM Annaamalai LNU: I am also facing same issue
+1:50 AM Annaamalai LNU: for me it is showing until oct21
+1:51 AM Annaamalai LNU: So, I am checking on it please wait
+1:51 AM Md. Kamran Uddin: thats very strange
+1:51 AM Md. Kamran Uddin: yes, will wait
+1:53 AM Annaamalai LNU: as checked if we login gmail we will face this issue
+1:55 AM Md. Kamran Uddin: ok understood
+1:55 AM Md. Kamran Uddin: but after we logout also, we are facing the same issue
+1:56 AM Annaamalai LNU: We are experiencing a Global outage with Chrome browser which is ongoing across different locations.
+Our support team has been notified on the same. We are coordinating with the team and checking this issue on a high priority.
+We expect the issue to be resolved soon.
+1:57 AM Md. Kamran Uddin: ok Annaamalai
+1:57 AM Md. Kamran Uddin: any expected resolution date
+1:58 AM Md. Kamran Uddin: if any ways to track it or get an update if it got resolved in coming days
+1:58 AM Annaamalai LNU: It will be resolved in next chrome update
+1:58 AM Annaamalai LNU: kindly please wait
+1:58 AM Annaamalai LNU: If have any updates regarding this issue I will update you in teams
+1:59 AM Md. Kamran Uddin: ok Annaamalai
+1:59 AM Md. Kamran Uddin: understood
+1:59 AM Annaamalai LNU: Kindly ping me on friday I will check with the concern team
+1:59 AM Md. Kamran Uddin: this will be of great help
+1:59 AM Annaamalai LNU: thank you for the understanding
+1:59 AM Md. Kamran Uddin: i will ping you on Friday again
+1:59 AM Annaamalai LNU: sure
+1:59 AM Annaamalai LNU: thank you
+1:59 AM Md. Kamran Uddin: thank you for your help on this
+1:59 AM Annaamalai LNU: don't forgot to ping me on friday
+1:59 AM Annaamalai LNU: you are welcome
+1:59 AM Md. Kamran Uddin: no, I wont
+1:59 AM Annaamalai LNU: may i end the session
+2:00 AM Md. Kamran Uddin: i will keep a note
+2:00 AM Annaamalai LNU: thank you
+2:00 AM Md. Kamran Uddin: yes, please
+
+2:00 AM Annaamalai LNU has stopped servicing requests. Please wait.
+2:00 AM Remote Control by Annaamalai LNU stopped.
+2:01 AM The session has exceeded the maximum allowed waiting time, please try a new session at a later time.

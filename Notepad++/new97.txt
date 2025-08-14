@@ -1,0 +1,24 @@
+
+class singleclass {
+
+private static Singleton abc;
+
+private singleclass(){}
+
+private Singleton getObject(){
+
+}
+
+}
+
+Given a String, find the first non-repeated character in it using Stream functions?
+ 
+Input : Java articles are Awesome //input
+
+Character result=input.chars().mapToObj(c->Character.toLowerCase(Character.valueOf((char)c)).
+				collect(Collectors.groupingBy(Function.identity(),LinkedHashMap::new,Collectors.counting()).
+				entrySet().stream().filter(entry->entry.getValue==1).map(entry->entry.getKey()).findFirst().get();
+				
+				
+//isolation and propagation in transaction management
+

@@ -1,0 +1,165 @@
+Q.2 how you will map json request with java dto
+
+	   JsonRequest
+
+	   { "email" : "abc@test.com", "cardnumber":"5433353533555"}
+
+	   class memeber {
+
+		private string email;
+
+		private string identifier;
+
+	   }
+
+	   @POST
+
+	   public  boolean registration(@RequestBody Member member){
+
+	    /// logic
+
+		return false;
+ 
+	   }
+ 
+Q3. find for each city the sum of transaction amounts for each day  using Java streams & using database query
+
+	    List<Transaction> transactions = Arrays.asList(
+ 
+		new Transaction("Mumbai","2022-01-01", 100),
+ 
+		new Transaction("Mumbai","2022-01-02", 200),
+ 
+		new Transaction("Pune","2022-01-02", 300),
+ 
+		new Transaction("Pune","2022-01-02", 400),
+ 
+		new Transaction("Banglore","2022-01-03", 500)
+ 
+		);
+
+ //streams
+ transactions.stream().collect(Collectors.groupingBy(Function.identity(),LinkedHashMap::new));
+ //Function.identity(transactions.getDate()),
+ 
+ 
+ //sql
+ select city,sum(amount) as totalamt,date from transaction group by date,city;
+ 
+ //3rd highest transaction amount
+ 
+ select 
+ 
+ Q.2 how you will map json request with java dto
+
+	   JsonRequest
+
+	   { "email" : "abc@test.com", "cardnumber":"5433353533555"}
+
+	   class memeber {
+
+		private string email;
+
+		private string identifier;
+
+	   }
+
+	   @POST
+
+	   public  boolean registration(@RequestBody Member member){
+
+	    /// logic
+
+		return false;
+ 
+	   }
+ 
+Q3. find for each city the sum of transaction amounts for each day  using Java streams & using database query
+
+	    List<Transaction> transactions = Arrays.asList(
+ 
+		new Transaction("Mumbai","2022-01-01", 100),
+ 
+		new Transaction("Mumbai","2022-01-02", 200),
+ 
+		new Transaction("Pune","2022-01-02", 300),
+ 
+		new Transaction("Pune","2022-01-02", 400),
+ 
+		new Transaction("Banglore","2022-01-03", 500)
+ 
+		);
+
+ 
+if(cardNumber !=null && isDigit(cardNumber)) {}
+ 
+100% code  coverage for above line
+ 
+ 
+import java.time.LocalDate;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+
+public class TransactionProcessor {
+
+    public static class Transaction {
+        private String city;
+        private LocalDate date;
+        private double amount;
+
+        public Transaction(String city, LocalDate date, double amount) {
+            this.city = city;
+            this.date = date;
+            this.amount = amount;
+        }
+
+        public String getCity() {
+            return city;
+        }
+
+        public LocalDate getDate() {
+            return date;
+        }
+
+        public double getAmount() {
+            return amount;
+        }
+    }
+
+    public static void main(String[] args) {
+        // Sample data
+        List<Transaction> transactions = List.of(
+                new Transaction("New York", LocalDate.of(2024, 1, 1), 100.0),
+                new Transaction("New York", LocalDate.of(2024, 1, 1), 200.0),
+                new Transaction("London", LocalDate.of(2024, 1, 1), 150.0),
+                new Transaction("New York", LocalDate.of(2024, 1, 2), 300.0),
+                new Transaction("London", LocalDate.of(2024, 1, 2), 250.0),
+                new Transaction("Paris", LocalDate.of(2024, 1, 2), 100.0),
+                new Transaction("Paris", LocalDate.of(2024, 1, 3), 100.0)
+        );
+
+        // Group by city and then by date and sum amounts
+        Map<String, Map<LocalDate, Double>> cityDateAmountMap = transactions.stream()
+                .collect(Collectors.groupingBy(
+                        Transaction::getCity,
+                        Collectors.groupingBy(
+                                Transaction::getDate,
+                                Collectors.summingDouble(Transaction::getAmount)
+                        )
+                ));
+
+        cityDateAmountMap.forEach((city, dateAmountMap) -> {
+            System.out.println("City: " + city);
+            dateAmountMap.forEach((date, totalAmount) -> {
+                System.out.println("  Date: " + date + ", Total Amount: " + totalAmount);
+            });
+        });
+    }
+}
+
+
+SELECT city, date, SUM(amount) AS total_amount
+FROM transactions_table
+GROUP BY city, date
+ORDER BY city, date;

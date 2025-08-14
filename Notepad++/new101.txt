@@ -1,0 +1,27 @@
+
+mylist=[9,8,7,6,5,4,3,2,1]
+
+//sorted list using foreach
+
+mylist.stream().sorted(Collections.reverseOrder()).forEach(System.out::ptintln);
+
+
+String str="Md Kamran Uddin"
+
+//_ all caps
+
+Arrays.stream(str.toUpperCase().split(" ").join("_").forEach(newStr->System.out.println(newStr));
+
+//mdKamranUddin no space camel case
+
+String str2=Arrays.stream(str.toUpperCase().split(" ").join("_").forEach(newStr->System.out.println(newStr));
+
+Arrays.stream(str2->new StringBuilder(str2).remove("_").charAt(0).toLowerCase()
+
+N Vijayaragavan (Unverified)5:32 PM
+CaseUtils.toCamelCase(text, false, '_');
+
+//angular security and backend security //security concepts //caching concepts //kafka message queue
+
+
+
